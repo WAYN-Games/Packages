@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40ddfe0fac44ee8940078d695989a25, type: 3}
+  m_Name: BasicCharacterProfileAsset
+  m_EditorClassIdentifier: 
+  PhysicsProfile:
+    ShellWidth: 0.025
+    MaxBounce: 6
+    CapsuleHeight: 2
+    CapsuleRadius: 0.5
+    SpinOrRollAlongWall: 0
+    BelongsTo:
+      serializedVersion: 2
+      m_Bits: 1
+    CollidesWith:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  Moving:
+    MaxSpeed: 12
+    MaxSlope: 35
+    TimeToMaxSpeed: 0.5
+    TimeToStop: 0.5
+    MaxStepHeight: 0.35
+    Sharpness: 0.25
+  Falling:
+    TerminalVelocity: 50
+    GravityMultiplier: 3
+  Jumping:
+    Force: 30
+    MaxJumps: 2

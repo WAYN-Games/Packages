@@ -1,0 +1,9 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "DebugRoslynSourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "../Wayn.Games.Locomotion.SourceGen.Sample/Wayn.Games.Locomotion.SourceGen.Sample.csproj"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Wayn.Games.Locomotion.Tests.Editor",
+  "rootNamespace": "",
+  "references": [
+    "GUID:69a0414db8ed4dc8ae1486c2301e6af4",
+    "GUID:c38fb62397af04c51b143415e1db6d90",
+    "GUID:27619889b8ba8c24980f49ee34dbb44a"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
