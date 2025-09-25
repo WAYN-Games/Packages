@@ -6,12 +6,13 @@ using Wayn.Locomotion.StateMachine;
 using Unity.Entities;
 #pragma warning restore CS0105
 
-[assembly: RegisterGenericComponentType(typeof(LocomotionInput<>))]
-[assembly: RegisterGenericComponentType(typeof(LocomotionInputInitialized<>))]
+[assembly: RegisterGenericComponentType(typeof(LocomotionInputAsset<>))]
+[assembly: RegisterGenericComponentType(typeof(LocomotionInputInstance<>))]
 [assembly: RegisterGenericComponentType(typeof(LocomotionProfileBlob<>))]
 
 namespace WAYN.Locomotion.Demo.BasicLocomotion
 {
+    /// <exclude />
     public partial struct BasicLocomotionStatesStateMachine : IComponentData,ILocomotionStateMachine<BasicLocomotionStatesStateMachine, WAYN.Locomotion.Demo.BasicLocomotion.BasicLocomotionStates, 
     BasicLocomotionContext, , , > 
     {

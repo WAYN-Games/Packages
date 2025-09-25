@@ -126,6 +126,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/Locomotion.Runtime.Authoring.Player.FollowStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Locomotion.Runtime.Authoring.Player.FollowStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Locomotion.Runtime.Authoring.Player.FollowStrategy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": ".tmp/api/Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.yml",
       "output": {
         ".html": {
@@ -868,6 +882,594 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.CharacterPath",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.yml\" sourcestartlinenumber=\"1\">A list of transform teh character went through.\nThe first element is the next target position and the second and third element are previous transforms.\nTime allows for interpolation between the previous position and next target position.\nThe third element can be used to compute velocity and acceleration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.yml\" sourcestartlinenumber=\"1\">Represents a physics configuration profile for a character, encapsulating core properties that define\ncollision behavior, dimensions, and interaction with physics layers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Contact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Contact.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Contact",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.Contact.yml\" sourcestartlinenumber=\"1\">Information about a collision contact point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.ControlledCharacters",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.yml\" sourcestartlinenumber=\"1\">List of character entity controlled by the player or AI Agent</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionContact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.LocomotionContact.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.LocomotionContact",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionContact.yml\" sourcestartlinenumber=\"1\">Last ground or obstacle contact information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.LocomotionGravity",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.yml\" sourcestartlinenumber=\"1\">Encapsulates gravity settings for the character.\nThis value can be updated by a system to simulate any arbitrary gravitiy direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.yml\" sourcestartlinenumber=\"1\">Locomotion velocity for a character locomotor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Locomotor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Locomotor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Locomotor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Model.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Model",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Platform.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Platform",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.yml\" sourcestartlinenumber=\"1\">Set of references to mono objects.\nThese are used to update and managed game object behaviors of the player entity from systems allowing for greater\ncontrol on the player loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.yml\" sourcestartlinenumber=\"1\">Set of references to mono objects.\nThese are used to update and managed game object behaviors of the player entity from systems allowing for greater\ncontrol on the player loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Rotor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Rotor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Rotor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.Track.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.Track.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.Track",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components.TrackedMotion",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.yml\" sourcestartlinenumber=\"1\">Tracks a transform over time to compute inherited movement and velocity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Components.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Components",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.yml\" sourcestartlinenumber=\"1\">Base context available to all locomotion state machine.\nContains the minimal core state data (Velocity, Position, ...) and information (Entity, Collider, PhysicsWorld,...) required for locomotion state logic and platform handling logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting the closest collider cast hits while ignoring a specific entity.\nImplements the ICollector interface to gather and manage collider cast hit results.\nFilters out results that do not meet defined criteria such as hits associated with\nan ignored entity or backface collisions. This is particularly useful in physics-related\ncomputations where certain entities need to be excluded, such as in character or object\ntraversal and detection systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting the closest distance-based hits while ignoring a specified entity. Implements the ICollector\ninterface\nto manage distance hit results and filters hits based on custom criteria such as excluding hits involving a\nspecified\nentity or backface collisions. Useful in scenarios where distance queries need to selectively exclude certain\nentities\nor object surfaces, e.g., during character or object navigation systems in physics simulations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting closest raycast hits while ignoring a specified entity. Implements the ICollector interface\nto manage raycast hit results and avoids processing hits that do not meet the criteria, such as hits associated\nwith a self entity or backface collisions. Useful in scenarios where certain entities need to be ignored during\nraycasting computations, such as character locomotion systems in physics-based simulations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.yml\" sourcestartlinenumber=\"1\">Interface enforcing the minimal information need for the context of locomotion state machine. It enforces the encapsulation configuration, input, and state data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.yml\" sourcestartlinenumber=\"1\">Interface for defining locomotion states within a character movement state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.yml\" sourcestartlinenumber=\"1\">Interface that defines the structure of a character locomotion state machine, responsible for managing state transitions,\nphysics integration, collision resolution, and other locomotion behaviors of characters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset<TInput>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset-1.yml\" sourcestartlinenumber=\"1\">Stores a reference to the original <code>PlayerInputAsset</code> used by a player.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance<TInput>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance-1.yml\" sourcestartlinenumber=\"1\">Stores a reference to the <xref href=\"PlayerInputAsset%601\" data-throw-if-not-resolved=\"false\"></xref> instance of a player.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob<TProfile>",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob-1.yml\" sourcestartlinenumber=\"1\">Locomotion profile in the form of a blob asset.\nThis profile contains configuration and parameters necessary for defining locomotion behavior within a state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum field as a Locomotion state.\nThis is picked up by a source generator to generate the corresponding state machine dispatch.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum as a Locomotion state machine.\nThis is picked up by a source generator to generate the corresponding state machine component and systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.StateMachine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.StateMachine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem",
+      "Summary": "<p sourcefile=\".tmp/api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.yml\" sourcestartlinenumber=\"1\">Manages the lifecycle of the camera rig game object.\nIt ensures it's instantiation from the prefab for every player.\nWhen a player entity gets destroyed, the cleanup component ensures the destruction of the camera rig game object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".tmp/api/WAYNGames.Locomotion.Runtime.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYNGames.Locomotion.Runtime.Systems.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYNGames.Locomotion.Runtime.Systems",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": ".tmp/api/Wayn.Games.Locomotion.SourceGen.StateMachineSourceGenerator.yml",
       "output": {
         ".html": {
@@ -1074,7 +1676,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Wayn.Locomotion.StateMachine.LocomotionStateAttribute",
-      "Summary": "<p sourcefile=\".tmp/api/Wayn.Locomotion.StateMachine.LocomotionStateAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum field as a Locomotion state.\nThis is picked up by a source generator to generate the corresponding state machine dispatch.</p>\n"
+      "Summary": "<p sourcefile=\".tmp/api/Wayn.Locomotion.StateMachine.LocomotionStateAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum field as a Locomotion state.\nThis is picked up by a source generate to generate the corresponding state machine system.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1088,7 +1690,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute",
-      "Summary": "<p sourcefile=\".tmp/api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum as a Locomotion state machine.\nThis is picked up by a source generator to generate the corresponding state machine component and systems.</p>\n"
+      "Summary": "<p sourcefile=\".tmp/api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum field as a Locomotion state.\nThis is picked up by a source generate to generate the corresponding state machine system.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1140,20 +1742,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Design & Architecture/Main Concepts/Main Concepts.md",
+      "source_relative_path": "Manual/Design & Architecture/Main Concepts/Character.md",
       "output": {
         ".html": {
-          "relative_path": "manual/Design & Architecture/Main Concepts/Main Concepts.html"
+          "relative_path": "manual/Design & Architecture/Main Concepts/Character.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Design & Architecture/Main Concepts/Player Archetype.md",
+      "source_relative_path": "Manual/Design & Architecture/Main Concepts/GenericsAndSourceGenerator.md",
       "output": {
         ".html": {
-          "relative_path": "manual/Design & Architecture/Main Concepts/Player Archetype.html"
+          "relative_path": "manual/Design & Architecture/Main Concepts/GenericsAndSourceGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Design & Architecture/Main Concepts/Player.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Design & Architecture/Main Concepts/Player.html"
         }
       },
       "version": ""
@@ -1170,6 +1782,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Manual/Design & Architecture/Systems/CameraManagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Design & Architecture/Systems/CameraManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Manual/Design & Architecture/Systems/Character Editor Preview.md",
       "output": {
         ".html": {
@@ -1180,30 +1802,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Design & Architecture/Systems/Character Movement Execution.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/Design & Architecture/Systems/Character Movement Execution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Manual/Design & Architecture/Systems/Input Management.md",
       "output": {
         ".html": {
           "relative_path": "manual/Design & Architecture/Systems/Input Management.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Manual/Design & Architecture/Systems/System Loop.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/Design & Architecture/Systems/System Loop.html"
         }
       },
       "version": ""

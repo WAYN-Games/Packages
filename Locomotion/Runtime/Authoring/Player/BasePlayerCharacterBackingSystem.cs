@@ -1,4 +1,4 @@
-﻿using Locomotion.Runtime.Components;
+﻿using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Entities;
 
 namespace Locomotion.Runtime.Authoring.Player
@@ -13,7 +13,8 @@ namespace Locomotion.Runtime.Authoring.Player
     {
         void OnUpdate(ref SystemState state)
         {
-            var characterLookup = SystemAPI.GetComponentLookup<Character>();
+            var locomotorLookup = SystemAPI.GetComponentLookup<Locomotor>();
+            var modelLookup = SystemAPI.GetComponentLookup<Model>();
             foreach (var (controlledCharactersList, controlledCharacters) in SystemAPI
                          .Query<DynamicBuffer<ControlledCharactersBakingList>, DynamicBuffer<ControlledCharacters>>())
             {
@@ -21,7 +22,9 @@ namespace Locomotion.Runtime.Authoring.Player
                 foreach (ControlledCharactersBakingList controlledCharacter in controlledCharactersList)
                     controlledCharacters.Add(new ControlledCharacters
                     {
-                        Character = characterLookup[controlledCharacter.Character]
+                        Character = controlledCharacter.Character,
+                        Locomotor = locomotorLookup[controlledCharacter.Character],
+                        Model = modelLookup[controlledCharacter.Character]
                     });
             }
         }

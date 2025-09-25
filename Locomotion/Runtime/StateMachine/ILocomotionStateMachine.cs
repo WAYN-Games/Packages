@@ -13,11 +13,11 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Entities;
 using Unity.Profiling;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     /// <summary>
     /// Interface for defining locomotion states within a character movement state machine.
@@ -96,16 +96,16 @@ namespace Wayn.Locomotion.StateMachine
     }
 
     /// <summary>
-    /// Stores a reference to the <see cref="PlayerInputAsset"/> instance of a player.
+    /// Stores a reference to the <see cref="PlayerInputAsset{TInput}"/> instance of a player.
     /// </summary>
     /// <remarks>
     /// This is the instance of the asset specific to a player and should be used at runtime.
-    /// It will contain the cached player specific data set during the <see cref="PlayerInputAsset"/>.<c>InitInputAsset(PlayerGameObject playerGameObject)</c> method invocation.
+    /// It will contain the cached player specific data set during the <see cref="PlayerInputAsset{TInput}"/>.<c>InitInputAsset(PlayerGameObject playerGameObject)</c> method invocation.
     /// </remarks>
     /// <typeparam name="TInput">
     /// The type of the input used for character locomotion, which must be unmanaged and implement ICharacterLocomotionInput.
     /// </typeparam>
-    public struct LocomotionInputInitialized<TInput> : ICleanupComponentData where TInput : unmanaged, ICharacterLocomotionInput<TInput>
+    public struct LocomotionInputInstance<TInput> : ICleanupComponentData where TInput : unmanaged, ICharacterLocomotionInput<TInput>
     {
         public UnityObjectRef<PlayerInputAsset<TInput>> Instance;
     }
@@ -119,7 +119,7 @@ namespace Wayn.Locomotion.StateMachine
     /// <typeparam name="TInput">
     /// The type of input structure implementing the ICharacterLocomotionInput interface, which defines the input data for controlling character locomotion.
     /// </typeparam>
-    public struct LocomotionInput<TInput> : IComponentData where TInput : unmanaged, ICharacterLocomotionInput<TInput>
+    public struct LocomotionInputAsset<TInput> : IComponentData where TInput : unmanaged, ICharacterLocomotionInput<TInput>
     {
         public UnityObjectRef<PlayerInputAsset<TInput>> Asset;
     }
@@ -185,7 +185,10 @@ namespace Wayn.Locomotion.StateMachine
         /// <param name="distance">
         /// The output parameter that is assigned the computed ground snapping distance.
         /// </param>
-        public void ComputeGroundSnappingDistance(in TProfile profile, out float distance);
+        public void ComputeGroundSnappingDistance(in TProfile profile, out float distance)
+        {
+            distance = profile.PhysicsProfileValue.ShellWidth;
+        }
         
         
     }

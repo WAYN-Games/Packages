@@ -13,7 +13,7 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Burst.Intrinsics;
 using Unity.Collections;
@@ -22,7 +22,7 @@ using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     [BurstCompile]
     public struct LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData> : IJobChunk

@@ -10,6 +10,7 @@ using Wayn.Locomotion.StateMachine;
 
 namespace WAYN.Locomotion.Demo.BasicLocomotion
 {
+    /// <exclude />
     [UpdateInGroup(typeof(InitializationSystemGroup))]
     public partial struct BasicLocomotionStatesPlayerInputManagerSystem : ISystem
     {
@@ -19,14 +20,14 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
         public void OnCreate(ref SystemState state)
         {
             m_UninitializedPlayerQuery = new EntityQueryBuilder(Allocator.Temp)
-                .WithAll<LocomotionInput<>>()
-                .WithAll<PlayerGameObject>()
-                .WithNone<LocomotionInputInitialized<>>()
+                .WithAll<LocomotionInputAsset<>>()
+                .WithAll<PlayerGameObjectInstance>()
+                .WithNone<LocomotionInputInstance<>>()
                 .Build(ref state);
             
             m_DestroyedPlayerQuery = new EntityQueryBuilder(Allocator.Temp)
-                .WithAll<LocomotionInputInitialized<>>()
-                .WithNone<LocomotionInput<>>()
+                .WithAll<LocomotionInputInstance<>>()
+                .WithNone<LocomotionInputAsset<>>()
                 .Build(ref state);
         }
         
@@ -34,11 +35,11 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
         {
             foreach (Entity entity in m_UninitializedPlayerQuery.ToEntityArray(Allocator.Temp))
             {
-                var inputAsset = state.EntityManager.GetComponentData<LocomotionInput<>>(entity);
-                var playerGameObject = state.EntityManager.GetComponentData<PlayerGameObject>(entity);
+                var inputAsset = state.EntityManager.GetComponentData<LocomotionInputAsset<>>(entity);
+                var playerGameObject = state.EntityManager.GetComponentData<PlayerGameObjectInstance>(entity);
                 var inputAssetInstance = Object.Instantiate(inputAsset.Asset.Value);
                 inputAssetInstance.InitInputAsset(playerGameObject);
-                state.EntityManager.AddComponentData(entity, new LocomotionInputInitialized<>
+                state.EntityManager.AddComponentData(entity, new LocomotionInputInstance<>
                 {
                     Instance = inputAssetInstance
                 });
@@ -46,9 +47,9 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
 
             foreach (Entity entity in m_DestroyedPlayerQuery.ToEntityArray(Allocator.Temp))
             {
-                var instance = state.EntityManager.GetComponentData<LocomotionInputInitialized<>>(entity).Instance;
+                var instance = state.EntityManager.GetComponentData<LocomotionInputInstance<>>(entity).Instance;
                 Object.Destroy(instance);
-                state.EntityManager.RemoveComponent<LocomotionInputInitialized<>>(entity);
+                state.EntityManager.RemoveComponent<LocomotionInputInstance<>>(entity);
             }
             
             

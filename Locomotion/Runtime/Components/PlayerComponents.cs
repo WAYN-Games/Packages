@@ -18,7 +18,7 @@ using Locomotion.Runtime.Authoring.Player;
 using Unity.Entities;
 using UnityEngine;
 
-namespace Locomotion.Runtime.Components
+namespace WAYNGames.Locomotion.Runtime.Components
 {
     /// <summary>
     ///     List of character entity controlled by the player or AI Agent
@@ -27,7 +27,9 @@ namespace Locomotion.Runtime.Components
     [InternalBufferCapacity(1)]
     public struct ControlledCharacters : IBufferElementData
     {
-        public Character Character;
+        public Entity Character;
+        public Locomotor Locomotor;
+        public Model Model;
     }
 
     /// <summary>
@@ -36,7 +38,7 @@ namespace Locomotion.Runtime.Components
     ///     control on the player loop.
     /// </summary>
     [Serializable]
-    public struct PlayerGameObject : ICleanupComponentData
+    public struct PlayerGameObjectInstance : ICleanupComponentData
     {
         /// <summary>
         ///     The camera in charge of rendering the POV of the player.

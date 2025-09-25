@@ -27,6 +27,17 @@ namespace Locomotion.Runtime.Authoring.Player
             "Transform to use as a camera target. This transform is updated by the character's controller. If not set, a new game object will be created as a child of the player game object." )]
         public Transform CameraTarget;
 
+
+        /// <summary>
+        /// Strategy used to determine how the player's camera follows the controlled character(s).
+        /// - None : Disable the following of the camera
+        /// - First : follow the first character in the controlled character buffer
+        /// - Average : averages the position of all characters controlled by the player
+        /// </summary>
+        [Tooltip(
+            "Select a follow strategy for the camera target." )]
+        public FollowStrategy FollowStrategy;
+
         void Awake()
         {
             if (!Camera) Camera = Camera.main;
@@ -34,5 +45,12 @@ namespace Locomotion.Runtime.Authoring.Player
             CameraTarget = new GameObject("CameraTarget").transform;
             CameraTarget.parent = transform;
         }
+    }
+
+    public enum FollowStrategy
+    {
+        None,
+        First,
+        Average
     }
 }

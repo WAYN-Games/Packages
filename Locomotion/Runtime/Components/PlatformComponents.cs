@@ -16,7 +16,7 @@
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace Locomotion.Runtime.Components
+namespace WAYNGames.Locomotion.Runtime.Components
 {
     public struct Rotor : IComponentData
     {

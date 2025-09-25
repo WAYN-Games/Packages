@@ -14,7 +14,7 @@
 //  */
 
 using Locomotion.Runtime.Authoring.Player;
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -23,14 +23,24 @@ using Unity.Profiling;
 using Unity.Transforms;
 using UnityEngine.Jobs;
 
-namespace Locomotion.Systems
+namespace WAYNGames.Locomotion.Runtime.Systems
 {
     // We update before the PresentationGoTransformSyncSystem so its update only once per frame after character movements.
     [UpdateInGroup(typeof(TransformSystemGroup))]
     public partial struct CameraRigFollowControlledCharacterSystem : ISystem
     {
+        static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_Allocation =
+            new("Allocation");
         static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_TransformAccessArray =
             new("TransformAccessArray");
+        static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_get =
+            new("Get");
+        static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_Add =
+            new("Add");
+        static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_Switch =
+            new("Switch");
+        static readonly ProfilerMarker k_LocomotionCameraTargetTrackerSystem_Schedule =
+            new("Schedule");
 
         TransformAccessArray _taa;
         ComponentLookup<LocalToWorld> _transformLookup;
@@ -51,7 +61,7 @@ namespace Locomotion.Systems
 
         public void OnUpdate(ref SystemState state)
         {
-            k_LocomotionCameraTargetTrackerSystem_TransformAccessArray.Begin();
+            k_LocomotionCameraTargetTrackerSystem_Allocation.Begin();
             // Clear last frame’s data
             if (_taa.isCreated)
                 _taa.Dispose();
@@ -59,27 +69,45 @@ namespace Locomotion.Systems
             var entities = new NativeList<Entity>(state.WorldUpdateAllocator);
             var entityCounts = new NativeList<int>(state.WorldUpdateAllocator);
             var entityStarts = new NativeList<int>(state.WorldUpdateAllocator);
+            k_LocomotionCameraTargetTrackerSystem_Allocation.End();
 
-
+            k_LocomotionCameraTargetTrackerSystem_TransformAccessArray.Begin();
             // Gather all (CameraTarget, Entity) pairs on the main thread
             foreach (var (controlledCharacters, playerCameraRig) in SystemAPI
-                         .Query<DynamicBuffer<ControlledCharacters>, RefRO<PlayerGameObject>>())
+                         .Query<DynamicBuffer<ControlledCharacters>, RefRO<PlayerGameObjectInstance>>())
             {
+                if(controlledCharacters.Length == 0) continue;
+                k_LocomotionCameraTargetTrackerSystem_get.Begin();
                 var cameraRig = playerCameraRig.ValueRO.Instance.Value.GetComponent<PlayerGoAuthoring>();
+                k_LocomotionCameraTargetTrackerSystem_get.End();
+                if (cameraRig == null) continue;
+                if (cameraRig.FollowStrategy == FollowStrategy.None) continue;
                 if (cameraRig.CameraTarget == null) continue;
                 if (controlledCharacters.IsEmpty) continue;
-
+                k_LocomotionCameraTargetTrackerSystem_Add.Begin();
                 _taa.Add(cameraRig.CameraTarget);
-                entityCounts.Add(controlledCharacters.Length);
-                entityStarts.Add(entities.Length);
-                foreach (ControlledCharacters controlledCharacter in controlledCharacters)
-                    entities.Add(controlledCharacter.Character.Model);
+                k_LocomotionCameraTargetTrackerSystem_Add.End();
+
+
+                AddControlledCharacterEntities(cameraRig.FollowStrategy, ref entityCounts, ref entityStarts,
+                    ref entities,
+                    in controlledCharacters);
+
+
             }
 
             k_LocomotionCameraTargetTrackerSystem_TransformAccessArray.End();
 
             // Schedule the TransformJob in parallel using AsDeferredJobArray to avoid hard sync-point
+          
+            ScheduleCameraTransformJob(ref state, entities, entityCounts, entityStarts);
 
+        }
+
+        [BurstCompile]
+        void ScheduleCameraTransformJob(ref SystemState state, NativeList<Entity> entities, NativeList<int> entityCounts,
+            NativeList<int> entityStarts)
+        {  k_LocomotionCameraTargetTrackerSystem_Schedule.Begin();
             _transformLookup.Update(ref state);
             state.Dependency = new ApplyCameraTransformJob
             {
@@ -88,6 +116,32 @@ namespace Locomotion.Systems
                 EntityStarts = entityStarts.AsDeferredJobArray(),
                 TransformLookup = _transformLookup
             }.Schedule(_taa, state.Dependency);
+            k_LocomotionCameraTargetTrackerSystem_Schedule.End();
+        }
+
+        [BurstCompile]
+        static void AddControlledCharacterEntities(FollowStrategy followStrategy, ref NativeList<int> entityCounts,
+            ref NativeList<int> entityStarts, ref NativeList<Entity> entities, in DynamicBuffer<ControlledCharacters> controlledCharacters)
+        {
+            using (k_LocomotionCameraTargetTrackerSystem_Switch.Auto())
+            {
+                switch (followStrategy)
+                {
+                    case FollowStrategy.First:
+                        entityCounts.Add(1);
+                        entityStarts.Add(entities.Length);
+                        entities.Add(controlledCharacters[0].Model.Entity);
+                        break;
+                    case FollowStrategy.Average:
+                    {
+                        entityCounts.Add(controlledCharacters.Length);
+                        entityStarts.Add(entities.Length);
+                        foreach (ControlledCharacters controlledCharacter in controlledCharacters)
+                            entities.Add(controlledCharacter.Model.Entity);
+                        break;
+                    }
+                }
+            }
         }
 
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wayn.Games.Locomotion.SourceGen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80ca0955fe6b86fbd907738f92114033a7a6d740")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7a4925dc2ba29c479cf7cebf3b715bd8af38671")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wayn.Games.Locomotion.SourceGen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wayn.Games.Locomotion.SourceGen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,7 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -22,7 +22,7 @@ using Unity.Physics.Authoring;
 using Unity.Transforms;
 using UnityEngine;
 using UnityEngine.Serialization;
-using Wayn.Locomotion.StateMachine;
+using WAYNGames.Locomotion.Runtime.StateMachine;
 using CapsuleCollider = Unity.Physics.CapsuleCollider;
 using Collider = Unity.Physics.Collider;
 using Hash128 = UnityEngine.Hash128;
@@ -121,13 +121,12 @@ namespace Locomotion.Runtime.Authoring
                 CharacterEntity = GetEntity(authoring, TransformUsageFlags.Dynamic);
 
 
-                var characterComponent = new Character();
 
                 if (authoring.ModelPrefab != null)
                 {
                     ModelEntity = CreateAdditionalEntity(TransformUsageFlags.WorldSpace,
                         entityName: $"{authoring.ModelPrefab.name} (Model)");
-                    characterComponent.Model = ModelEntity;
+                    AddComponent(CharacterEntity,new Model(){ Entity = ModelEntity});
                     AddComponentObject(ModelEntity, new GameObjectEntity { Prefab = authoring.ModelPrefab });
                 }
 
@@ -153,7 +152,8 @@ namespace Locomotion.Runtime.Authoring
 
                 LocomotorEntity = CreateAdditionalEntity(TransformUsageFlags.ManualOverride,
                     entityName: $"{authoring.ModelPrefab.name} (Locomotion)");
-                characterComponent.Locomotion = LocomotorEntity;
+                
+                AddComponent(CharacterEntity,new Locomotor(){ Entity = LocomotorEntity});
                 AddComponent(LocomotorEntity, locLocalTransform);
                 ;
                 AddComponent<TStateMachine>(LocomotorEntity);
@@ -208,7 +208,6 @@ namespace Locomotion.Runtime.Authoring
                     Gravity = PhysicsStep.Default.Gravity
                 });
 
-                AddComponent(CharacterEntity, characterComponent);
                 ContinueBaking();
             }
         }

@@ -13,7 +13,7 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -21,7 +21,7 @@ using Unity.Mathematics;
 using Unity.Physics.Systems;
 using Unity.Transforms;
 
-namespace Locomotion.Systems
+namespace WAYNGames.Locomotion.Runtime.Systems
 {
     [UpdateInGroup(typeof(AfterPhysicsSystemGroup))]
     [BurstCompile]
@@ -55,11 +55,11 @@ namespace Locomotion.Systems
             [ReadOnly] public ComponentLookup<LocalTransform> TransformLookup;
             [ReadOnly] public float DeltaTime;
 
-            void Execute(DynamicBuffer<CharacterPath> path, in Character character)
+            void Execute(DynamicBuffer<CharacterPath> path, in Locomotor character)
             {
                 path.Insert(0, new CharacterPath
                 {
-                    Transform = new RigidTransform(TransformLookup[character.Locomotion].ToMatrix()),
+                    Transform = new RigidTransform(TransformLookup[character.Entity].ToMatrix()),
                     Time = DeltaTime
                 });
                 path.ResizeUninitialized(3);

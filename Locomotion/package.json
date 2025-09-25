@@ -3,7 +3,7 @@
   "displayName": "Wayn Games Locomotion",
   "version": "0.1.0",
   "unity": "6000.0",
-  "description": "The Locomotion package provides a modular, ECS-based system for controlling characters in Unity using the new Input System, Physics, and state-driven locomotion logic. It separates core gameplay entities (Players/AI Agent, Characters, and Models) and handles input, movement, and visual synchronization in a robust and scalable way.",
+  "description": "The Locomotion Package provides a modular, ECS-based architecture for implementing character control in Unity using state-driven locomotion logic. It cleanly separates gameplay entities—Players, Characters, and Models—and handles input, movement, and visual synchronization in a scalable and maintainable way.\n\nIt integrates seamlessly with Unity's New Input System and Cinemachine, but remains flexible enough to support custom input or camera solutions.",
   "keywords": [
     "locomotion",
     "character",
@@ -21,23 +21,35 @@
     "url": "https://wayn.games"
   },
   "dependencies": {
-    "com.unity.probuilder": "5.2.4",
     "com.unity.entities.graphics": "1.4.12",
     "com.unity.entities": "1.3.14",
-    "com.unity.physics": "1.3.14",
-    "com.unity.inputsystem": "1.14.0",
-    "com.unity.cinemachine": "3.1.3"
+    "com.unity.physics": "1.3.14"
   },
   "samples": [
     {
+      "displayName": "Shared Sample Resources",
+      "description": "Common resources and utility scripts used across all samples.",
+      "path": "Samples~/SampleSharedResources"
+    },
+    {
       "displayName": "Single Player Sample",
-      "description": "Sample scene demonstrating the locomotion system features in a single player context.",
-      "path": "Samples~/Single Player Sample"
+      "description": "An introductory example showcasing basic locomotion in a single-player setup, using the legacy Input System with custom scripted camera controls.",
+      "path": "Samples~/SinglePlayerSample"
     },
     {
       "displayName": "Local Multiplayer Sample",
-      "description": "Sample scene demonstrating the locomotion system features in a local multiplayer player context.",
-      "path": "Samples~/Local Multiplayer Sample"
+      "description": "A demonstration of local multiplayer gameplay built with the Input System package and Cinemachine, using a shared locomotion state machine.",
+      "path": "Samples~/LocalMultiplayerSample"
+    },
+    {
+      "displayName": "Character Switch Sample",
+      "description": "An example of a point-and-click style controller that allows switching between multiple playable characters.",
+      "path": "Samples~/CharacterSwitchSample"
+    },
+    {
+      "displayName": "Platformer Sample",
+      "description": "A platforming-focused example featuring platform interactions, arbitrary gravity, character animations, and advanced moves such as dashing and climbing.",
+      "path": "Samples~/PlaformerSample"
     }
   ]
 }

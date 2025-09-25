@@ -223,6 +223,30 @@ references:
   commentId: F:Locomotion.Runtime.Authoring.Player.ControlledCharactersBakingList.Character
   fullName: Locomotion.Runtime.Authoring.Player.ControlledCharactersBakingList.Character
   nameWithType: ControlledCharactersBakingList.Character
+- uid: Locomotion.Runtime.Authoring.Player.FollowStrategy
+  name: FollowStrategy
+  href: api/Locomotion.Runtime.Authoring.Player.FollowStrategy.html
+  commentId: T:Locomotion.Runtime.Authoring.Player.FollowStrategy
+  fullName: Locomotion.Runtime.Authoring.Player.FollowStrategy
+  nameWithType: FollowStrategy
+- uid: Locomotion.Runtime.Authoring.Player.FollowStrategy.Average
+  name: Average
+  href: api/Locomotion.Runtime.Authoring.Player.FollowStrategy.html#Locomotion_Runtime_Authoring_Player_FollowStrategy_Average
+  commentId: F:Locomotion.Runtime.Authoring.Player.FollowStrategy.Average
+  fullName: Locomotion.Runtime.Authoring.Player.FollowStrategy.Average
+  nameWithType: FollowStrategy.Average
+- uid: Locomotion.Runtime.Authoring.Player.FollowStrategy.First
+  name: First
+  href: api/Locomotion.Runtime.Authoring.Player.FollowStrategy.html#Locomotion_Runtime_Authoring_Player_FollowStrategy_First
+  commentId: F:Locomotion.Runtime.Authoring.Player.FollowStrategy.First
+  fullName: Locomotion.Runtime.Authoring.Player.FollowStrategy.First
+  nameWithType: FollowStrategy.First
+- uid: Locomotion.Runtime.Authoring.Player.FollowStrategy.None
+  name: None
+  href: api/Locomotion.Runtime.Authoring.Player.FollowStrategy.html#Locomotion_Runtime_Authoring_Player_FollowStrategy_None
+  commentId: F:Locomotion.Runtime.Authoring.Player.FollowStrategy.None
+  fullName: Locomotion.Runtime.Authoring.Player.FollowStrategy.None
+  nameWithType: FollowStrategy.None
 - uid: Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring
   name: PlayerGoAuthoring
   href: api/Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.html
@@ -241,6 +265,12 @@ references:
   commentId: F:Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.CameraTarget
   fullName: Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.CameraTarget
   nameWithType: PlayerGoAuthoring.CameraTarget
+- uid: Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.FollowStrategy
+  name: FollowStrategy
+  href: api/Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.html#Locomotion_Runtime_Authoring_Player_PlayerGoAuthoring_FollowStrategy
+  commentId: F:Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.FollowStrategy
+  fullName: Locomotion.Runtime.Authoring.Player.PlayerGoAuthoring.FollowStrategy
+  nameWithType: PlayerGoAuthoring.FollowStrategy
 - uid: Locomotion.Runtime.Components
   name: Locomotion.Runtime.Components
   href: api/Locomotion.Runtime.Components.html
@@ -1218,12 +1248,12 @@ references:
   commentId: T:WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset
   fullName: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset
   nameWithType: BasicPlayerCharacterInputAsset
-- uid: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(Locomotion.Runtime.Components.PlayerGameObject)
-  name: InitInputAsset(PlayerGameObject)
-  href: api/WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.html#WAYN_Locomotion_Demo_BasicLocomotion_BasicPlayerCharacterInputAsset_InitInputAsset_Locomotion_Runtime_Components_PlayerGameObject_
-  commentId: M:WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(Locomotion.Runtime.Components.PlayerGameObject)
-  fullName: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(Locomotion.Runtime.Components.PlayerGameObject)
-  nameWithType: BasicPlayerCharacterInputAsset.InitInputAsset(PlayerGameObject)
+- uid: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance)
+  name: InitInputAsset(PlayerGameObjectInstance)
+  href: api/WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.html#WAYN_Locomotion_Demo_BasicLocomotion_BasicPlayerCharacterInputAsset_InitInputAsset_WAYNGames_Locomotion_Runtime_Components_PlayerGameObjectInstance_
+  commentId: M:WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance)
+  fullName: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset(WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance)
+  nameWithType: BasicPlayerCharacterInputAsset.InitInputAsset(PlayerGameObjectInstance)
 - uid: WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.InitInputAsset*
   name: InitInputAsset
   href: api/WAYN.Locomotion.Demo.BasicLocomotion.BasicPlayerCharacterInputAsset.html#WAYN_Locomotion_Demo_BasicLocomotion_BasicPlayerCharacterInputAsset_InitInputAsset_
@@ -1531,13 +1561,13 @@ references:
   commentId: T:WAYN.Locomotion.Demo.BasicLocomotion.MovingState
   fullName: WAYN.Locomotion.Demo.BasicLocomotion.MovingState
   nameWithType: MovingState
-- uid: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(Wayn.Locomotion.StateMachine.BaseLocomotionContext@,WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile,float3,System.Single,float3@)
+- uid: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile,float3,System.Single,float3@)
   name: ComputeHorizontalMovementAcceleration(ref BaseLocomotionContext, MovingProfile, float3, float, out float3)
-  href: api/WAYN.Locomotion.Demo.BasicLocomotion.MovingState.html#WAYN_Locomotion_Demo_BasicLocomotion_MovingState_ComputeHorizontalMovementAcceleration_Wayn_Locomotion_StateMachine_BaseLocomotionContext__WAYN_Locomotion_Demo_BasicLocomotion_MovingProfile_float3_System_Single_float3__
-  commentId: M:WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(Wayn.Locomotion.StateMachine.BaseLocomotionContext@,WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile,float3,System.Single,float3@)
+  href: api/WAYN.Locomotion.Demo.BasicLocomotion.MovingState.html#WAYN_Locomotion_Demo_BasicLocomotion_MovingState_ComputeHorizontalMovementAcceleration_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYN_Locomotion_Demo_BasicLocomotion_MovingProfile_float3_System_Single_float3__
+  commentId: M:WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile,float3,System.Single,float3@)
   name.vb: ComputeHorizontalMovementAcceleration(BaseLocomotionContext, MovingProfile, float3, Single, float3)
-  fullName: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(ref Wayn.Locomotion.StateMachine.BaseLocomotionContext, WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile, float3, float, out float3)
-  fullName.vb: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(Wayn.Locomotion.StateMachine.BaseLocomotionContext, WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile, float3, Single, float3)
+  fullName: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile, float3, float, out float3)
+  fullName.vb: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYN.Locomotion.Demo.BasicLocomotion.MovingProfile, float3, Single, float3)
   nameWithType: MovingState.ComputeHorizontalMovementAcceleration(ref BaseLocomotionContext, MovingProfile, float3, float, out float3)
   nameWithType.vb: MovingState.ComputeHorizontalMovementAcceleration(BaseLocomotionContext, MovingProfile, float3, Single, float3)
 - uid: WAYN.Locomotion.Demo.BasicLocomotion.MovingState.ComputeHorizontalMovementAcceleration*
@@ -1553,6 +1583,1912 @@ references:
   commentId: T:WAYN.Locomotion.Demo.BasicLocomotion.SlidingState
   fullName: WAYN.Locomotion.Demo.BasicLocomotion.SlidingState
   nameWithType: SlidingState
+- uid: WAYNGames.Locomotion.Runtime.Components
+  name: WAYNGames.Locomotion.Runtime.Components
+  href: api/WAYNGames.Locomotion.Runtime.Components.html
+  commentId: N:WAYNGames.Locomotion.Runtime.Components
+  fullName: WAYNGames.Locomotion.Runtime.Components
+  nameWithType: WAYNGames.Locomotion.Runtime.Components
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPath
+  name: CharacterPath
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.CharacterPath
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPath
+  nameWithType: CharacterPath
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPath.Time
+  name: Time
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.html#WAYNGames_Locomotion_Runtime_Components_CharacterPath_Time
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPath.Time
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPath.Time
+  nameWithType: CharacterPath.Time
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPath.Transform
+  name: Transform
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPath.html#WAYNGames_Locomotion_Runtime_Components_CharacterPath_Transform
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPath.Transform
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPath.Transform
+  nameWithType: CharacterPath.Transform
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile
+  name: CharacterPhysicsProfile
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile
+  nameWithType: CharacterPhysicsProfile
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.BelongsTo
+  name: BelongsTo
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_BelongsTo
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.BelongsTo
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.BelongsTo
+  nameWithType: CharacterPhysicsProfile.BelongsTo
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry
+  name: CapsuleGeometry()
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_CapsuleGeometry
+  commentId: M:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry()
+  nameWithType: CharacterPhysicsProfile.CapsuleGeometry()
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry*
+  name: CapsuleGeometry
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_CapsuleGeometry_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleGeometry
+  nameWithType: CharacterPhysicsProfile.CapsuleGeometry
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleHeight
+  name: CapsuleHeight
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_CapsuleHeight
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleHeight
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleHeight
+  nameWithType: CharacterPhysicsProfile.CapsuleHeight
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleRadius
+  name: CapsuleRadius
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_CapsuleRadius
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleRadius
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CapsuleRadius
+  nameWithType: CharacterPhysicsProfile.CapsuleRadius
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CollidesWith
+  name: CollidesWith
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_CollidesWith
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CollidesWith
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.CollidesWith
+  nameWithType: CharacterPhysicsProfile.CollidesWith
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default
+  name: Default
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_Default
+  commentId: P:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default
+  nameWithType: CharacterPhysicsProfile.Default
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default*
+  name: Default
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_Default_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Default
+  nameWithType: CharacterPhysicsProfile.Default
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter
+  name: Filter()
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_Filter
+  commentId: M:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter()
+  nameWithType: CharacterPhysicsProfile.Filter()
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter*
+  name: Filter
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_Filter_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.Filter
+  nameWithType: CharacterPhysicsProfile.Filter
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.MaxBounce
+  name: MaxBounce
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_MaxBounce
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.MaxBounce
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.MaxBounce
+  nameWithType: CharacterPhysicsProfile.MaxBounce
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.ShellWidth
+  name: ShellWidth
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_ShellWidth
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.ShellWidth
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.ShellWidth
+  nameWithType: CharacterPhysicsProfile.ShellWidth
+- uid: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.SpinOrRollAlongWall
+  name: SpinOrRollAlongWall
+  href: api/WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.html#WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile_SpinOrRollAlongWall
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.SpinOrRollAlongWall
+  fullName: WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile.SpinOrRollAlongWall
+  nameWithType: CharacterPhysicsProfile.SpinOrRollAlongWall
+- uid: WAYNGames.Locomotion.Runtime.Components.Contact
+  name: Contact
+  href: api/WAYNGames.Locomotion.Runtime.Components.Contact.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Contact
+  fullName: WAYNGames.Locomotion.Runtime.Components.Contact
+  nameWithType: Contact
+- uid: WAYNGames.Locomotion.Runtime.Components.Contact.Entity
+  name: Entity
+  href: api/WAYNGames.Locomotion.Runtime.Components.Contact.html#WAYNGames_Locomotion_Runtime_Components_Contact_Entity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Contact.Entity
+  fullName: WAYNGames.Locomotion.Runtime.Components.Contact.Entity
+  nameWithType: Contact.Entity
+- uid: WAYNGames.Locomotion.Runtime.Components.Contact.Normal
+  name: Normal
+  href: api/WAYNGames.Locomotion.Runtime.Components.Contact.html#WAYNGames_Locomotion_Runtime_Components_Contact_Normal
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Contact.Normal
+  fullName: WAYNGames.Locomotion.Runtime.Components.Contact.Normal
+  nameWithType: Contact.Normal
+- uid: WAYNGames.Locomotion.Runtime.Components.Contact.Position
+  name: Position
+  href: api/WAYNGames.Locomotion.Runtime.Components.Contact.html#WAYNGames_Locomotion_Runtime_Components_Contact_Position
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Contact.Position
+  fullName: WAYNGames.Locomotion.Runtime.Components.Contact.Position
+  nameWithType: Contact.Position
+- uid: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters
+  name: ControlledCharacters
+  href: api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.ControlledCharacters
+  fullName: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters
+  nameWithType: ControlledCharacters
+- uid: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Character
+  name: Character
+  href: api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.html#WAYNGames_Locomotion_Runtime_Components_ControlledCharacters_Character
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Character
+  fullName: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Character
+  nameWithType: ControlledCharacters.Character
+- uid: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Locomotor
+  name: Locomotor
+  href: api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.html#WAYNGames_Locomotion_Runtime_Components_ControlledCharacters_Locomotor
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Locomotor
+  fullName: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Locomotor
+  nameWithType: ControlledCharacters.Locomotor
+- uid: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Model
+  name: Model
+  href: api/WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.html#WAYNGames_Locomotion_Runtime_Components_ControlledCharacters_Model
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Model
+  fullName: WAYNGames.Locomotion.Runtime.Components.ControlledCharacters.Model
+  nameWithType: ControlledCharacters.Model
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionContact
+  name: LocomotionContact
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionContact.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.LocomotionContact
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionContact
+  nameWithType: LocomotionContact
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionContact.Contact
+  name: Contact
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionContact.html#WAYNGames_Locomotion_Runtime_Components_LocomotionContact_Contact
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.LocomotionContact.Contact
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionContact.Contact
+  nameWithType: LocomotionContact.Contact
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity
+  name: LocomotionGravity
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity
+  nameWithType: LocomotionGravity
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.Gravity
+  name: Gravity
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionGravity_Gravity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.Gravity
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.Gravity
+  nameWithType: LocomotionGravity.Gravity
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection
+  name: GravityDirection
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionGravity_GravityDirection
+  commentId: P:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection
+  nameWithType: LocomotionGravity.GravityDirection
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection*
+  name: GravityDirection
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionGravity_GravityDirection_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityDirection
+  nameWithType: LocomotionGravity.GravityDirection
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength
+  name: GravityStrength
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionGravity_GravityStrength
+  commentId: P:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength
+  nameWithType: LocomotionGravity.GravityStrength
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength*
+  name: GravityStrength
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionGravity_GravityStrength_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionGravity.GravityStrength
+  nameWithType: LocomotionGravity.GravityStrength
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity
+  name: LocomotionVelocity
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity
+  nameWithType: LocomotionVelocity
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.InheritedVelocity
+  name: InheritedVelocity
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionVelocity_InheritedVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.InheritedVelocity
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.InheritedVelocity
+  nameWithType: LocomotionVelocity.InheritedVelocity
+- uid: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.Velocity
+  name: Velocity
+  href: api/WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.html#WAYNGames_Locomotion_Runtime_Components_LocomotionVelocity_Velocity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.Velocity
+  fullName: WAYNGames.Locomotion.Runtime.Components.LocomotionVelocity.Velocity
+  nameWithType: LocomotionVelocity.Velocity
+- uid: WAYNGames.Locomotion.Runtime.Components.Locomotor
+  name: Locomotor
+  href: api/WAYNGames.Locomotion.Runtime.Components.Locomotor.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Locomotor
+  fullName: WAYNGames.Locomotion.Runtime.Components.Locomotor
+  nameWithType: Locomotor
+- uid: WAYNGames.Locomotion.Runtime.Components.Locomotor.Entity
+  name: Entity
+  href: api/WAYNGames.Locomotion.Runtime.Components.Locomotor.html#WAYNGames_Locomotion_Runtime_Components_Locomotor_Entity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Locomotor.Entity
+  fullName: WAYNGames.Locomotion.Runtime.Components.Locomotor.Entity
+  nameWithType: Locomotor.Entity
+- uid: WAYNGames.Locomotion.Runtime.Components.Model
+  name: Model
+  href: api/WAYNGames.Locomotion.Runtime.Components.Model.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Model
+  fullName: WAYNGames.Locomotion.Runtime.Components.Model
+  nameWithType: Model
+- uid: WAYNGames.Locomotion.Runtime.Components.Model.Entity
+  name: Entity
+  href: api/WAYNGames.Locomotion.Runtime.Components.Model.html#WAYNGames_Locomotion_Runtime_Components_Model_Entity
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Model.Entity
+  fullName: WAYNGames.Locomotion.Runtime.Components.Model.Entity
+  nameWithType: Model.Entity
+- uid: WAYNGames.Locomotion.Runtime.Components.Platform
+  name: Platform
+  href: api/WAYNGames.Locomotion.Runtime.Components.Platform.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Platform
+  fullName: WAYNGames.Locomotion.Runtime.Components.Platform
+  nameWithType: Platform
+- uid: WAYNGames.Locomotion.Runtime.Components.Platform.Index
+  name: Index
+  href: api/WAYNGames.Locomotion.Runtime.Components.Platform.html#WAYNGames_Locomotion_Runtime_Components_Platform_Index
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Platform.Index
+  fullName: WAYNGames.Locomotion.Runtime.Components.Platform.Index
+  nameWithType: Platform.Index
+- uid: WAYNGames.Locomotion.Runtime.Components.Platform.Speed
+  name: Speed
+  href: api/WAYNGames.Locomotion.Runtime.Components.Platform.html#WAYNGames_Locomotion_Runtime_Components_Platform_Speed
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Platform.Speed
+  fullName: WAYNGames.Locomotion.Runtime.Components.Platform.Speed
+  nameWithType: Platform.Speed
+- uid: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance
+  name: PlayerGameObjectInstance
+  href: api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance
+  fullName: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance
+  nameWithType: PlayerGameObjectInstance
+- uid: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.Instance
+  name: Instance
+  href: api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.html#WAYNGames_Locomotion_Runtime_Components_PlayerGameObjectInstance_Instance
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.Instance
+  fullName: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectInstance.Instance
+  nameWithType: PlayerGameObjectInstance.Instance
+- uid: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab
+  name: PlayerGameObjectPrefab
+  href: api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab
+  fullName: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab
+  nameWithType: PlayerGameObjectPrefab
+- uid: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.Prefab
+  name: Prefab
+  href: api/WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.html#WAYNGames_Locomotion_Runtime_Components_PlayerGameObjectPrefab_Prefab
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.Prefab
+  fullName: WAYNGames.Locomotion.Runtime.Components.PlayerGameObjectPrefab.Prefab
+  nameWithType: PlayerGameObjectPrefab.Prefab
+- uid: WAYNGames.Locomotion.Runtime.Components.Rotor
+  name: Rotor
+  href: api/WAYNGames.Locomotion.Runtime.Components.Rotor.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Rotor
+  fullName: WAYNGames.Locomotion.Runtime.Components.Rotor
+  nameWithType: Rotor
+- uid: WAYNGames.Locomotion.Runtime.Components.Rotor.Axis
+  name: Axis
+  href: api/WAYNGames.Locomotion.Runtime.Components.Rotor.html#WAYNGames_Locomotion_Runtime_Components_Rotor_Axis
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Rotor.Axis
+  fullName: WAYNGames.Locomotion.Runtime.Components.Rotor.Axis
+  nameWithType: Rotor.Axis
+- uid: WAYNGames.Locomotion.Runtime.Components.Track
+  name: Track
+  href: api/WAYNGames.Locomotion.Runtime.Components.Track.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.Track
+  fullName: WAYNGames.Locomotion.Runtime.Components.Track
+  nameWithType: Track
+- uid: WAYNGames.Locomotion.Runtime.Components.Track.Position
+  name: Position
+  href: api/WAYNGames.Locomotion.Runtime.Components.Track.html#WAYNGames_Locomotion_Runtime_Components_Track_Position
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.Track.Position
+  fullName: WAYNGames.Locomotion.Runtime.Components.Track.Position
+  nameWithType: Track.Position
+- uid: WAYNGames.Locomotion.Runtime.Components.TrackedMotion
+  name: TrackedMotion
+  href: api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Components.TrackedMotion
+  fullName: WAYNGames.Locomotion.Runtime.Components.TrackedMotion
+  nameWithType: TrackedMotion
+- uid: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.CurrentTransform
+  name: CurrentTransform
+  href: api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.html#WAYNGames_Locomotion_Runtime_Components_TrackedMotion_CurrentTransform
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.TrackedMotion.CurrentTransform
+  fullName: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.CurrentTransform
+  nameWithType: TrackedMotion.CurrentTransform
+- uid: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.DeltaTime
+  name: DeltaTime
+  href: api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.html#WAYNGames_Locomotion_Runtime_Components_TrackedMotion_DeltaTime
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.TrackedMotion.DeltaTime
+  fullName: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.DeltaTime
+  nameWithType: TrackedMotion.DeltaTime
+- uid: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.PreviousTransform
+  name: PreviousTransform
+  href: api/WAYNGames.Locomotion.Runtime.Components.TrackedMotion.html#WAYNGames_Locomotion_Runtime_Components_TrackedMotion_PreviousTransform
+  commentId: F:WAYNGames.Locomotion.Runtime.Components.TrackedMotion.PreviousTransform
+  fullName: WAYNGames.Locomotion.Runtime.Components.TrackedMotion.PreviousTransform
+  nameWithType: TrackedMotion.PreviousTransform
+- uid: WAYNGames.Locomotion.Runtime.StateMachine
+  name: WAYNGames.Locomotion.Runtime.StateMachine
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.html
+  commentId: N:WAYNGames.Locomotion.Runtime.StateMachine
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine
+  nameWithType: WAYNGames.Locomotion.Runtime.StateMachine
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext
+  name: BaseLocomotionContext
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext
+  nameWithType: BaseLocomotionContext
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterEntity
+  name: CharacterEntity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_CharacterEntity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterEntity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterEntity
+  nameWithType: BaseLocomotionContext.CharacterEntity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterPosition
+  name: CharacterPosition
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_CharacterPosition
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterPosition
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.CharacterPosition
+  nameWithType: BaseLocomotionContext.CharacterPosition
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.Collider
+  name: Collider
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_Collider
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.Collider
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.Collider
+  nameWithType: BaseLocomotionContext.Collider
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityDirection
+  name: GravityDirection
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_GravityDirection
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityDirection
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityDirection
+  nameWithType: BaseLocomotionContext.GravityDirection
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityStrength
+  name: GravityStrength
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_GravityStrength
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityStrength
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.GravityStrength
+  nameWithType: BaseLocomotionContext.GravityStrength
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement
+  name: HasRemainingDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HasRemainingDisplacement
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement
+  nameWithType: BaseLocomotionContext.HasRemainingDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement*
+  name: HasRemainingDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HasRemainingDisplacement_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HasRemainingDisplacement
+  nameWithType: BaseLocomotionContext.HasRemainingDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalDisplacement
+  name: HorizontalDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HorizontalDisplacement
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalDisplacement
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalDisplacement
+  nameWithType: BaseLocomotionContext.HorizontalDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedDisplacement
+  name: HorizontalInheritedDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HorizontalInheritedDisplacement
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedDisplacement
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedDisplacement
+  nameWithType: BaseLocomotionContext.HorizontalInheritedDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedVelocity
+  name: HorizontalInheritedVelocity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HorizontalInheritedVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedVelocity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalInheritedVelocity
+  nameWithType: BaseLocomotionContext.HorizontalInheritedVelocity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalVelocity
+  name: HorizontalVelocity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_HorizontalVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalVelocity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.HorizontalVelocity
+  nameWithType: BaseLocomotionContext.HorizontalVelocity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InheritedRotation
+  name: InheritedRotation
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_InheritedRotation
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InheritedRotation
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InheritedRotation
+  nameWithType: BaseLocomotionContext.InheritedRotation
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InitialPosition
+  name: InitialPosition
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_InitialPosition
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InitialPosition
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.InitialPosition
+  nameWithType: BaseLocomotionContext.InitialPosition
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling
+  name: IsCeiling
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsCeiling
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling
+  nameWithType: BaseLocomotionContext.IsCeiling
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling*
+  name: IsCeiling
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsCeiling_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsCeiling
+  nameWithType: BaseLocomotionContext.IsCeiling
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact
+  name: IsInContact
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsInContact
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact
+  nameWithType: BaseLocomotionContext.IsInContact
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact*
+  name: IsInContact
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsInContact_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsInContact
+  nameWithType: BaseLocomotionContext.IsInContact
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving
+  name: IsMoving
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsMoving
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving
+  nameWithType: BaseLocomotionContext.IsMoving
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving*
+  name: IsMoving
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsMoving_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMoving
+  nameWithType: BaseLocomotionContext.IsMoving
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope
+  name: IsMovingAgainstSlope
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsMovingAgainstSlope
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope
+  nameWithType: BaseLocomotionContext.IsMovingAgainstSlope
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope*
+  name: IsMovingAgainstSlope
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsMovingAgainstSlope_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsMovingAgainstSlope
+  nameWithType: BaseLocomotionContext.IsMovingAgainstSlope
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform
+  name: IsOnMovingPlatform
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsOnMovingPlatform
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform
+  nameWithType: BaseLocomotionContext.IsOnMovingPlatform
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform*
+  name: IsOnMovingPlatform
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_IsOnMovingPlatform_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.IsOnMovingPlatform
+  nameWithType: BaseLocomotionContext.IsOnMovingPlatform
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.LocomotionContact
+  name: LocomotionContact
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_LocomotionContact
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.LocomotionContact
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.LocomotionContact
+  nameWithType: BaseLocomotionContext.LocomotionContact
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PhysicsWorld
+  name: PhysicsWorld
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_PhysicsWorld
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PhysicsWorld
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PhysicsWorld
+  nameWithType: BaseLocomotionContext.PhysicsWorld
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PlatformMotionFrameLookup
+  name: PlatformMotionFrameLookup
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_PlatformMotionFrameLookup
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PlatformMotionFrameLookup
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.PlatformMotionFrameLookup
+  nameWithType: BaseLocomotionContext.PlatformMotionFrameLookup
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight(System.Single)
+  name: StepHeight(float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_StepHeight_System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight(System.Single)
+  name.vb: StepHeight(Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight(float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight(Single)
+  nameWithType: BaseLocomotionContext.StepHeight(float)
+  nameWithType.vb: BaseLocomotionContext.StepHeight(Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight*
+  name: StepHeight
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_StepHeight_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.StepHeight
+  nameWithType: BaseLocomotionContext.StepHeight
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.TimeStep
+  name: TimeStep
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_TimeStep
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.TimeStep
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.TimeStep
+  nameWithType: BaseLocomotionContext.TimeStep
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements(float3,float3)
+  name: UpdateVelocitiesAndComputeDisplacements(float3, float3)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_UpdateVelocitiesAndComputeDisplacements_float3_float3_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements(float3,float3)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements(float3, float3)
+  nameWithType: BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements(float3, float3)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements*
+  name: UpdateVelocitiesAndComputeDisplacements
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_UpdateVelocitiesAndComputeDisplacements_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements
+  nameWithType: BaseLocomotionContext.UpdateVelocitiesAndComputeDisplacements
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalDisplacement
+  name: VerticalDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_VerticalDisplacement
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalDisplacement
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalDisplacement
+  nameWithType: BaseLocomotionContext.VerticalDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedDisplacement
+  name: VerticalInheritedDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_VerticalInheritedDisplacement
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedDisplacement
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedDisplacement
+  nameWithType: BaseLocomotionContext.VerticalInheritedDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedVelocity
+  name: VerticalInheritedVelocity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_VerticalInheritedVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedVelocity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalInheritedVelocity
+  nameWithType: BaseLocomotionContext.VerticalInheritedVelocity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalVelocity
+  name: VerticalVelocity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html#WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext_VerticalVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalVelocity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext.VerticalVelocity
+  nameWithType: BaseLocomotionContext.VerticalVelocity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf
+  name: ClosestColliderCastHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name: ClosestColliderCastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf__ctor_Entity_NativeSlice_RigidBody__System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name.vb: New(Entity, NativeSlice(Of RigidBody), Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestColliderCastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.ClosestColliderCastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  nameWithType.vb: ClosestColliderCastHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.#ctor*
+  name: ClosestColliderCastHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf__ctor_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestColliderCastHitCollectorIgnoreSelf
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.New
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.ClosestColliderCastHitCollectorIgnoreSelf
+  nameWithType.vb: ClosestColliderCastHitCollectorIgnoreSelf.New
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit(ColliderCastHit)
+  name: AddHit(ColliderCastHit)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_AddHit_ColliderCastHit_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit(ColliderCastHit)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit(ColliderCastHit)
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.AddHit(ColliderCastHit)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit*
+  name: AddHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_AddHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.AddHit
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.AddHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_ClosestHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit*
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_ClosestHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_EarlyOutOnFirstHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit*
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_EarlyOutOnFirstHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_MaxDistance
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance*
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_MaxDistance_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_MaxFraction
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction*
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_MaxFraction_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_NumHits
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits*
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestColliderCastHitCollectorIgnoreSelf_NumHits_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestColliderCastHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf
+  name: ClosestDistanceHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name: ClosestDistanceHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf__ctor_Entity_NativeSlice_RigidBody__System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name.vb: New(Entity, NativeSlice(Of RigidBody), Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestDistanceHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.ClosestDistanceHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  nameWithType.vb: ClosestDistanceHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.#ctor*
+  name: ClosestDistanceHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf__ctor_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestDistanceHitCollectorIgnoreSelf
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.New
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.ClosestDistanceHitCollectorIgnoreSelf
+  nameWithType.vb: ClosestDistanceHitCollectorIgnoreSelf.New
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit(DistanceHit)
+  name: AddHit(DistanceHit)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_AddHit_DistanceHit_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit(DistanceHit)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit(DistanceHit)
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.AddHit(DistanceHit)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit*
+  name: AddHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_AddHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.AddHit
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.AddHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_ClosestHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit*
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_ClosestHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_EarlyOutOnFirstHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit*
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_EarlyOutOnFirstHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_MaxDistance
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance*
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_MaxDistance_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_MaxFraction
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction*
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_MaxFraction_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_NumHits
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits*
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestDistanceHitCollectorIgnoreSelf_NumHits_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestDistanceHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestDistanceHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf
+  name: ClosestRaycastHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name: ClosestRaycastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf__ctor_Entity_NativeSlice_RigidBody__System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.#ctor(Entity,NativeSlice{RigidBody},System.Single)
+  name.vb: New(Entity, NativeSlice(Of RigidBody), Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestRaycastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.ClosestRaycastHitCollectorIgnoreSelf(Entity, NativeSlice<RigidBody>, float)
+  nameWithType.vb: ClosestRaycastHitCollectorIgnoreSelf.New(Entity, NativeSlice(Of RigidBody), Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.#ctor*
+  name: ClosestRaycastHitCollectorIgnoreSelf
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf__ctor_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestRaycastHitCollectorIgnoreSelf
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.New
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.ClosestRaycastHitCollectorIgnoreSelf
+  nameWithType.vb: ClosestRaycastHitCollectorIgnoreSelf.New
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit(Unity.Physics.RaycastHit)
+  name: AddHit(RaycastHit)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_AddHit_Unity_Physics_RaycastHit_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit(Unity.Physics.RaycastHit)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit(Unity.Physics.RaycastHit)
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.AddHit(Unity.Physics.RaycastHit)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit*
+  name: AddHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_AddHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.AddHit
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.AddHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_ClosestHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit*
+  name: ClosestHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_ClosestHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.ClosestHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_EarlyOutOnFirstHit
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit*
+  name: EarlyOutOnFirstHit
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_EarlyOutOnFirstHit_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.EarlyOutOnFirstHit
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_MaxDistance
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance*
+  name: MaxDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_MaxDistance_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.MaxDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_MaxFraction
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction*
+  name: MaxFraction
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_MaxFraction_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.MaxFraction
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_NumHits
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits*
+  name: NumHits
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.html#WAYNGames_Locomotion_Runtime_StateMachine_ClosestRaycastHitCollectorIgnoreSelf_NumHits_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ClosestRaycastHitCollectorIgnoreSelf.NumHits
+  nameWithType: ClosestRaycastHitCollectorIgnoreSelf.NumHits
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3
+  name: ILocomotionContext<TProfile, TInput, TStateData>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3
+  name.vb: ILocomotionContext(Of TProfile, TInput, TStateData)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData)
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.BaseContextValue
+  name: BaseContextValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_BaseContextValue
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.BaseContextValue
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.BaseContextValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).BaseContextValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.BaseContextValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).BaseContextValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.BaseContextValue*
+  name: BaseContextValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_BaseContextValue_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.BaseContextValue
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.BaseContextValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).BaseContextValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.BaseContextValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).BaseContextValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ComputeGroundSnappingDistance(`0@,System.Single@)
+  name: ComputeGroundSnappingDistance(in TProfile, out float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_ComputeGroundSnappingDistance__0__System_Single__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ComputeGroundSnappingDistance(`0@,System.Single@)
+  name.vb: ComputeGroundSnappingDistance(TProfile, Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.ComputeGroundSnappingDistance(in TProfile, out float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).ComputeGroundSnappingDistance(TProfile, Single)
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.ComputeGroundSnappingDistance(in TProfile, out float)
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).ComputeGroundSnappingDistance(TProfile, Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ComputeGroundSnappingDistance*
+  name: ComputeGroundSnappingDistance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_ComputeGroundSnappingDistance_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ComputeGroundSnappingDistance
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.ComputeGroundSnappingDistance
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).ComputeGroundSnappingDistance
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.ComputeGroundSnappingDistance
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).ComputeGroundSnappingDistance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.InputValue
+  name: InputValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_InputValue
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.InputValue
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.InputValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).InputValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.InputValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).InputValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.InputValue*
+  name: InputValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_InputValue_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.InputValue
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.InputValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).InputValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.InputValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).InputValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ProfileValue
+  name: ProfileValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_ProfileValue
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ProfileValue
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.ProfileValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).ProfileValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.ProfileValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).ProfileValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ProfileValue*
+  name: ProfileValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_ProfileValue_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.ProfileValue
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.ProfileValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).ProfileValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.ProfileValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).ProfileValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.StateDataValue
+  name: StateDataValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_StateDataValue
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.StateDataValue
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.StateDataValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).StateDataValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.StateDataValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).StateDataValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.StateDataValue*
+  name: StateDataValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionContext_3_StateDataValue_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext`3.StateDataValue
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>.StateDataValue
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionContext(Of TProfile, TInput, TStateData).StateDataValue
+  nameWithType: ILocomotionContext<TProfile, TInput, TStateData>.StateDataValue
+  nameWithType.vb: ILocomotionContext(Of TProfile, TInput, TStateData).StateDataValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile
+  name: ILocomotionProfile
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile
+  nameWithType: ILocomotionProfile
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue
+  name: PhysicsProfileValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionProfile_PhysicsProfileValue
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue
+  nameWithType: ILocomotionProfile.PhysicsProfileValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue*
+  name: PhysicsProfileValue
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionProfile_PhysicsProfileValue_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionProfile.PhysicsProfileValue
+  nameWithType: ILocomotionProfile.PhysicsProfileValue
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6
+  name: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6
+  name.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.EvaluateTransition(`2@)
+  name: EvaluateTransition(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_EvaluateTransition__2__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.EvaluateTransition(`2@)
+  name.vb: EvaluateTransition(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.EvaluateTransition(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).EvaluateTransition(TContext)
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.EvaluateTransition(ref TContext)
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).EvaluateTransition(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.EvaluateTransition*
+  name: EvaluateTransition
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_EvaluateTransition_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.EvaluateTransition
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.EvaluateTransition
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).EvaluateTransition
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.EvaluateTransition
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).EvaluateTransition
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Execute(`0@,`2@)
+  name: Execute(ref TStateMachine, ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_Execute__0___2__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Execute(`0@,`2@)
+  name.vb: Execute(TStateMachine, TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute(ref TStateMachine, ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute(TStateMachine, TContext)
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute(ref TStateMachine, ref TContext)
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute(TStateMachine, TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Execute*
+  name: Execute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_Execute_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Execute
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Integrate(`2@)
+  name: Integrate(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_Integrate__2__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Integrate(`2@)
+  name.vb: Integrate(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Integrate(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Integrate(TContext)
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Integrate(ref TContext)
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Integrate(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Integrate*
+  name: Integrate
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_Integrate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.Integrate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Integrate
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Integrate
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Integrate
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Integrate
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineComputeInheritedDisplacementPerfMarker
+  name: KStateMachineComputeInheritedDisplacementPerfMarker
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_KStateMachineComputeInheritedDisplacementPerfMarker
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineComputeInheritedDisplacementPerfMarker
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineComputeInheritedDisplacementPerfMarker
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineComputeInheritedDisplacementPerfMarker
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineComputeInheritedDisplacementPerfMarker
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineComputeInheritedDisplacementPerfMarker
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineIntegratePerfMarker
+  name: KStateMachineIntegratePerfMarker
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_KStateMachineIntegratePerfMarker
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineIntegratePerfMarker
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineIntegratePerfMarker
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineIntegratePerfMarker
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineIntegratePerfMarker
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineIntegratePerfMarker
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineResolveCollisionPerfMarker
+  name: KStateMachineResolveCollisionPerfMarker
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_KStateMachineResolveCollisionPerfMarker
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineResolveCollisionPerfMarker
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineResolveCollisionPerfMarker
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineResolveCollisionPerfMarker
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineResolveCollisionPerfMarker
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineResolveCollisionPerfMarker
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineSnapToGroundPerfMarker
+  name: KStateMachineSnapToGroundPerfMarker
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_KStateMachineSnapToGroundPerfMarker
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineSnapToGroundPerfMarker
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineSnapToGroundPerfMarker
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineSnapToGroundPerfMarker
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineSnapToGroundPerfMarker
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineSnapToGroundPerfMarker
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineSolveOverlapsPerfMarker
+  name: KStateMachineSolveOverlapsPerfMarker
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_KStateMachineSolveOverlapsPerfMarker
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.KStateMachineSolveOverlapsPerfMarker
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineSolveOverlapsPerfMarker
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineSolveOverlapsPerfMarker
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.KStateMachineSolveOverlapsPerfMarker
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).KStateMachineSolveOverlapsPerfMarker
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.ResolveCollision(`2@)
+  name: ResolveCollision(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_ResolveCollision__2__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.ResolveCollision(`2@)
+  name.vb: ResolveCollision(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.ResolveCollision(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).ResolveCollision(TContext)
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.ResolveCollision(ref TContext)
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).ResolveCollision(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.ResolveCollision*
+  name: ResolveCollision
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionStateMachine_6_ResolveCollision_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine`6.ResolveCollision
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.ResolveCollision
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).ResolveCollision
+  nameWithType: ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.ResolveCollision
+  nameWithType.vb: ILocomotionStateMachine(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).ResolveCollision
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4
+  name: ILocomotionState<TContext, TProfile, TInput, TStateData>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4
+  name.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData)
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnEnterState(`0@)
+  name: OnEnterState(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnEnterState__0__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnEnterState(`0@)
+  name.vb: OnEnterState(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnEnterState(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnEnterState(TContext)
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnEnterState(ref TContext)
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnEnterState(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnEnterState*
+  name: OnEnterState
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnEnterState_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnEnterState
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnEnterState
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnEnterState
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnEnterState
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnEnterState
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnExitState(`0@)
+  name: OnExitState(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnExitState__0__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnExitState(`0@)
+  name.vb: OnExitState(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnExitState(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnExitState(TContext)
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnExitState(ref TContext)
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnExitState(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnExitState*
+  name: OnExitState
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnExitState_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnExitState
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnExitState
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnExitState
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnExitState
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnExitState
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnIntegrateState(`0@)
+  name: OnIntegrateState(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnIntegrateState__0__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnIntegrateState(`0@)
+  name.vb: OnIntegrateState(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnIntegrateState(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnIntegrateState(TContext)
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnIntegrateState(ref TContext)
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnIntegrateState(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnIntegrateState*
+  name: OnIntegrateState
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnIntegrateState_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnIntegrateState
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnIntegrateState
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnIntegrateState
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnIntegrateState
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnIntegrateState
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnResolveStateCollisions(`0@)
+  name: OnResolveStateCollisions(ref TContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnResolveStateCollisions__0__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnResolveStateCollisions(`0@)
+  name.vb: OnResolveStateCollisions(TContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnResolveStateCollisions(ref TContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnResolveStateCollisions(TContext)
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnResolveStateCollisions(ref TContext)
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnResolveStateCollisions(TContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnResolveStateCollisions*
+  name: OnResolveStateCollisions
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState-4.html#WAYNGames_Locomotion_Runtime_StateMachine_ILocomotionState_4_OnResolveStateCollisions_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState`4.OnResolveStateCollisions
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState<TContext, TProfile, TInput, TStateData>.OnResolveStateCollisions
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnResolveStateCollisions
+  nameWithType: ILocomotionState<TContext, TProfile, TInput, TStateData>.OnResolveStateCollisions
+  nameWithType.vb: ILocomotionState(Of TContext, TProfile, TInput, TStateData).OnResolveStateCollisions
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset`1
+  name: LocomotionInputAsset<TInput>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset-1.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset`1
+  name.vb: LocomotionInputAsset(Of TInput)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset<TInput>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset(Of TInput)
+  nameWithType: LocomotionInputAsset<TInput>
+  nameWithType.vb: LocomotionInputAsset(Of TInput)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset`1.Asset
+  name: Asset
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset-1.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionInputAsset_1_Asset
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset`1.Asset
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset<TInput>.Asset
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputAsset(Of TInput).Asset
+  nameWithType: LocomotionInputAsset<TInput>.Asset
+  nameWithType.vb: LocomotionInputAsset(Of TInput).Asset
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance`1
+  name: LocomotionInputInstance<TInput>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance-1.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance`1
+  name.vb: LocomotionInputInstance(Of TInput)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance<TInput>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance(Of TInput)
+  nameWithType: LocomotionInputInstance<TInput>
+  nameWithType.vb: LocomotionInputInstance(Of TInput)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance`1.Instance
+  name: Instance
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance-1.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionInputInstance_1_Instance
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance`1.Instance
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance<TInput>.Instance
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionInputInstance(Of TInput).Instance
+  nameWithType: LocomotionInputInstance<TInput>.Instance
+  nameWithType.vb: LocomotionInputInstance(Of TInput).Instance
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6
+  name: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6
+  name.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.DeltaTime
+  name: DeltaTime
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_DeltaTime
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.DeltaTime
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.DeltaTime
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).DeltaTime
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.DeltaTime
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).DeltaTime
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Entity
+  name: Entity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_Entity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Entity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Entity
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Entity
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Entity
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Entity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Execute(ArchetypeChunk@,System.Int32,System.Boolean,v128@)
+  name: Execute(in ArchetypeChunk, int, bool, in v128)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_Execute_ArchetypeChunk__System_Int32_System_Boolean_v128__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Execute(ArchetypeChunk@,System.Int32,System.Boolean,v128@)
+  name.vb: Execute(ArchetypeChunk, Integer, Boolean, v128)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute(in ArchetypeChunk, int, bool, in v128)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute(ArchetypeChunk, Integer, Boolean, v128)
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute(in ArchetypeChunk, int, bool, in v128)
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute(ArchetypeChunk, Integer, Boolean, v128)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Execute*
+  name: Execute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_Execute_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Execute
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Execute
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Execute
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionContact
+  name: LocomotionContact
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionContact
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionContact
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionContact
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionContact
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionContact
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionContact
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionGravity
+  name: LocomotionGravity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionGravity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionGravity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionGravity
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionGravity
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionGravity
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionGravity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionInput
+  name: LocomotionInput
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionInput
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionInput
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionInput
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionInput
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionInput
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionInput
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionProfile
+  name: LocomotionProfile
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionProfile
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionProfile
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionProfile
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionProfile
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionProfile
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionProfile
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionStateData
+  name: LocomotionStateData
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionStateData
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionStateData
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionStateData
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionStateData
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionStateData
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionStateData
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionStateMachine
+  name: LocomotionStateMachine
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionStateMachine
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionStateMachine
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionStateMachine
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionStateMachine
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionStateMachine
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionStateMachine
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionVelocity
+  name: LocomotionVelocity
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_LocomotionVelocity
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.LocomotionVelocity
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionVelocity
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionVelocity
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionVelocity
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).LocomotionVelocity
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PhysicsCollider
+  name: PhysicsCollider
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_PhysicsCollider
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PhysicsCollider
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PhysicsCollider
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PhysicsCollider
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PhysicsCollider
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PhysicsCollider
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PhysicsWorld
+  name: PhysicsWorld
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_PhysicsWorld
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PhysicsWorld
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PhysicsWorld
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PhysicsWorld
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PhysicsWorld
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PhysicsWorld
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PlatformMotionFrameLookup
+  name: PlatformMotionFrameLookup
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_PlatformMotionFrameLookup
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.PlatformMotionFrameLookup
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PlatformMotionFrameLookup
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PlatformMotionFrameLookup
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.PlatformMotionFrameLookup
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).PlatformMotionFrameLookup
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Transform
+  name: Transform
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob-6.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionJob_6_Transform
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob`6.Transform
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Transform
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Transform
+  nameWithType: LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.Transform
+  nameWithType.vb: LocomotionJob(Of TStateMachine, TStates, TContext, TProfile, TInput, TStateData).Transform
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob`1
+  name: LocomotionProfileBlob<TProfile>
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob-1.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob`1
+  name.vb: LocomotionProfileBlob(Of TProfile)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob<TProfile>
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob(Of TProfile)
+  nameWithType: LocomotionProfileBlob<TProfile>
+  nameWithType.vb: LocomotionProfileBlob(Of TProfile)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob`1.Profile
+  name: Profile
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob-1.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionProfileBlob_1_Profile
+  commentId: F:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob`1.Profile
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob<TProfile>.Profile
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionProfileBlob(Of TProfile).Profile
+  nameWithType: LocomotionProfileBlob<TProfile>.Profile
+  nameWithType.vb: LocomotionProfileBlob(Of TProfile).Profile
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute
+  name: LocomotionStateAttribute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute
+  nameWithType: LocomotionStateAttribute
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.#ctor(System.Type)
+  name: LocomotionStateAttribute(Type)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateAttribute__ctor_System_Type_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.LocomotionStateAttribute(System.Type)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.New(System.Type)
+  nameWithType: LocomotionStateAttribute.LocomotionStateAttribute(Type)
+  nameWithType.vb: LocomotionStateAttribute.New(Type)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.#ctor*
+  name: LocomotionStateAttribute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateAttribute__ctor_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.LocomotionStateAttribute
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.New
+  nameWithType: LocomotionStateAttribute.LocomotionStateAttribute
+  nameWithType.vb: LocomotionStateAttribute.New
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type
+  name: Type
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateAttribute_Type
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type
+  nameWithType: LocomotionStateAttribute.Type
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type*
+  name: Type
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateAttribute_Type_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.Type
+  nameWithType: LocomotionStateAttribute.Type
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute
+  name: LocomotionStateMachineAttribute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute
+  nameWithType: LocomotionStateMachineAttribute
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.#ctor(System.Type,System.Type,System.Type,System.Type)
+  name: LocomotionStateMachineAttribute(Type, Type, Type, Type)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute__ctor_System_Type_System_Type_System_Type_System_Type_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.#ctor(System.Type,System.Type,System.Type,System.Type)
+  name.vb: New(Type, Type, Type, Type)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.LocomotionStateMachineAttribute(System.Type, System.Type, System.Type, System.Type)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.New(System.Type, System.Type, System.Type, System.Type)
+  nameWithType: LocomotionStateMachineAttribute.LocomotionStateMachineAttribute(Type, Type, Type, Type)
+  nameWithType.vb: LocomotionStateMachineAttribute.New(Type, Type, Type, Type)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.#ctor*
+  name: LocomotionStateMachineAttribute
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute__ctor_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.LocomotionStateMachineAttribute
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.New
+  nameWithType: LocomotionStateMachineAttribute.LocomotionStateMachineAttribute
+  nameWithType.vb: LocomotionStateMachineAttribute.New
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context
+  name: Context
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Context
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context
+  nameWithType: LocomotionStateMachineAttribute.Context
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context*
+  name: Context
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Context_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Context
+  nameWithType: LocomotionStateMachineAttribute.Context
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data
+  name: Data
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Data
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data
+  nameWithType: LocomotionStateMachineAttribute.Data
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data*
+  name: Data
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Data_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Data
+  nameWithType: LocomotionStateMachineAttribute.Data
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input
+  name: Input
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Input
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input
+  nameWithType: LocomotionStateMachineAttribute.Input
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input*
+  name: Input
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Input_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Input
+  nameWithType: LocomotionStateMachineAttribute.Input
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile
+  name: Profile
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Profile
+  commentId: P:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile
+  nameWithType: LocomotionStateMachineAttribute.Profile
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile*
+  name: Profile
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html#WAYNGames_Locomotion_Runtime_StateMachine_LocomotionStateMachineAttribute_Profile_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.Profile
+  nameWithType: LocomotionStateMachineAttribute.Profile
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations
+  name: PhysicsOperations
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html
+  commentId: T:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations
+  nameWithType: PhysicsOperations
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision(RigidBody@,ChildCollider@,float3@)
+  name: CheckForBackFaceCollision(ref RigidBody, ref ChildCollider, ref float3)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_CheckForBackFaceCollision_RigidBody__ChildCollider__float3__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision(RigidBody@,ChildCollider@,float3@)
+  name.vb: CheckForBackFaceCollision(RigidBody, ChildCollider, float3)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision(ref RigidBody, ref ChildCollider, ref float3)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision(RigidBody, ChildCollider, float3)
+  nameWithType: PhysicsOperations.CheckForBackFaceCollision(ref RigidBody, ref ChildCollider, ref float3)
+  nameWithType.vb: PhysicsOperations.CheckForBackFaceCollision(RigidBody, ChildCollider, float3)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision*
+  name: CheckForBackFaceCollision
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_CheckForBackFaceCollision_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForBackFaceCollision
+  nameWithType: PhysicsOperations.CheckForBackFaceCollision
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,System.Single)
+  name: CheckForStepDown(ref BaseLocomotionContext, float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_CheckForStepDown_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,System.Single)
+  name.vb: CheckForStepDown(BaseLocomotionContext, Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, Single)
+  nameWithType: PhysicsOperations.CheckForStepDown(ref BaseLocomotionContext, float)
+  nameWithType.vb: PhysicsOperations.CheckForStepDown(BaseLocomotionContext, Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown*
+  name: CheckForStepDown
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_CheckForStepDown_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.CheckForStepDown
+  nameWithType: PhysicsOperations.CheckForStepDown
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@)
+  name: ComputeInheritedDisplacement(ref BaseLocomotionContext)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_ComputeInheritedDisplacement_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@)
+  name.vb: ComputeInheritedDisplacement(BaseLocomotionContext)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext)
+  nameWithType: PhysicsOperations.ComputeInheritedDisplacement(ref BaseLocomotionContext)
+  nameWithType.vb: PhysicsOperations.ComputeInheritedDisplacement(BaseLocomotionContext)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement*
+  name: ComputeInheritedDisplacement
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_ComputeInheritedDisplacement_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.ComputeInheritedDisplacement
+  nameWithType: PhysicsOperations.ComputeInheritedDisplacement
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name: MoveUpToNextObstacle(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacle_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name.vb: MoveUpToNextObstacle(BaseLocomotionContext, CharacterPhysicsProfile)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  nameWithType: PhysicsOperations.MoveUpToNextObstacle(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  nameWithType.vb: PhysicsOperations.MoveUpToNextObstacle(BaseLocomotionContext, CharacterPhysicsProfile)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle*
+  name: MoveUpToNextObstacle
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacle_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacle
+  nameWithType: PhysicsOperations.MoveUpToNextObstacle
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name: MoveUpToNextObstacleHorizontally(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacleHorizontally_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name.vb: MoveUpToNextObstacleHorizontally(BaseLocomotionContext, CharacterPhysicsProfile)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  nameWithType: PhysicsOperations.MoveUpToNextObstacleHorizontally(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  nameWithType.vb: PhysicsOperations.MoveUpToNextObstacleHorizontally(BaseLocomotionContext, CharacterPhysicsProfile)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally*
+  name: MoveUpToNextObstacleHorizontally
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacleHorizontally_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleHorizontally
+  nameWithType: PhysicsOperations.MoveUpToNextObstacleHorizontally
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name: MoveUpToNextObstacleVertically(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacleVertically_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name.vb: MoveUpToNextObstacleVertically(BaseLocomotionContext, CharacterPhysicsProfile)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  nameWithType: PhysicsOperations.MoveUpToNextObstacleVertically(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  nameWithType.vb: PhysicsOperations.MoveUpToNextObstacleVertically(BaseLocomotionContext, CharacterPhysicsProfile)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically*
+  name: MoveUpToNextObstacleVertically
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_MoveUpToNextObstacleVertically_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.MoveUpToNextObstacleVertically
+  nameWithType: PhysicsOperations.MoveUpToNextObstacleVertically
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@,System.Single)
+  name: SnapToGround(ref BaseLocomotionContext, in CharacterPhysicsProfile, float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_SnapToGround_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__System_Single_
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@,System.Single)
+  name.vb: SnapToGround(BaseLocomotionContext, CharacterPhysicsProfile, Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile, float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile, Single)
+  nameWithType: PhysicsOperations.SnapToGround(ref BaseLocomotionContext, in CharacterPhysicsProfile, float)
+  nameWithType.vb: PhysicsOperations.SnapToGround(BaseLocomotionContext, CharacterPhysicsProfile, Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround*
+  name: SnapToGround
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_SnapToGround_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SnapToGround
+  nameWithType: PhysicsOperations.SnapToGround
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name: SolveOverlaps(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_SolveOverlaps_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@)
+  name.vb: SolveOverlaps(BaseLocomotionContext, CharacterPhysicsProfile)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile)
+  nameWithType: PhysicsOperations.SolveOverlaps(ref BaseLocomotionContext, in CharacterPhysicsProfile)
+  nameWithType.vb: PhysicsOperations.SolveOverlaps(BaseLocomotionContext, CharacterPhysicsProfile)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps*
+  name: SolveOverlaps
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_SolveOverlaps_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.SolveOverlaps
+  nameWithType: PhysicsOperations.SolveOverlaps
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@,float3@,System.Single@)
+  name: TryStep(ref BaseLocomotionContext, in CharacterPhysicsProfile, in float3, in float)
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_TryStep_WAYNGames_Locomotion_Runtime_StateMachine_BaseLocomotionContext__WAYNGames_Locomotion_Runtime_Components_CharacterPhysicsProfile__float3__System_Single__
+  commentId: M:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext@,WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile@,float3@,System.Single@)
+  name.vb: TryStep(BaseLocomotionContext, CharacterPhysicsProfile, float3, Single)
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep(ref WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, in WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile, in float3, in float)
+  fullName.vb: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep(WAYNGames.Locomotion.Runtime.StateMachine.BaseLocomotionContext, WAYNGames.Locomotion.Runtime.Components.CharacterPhysicsProfile, float3, Single)
+  nameWithType: PhysicsOperations.TryStep(ref BaseLocomotionContext, in CharacterPhysicsProfile, in float3, in float)
+  nameWithType.vb: PhysicsOperations.TryStep(BaseLocomotionContext, CharacterPhysicsProfile, float3, Single)
+- uid: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep*
+  name: TryStep
+  href: api/WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.html#WAYNGames_Locomotion_Runtime_StateMachine_PhysicsOperations_TryStep_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.StateMachine.PhysicsOperations.TryStep
+  nameWithType: PhysicsOperations.TryStep
+- uid: WAYNGames.Locomotion.Runtime.Systems
+  name: WAYNGames.Locomotion.Runtime.Systems
+  href: api/WAYNGames.Locomotion.Runtime.Systems.html
+  commentId: N:WAYNGames.Locomotion.Runtime.Systems
+  fullName: WAYNGames.Locomotion.Runtime.Systems
+  nameWithType: WAYNGames.Locomotion.Runtime.Systems
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem
+  name: CameraRigFollowControlledCharacterSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem
+  nameWithType: CameraRigFollowControlledCharacterSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate(SystemState@)
+  name: OnCreate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnCreate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate(SystemState@)
+  name.vb: OnCreate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate(SystemState)
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnCreate(ref SystemState)
+  nameWithType.vb: CameraRigFollowControlledCharacterSystem.OnCreate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate*
+  name: OnCreate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnCreate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnCreate
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnCreate
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy(SystemState@)
+  name: OnDestroy(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnDestroy_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy(SystemState@)
+  name.vb: OnDestroy(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy(SystemState)
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnDestroy(ref SystemState)
+  nameWithType.vb: CameraRigFollowControlledCharacterSystem.OnDestroy(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy*
+  name: OnDestroy
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnDestroy_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnDestroy
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnDestroy
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate(SystemState)
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: CameraRigFollowControlledCharacterSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html#WAYNGames_Locomotion_Runtime_Systems_CameraRigFollowControlledCharacterSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.OnUpdate
+  nameWithType: CameraRigFollowControlledCharacterSystem.OnUpdate
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem
+  name: LocomotionDrivenSyncSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem
+  nameWithType: LocomotionDrivenSyncSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate(SystemState@)
+  name: OnCreate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionDrivenSyncSystem_OnCreate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate(SystemState@)
+  name.vb: OnCreate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate(SystemState)
+  nameWithType: LocomotionDrivenSyncSystem.OnCreate(ref SystemState)
+  nameWithType.vb: LocomotionDrivenSyncSystem.OnCreate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate*
+  name: OnCreate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionDrivenSyncSystem_OnCreate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnCreate
+  nameWithType: LocomotionDrivenSyncSystem.OnCreate
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionDrivenSyncSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate(SystemState)
+  nameWithType: LocomotionDrivenSyncSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: LocomotionDrivenSyncSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionDrivenSyncSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionDrivenSyncSystem.OnUpdate
+  nameWithType: LocomotionDrivenSyncSystem.OnUpdate
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem
+  name: LocomotionInterpolationSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem
+  nameWithType: LocomotionInterpolationSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob
+  name: LocomotionInterpolationSystem.InterpolationJob
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob
+  nameWithType: LocomotionInterpolationSystem.InterpolationJob
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.ElapsedTime
+  name: ElapsedTime
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_InterpolationJob_ElapsedTime
+  commentId: F:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.ElapsedTime
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.ElapsedTime
+  nameWithType: LocomotionInterpolationSystem.InterpolationJob.ElapsedTime
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.LocalToWorldLookup
+  name: LocalToWorldLookup
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_InterpolationJob_LocalToWorldLookup
+  commentId: F:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.LocalToWorldLookup
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.InterpolationJob.LocalToWorldLookup
+  nameWithType: LocomotionInterpolationSystem.InterpolationJob.LocalToWorldLookup
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate(SystemState@)
+  name: OnCreate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_OnCreate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate(SystemState@)
+  name.vb: OnCreate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate(SystemState)
+  nameWithType: LocomotionInterpolationSystem.OnCreate(ref SystemState)
+  nameWithType.vb: LocomotionInterpolationSystem.OnCreate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate*
+  name: OnCreate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_OnCreate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnCreate
+  nameWithType: LocomotionInterpolationSystem.OnCreate
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate(SystemState)
+  nameWithType: LocomotionInterpolationSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: LocomotionInterpolationSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.html#WAYNGames_Locomotion_Runtime_Systems_LocomotionInterpolationSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.LocomotionInterpolationSystem.OnUpdate
+  nameWithType: LocomotionInterpolationSystem.OnUpdate
+- uid: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem
+  name: MotionTrackingSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem
+  nameWithType: MotionTrackingSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.html#WAYNGames_Locomotion_Runtime_Systems_MotionTrackingSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate(SystemState)
+  nameWithType: MotionTrackingSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: MotionTrackingSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.html#WAYNGames_Locomotion_Runtime_Systems_MotionTrackingSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.MotionTrackingSystem.OnUpdate
+  nameWithType: MotionTrackingSystem.OnUpdate
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob
+  name: PlatformMovementJob
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob
+  nameWithType: PlatformMovementJob
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.DeltaTime
+  name: DeltaTime
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.html#WAYNGames_Locomotion_Runtime_Systems_PlatformMovementJob_DeltaTime
+  commentId: F:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.DeltaTime
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementJob.DeltaTime
+  nameWithType: PlatformMovementJob.DeltaTime
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem
+  name: PlatformMovementSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem
+  nameWithType: PlatformMovementSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate(SystemState@)
+  name: OnCreate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlatformMovementSystem_OnCreate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate(SystemState@)
+  name.vb: OnCreate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate(SystemState)
+  nameWithType: PlatformMovementSystem.OnCreate(ref SystemState)
+  nameWithType.vb: PlatformMovementSystem.OnCreate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate*
+  name: OnCreate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlatformMovementSystem_OnCreate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnCreate
+  nameWithType: PlatformMovementSystem.OnCreate
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlatformMovementSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate(SystemState)
+  nameWithType: PlatformMovementSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: PlatformMovementSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlatformMovementSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformMovementSystem.OnUpdate
+  nameWithType: PlatformMovementSystem.OnUpdate
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob
+  name: PlatformRotateJob
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob
+  nameWithType: PlatformRotateJob
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.DeltaTime
+  name: DeltaTime
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.html#WAYNGames_Locomotion_Runtime_Systems_PlatformRotateJob_DeltaTime
+  commentId: F:WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.DeltaTime
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlatformRotateJob.DeltaTime
+  nameWithType: PlatformRotateJob.DeltaTime
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem
+  name: PlayerGoManagerSystem
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html
+  commentId: T:WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem
+  nameWithType: PlayerGoManagerSystem
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate(SystemState@)
+  name: OnUpdate(ref SystemState)
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlayerGoManagerSystem_OnUpdate_SystemState__
+  commentId: M:WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate(SystemState@)
+  name.vb: OnUpdate(SystemState)
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate(ref SystemState)
+  fullName.vb: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate(SystemState)
+  nameWithType: PlayerGoManagerSystem.OnUpdate(ref SystemState)
+  nameWithType.vb: PlayerGoManagerSystem.OnUpdate(SystemState)
+- uid: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate*
+  name: OnUpdate
+  href: api/WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html#WAYNGames_Locomotion_Runtime_Systems_PlayerGoManagerSystem_OnUpdate_
+  commentId: Overload:WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate
+  isSpec: "True"
+  fullName: WAYNGames.Locomotion.Runtime.Systems.PlayerGoManagerSystem.OnUpdate
+  nameWithType: PlayerGoManagerSystem.OnUpdate
 - uid: Wayn.Games.Locomotion.SourceGen
   name: Wayn.Games.Locomotion.SourceGen
   href: api/Wayn.Games.Locomotion.SourceGen.html
@@ -2671,15 +4607,6 @@ references:
   fullName.vb: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.New(System.Type)
   nameWithType: LocomotionStateMachineAttribute.LocomotionStateMachineAttribute(Type)
   nameWithType.vb: LocomotionStateMachineAttribute.New(Type)
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.#ctor(System.Type,System.Type,System.Type,System.Type)
-  name: LocomotionStateMachineAttribute(Type, Type, Type, Type)
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute__ctor_System_Type_System_Type_System_Type_System_Type_
-  commentId: M:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.#ctor(System.Type,System.Type,System.Type,System.Type)
-  name.vb: New(Type, Type, Type, Type)
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.LocomotionStateMachineAttribute(System.Type, System.Type, System.Type, System.Type)
-  fullName.vb: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.New(System.Type, System.Type, System.Type, System.Type)
-  nameWithType: LocomotionStateMachineAttribute.LocomotionStateMachineAttribute(Type, Type, Type, Type)
-  nameWithType.vb: LocomotionStateMachineAttribute.New(Type, Type, Type, Type)
 - uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.#ctor*
   name: LocomotionStateMachineAttribute
   href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute__ctor_
@@ -2703,45 +4630,6 @@ references:
   isSpec: "True"
   fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Context
   nameWithType: LocomotionStateMachineAttribute.Context
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data
-  name: Data
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Data
-  commentId: P:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data
-  nameWithType: LocomotionStateMachineAttribute.Data
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data*
-  name: Data
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Data_
-  commentId: Overload:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data
-  isSpec: "True"
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Data
-  nameWithType: LocomotionStateMachineAttribute.Data
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input
-  name: Input
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Input
-  commentId: P:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input
-  nameWithType: LocomotionStateMachineAttribute.Input
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input*
-  name: Input
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Input_
-  commentId: Overload:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input
-  isSpec: "True"
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Input
-  nameWithType: LocomotionStateMachineAttribute.Input
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile
-  name: Profile
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Profile
-  commentId: P:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile
-  nameWithType: LocomotionStateMachineAttribute.Profile
-- uid: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile*
-  name: Profile
-  href: api/Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.html#Wayn_Locomotion_StateMachine_LocomotionStateMachineAttribute_Profile_
-  commentId: Overload:Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile
-  isSpec: "True"
-  fullName: Wayn.Locomotion.StateMachine.LocomotionStateMachineAttribute.Profile
-  nameWithType: LocomotionStateMachineAttribute.Profile
 - uid: Wayn.Locomotion.StateMachine.PhysicsOperations
   name: PhysicsOperations
   href: api/Wayn.Locomotion.StateMachine.PhysicsOperations.html

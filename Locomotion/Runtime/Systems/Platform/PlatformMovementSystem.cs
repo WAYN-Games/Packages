@@ -13,18 +13,17 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Physics.Systems;
 using Unity.Transforms;
-using UnityEngine.Splines;
 
-namespace Locomotion.Systems
+namespace WAYNGames.Locomotion.Runtime.Systems
 {
     [BurstCompile]
-    [UpdateInGroup(typeof(BeforePhysicsSystemGroup))]
+    [UpdateInGroup(typeof(SimulationSystemGroup), OrderFirst = true)]
+    [UpdateBefore(typeof(FixedStepSimulationSystemGroup))]
     public partial struct PlatformMovementSystem : ISystem
     {
         [BurstCompile]
@@ -35,40 +34,60 @@ namespace Locomotion.Systems
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            var dt = SystemAPI.Time.DeltaTime;
 
-            foreach (var (platform, track, localTransform) in
-                     SystemAPI.Query<RefRW<Platform>,
-                         DynamicBuffer<Track>,
-                         RefRW<LocalTransform>>())
+            state.Dependency = new PlatformMovementJob
             {
-                var currentIndex = platform.ValueRO.Index;
-                var targetIndex = (currentIndex + 1) % track.Length;
-                var targetPosition = track[targetIndex].Position;
-                var currentPosition = localTransform.ValueRO.Position;
-
-                var direction = math.normalize(targetPosition - currentPosition);
-                var distanceToMove = platform.ValueRO.Speed * dt;
-                var newPosition = currentPosition + direction * distanceToMove;
-
-                if (math.distancesq(newPosition, targetPosition) < 0.01f)
-                {
-                    newPosition = targetPosition;
-                    platform.ValueRW.Index = targetIndex;
-                }
-                localTransform.ValueRW.Position = newPosition;
-            }
-            
-            
-            foreach (var (rotor, localTransform) in
-                     SystemAPI.Query<RefRW<Rotor>,
-                         RefRW<LocalTransform>>())
+                DeltaTime = SystemAPI.Time.DeltaTime
+            }.ScheduleParallel(state.Dependency);
+            state.Dependency = new PlatformRotateJob
             {
-                var rotationAngle = rotor.ValueRO.Axis * dt;
-                localTransform.ValueRW = localTransform.ValueRW.RotateX(rotationAngle.x);
-                localTransform.ValueRW = localTransform.ValueRW.RotateY(rotationAngle.y);
-                localTransform.ValueRW = localTransform.ValueRW.RotateZ(rotationAngle.z);
-            }
+                DeltaTime = SystemAPI.Time.DeltaTime
+            }.ScheduleParallel(state.Dependency);
+
         }
     }
+    [BurstCompile]
+    public partial struct PlatformRotateJob : IJobEntity
+    {
+        public float DeltaTime;
+
+        void Execute(ref Rotor rotor, ref LocalTransform localTransform)
+        {
+            var rotationAngle = rotor.Axis * DeltaTime;
+            localTransform = localTransform.RotateX(rotationAngle.x);
+            localTransform = localTransform.RotateY(rotationAngle.y);
+            localTransform = localTransform.RotateZ(rotationAngle.z);
+        }
+    }
+    
+    
+    [BurstCompile]
+    public partial struct PlatformMovementJob : IJobEntity
+    {
+        public float DeltaTime;
+
+        const float PositionTolerance = 0.01f;
+
+        void Execute(ref Platform platform, ref LocalTransform localTransform, in DynamicBuffer<Track> track)
+        {
+            int currentIndex = platform.Index;
+            int nextIndex = (currentIndex + 1) % track.Length;
+
+            float3 targetPosition = track[nextIndex].Position;
+            float3 currentPosition = localTransform.Position;
+
+            float3 direction = math.normalize(targetPosition - currentPosition);
+            float distanceToMove = platform.Speed * DeltaTime;
+            float3 newPosition = currentPosition + direction * distanceToMove;
+
+            if (math.distancesq(newPosition, targetPosition) < PositionTolerance)
+            {
+                newPosition = targetPosition;
+                platform.Index = nextIndex;
+            }
+
+            localTransform.Position = newPosition;
+        }
+    }
+
 }

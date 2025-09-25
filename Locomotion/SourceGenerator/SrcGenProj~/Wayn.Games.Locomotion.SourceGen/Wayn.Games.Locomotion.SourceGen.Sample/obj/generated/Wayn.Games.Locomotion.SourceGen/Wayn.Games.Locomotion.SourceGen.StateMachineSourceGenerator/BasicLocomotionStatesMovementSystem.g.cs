@@ -14,6 +14,7 @@ using Wayn.Locomotion.StateMachine;
 
 namespace WAYN.Locomotion.Demo.BasicLocomotion
 {
+    /// <exclude />
     [UpdateInGroup(typeof(AfterPhysicsSystemGroup))]
     [UpdateBefore(typeof(LocomotionDrivenSyncSystem))]
     [UpdateAfter(typeof(MotionTrackingSystem))]

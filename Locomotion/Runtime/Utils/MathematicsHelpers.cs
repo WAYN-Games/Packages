@@ -15,7 +15,7 @@
 
 using Unity.Burst;
 using Unity.Mathematics;
-using Wayn.Locomotion.StateMachine;
+using WAYNGames.Locomotion.Runtime.StateMachine;
 
 [BurstCompile]
 public static class MathematicsHelpers

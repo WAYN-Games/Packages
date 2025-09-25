@@ -19,7 +19,7 @@ using Unity.Mathematics;
 using Unity.Physics;
 using RaycastHit = Unity.Physics.RaycastHit;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     /// <summary>
     ///     Struct for collecting closest raycast hits while ignoring a specified entity. Implements the ICollector interface

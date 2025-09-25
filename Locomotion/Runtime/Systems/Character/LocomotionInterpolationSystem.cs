@@ -13,14 +13,14 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-namespace Locomotion.Systems
+namespace WAYNGames.Locomotion.Runtime.Systems
 {
     [UpdateInGroup(typeof(TransformSystemGroup))]
     [UpdateBefore(typeof(LocalToWorldSystem))]
@@ -54,7 +54,7 @@ namespace Locomotion.Systems
             [ReadOnly] public float ElapsedTime;
             [NativeDisableParallelForRestriction] public ComponentLookup<LocalToWorld> LocalToWorldLookup;
 
-            void Execute(Entity self, in Character character, in DynamicBuffer<CharacterPath> path,
+            void Execute(Entity self, in Model characterModel, in DynamicBuffer<CharacterPath> path,
                 ref LocalTransform localTransform)
             {
                 if (path.Length < 2) return;
@@ -67,10 +67,10 @@ namespace Locomotion.Systems
                 quaternion rot = math.slerp(previous.rot, current.rot, interpolationFactor);
 
                 localTransform = LocalTransform.FromPositionRotation(pos, rot);
-                LocalToWorld worldTransform = LocalToWorldLookup[character.Model];
+                LocalToWorld worldTransform = LocalToWorldLookup[characterModel.Entity];
                 worldTransform.Value = localTransform.ToMatrix();
                 LocalToWorldLookup[self] = worldTransform;
-                LocalToWorldLookup[character.Model] = worldTransform;
+                LocalToWorldLookup[characterModel.Entity] = worldTransform;
             }
         }
     }

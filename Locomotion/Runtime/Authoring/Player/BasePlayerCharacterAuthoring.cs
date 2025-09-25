@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Entities;
 using UnityEngine;
 using UnityEngine.Serialization;
-using Wayn.Locomotion.StateMachine;
+using WAYNGames.Locomotion.Runtime.StateMachine;
 
 namespace Locomotion.Runtime.Authoring.Player
 {
@@ -62,7 +62,7 @@ namespace Locomotion.Runtime.Authoring.Player
                         Character = GetEntity(character, TransformUsageFlags.None)
                     });
 
-                AddComponent(playerEntity, new LocomotionInput<TInput>
+                AddComponent(playerEntity, new LocomotionInputAsset<TInput>
                 {
                     Asset = authoring.InputAsset
                 });

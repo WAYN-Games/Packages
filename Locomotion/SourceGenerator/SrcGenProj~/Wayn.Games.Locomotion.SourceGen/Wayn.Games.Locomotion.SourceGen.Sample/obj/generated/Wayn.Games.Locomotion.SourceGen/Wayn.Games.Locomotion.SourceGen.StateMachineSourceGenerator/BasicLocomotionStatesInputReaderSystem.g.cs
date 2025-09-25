@@ -12,6 +12,7 @@ using Wayn.Locomotion.StateMachine;
 
 namespace WAYN.Locomotion.Demo.BasicLocomotion
 {
+    /// <exclude />
     [UpdateInGroup(typeof(SimulationSystemGroup), OrderFirst = true)]
     [UpdateBefore(typeof(FixedStepSimulationSystemGroup))]
     public partial struct BasicLocomotionStatesInputReaderSystem : ISystem
@@ -32,7 +33,7 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
             
             m_PlayerQuery = new EntityQueryBuilder(Allocator.Temp)
                 .WithAll<ControlledCharacters>()
-                .WithAll<LocomotionInputInitialized<>>()
+                .WithAll<LocomotionInputInstance<>>()
                 .Build(ref state);
         }
 
@@ -49,7 +50,7 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
 
             foreach (var player in players)
             {
-                var inputs = state.EntityManager.GetComponentData<LocomotionInputInitialized<>>(player);
+                var inputs = state.EntityManager.GetComponentData<LocomotionInputInstance<>>(player);
                 inputs.Instance.Value.ReadInputsFromAsset(out  playerInputs);
                 m_PlayerInputs.Add(player, playerInputs);
             }
@@ -88,9 +89,9 @@ namespace WAYN.Locomotion.Demo.BasicLocomotion
                     var controlledCharacters = controlledCharactersAccessor[i];
                     foreach (var controlledCharacter in controlledCharacters)
                     {
-                         input = LocomotionInputLookup[controlledCharacter.Character.Locomotion];
+                         input = LocomotionInputLookup[controlledCharacter.Locomotor.Entity];
                         input.ApplyInputsToCharacter(PlayerInputs[entity]);
-                        LocomotionInputLookup[controlledCharacter.Character.Locomotion] = input;
+                        LocomotionInputLookup[controlledCharacter.Locomotor.Entity] = input;
                     }
                 }
             }

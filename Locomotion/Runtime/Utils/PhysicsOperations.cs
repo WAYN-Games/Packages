@@ -13,14 +13,14 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     [BurstCompile]
     public static class PhysicsOperations

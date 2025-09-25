@@ -13,14 +13,14 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     /// <summary>
     /// Base context available to all locomotion state machine.

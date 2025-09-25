@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Wayn.Locomotion.StateMachine
+namespace WAYNGames.Locomotion.Runtime.StateMachine
 {
     /// <summary>
     ///     This attribute mark an enum field as a Locomotion state.

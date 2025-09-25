@@ -13,10 +13,10 @@
 //  * For permissions, contact: contact@wayn.games
 //  */
 
-using Locomotion.Runtime.Components;
+using WAYNGames.Locomotion.Runtime.Components;
 using Unity.Entities;
 using UnityEngine;
-using Wayn.Locomotion.StateMachine;
+using WAYNGames.Locomotion.Runtime.StateMachine;
 
 public abstract class LocomotionProfileAsset<TProfile> : ScriptableObject
     where TProfile : unmanaged, ILocomotionProfile

@@ -20,19 +20,18 @@ using Unity.Physics;
 using Unity.Transforms;
 using UnityEngine;
 
-namespace Locomotion.Runtime.Components
+namespace WAYNGames.Locomotion.Runtime.Components
 {
-    /// <summary>
-    /// Represents a character within the locomotion system.
-    /// The `Character` struct includes references to the locomotion and model sub-entities associated with the character.
-    /// Typically used to manage and query the state of characters within gameplay systems, ensuring updates to locomotion, transformations, and other related components are synchronized.
-    /// </summary>
-    public struct Character : IComponentData
-    {
-        public Entity Locomotion;
-        public Entity Model;
-    }
 
+    public struct Locomotor : IComponentData
+    {
+        public Entity Entity;
+    }
+    
+    public struct Model : IComponentData
+    {
+        public Entity Entity;
+    }
 
     /// <summary>
     /// A list of transform teh character went through.
