@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WAYN Games - Documentation</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a2e;
+      --muted: #555;
+      --border: #e0e0e0;
+      --link: #0366d6;
+      --card-bg: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a2e;
+        --text: #e0e0e0;
+        --muted: #999;
+        --border: #333;
+        --link: #58a6ff;
+        --card-bg: #222;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      color: var(--text);
+      background: var(--bg);
+    }
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+    .package {
+      margin: 16px 0;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card-bg);
+    }
+    .package h2 { margin: 0 0 6px; font-size: 1.2rem; }
+    .package h2 a { text-decoration: none; color: var(--link); }
+    .package h2 a:hover { text-decoration: underline; }
+    .package p { color: var(--muted); font-size: 0.95rem; }
+    .package code {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <h1>WAYN Games Documentation</h1>
+
+  <div class="package">
+    <h2><a href="com.wayngamesassets.mgm.charactercontroller/">MGM Character Controller</a></h2>
+    <p>ECS-based character locomotion system for Unity DOTS</p>
+    <code>com.wayngamesassets.mgm.charactercontroller</code>
+  </div>
+
+  <div class="package">
+    <h2><a href="games.wayn.blob/">WAYN Games Blob</a></h2>
+    <p>BlobAsset-based HashMap and MultiHashMap for Unity DOTS</p>
+    <code>games.wayn.blob</code>
+  </div>
+
+  <div class="package">
+    <h2><a href="com.wayngames.doctools/">DocTools</a></h2>
+    <p>Bash CLI for building DocFX documentation sites</p>
+    <code>com.wayngames.doctools</code>
+  </div>
+</body>
+</html>
