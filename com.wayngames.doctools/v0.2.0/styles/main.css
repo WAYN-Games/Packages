@@ -534,6 +534,58 @@ body {
   .toc .nav > li.active > a { border-left: 3px solid LinkText; }
 }
 
+/* --- Cross-package search ---------------------------------------- */
+
+#cross-search-results {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+#cross-search-results .cross-search-header {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#cross-search-results .cross-search-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+#cross-search-results .sr-item {
+  margin-bottom: 20px;
+}
+
+#cross-search-results .item-title a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#cross-search-results .item-title a:hover {
+  text-decoration: underline;
+}
+
+#cross-search-results .item-href {
+  font-size: 0.8rem;
+  color: var(--success);
+}
+
+#cross-search-results .item-brief {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+
 /* --- Print -------------------------------------------------------- */
 
 @media print {

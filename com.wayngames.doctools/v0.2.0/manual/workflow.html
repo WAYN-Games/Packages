@@ -291,6 +291,14 @@ jobs:
 <li>Re-trigger the docs workflow (via <code>workflow_dispatch</code>) to update <code>versions.js</code> and the root redirect on the deployed site</li>
 </ol>
 <h2 id="authentication-setup">Authentication Setup</h2>
+<h3 id="reusable-workflow-access">Reusable Workflow Access</h3>
+<p>Since DocTools is a private repository, its reusable workflows must be explicitly shared with the organization:</p>
+<ol>
+<li>Go to <strong><a href="https://github.com/WAYN-Games/DocTools/settings/actions">https://github.com/WAYN-Games/DocTools/settings/actions</a></strong></li>
+<li>Under <strong>Access</strong>, select <strong>&quot;Accessible from repositories in the 'WAYN-Games' organization&quot;</strong></li>
+</ol>
+<p>This is a one-time setup. Without it, other repos cannot call the reusable workflow.</p>
+<h3 id="personal-access-tokens">Personal Access Tokens</h3>
 <p>The system uses two fine-grained Personal Access Tokens for least-privilege access:</p>
 <table>
 <thead>
@@ -395,6 +403,8 @@ jobs:
       }
     })();
     </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
 
     <script src="../../versions.js"></script>
     <script>
