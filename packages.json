@@ -1,0 +1,17 @@
+[
+  {
+    "name": "com.wayngames.doctools",
+    "title": "DocTools",
+    "latestVersion": "0.2.0"
+  },
+  {
+    "name": "games.wayn.blob",
+    "title": "WAYN Games Blob",
+    "latestVersion": "1.0.0"
+  },
+  {
+    "name": "com.wayngamesassets.mgm.charactercontroller",
+    "title": "MGM Character Controller",
+    "latestVersion": "0.3.0"
+  }
+]
