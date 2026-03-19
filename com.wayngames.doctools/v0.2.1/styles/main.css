@@ -173,12 +173,6 @@ body {
   font-size: 1rem;
 }
 
-.navbar-inverse .navbar-brand img#logo {
-  height: 32px;
-  width: auto;
-  vertical-align: middle;
-}
-
 .navbar-inverse .navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.85);
   font-family: var(--font);
