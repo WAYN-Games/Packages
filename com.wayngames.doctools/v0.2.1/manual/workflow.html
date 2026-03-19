@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Package Lifecycle &amp; Documentation Workflow | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Package Lifecycle &amp; Documentation Workflow | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="../Images/logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../Images/logo.png" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                    </li>
+                    <li class="">
+                      <a href="commands.html" title="Commands" class="">Commands</a>
+                    </li>
+                    <li class="">
+                      <a href="versioning.html" title="Versioning" class="">Versioning</a>
+                    </li>
+                    <li class="">
+                      <a href="template.html" title="Template" class="">Template</a>
+                    </li>
+                    <li class="active">
+                      <a href="workflow.html" title="Workflow" class="active">Workflow</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="workflow">
+<h1 id="package-lifecycle--documentation-workflow">Package Lifecycle &amp; Documentation Workflow</h1>
+
+<p>This page describes the end-to-end workflow for managing packages with versioned documentation, from initial setup through automated deployment.</p>
+<h2 id="package-lifecycle">Package Lifecycle</h2>
+<h3 id="1-create-package">1. Create package</h3>
+<p>Create a new Unity package with a <code>package.json</code> containing at minimum:</p>
+<ul>
+<li><code>name</code> — reverse-domain identifier (e.g., <code>com.wayngames.mypackage</code>)</li>
+<li><code>displayName</code> — human-readable title</li>
+<li><code>version</code> — semantic version (e.g., <code>1.0.0</code>)</li>
+</ul>
+<h3 id="2-initialize-documentation">2. Initialize documentation</h3>
+<p>Run DocTools to scaffold the documentation structure:</p>
+<pre><code class="lang-bash">doctools.sh init ./MyPackage
+</code></pre>
+<p>This creates <code>Documentation/</code> with a table of contents, index page, and DocFX configuration.</p>
+<h3 id="3-write-documentation">3. Write documentation</h3>
+<ul>
+<li>Add markdown pages under <code>Documentation/</code></li>
+<li>Write XML doc comments (<code>/// &lt;summary&gt;</code>) on public C# types for API reference generation</li>
+<li>Add images to <code>Documentation/Images/</code></li>
+</ul>
+<h3 id="4-build-locally">4. Build locally</h3>
+<pre><code class="lang-bash">doctools.sh build ./MyPackage
+</code></pre>
+<p>This generates <code>Documentation~/v{X.Y.Z}/</code> containing the full HTML site with API reference and manual pages.</p>
+<h3 id="5-version-bump">5. Version bump</h3>
+<p>When preparing a new release:</p>
+<ol>
+<li>Update <code>version</code> in <code>package.json</code></li>
+<li>Update <code>CHANGELOG.md</code></li>
+<li>Run <code>doctools.sh build</code> — the new version is built alongside existing versions in <code>Documentation~/</code></li>
+</ol>
+<p>The version switcher dropdown automatically includes all versions found in <code>Documentation~/v*/</code>.</p>
+<h3 id="6-release">6. Release</h3>
+<p>Push a git tag matching the version:</p>
+<pre><code class="lang-bash">git tag v1.0.0
+git push --tags
+</code></pre>
+<p>This triggers the automated documentation deployment.</p>
+<h2 id="documentation-workflow-cicd">Documentation Workflow (CI/CD)</h2>
+<p>When a version tag (<code>v*</code>) is pushed, the following automated flow executes:</p>
+<pre><code class="lang-text">Package Repo                    DocTools                        Packages (gh-pages)
+    |                               |                               |
+    |-- tag v1.0.0 pushed ---------&gt;|                               |
+    |   docs.yml triggers           |                               |
+    |   calls deploy-docs.yml -----&gt;|                               |
+    |                               |-- checkout package repo       |
+    |                               |-- checkout DocTools            |
+    |                               |-- install .NET + DocFX        |
+    |                               |-- fetch existing v*/ --------&gt;|
+    |                               |   from gh-pages               |
+    |                               |-- doctools.sh build           |
+    |                               |-- deploy Documentation~/ ---&gt;|
+    |                               |   to /{package.name}/         |
+    |                               |                               |-- GitHub Pages serves
+    |                               |                               |   docs.wayn.games/{name}/
+</code></pre>
+<h3 id="step-by-step">Step by step</h3>
+<ol>
+<li>A <code>v*</code> tag push triggers the package repo's <code>.github/workflows/docs.yml</code></li>
+<li><code>docs.yml</code> calls the reusable workflow at <code>WAYN-Games/DocTools/.github/workflows/deploy-docs.yml</code></li>
+<li>The reusable workflow:
+<ul>
+<li>Checks out the package repo and DocTools (private repo, authenticated via PAT)</li>
+<li>Installs .NET SDK and DocFX</li>
+<li>Sparse-checkouts previously published version directories from the <code>gh-pages</code> branch of <code>WAYN-Games/Packages</code> into <code>Documentation~/</code> so the version switcher includes all historical versions</li>
+<li>Runs <code>doctools.sh build</code> which generates the DocFX site, <code>versions.js</code>, and a root <code>index.html</code> redirect</li>
+<li>Deploys the full <code>Documentation~/</code> output to <code>WAYN-Games/Packages</code> gh-pages under <code>/{package.name}/</code> using <code>keep_files: true</code> (preserving other packages' docs)</li>
+</ul>
+</li>
+<li>GitHub Pages serves the content at <code>docs.wayn.games/{package.name}/</code></li>
+<li>The version-switcher dropdown (populated from <code>versions.js</code>) lets users navigate between versions</li>
+</ol>
+<h2 id="repository-roles">Repository Roles</h2>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Visibility</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WAYN-Games/DocTools</code></td>
+<td>Private</td>
+<td>Build CLI + reusable GitHub Actions workflow</td>
+</tr>
+<tr>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Public</td>
+<td>Hosts <code>gh-pages</code> branch, custom domain <code>docs.wayn.games</code></td>
+</tr>
+<tr>
+<td>Package repos</td>
+<td>Private or Public</td>
+<td>Source code + doc source, each has a <code>docs.yml</code> caller workflow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="url-structure">URL Structure</h2>
+<p>All documentation is served from a single domain:</p>
+<pre><code class="lang-text">docs.wayn.games/
+  index.html                              &lt;- landing page listing all packages
+  com.wayngames.doctools/
+    index.html                            &lt;- redirect to latest version
+    versions.js                           &lt;- version manifest for dropdown
+    v0.1.0/                               &lt;- DocFX output for v0.1.0
+    v0.2.0/                               &lt;- DocFX output for v0.2.0
+  com.wayngamesassets.mgm.charactercontroller/
+    index.html
+    versions.js
+    v0.3.0/
+</code></pre>
+<p>The URL path segment is the <code>name</code> field from the package's <code>package.json</code>.</p>
+<h2 id="adding-a-new-package">Adding a New Package</h2>
+<ol>
+<li><p>Initialize documentation: <code>doctools.sh init ./NewPackage</code></p>
+</li>
+<li><p>Write docs and build locally: <code>doctools.sh build ./NewPackage</code></p>
+</li>
+<li><p>Add <code>.github/workflows/docs.yml</code> to the package repo:</p>
+<pre><code class="lang-yaml">name: Documentation
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  docs:
+    uses: WAYN-Games/DocTools/.github/workflows/deploy-docs.yml@main
+    with:
+      package-name: com.wayngames.newpackage
+    secrets:
+      doctools-token: ${{ secrets.DOCTOOLS_READ_TOKEN }}
+      deploy-token: ${{ secrets.PACKAGES_DEPLOY_TOKEN }}
+</code></pre>
+</li>
+<li><p>Add <code>DOCTOOLS_READ_TOKEN</code> and <code>PACKAGES_DEPLOY_TOKEN</code> secrets to the repo (or use org-level secrets)</p>
+</li>
+<li><p>Tag a release (<code>git tag v1.0.0 &amp;&amp; git push --tags</code>) to trigger deployment</p>
+</li>
+<li><p>Add an entry to <code>landing/index.html</code> in the Packages repo</p>
+</li>
+</ol>
+<h2 id="removing-a-version">Removing a Version</h2>
+<p>To remove a published version:</p>
+<ol>
+<li>Locally: <code>doctools.sh version ./PackageDir remove X.Y.Z</code></li>
+<li>Re-trigger the docs workflow (via <code>workflow_dispatch</code>) to update <code>versions.js</code> and the root redirect on the deployed site</li>
+</ol>
+<h2 id="authentication-setup">Authentication Setup</h2>
+<h3 id="reusable-workflow-access">Reusable Workflow Access</h3>
+<p>Since DocTools is a private repository, its reusable workflows must be explicitly shared with the organization:</p>
+<ol>
+<li>Go to <strong><a href="https://github.com/WAYN-Games/DocTools/settings/actions">https://github.com/WAYN-Games/DocTools/settings/actions</a></strong></li>
+<li>Under <strong>Access</strong>, select <strong>&quot;Accessible from repositories in the 'WAYN-Games' organization&quot;</strong></li>
+</ol>
+<p>This is a one-time setup. Without it, other repos cannot call the reusable workflow.</p>
+<h3 id="personal-access-tokens">Personal Access Tokens</h3>
+<p>The system uses two fine-grained Personal Access Tokens for least-privilege access:</p>
+<table>
+<thead>
+<tr>
+<th>Secret Name</th>
+<th>Scope</th>
+<th>Permission</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DOCTOOLS_READ_TOKEN</code></td>
+<td><code>WAYN-Games/DocTools</code></td>
+<td>Contents: Read-only</td>
+<td>Checkout the private build tooling</td>
+</tr>
+<tr>
+<td><code>PACKAGES_DEPLOY_TOKEN</code></td>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Contents: Read and write</td>
+<td>Push built docs to <code>gh-pages</code></td>
+</tr>
+</tbody>
+</table>
+<p>Both secrets must be added to each package repo (or stored as organization-level secrets for convenience).</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script src="../../versions.js"></script>
+    <script>
+    (function () {
+      var current = '0.2.1';
+      var rel = '../';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
