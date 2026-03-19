@@ -1,0 +1,2859 @@
+{
+  "source_base_path": "/home/runner/work/MGM-Locomotion/MGM-Locomotion/package/Documentation/.doctools-build-2869",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../Images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/architecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../creating-state-machine.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/creating-state-machine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../debug-visualization.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/debug-visualization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../execution-loop.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/execution-loop.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../extending.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/extending.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../hybrid-layer.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hybrid-layer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../input-system.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/input-system.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../moving-platforms.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/moving-platforms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../physics-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/physics-configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../writing-states.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/writing-states.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_root/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "_root/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring<TProfile>.BaseCharacterLocomotorBaker<TAuthoring, TStateMachine, TStates, TContext, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"1\">Baker for the CharacterAuthoring. Converts the authoring data into one or more ECS entities with the following\nsetup:</p>\n<ol sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"3\">\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"3\">Creates the primary character entity (manual‐override transform) and, if Playable is checked, adds a\nPlayableCharacter tag.</li>\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"5\">If a ModelPrefab is assigned, spawns a separate “model” entity with:\n– PresentationGo (holds the prefab for rendering)\n– ControllingEntity (points back to the character entity)</li>\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"8\">Applies the authoring transform to the character via LocalTransform.</li>\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.yml\" sourcestartlinenumber=\"9\">If a CharacterProfile is provided:\n– Generates or reuses a BlobAssetReference<characterprofile></characterprofile> from the profile asset (and calls DependsOn so\nchanges re-bake automatically)\n– Adds LocomotionInput to drive character movement from player input or AI Agent\n– Builds a CapsuleCollider from profile settings (CapsuleGeometry + CollisionFilter) and adds it as a\nPhysicsCollider blob asset\n– Registers the character with the physics world (PhysicsWorldIndex)\n– Adds LocomotionProfileReference (points to the blob asset), LocomotionData (initial velocity, jump count, etc.),\nLocomotionGravity (gravity multiplier)\n– Initializes the CharacterLocomotionStateMachine in the Falling state</li>\n</ol>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring<TProfile>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml\" sourcestartlinenumber=\"1\">Serves as a base class for authoring character entities with locomotion capabilities. Designed to work with a\nprofile of type <code class=\"typeparamref\">TProfile</code>, enabling customization of character movement and behavior\nthrough specific profile definitions.\nContains shared properties and functionality for setting up entities related to character locomotion, including\nrendering models and defining state machines through further specialization.\nThe class includes a nested abstract baker class used for converting authoring data into ECS entities with the\nfollowing configurations:</p>\n<ol sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml\" sourcestartlinenumber=\"8\">\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml\" sourcestartlinenumber=\"8\">Associates the authored character with a profile asset (defining locomotion behavior and rules).</li>\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml\" sourcestartlinenumber=\"9\">Supports optional assignment of a prefab model entity for visual representation.</li>\n<li sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.yml\" sourcestartlinenumber=\"10\">Facilitates the integration of locomotion state machines, states, and custom contexts specific to the\nmovement profile.</li>\n</ol>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.BasePlayerCharacterBaker-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.BasePlayerCharacterBaker-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring<TInput>.BasePlayerCharacterBaker<TAuthoring>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.BasePlayerCharacterBaker-1.yml\" sourcestartlinenumber=\"1\">Baker class to convert PlayerAuthoring into ECS entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring<TInput>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.yml\" sourcestartlinenumber=\"1\">Abstract base class for authoring player character components.\nProvides support for player input assets and control over multiple characters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterBakingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterBakingSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterBakingSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterBakingSystem.yml\" sourcestartlinenumber=\"1\">A Unity ECS system that operates under the baking system filter.\nThis system is part of the Locomotion.Authoring namespace\nand may contain logic related to the backing or processing of player character data during runtime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring\" data-throw-if-not-resolved=\"false\"></xref> into a <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower\" data-throw-if-not-resolved=\"false\"></xref> ECS component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.yml\" sourcestartlinenumber=\"1\">MonoBehaviour authoring component that marks a GameObject as a character follower entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.CompositeEntityAuthoringBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.CompositeEntityAuthoringBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.CompositeEntityAuthoringBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.CompositeEntityAuthoringBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring\" data-throw-if-not-resolved=\"false\"></xref> to its ECS representation with manual transform override.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component that marks a prefab root as a composite entity (Locomotor + Model hierarchy).\nRequires a LinkedEntityGroupAuthoring to be present on the same GameObject.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.ControlledCharactersBakingList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.ControlledCharactersBakingList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.ControlledCharactersBakingList",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.ControlledCharactersBakingList.yml\" sourcestartlinenumber=\"1\">Temporary buffer element used during the baking process to store a list of entities representing controlled\ncharacters.\nThis structure is utilized to transfer character entity references during authoring.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.FollowStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.FollowStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.FollowStrategy",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.FollowStrategy.yml\" sourcestartlinenumber=\"1\">Determines how the camera target follows the controlled character(s) each frame.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.ICharacterLocomotionInput-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.ICharacterLocomotionInput-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.ICharacterLocomotionInput<TInput>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.ICharacterLocomotionInput-1.yml\" sourcestartlinenumber=\"1\">Interface for character locomotion input components.\nImplement this on the <code>TInput</code> struct to allow accumulated input (e.g. jump triggers)\ncollected each Update to be applied to the character during the fixed update step.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionDebugConfigAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionDebugConfigAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.LocomotionDebugConfigAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionDebugConfigAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component that adds per-character locomotion debug visualisation configuration.\nAttach to a character prefab alongside the locomotor authoring — fully optional.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionProfileAsset-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionProfileAsset-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.LocomotionProfileAsset<TProfile>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.LocomotionProfileAsset-1.yml\" sourcestartlinenumber=\"1\">Abstract ScriptableObject base class for locomotion profile assets.\nConcrete implementations populate the <code class=\"typeparamref\">TProfile</code> blob with authoring data\nduring the baking process.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotorAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.LocomotorAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.LocomotorAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.LocomotorAuthoring.yml\" sourcestartlinenumber=\"1\">Abstract base MonoBehaviour for all locomotor authoring components, used as a type-erased reference from follower authoring.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.MovingPlatformAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.MovingPlatformAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.MovingPlatformAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.MovingPlatformAuthoring.yml\" sourcestartlinenumber=\"1\">The PlatformAuthoring class is responsible for configuring platform components\nand their associated properties within the Unity Editor. It is used to initialize\nplatform behavior by baking it into ECS-compatible components, such as Platform,\nRotor, and Track.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.PlatformAuthoringBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.PlatformAuthoringBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.PlatformAuthoringBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.PlatformAuthoringBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring\" data-throw-if-not-resolved=\"false\"></xref> into a <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.Components.Platform\" data-throw-if-not-resolved=\"false\"></xref> tag component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component that marks a GameObject as a tracked moving platform entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlayerGoAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlayerGoAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.PlayerGoAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.PlayerGoAuthoring.yml\" sourcestartlinenumber=\"1\">Most of the player components (camera, input, ...) still required MonoBehaviour.\nThis authoring component has to be set on a game object prefab that will represent the game object side of the\nplayer and handle all MonoBehaviour interactions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset<TInput>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset-1.yml\" sourcestartlinenumber=\"1\">The <code>PlayerInputAsset</code> is an abstract base class for defining player input behavior\nin a characters locomotion system. This class should be inherited to implement\nspecific player input handling, such as mapping game inputs to a given input type.\nAt runtime the asset is instantiated per player to allow caching of player specific reference (camera, etc...) in\nthe asset instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Authoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Authoring",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Editors.ScriptTemplates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Editors.ScriptTemplates.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Editors.ScriptTemplates",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Editors.ScriptTemplates.yml\" sourcestartlinenumber=\"1\">Provides C# source-code template strings used by CreationMenus\nto scaffold new locomotion state machine files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Editors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Editors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Editors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.EntityGoCleanup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.EntityGoCleanup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Components.EntityGoCleanup",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Hybrid.Components.EntityGoCleanup.yml\" sourcestartlinenumber=\"1\">A managed cleanup component allowing to store an instance of game object that is used for rendering and other non\necs compatible features.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.GameObjectEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.GameObjectEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Components.GameObjectEntity",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Hybrid.Components.GameObjectEntity.yml\" sourcestartlinenumber=\"1\">A managed component allowing to store a prefab game object that will be used for rendering and other non ecs\ncompatible features.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Components.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Components",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.DestructionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.DestructionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.DestructionManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.EntityGameObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.EntityGameObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.EntityGameObject",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.EntityGameObject.yml\" sourcestartlinenumber=\"1\">This monobehaviour is automatically added to the game object if it is linked to an entity.\nIt allows to keep track of it's entity counter part.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.LocomotionProfilerHUD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.LocomotionProfilerHUD.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.LocomotionProfilerHUD",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoCleanupSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoCleanupSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoCleanupSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.MeshPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.MeshPreview.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.MeshPreview",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoInitialisationSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoInitialisationSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoInitialisationSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoInitialisationSystem.yml\" sourcestartlinenumber=\"1\">This system will spawn a game object for an entity\nIt will create a bidirectional link between the two\nIt will keep a reference to all the monobehaviour of the game object in managed component on the entity</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoTransformSyncSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoTransformSyncSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoTransformSyncSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoTransformSyncSystem.yml\" sourcestartlinenumber=\"1\">This system keep the game object position in sync with its entity.\nWe can't use burst in this system because we are iterating over managed components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.Systems.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Hybrid.Systems",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Hybrid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.BodyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.BodyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.BodyType",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.BodyType.yml\" sourcestartlinenumber=\"1\">Classifies the physics body type of a collision contact surface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower.yml\" sourcestartlinenumber=\"1\">Registers an entity to follow a CharacterPath.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfile.yml\" sourcestartlinenumber=\"1\">Represents a physics configuration profile for a character, encapsulating core properties that define\ncollision behavior, dimensions, and interaction with physics layers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfileBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfileBlob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfileBlob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.ContactType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.ContactType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.ContactType",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.ContactType.yml\" sourcestartlinenumber=\"1\">Classifies the geometry of the collision contact surface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters.yml\" sourcestartlinenumber=\"1\">List of character entity controlled by the player or AI Agent</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Impact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Impact.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.Impact",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.Impact.yml\" sourcestartlinenumber=\"1\">Describes a collision impact event between two physics bodies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.InterpolationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.InterpolationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.InterpolationMode",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.InterpolationMode.yml\" sourcestartlinenumber=\"1\">Controls whether the character's transform is updated via physics graphical smoothing interpolation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionContact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionContact.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionContact",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionContact.yml\" sourcestartlinenumber=\"1\">Last ground or obstacle contact for a Locomotor entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionGravity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionGravity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionGravity",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionGravity.yml\" sourcestartlinenumber=\"1\">Encapsulates gravity settings for the character.\nThis value can be updated by a system to simulate any arbitrary gravity direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputAsset-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputAsset-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputAsset<TInput>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputAsset-1.yml\" sourcestartlinenumber=\"1\">Stores a reference to the original <code>PlayerInputAsset</code> used by a player.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputInstance-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputInstance-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputInstance<TInput>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputInstance-1.yml\" sourcestartlinenumber=\"1\">Stores a reference to the <xref href=\"WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset%601\" data-throw-if-not-resolved=\"false\"></xref> instance of a player.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionProfileBlob-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionProfileBlob-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionProfileBlob<TProfile>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionProfileBlob-1.yml\" sourcestartlinenumber=\"1\">Locomotion profile in the form of a blob asset.\nThis profile contains configuration and parameters necessary for defining locomotion behavior within a state\nmachine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionVelocity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionVelocity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionVelocity",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionVelocity.yml\" sourcestartlinenumber=\"1\">Locomotion velocity for a character locomotor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Motion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Motion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.Motion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PhysicsBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PhysicsBody.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PhysicsBody",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PhysicsBody.yml\" sourcestartlinenumber=\"1\">Lightweight reference to a physics rigid body, pairing its index and entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Platform.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.Platform",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.Platform.yml\" sourcestartlinenumber=\"1\">Tag component marking an entity as a moving platform tracked by the platform systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlatformMover.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlatformMover.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PlatformMover",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlatformMover.yml\" sourcestartlinenumber=\"1\">Component driving a platform entity along a predefined track at a given speed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerCameraHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerCameraHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerCameraHandle",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerCameraHandle.yml\" sourcestartlinenumber=\"1\">Component storing a reference to the player camera's target transform.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectInstance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectInstance",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectInstance.yml\" sourcestartlinenumber=\"1\">Set of references to mono objects.\nThese are used to update and managed game object behaviors of the player entity from systems allowing for greater\ncontrol on the player loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectPrefab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectPrefab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectPrefab",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectPrefab.yml\" sourcestartlinenumber=\"1\">Set of references to mono objects.\nThese are used to update and managed game object behaviors of the player entity from systems allowing for greater\ncontrol on the player loop.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PostCollisionImpulse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.PostCollisionImpulse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.PostCollisionImpulse",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.PostCollisionImpulse.yml\" sourcestartlinenumber=\"1\">Represents the impulse applied to a rigid body following a collision event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Rotor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Rotor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.Rotor",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.Rotor.yml\" sourcestartlinenumber=\"1\">Component marking an entity as a rotating platform, providing its rotation axis.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Track.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.Track.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components.Track",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Components.Track.yml\" sourcestartlinenumber=\"1\">Buffer element defining one waypoint position on a platform track.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Components.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Components",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor.yml\" sourcestartlinenumber=\"1\">Dropdown-friendly colour palette for debug visualisations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColorExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColorExtensions",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColorExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for converting <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor\" data-throw-if-not-resolved=\"false\"></xref> to ColorIndex.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugContactShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugContactShape.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugContactShape",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugContactShape.yml\" sourcestartlinenumber=\"1\">Shape drawn at a contact point to distinguish body types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig.yml\" sourcestartlinenumber=\"1\">Blob asset containing per-character configuration for locomotion debug visualisation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigBlob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigBlob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigBlob.yml\" sourcestartlinenumber=\"1\">ECS wrapper that holds a BlobAssetReference&lt;T&gt; to <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigUtility",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigUtility.yml\" sourcestartlinenumber=\"1\">Burst-safe static helpers for querying <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig\" data-throw-if-not-resolved=\"false\"></xref> fields.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugContactPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugContactPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugContactPoint",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugContactPoint.yml\" sourcestartlinenumber=\"1\">A recorded contact point for debug visualisation, stored in a dynamic buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay.yml\" sourcestartlinenumber=\"1\">Static debug drawing utilities backed by PhysicsDebugDisplaySystem.\nMethods no-op when the physics debug display pipeline is not active.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplaySystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplaySystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplaySystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplaySystem.yml\" sourcestartlinenumber=\"1\">System that draws locomotion debug path trails and contact visualisations each frame\nusing <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter.yml\" sourcestartlinenumber=\"1\">Singleton component tracking the current debug frame index, incremented each fixed update.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounterSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounterSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounterSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounterSystem.yml\" sourcestartlinenumber=\"1\">Increments the <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter\" data-throw-if-not-resolved=\"false\"></xref> singleton each fixed update\nso that recorded debug points use frame indices consistent with the fixed timestep.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugImpulsePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugImpulsePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugImpulsePoint",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugImpulsePoint.yml\" sourcestartlinenumber=\"1\">A recorded impulse point for debug visualisation, stored in a dynamic buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugPathPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugPathPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugPathPoint",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugPathPoint.yml\" sourcestartlinenumber=\"1\">A recorded position at a specific execution stage, stored in a dynamic buffer for trail drawing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugRecorder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugRecorder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugRecorder",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugRecorder.yml\" sourcestartlinenumber=\"1\">Burst-compatible static helpers for recording debug path and contact points into dynamic buffers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugStage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugStage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugStage",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugStage.yml\" sourcestartlinenumber=\"1\">Identifies a stage within the locomotion execution loop for debug path recording.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Mathematics.MathematicsHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Mathematics.MathematicsHelpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Mathematics.MathematicsHelpers",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Mathematics.MathematicsHelpers.yml\" sourcestartlinenumber=\"1\">Collection of Burst-compiled static utility methods for locomotion-specific mathematics:\nvelocity reorientation, displacement projection, slope angle calculation, and quaternion decomposition.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Mathematics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Mathematics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Mathematics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestColliderCastHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestColliderCastHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestColliderCastHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestColliderCastHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting the closest collider cast hits while ignoring a specific entity.\nImplements the ICollector interface to gather and manage collider cast hit results.\nFilters out results that do not meet defined criteria such as hits associated with\nan ignored entity or backface collisions. This is particularly useful in physics-related\ncomputations where certain entities need to be excluded, such as in character or object\ntraversal and detection systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestDistanceHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestDistanceHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestDistanceHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestDistanceHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting the closest distance-based hits while ignoring a specified entity. Implements the ICollector\ninterface\nto manage distance hit results and filters hits based on custom criteria such as excluding hits involving a\nspecified\nentity or backface collisions. Useful in scenarios where distance queries need to selectively exclude certain\nentities\nor object surfaces, e.g., during character or object navigation systems in physics simulations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestRaycastHitCollectorIgnoreSelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestRaycastHitCollectorIgnoreSelf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestRaycastHitCollectorIgnoreSelf",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestRaycastHitCollectorIgnoreSelf.yml\" sourcestartlinenumber=\"1\">Struct for collecting closest raycast hits while ignoring a specified entity. Implements the ICollector interface\nto manage raycast hit results and avoids processing hits that do not meet the criteria, such as hits associated\nwith a self entity or backface collisions. Useful in scenarios where certain entities need to be ignored during\nraycasting computations, such as character locomotion systems in physics-based simulations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsOperations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsOperations",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsOperations.yml\" sourcestartlinenumber=\"1\">Collection of Burst-compiled static utility methods implementing the core physics operations used by the\nlocomotion state machine: capsule casting, overlap resolution, step detection, and body-type classification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsWorldExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsWorldExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsWorldExtensions",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsWorldExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for PhysicsWorld that provide body-type queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Physics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Physics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for ProfilerMarker that are conditionally compiled\nbased on the <code>ENABLE_LOCOMOTION_PROFILER</code> scripting define symbol.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Profiling.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Profiling",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.BaseLocomotionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.BaseLocomotionContext",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.BaseLocomotionContext.yml\" sourcestartlinenumber=\"1\">Base context available to all locomotion state machine.\nContains the minimal core state data (Velocity, Position, ...) and information (Entity, Collider, PhysicsWorld,...)\nrequired for locomotion state logic and platform handling logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionContext-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionContext<TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionContext-3.yml\" sourcestartlinenumber=\"1\">Interface enforcing the minimal information need for the context of locomotion state machine. It enforces the\nencapsulation configuration, input, and state data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionProfile.yml\" sourcestartlinenumber=\"1\">Marker interface for locomotion profile data.\nImplement this interface on an unmanaged struct that holds per-profile configuration values\n(e.g. movement speed, jump height) baked into a blob asset and supplied to the locomotion job.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState-5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState<TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState-5.yml\" sourcestartlinenumber=\"1\">Interface for defining locomotion states within a character movement state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionStateMachine<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.yml\" sourcestartlinenumber=\"1\">Interface that defines the structure of a character locomotion state machine, responsible for managing state\ntransitions,\nphysics integration, collision resolution, and other locomotion behaviors of characters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob-6.yml\" sourcestartlinenumber=\"1\">Burst-compiled ECS chunk job that drives the full locomotion execute loop for every Locomotor entity\nin a chunk: inherit displacement, solve overlaps, handle impulses, integrate, collide-and-slide,\nsnap-to-ground, and evaluate transitions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateAttribute",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum field as a Locomotion state.\nThis is picked up by a source generator to generate the corresponding state machine dispatch.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateBehaviorDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateBehaviorDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateBehaviorDispatcher",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateBehaviorDispatcher.yml\" sourcestartlinenumber=\"1\">Static dispatcher that invokes <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState%605\" data-throw-if-not-resolved=\"false\"></xref>\nlifecycle methods on a zero-size default instance of <code class=\"typeparamref\">TState</code>.\nBurst devirtualises each call at compile time — no boxing occurs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.yml\" sourcestartlinenumber=\"1\">This attribute mark an enum as a Locomotion state machine.\nThis is picked up by a source generator to generate the corresponding state machine component and systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.OverlapState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.OverlapState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine.OverlapState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.StateMachine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.StateMachine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ApplyPostCollisionImpulseJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ApplyPostCollisionImpulseJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.ApplyPostCollisionImpulseJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ApplyPostCollisionImpulseJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled job that processes each pending post-collision impulse and applies the appropriate\nvelocity change to the affected physics bodies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.Singleton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.Singleton",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.Singleton.yml\" sourcestartlinenumber=\"1\">Singleton component storing the camera transform array and the corresponding player entity list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.yml\" sourcestartlinenumber=\"1\">A system responsible for managing the camera rig to follow the currently controlled character in a game scene.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactClearMapJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactClearMapJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactClearMapJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactClearMapJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled job that clears the de-collision and velocity impulse maps at the start of each frame.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled contacts job that classifies each contact body, disables the default physics jacobian,\nand records de-collision offsets and velocity impulses for character entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.ExternalImpulse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.ExternalImpulse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.ExternalImpulse",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.ExternalImpulse.yml\" sourcestartlinenumber=\"1\">Represents a velocity impulse applied to a character as a result of a physics contact.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.Singleton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.Singleton",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.Singleton.yml\" sourcestartlinenumber=\"1\">Singleton holding the per-frame contact data maps produced by <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.yml\" sourcestartlinenumber=\"1\">ECS system that runs during the physics simulation group to intercept contact events between character\ncolliders and other physics bodies, classify body types, and accumulate de-collision and velocity impulse data\nfor later processing by the locomotion job.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.CharacterFollowerJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.CharacterFollowerJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.CharacterFollowerJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.CharacterFollowerJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled parallel job that copies the followed entity's LocalToWorld to each follower.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.yml\" sourcestartlinenumber=\"1\">A system responsible for updating the transformations of entities that follow a character within the game world.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.LocomotionJobData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.LocomotionJobData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>.LocomotionJobData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.LocomotionJobData.yml\" sourcestartlinenumber=\"1\">Aggregated data bag holding all component type handles and lookups required by the locomotion job.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem<TStateMachine, TStates, TContext, TProfile, TInput, TStateData>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.yml\" sourcestartlinenumber=\"1\">Interface implemented by generated locomotion systems.\nProvides the contract for scheduling and running the <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob%606\" data-throw-if-not-resolved=\"false\"></xref>\neach fixed update step.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled parallel job that moves platform entities along their configured track waypoints.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementSystem.yml\" sourcestartlinenumber=\"1\">This system updates the position and rotation of platforms.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformRotateJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformRotateJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformRotateJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformRotateJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled parallel job that rotates platform entities around their configured axis each frame.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob.yml\" sourcestartlinenumber=\"1\">Parallel job that removes destroyed character entities from each player's <xref href=\"WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters\" data-throw-if-not-resolved=\"false\"></xref> buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.yml\" sourcestartlinenumber=\"1\">Manages the lifecycle of the player game object.\nIt ensures it's instantiation from the prefab for every player.\nWhen a player entity gets destroyed, the cleanup component ensures the destruction of the camera rig game object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseClearJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseClearJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseClearJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseClearJob.yml\" sourcestartlinenumber=\"1\">Burst-compiled job that clears the post-collision impulse map after all impulses have been applied.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.Singleton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.Singleton",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.Singleton.yml\" sourcestartlinenumber=\"1\">Singleton component holding the shared post-collision impulse map.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.yml\" sourcestartlinenumber=\"1\">ECS system that dequeues and applies post-collision impulses accumulated during the locomotion job.\nRuns after the physics group to ensure all collision responses have been resolved.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.Systems.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Runtime.Systems",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingProfile.yml\" sourcestartlinenumber=\"1\">Contains parameters related to the falling behavior of a character in the locomotion system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.ILocomotionLocomotionSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.ILocomotionLocomotionSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.ILocomotionLocomotionSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpData.yml\" sourcestartlinenumber=\"1\">Per-entity persistent data tracking the number of jumps performed in the current airborne sequence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingProfile.yml\" sourcestartlinenumber=\"1\">Defines the properties associated with jumping behavior in a locomotion system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionContext",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionContext.yml\" sourcestartlinenumber=\"1\">Represents the context for basic locomotion mechanics, providing access to profile data,\ninput data, state data, and base locomotion operations. This is primarily used in the\nstate machine system for character movement and physics interactions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionInput",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionInput.yml\" sourcestartlinenumber=\"1\">Input commands for the characters' locomotion.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionPlayerInputAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionPlayerInputAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionPlayerInputAsset",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionPlayerInputAsset.yml\" sourcestartlinenumber=\"1\">A specialized ScriptableObject representing a player's input asset for basic locomotion.\nThis class provides the mechanisms to map inputs from a player (such as key presses or\njoystick motions) into meaningful locomotion values for gameplay behavior. It uses the\ncamera's perspective to determine movement vector directions and handles actions like jumping.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfile.yml\" sourcestartlinenumber=\"1\">Locomotion profiles used to define movement behavior for a character for various states of locomotion, such as\nmoving, falling, and jumping, as well as the overall physics profile of the character.\nIt implements the ILocomotionProfile interface to enforce the minimal configuration required for the state machine\nto work.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfileAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfileAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfileAsset",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfileAsset.yml\" sourcestartlinenumber=\"1\">A scriptable object to define the configuration for a basic character profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateData.yml\" sourcestartlinenumber=\"1\">Component containing state data for basic locomotion mechanics.\nThis struct is intended to be used within the locomotion state machine\nto track and manage state specific data, such as jumping count, timers, etc...</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStates.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStates",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStates.yml\" sourcestartlinenumber=\"1\">Represents the different possible locomotion states for basic movement in a character controller system.\nThis enumeration is used within the locomotion state machine to determine the active state of an entity\nand manage transitions between them.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStatesLocomotionSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStatesLocomotionSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStatesLocomotionSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStatesLocomotionSystem.yml\" sourcestartlinenumber=\"1\">ECS system that schedules the locomotion job for all single-player locomotor entities each fixed update.\nRuns last in PhysicsSolveAndIntegrateGroup and uses a fixed-rate catch-up rate manager.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingProfile.yml\" sourcestartlinenumber=\"1\">Settings governing basic movement behavior (speed, acceleration, stepping, turning).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Samples.Locomotion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator.yml\" sourcestartlinenumber=\"1\">A source generator that look for the <code sourcefile=\"api/WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator.yml\" sourcestartlinenumber=\"1\">LocomotionStateMachine</code> attribute to generate : StateMachine, LocomotionSystem, InputReaderSystem and PlayerInputManagerSystem.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.SourceGen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.SourceGen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.SourceGen",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWell",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWell.yml\" sourcestartlinenumber=\"1\">Component data defining the parameters of a gravity well that attracts nearby characters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component for a gravity well entity that overrides locomotion gravity\nfor nearby characters within a configurable range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.GravityWellJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.GravityWellJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.GravityWellJob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.GravityWellJob.yml\" sourcestartlinenumber=\"1\">Parallel job that redirects each locomotor's gravity toward the gravity well\nwhen the entity is within the well's range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.yml\" sourcestartlinenumber=\"1\">ECS system that applies gravity well forces to all locomotor entities within range each frame.\nRuns in InitializationSystemGroup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfig",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfig.yml\" sourcestartlinenumber=\"1\">Authoring MonoBehaviour that exposes <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData\" data-throw-if-not-resolved=\"false\"></xref> fields in the Unity Inspector.\nAttach alongside <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner\" data-throw-if-not-resolved=\"false\"></xref> on the spawner GameObject.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData.yml\" sourcestartlinenumber=\"1\">ECS component that configures spawn parameters for <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnPattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnPattern.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnPattern",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnPattern.yml\" sourcestartlinenumber=\"1\">Identifies which spatial layout is used when batch-spawning entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner.yml\" sourcestartlinenumber=\"1\">Component data marking an entity as a spawner and holding a reference to the prefab entity to spawn.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem.yml\" sourcestartlinenumber=\"1\">ECS system that spawns prefab entities in configurable spatial patterns in response to player input.\nRuns in InitializationSystemGroup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner.yml\" sourcestartlinenumber=\"1\">Authoring component that bakes a prefab reference into a <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner\" data-throw-if-not-resolved=\"false\"></xref> component\nfor use by the <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawnerBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawnerBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawnerBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawnerBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner\" data-throw-if-not-resolved=\"false\"></xref> into a <xref href=\"WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner\" data-throw-if-not-resolved=\"false\"></xref> component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.Runtime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.Baker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.Baker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.Baker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.Baker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring\" data-throw-if-not-resolved=\"false\"></xref> into ECS components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component placed on the Model GameObject to visualize the current locomotion state via mesh color.\nBakes per-state colors into a <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob\" data-throw-if-not-resolved=\"false\"></xref> and adds URPMaterialPropertyBaseColor\nto the entity for per-entity color overrides.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorEntry",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorEntry.yml\" sourcestartlinenumber=\"1\">A single state-to-color mapping entry for the debug color authoring component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts the authoring component into ECS components for the TestCharacter locomotor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component for baking a TestCharacter locomotor entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts the authoring component into ECS components for the TestCharacter player.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component for baking a TestCharacter player entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.TestInputBaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.TestInputBaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.TestInputBaker",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.TestInputBaker.yml\" sourcestartlinenumber=\"1\">Baker that converts <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring\" data-throw-if-not-resolved=\"false\"></xref> into a <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput\" data-throw-if-not-resolved=\"false\"></xref> component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.yml\" sourcestartlinenumber=\"1\">Authoring component that bakes a <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput\" data-throw-if-not-resolved=\"false\"></xref> component onto the entity\nfor keyboard-driven test input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.ITestCharacterStateLocomotionSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.ITestCharacterStateLocomotionSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.ITestCharacterStateLocomotionSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.ITestCharacterStateLocomotionSystem.yml\" sourcestartlinenumber=\"1\">Concrete locomotion system interface for the TestCharacterState state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob.yml\" sourcestartlinenumber=\"1\">Blob storing one color per state index.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig.yml\" sourcestartlinenumber=\"1\">Per-entity reference to the state color blob asset used for debug color visualization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.LocomotionDebugJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.LocomotionDebugJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.LocomotionDebugJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.yml\" sourcestartlinenumber=\"1\">Updates URPMaterialPropertyBaseColor on Model entities each frame based on the current\nlocomotion state of their followed Locomotor entity, using <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig\" data-throw-if-not-resolved=\"false\"></xref> blob data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterContext",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterContext.yml\" sourcestartlinenumber=\"1\">Represents the context for TestCharacter locomotion mechanics, providing access to profile data,\ninput data, state data, and base locomotion operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterFallingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterFallingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterFallingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterFallingProfile.yml\" sourcestartlinenumber=\"1\">Contains parameters related to the falling behavior of a character.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput.yml\" sourcestartlinenumber=\"1\">Input data for the TestCharacter locomotion state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpData.yml\" sourcestartlinenumber=\"1\">Per-entity persistent data tracking the number of jumps performed in the current airborne sequence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpingProfile.yml\" sourcestartlinenumber=\"1\">Defines the properties associated with jumping behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterLocomotionSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterLocomotionSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterLocomotionSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterLocomotionSystem.yml\" sourcestartlinenumber=\"1\">ECS system that schedules the locomotion job for all TestCharacter locomotor entities each fixed update.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterMovingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterMovingProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterMovingProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterMovingProfile.yml\" sourcestartlinenumber=\"1\">Settings governing basic movement behavior (speed, acceleration, turning).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterPlayerInputAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterPlayerInputAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterPlayerInputAsset",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterPlayerInputAsset.yml\" sourcestartlinenumber=\"1\">A specialized ScriptableObject representing a player's input asset for TestCharacter locomotion.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfile",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfile.yml\" sourcestartlinenumber=\"1\">Locomotion profiles used to define movement behavior for the TestCharacter state machine.\nImplements the ILocomotionProfile interface to enforce the minimal configuration required.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfileAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfileAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfileAsset",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfileAsset.yml\" sourcestartlinenumber=\"1\">A scriptable object to define the configuration for a TestCharacter profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateData",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateData.yml\" sourcestartlinenumber=\"1\">Component containing state data for TestCharacter locomotion mechanics.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStates.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStates",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStates.yml\" sourcestartlinenumber=\"1\">Represents the different possible locomotion states for the TestCharacter state machine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput.yml\" sourcestartlinenumber=\"1\">Component holding test input values for keyboard-driven character control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInputSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInputSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInputSystem",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInputSystem.yml\" sourcestartlinenumber=\"1\">Reads <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput\" data-throw-if-not-resolved=\"false\"></xref> and writes to <xref href=\"WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput\" data-throw-if-not-resolved=\"false\"></xref> each frame.\nUses Keyboard.current for jump input, so cannot be Burst-compiled.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.TestCharacter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.MGM.Locomotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.MGM.Locomotion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
