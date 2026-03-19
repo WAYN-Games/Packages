@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BlobHashMapBuilder&lt;TKey, TValue&gt; | WAYN Games Blob </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BlobHashMapBuilder&lt;TKey, TValue&gt; | WAYN Games Blob ">
+    
+    <meta name="description" content="Fluent builder for constructing a  stored in a blob asset. Accumulates key-value pairs, automatically rehashes when the load factor is exceeded, and produces an immutable BlobAssetReference&amp;lt;T&amp;gt; via .">
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="games.wayn.blob">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.Blob.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WAYN.Games.Blob.html" title="WAYN.Games.Blob" class="">WAYN.Games.Blob</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="WAYN.Games.Blob.BlobHashMapBuilder-2.html" title="BlobHashMapBuilder&lt;TKey, TValue&gt;" class="active">BlobHashMapBuilder&lt;TKey, TValue&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="WAYN.Games.Blob.BlobMultiHashMap-2.html" title="BlobMultiHashMap&lt;TKey, TValue&gt;" class="">BlobMultiHashMap&lt;TKey, TValue&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="WAYN.Games.Blob.KeyComputation.html" title="KeyComputation" class="">KeyComputation</a>
+                          </li>
+                          <li class="">
+                            <a href="WAYN.Games.Blob.KeyIndex.html" title="KeyIndex" class="">KeyIndex</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2">
+
+
+
+  <h1 id="WAYN_Games_Blob_BlobHashMapBuilder_2" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2" class="text-break">Class BlobHashMapBuilder&lt;TKey, TValue&gt;</h1>
+  <div class="markdown level0 summary"><p>Fluent builder for constructing a <a class="xref" href="WAYN.Games.Blob.BlobMultiHashMap-2.html">BlobMultiHashMap&lt;TKey, TValue&gt;</a> stored in a blob asset.
+Accumulates key-value pairs, automatically rehashes when the load factor is exceeded,
+and produces an immutable BlobAssetReference&lt;T&gt; via <a class="xref" href="WAYN.Games.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Blob_BlobHashMapBuilder_2_CreateBlobAssetReference_Allocator_">CreateBlobAssetReference(Allocator)</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">BlobHashMapBuilder&lt;TKey, TValue&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WAYN.html">WAYN</a>.<a class="xref" href="WAYN.Games.html">Games</a>.<a class="xref" href="WAYN.Games.Blob.html">Blob</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="WAYN_Games_Blob_BlobHashMapBuilder_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlobHashMapBuilder&lt;TKey, TValue&gt; where TKey : unmanaged, IEquatable&lt;TKey&gt;, IComparable&lt;TKey&gt; where TValue : unmanaged</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The key type. Must be unmanaged and implement both
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>The value type. Must be unmanaged.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="WAYN_Games_Blob_BlobHashMapBuilder_2__ctor_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.#ctor*"></a>
+  <h4 id="WAYN_Games_Blob_BlobHashMapBuilder_2__ctor_BlobBuilder_System_Int32_System_Single_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.#ctor(BlobBuilder,System.Int32,System.Single)">BlobHashMapBuilder(BlobBuilder, int, float)</h4>
+  <div class="markdown level1 summary"><p>Creates a new builder that will write the hash map into the provided BlobBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobHashMapBuilder(BlobBuilder bb, int bucketCount = -1, float loadFactor = 0.75)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlobBuilder</span></td>
+        <td><span class="parametername">bb</span></td>
+        <td><p>The BlobBuilder used to allocate the blob data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bucketCount</span></td>
+        <td><p>Initial number of hash buckets. Must be a power of two. Defaults to 16 if set to -1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">loadFactor</span></td>
+        <td><p>The ratio of unique keys to bucket count that triggers a rehash. Defaults to 0.75.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="WAYN_Games_Blob_BlobHashMapBuilder_2_Add_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.Add*"></a>
+  <h4 id="WAYN_Games_Blob_BlobHashMapBuilder_2_Add__0__1_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.Add(`0,`1)">Add(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Adds a single key-value pair to the builder. Multiple values can be added for the same key.
+Triggers an automatic rehash if the load factor is exceeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobHashMapBuilder&lt;TKey, TValue&gt; Add(TKey key, TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to associate the value with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WAYN.Games.Blob.BlobHashMapBuilder-2.html">BlobHashMapBuilder</a>&lt;TKey, TValue&gt;</td>
+        <td><p>This builder instance for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="WAYN_Games_Blob_BlobHashMapBuilder_2_AddAll_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.AddAll*"></a>
+  <h4 id="WAYN_Games_Blob_BlobHashMapBuilder_2_AddAll_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0__1___" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">AddAll(IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds all key-value pairs from an enumerable collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobHashMapBuilder&lt;TKey, TValue&gt; AddAll(IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">elements</span></td>
+        <td><p>A collection of key-value pairs to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WAYN.Games.Blob.BlobHashMapBuilder-2.html">BlobHashMapBuilder</a>&lt;TKey, TValue&gt;</td>
+        <td><p>This builder instance for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="WAYN_Games_Blob_BlobHashMapBuilder_2_AddAll_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.AddAll*"></a>
+  <h4 id="WAYN_Games_Blob_BlobHashMapBuilder_2_AddAll_System_Collections_Generic_IEnumerator_KeyValue__0__1___" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerator{KeyValue{`0,`1}})">AddAll(IEnumerator&lt;KeyValue&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds all key-value pairs from an enumerator of KeyValue&lt;TKey,TValue&gt; elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobHashMapBuilder&lt;TKey, TValue&gt; AddAll(IEnumerator&lt;KeyValue&lt;TKey, TValue&gt;&gt; elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<span class="xref">KeyValue</span>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">elements</span></td>
+        <td><p>An enumerator yielding key-value pairs to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WAYN.Games.Blob.BlobHashMapBuilder-2.html">BlobHashMapBuilder</a>&lt;TKey, TValue&gt;</td>
+        <td><p>This builder instance for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="WAYN_Games_Blob_BlobHashMapBuilder_2_CreateBlobAssetReference_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference*"></a>
+  <h4 id="WAYN_Games_Blob_BlobHashMapBuilder_2_CreateBlobAssetReference_Allocator_" data-uid="WAYN.Games.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference(Allocator)">CreateBlobAssetReference(Allocator)</h4>
+  <div class="markdown level1 summary"><p>Finalizes the hash map and creates an immutable BlobAssetReference&lt;T&gt;.
+After calling this method, the builder should not be reused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobAssetReference&lt;BlobMultiHashMap&lt;TKey, TValue&gt;&gt; CreateBlobAssetReference(Allocator allocator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Allocator</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The allocator for the blob asset reference. Defaults to Allocator.Temp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BlobAssetReference</span>&lt;<a class="xref" href="WAYN.Games.Blob.BlobMultiHashMap-2.html">BlobMultiHashMap</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><p>A BlobAssetReference&lt;T&gt; containing the built <a class="xref" href="WAYN.Games.Blob.BlobMultiHashMap-2.html">BlobMultiHashMap&lt;TKey, TValue&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script src="../../versions.js"></script>
+    <script>
+    (function () {
+      var current = '2.0.1';
+      var rel = '../';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'WAYN Games Blob ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

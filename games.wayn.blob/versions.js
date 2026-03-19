@@ -1,1 +1,1 @@
-window.DOC_VERSIONS = [{"version":"2.0.0"},{"version":"1.0.0"}];
+window.DOC_VERSIONS = [{"version":"2.0.1"},{"version":"1.0.0"},{"version":"2.0.0"}];
