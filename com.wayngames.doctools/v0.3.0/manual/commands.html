@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Commands | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Commands | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                    </li>
+                    <li class="active">
+                      <a href="commands.html" title="Commands" class="active">Commands</a>
+                    </li>
+                    <li class="">
+                      <a href="versioning.html" title="Versioning" class="">Versioning</a>
+                    </li>
+                    <li class="">
+                      <a href="template.html" title="Template" class="">Template</a>
+                    </li>
+                    <li class="">
+                      <a href="workflow.html" title="Workflow" class="">Workflow</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="commands">Commands</h1>
+
+<p>DocTools provides four commands, all invoked through <code>doctools.sh</code>.</p>
+<pre><code>doctools.sh &lt;command&gt; &lt;package-dir&gt; [arguments]
+</code></pre>
+<hr>
+<h2 id="init">init</h2>
+<p>Scaffold a <code>Documentation/</code> directory for a package.</p>
+<pre><code class="lang-bash">doctools.sh init &lt;package-dir&gt; [options]
+</code></pre>
+<h3 id="options">Options</h3>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name NAME</code></td>
+<td>Package name</td>
+<td>Directory basename</td>
+</tr>
+<tr>
+<td><code>--title TITLE</code></td>
+<td>Documentation title</td>
+<td>Same as <code>--name</code></td>
+</tr>
+<tr>
+<td><code>--version VER</code></td>
+<td>Initial version</td>
+<td><code>0.1.0</code></td>
+</tr>
+<tr>
+<td><code>--footer FOOTER</code></td>
+<td>Footer HTML</td>
+<td>Empty</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<pre><code class="lang-bash">doctools.sh init ./MyPackage --name &quot;My Package&quot; --title &quot;My Package Docs&quot; --version &quot;1.0.0&quot; --footer &quot;&amp;copy; 2025&quot;
+</code></pre>
+<p>Creates:</p>
+<pre><code>MyPackage/Documentation/
+├── doctools.config
+├── toc.md
+├── index.md
+└── Manual/
+    ├── toc.md
+    ├── getting-started.md
+    └── Images/
+</code></pre>
+<hr>
+<h2 id="build">build</h2>
+<p>Build documentation for one or all versions.</p>
+<pre><code class="lang-bash">doctools.sh build &lt;package-dir&gt; [version|all]
+</code></pre>
+<ul>
+<li><strong><code>all</code></strong> (default) — Builds every version in <code>ALL_VERSIONS</code>. The current version runs <code>docfx metadata</code> then <code>docfx build</code>; historical versions run <code>docfx build</code> only. Also generates <code>versions.js</code> and a root <code>index.html</code> redirect.</li>
+<li><strong><code>&lt;version&gt;</code></strong> — Builds a single version. If it matches <code>CURRENT_VERSION</code>, metadata extraction runs first.</li>
+</ul>
+<h3 id="example-1">Example</h3>
+<pre><code class="lang-bash"># Build all versions
+doctools.sh build ./MyPackage all
+
+# Build only version 0.2.0
+doctools.sh build ./MyPackage 0.2.0
+</code></pre>
+<h3 id="build-pipeline">Build Pipeline</h3>
+<ol>
+<li><strong>Load config</strong> — Sources <code>Documentation/doctools.config</code>, validates required fields, sets defaults.</li>
+<li><strong>Metadata</strong> (current version only) — Runs <code>docfx metadata</code> to extract API docs from C# source into <code>.tmp/api/</code>.</li>
+<li><strong>Generate docfx.json</strong> — Creates a temporary <code>docfx.json</code> with content entries, resource patterns, template paths, and global metadata.</li>
+<li><strong>Build</strong> — Runs <code>docfx build</code>, outputting to <code>{OUTPUT_DIR}/v{version}/</code>.</li>
+<li><strong>Output generation</strong> — Writes <code>versions.js</code> and (when building all) a root redirect <code>index.html</code>.</li>
+</ol>
+<h3 id="global-metadata">Global Metadata</h3>
+<p>Every page receives these metadata values:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_appTitle</code></td>
+<td><code>PACKAGE_TITLE</code></td>
+</tr>
+<tr>
+<td><code>_appFooter</code></td>
+<td><code>PACKAGE_FOOTER</code></td>
+</tr>
+<tr>
+<td><code>_appName</code></td>
+<td><code>PACKAGE_NAME</code></td>
+</tr>
+<tr>
+<td><code>_appLogoPath</code></td>
+<td><code>LOGO_PATH</code></td>
+</tr>
+<tr>
+<td><code>_appFaviconPath</code></td>
+<td><code>FAVICON_PATH</code></td>
+</tr>
+<tr>
+<td><code>_disableContribution</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>_enableSearch</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>_disableNextArticle</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>_lang</code></td>
+<td><code>&quot;en&quot;</code></td>
+</tr>
+<tr>
+<td><code>_packageVersion</code></td>
+<td>Current build version</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="version">version</h2>
+<p>Manage documentation versions.</p>
+<pre><code class="lang-bash">doctools.sh version &lt;package-dir&gt; &lt;action&gt; [version]
+</code></pre>
+<h3 id="actions">Actions</h3>
+<h4 id="list">list</h4>
+<p>List all versions. The current version is marked with <code>*</code>.</p>
+<pre><code class="lang-bash">doctools.sh version ./MyPackage list
+</code></pre>
+<pre><code>  0.2.0 *
+  0.1.0
+</code></pre>
+<h4 id="add">add</h4>
+<p>Add a new version. It becomes the current version and is prepended to <code>ALL_VERSIONS</code>. The current <code>toc.md</code> and <code>index.md</code> are copied into a <code>v{version}/</code> directory.</p>
+<pre><code class="lang-bash">doctools.sh version ./MyPackage add 0.3.0
+</code></pre>
+<h4 id="remove">remove</h4>
+<p>Remove a version from the config. You cannot remove the current version — use <code>set-current</code> first.</p>
+<pre><code class="lang-bash">doctools.sh version ./MyPackage remove 0.1.0
+</code></pre>
+<h4 id="set-current">set-current</h4>
+<p>Set which version is treated as current (receives metadata extraction on next build).</p>
+<pre><code class="lang-bash">doctools.sh version ./MyPackage set-current 0.2.0
+</code></pre>
+<hr>
+<h2 id="snapshot">snapshot</h2>
+<p>Copy the root <code>toc.md</code> and <code>index.md</code> into the current version's directory (<code>v{CURRENT_VERSION}/</code>). Use this to archive the table of contents before making changes for a new version.</p>
+<pre><code class="lang-bash">doctools.sh snapshot &lt;package-dir&gt;
+</code></pre>
+<h3 id="example-2">Example</h3>
+<pre><code class="lang-bash">doctools.sh snapshot ./MyPackage
+</code></pre>
+<p>Copies <code>Documentation/toc.md</code> and <code>Documentation/index.md</code> into <code>Documentation/v{CURRENT_VERSION}/</code>.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script src="../../versions.js"></script>
+    <script>
+    (function () {
+      var current = '0.3.0';
+      var rel = '../';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

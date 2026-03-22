@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Changelog | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Changelog | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<h2 id="030--2026-03-22">[0.3.0] — 2026-03-22</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Logo now uses the GitHub organization avatar URL instead of a local file, removing the need to bundle a logo image.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Constrained logo size to fit within the navbar height.</li>
+<li>Root TOC and index entries are now only emitted in <code>docfx.json</code> when using the new layout, preventing build errors in legacy mode.</li>
+</ul>
+<h2 id="021--2026-03-19">[0.2.1] — 2026-03-19</h2>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Removed broken <code>API Reference</code> link (<code>api/index.html</code>) from scaffold <code>index.md</code> template — DocFX never generates that page; the nav bar &quot;API&quot; tab already provides the correct link.</li>
+</ul>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Default logo included in scaffold — <code>doctools init</code> now copies a default <code>logo.png</code> into <code>Documentation/Images/</code> so new packages have a working logo out of the box.</li>
+</ul>
+<h2 id="020--2026-03-18">[0.2.0] — 2026-03-18</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li><code>package.json</code> — formalizes DocTools as a versioned package (<code>com.wayngames.doctools</code>) with display name, description, and author metadata.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Flattened <code>Documentation/</code> layout — moved all pages out of <code>Documentation/Manual/</code> into <code>Documentation/</code> directly; updated <code>toc.md</code> and <code>index.md</code> links accordingly.</li>
+<li>Removed <code>Documentation/doctools.config</code> (sample config that lived inside the docs folder).</li>
+</ul>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Version dropdown now shows the human-readable display name (e.g. &quot;DocTools 0.2.0&quot;) instead of the technical package name.</li>
+</ul>
+<h2 id="010--2025-03-18">[0.1.0] — 2025-03-18</h2>
+<p>Initial release of DocTools.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong><code>init</code> command</strong> — Scaffold a <code>Documentation/</code> directory with <code>doctools.config</code>, root <code>toc.md</code>, <code>index.md</code>, and a <code>Manual/</code> folder with starter pages.</li>
+<li><strong><code>build</code> command</strong> — Build documentation for a single version or all versions at once. Runs <code>docfx metadata</code> (for the current version) then <code>docfx build</code> with the custom template.</li>
+<li><strong><code>version</code> command</strong> — Manage documentation versions: <code>list</code>, <code>add</code>, <code>remove</code>, <code>set-current</code>. Adding a version snapshots the current TOC and index.</li>
+<li><strong><code>snapshot</code> command</strong> — Copy the current root <code>toc.md</code> and <code>index.md</code> into the active version directory.</li>
+<li><strong><code>doctools.config</code></strong> — Single-file configuration covering package metadata, version lists, per-version content overrides (<code>VERSION_CONTENT</code>), extra content files, and resource patterns.</li>
+<li><strong>Multi-version output</strong> — Each version builds into its own <code>v{version}/</code> subdirectory with a generated <code>versions.js</code> and root redirect.</li>
+<li><strong>WaynGames.StaticToc.Extension template</strong> — Custom DocFX template extending <code>statictoc</code> with:
+<ul>
+<li>Version dropdown in the breadcrumb bar</li>
+<li>Dark / light theme toggle with <code>localStorage</code> persistence and system-preference detection</li>
+<li>Mermaid diagram rendering</li>
+<li>Syntax highlighting via Highlight.js</li>
+<li>WCAG AA–compliant color palette for both themes</li>
+<li>Responsive layout with print stylesheet</li>
+<li>Reduced-motion and forced-colors (Windows High Contrast) support</li>
+</ul>
+</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="styles/cross-search.js"></script>
+
+    <script src="../versions.js"></script>
+    <script>
+    (function () {
+      var current = '0.3.0';
+      var rel = '';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

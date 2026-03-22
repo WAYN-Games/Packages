@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Configuration | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Configuration | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="active">
+                      <a href="configuration.html" title="Configuration" class="active">Configuration</a>
+                    </li>
+                    <li class="">
+                      <a href="commands.html" title="Commands" class="">Commands</a>
+                    </li>
+                    <li class="">
+                      <a href="versioning.html" title="Versioning" class="">Versioning</a>
+                    </li>
+                    <li class="">
+                      <a href="template.html" title="Template" class="">Template</a>
+                    </li>
+                    <li class="">
+                      <a href="workflow.html" title="Workflow" class="">Workflow</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configuration">Configuration</h1>
+
+<p>All DocTools settings for a package live in a single file: <code>Documentation/doctools.config</code>. This file is a Bash script that is sourced during the build, so standard Bash syntax applies.</p>
+<h2 id="field-reference">Field Reference</h2>
+<h3 id="required-fields">Required Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PACKAGE_NAME</code></td>
+<td>string</td>
+<td>Package identifier (used internally and in metadata)</td>
+</tr>
+<tr>
+<td><code>PACKAGE_TITLE</code></td>
+<td>string</td>
+<td>Human-readable title shown in the navbar and page titles</td>
+</tr>
+<tr>
+<td><code>CURRENT_VERSION</code></td>
+<td>string</td>
+<td>The version that receives C# metadata extraction during builds</td>
+</tr>
+<tr>
+<td><code>ALL_VERSIONS</code></td>
+<td>array</td>
+<td>All versions to build, newest first. Example: <code>(&quot;0.3.0&quot; &quot;0.2.0&quot; &quot;0.1.0&quot;)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-fields">Optional Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PACKAGE_FOOTER</code></td>
+<td>string</td>
+<td><code>&quot;&quot;</code></td>
+<td>Footer HTML rendered at the bottom of every page</td>
+</tr>
+<tr>
+<td><code>METADATA_SRC</code></td>
+<td>string</td>
+<td><code>&quot;..&quot;</code></td>
+<td>Path (relative to <code>Documentation/</code>) to the directory containing C# source files</td>
+</tr>
+<tr>
+<td><code>LOGO_PATH</code></td>
+<td>string</td>
+<td><code>&quot;&quot;</code></td>
+<td>Path to logo image displayed in the navbar</td>
+</tr>
+<tr>
+<td><code>FAVICON_PATH</code></td>
+<td>string</td>
+<td><code>&quot;&quot;</code></td>
+<td>Path to the site favicon</td>
+</tr>
+<tr>
+<td><code>OUTPUT_DIR</code></td>
+<td>string</td>
+<td><code>&quot;../Documentation~&quot;</code></td>
+<td>Build output directory (relative to <code>Documentation/</code>)</td>
+</tr>
+<tr>
+<td><code>METADATA_ALLOW_COMPILATION_ERRORS</code></td>
+<td>string</td>
+<td><code>&quot;true&quot;</code></td>
+<td>Allow <code>docfx metadata</code> to succeed even when C# has compilation errors</td>
+</tr>
+<tr>
+<td><code>METADATA_NAMESPACE_LAYOUT</code></td>
+<td>string</td>
+<td><code>&quot;nested&quot;</code></td>
+<td>Namespace layout in generated API docs: <code>&quot;nested&quot;</code> or <code>&quot;flat&quot;</code></td>
+</tr>
+<tr>
+<td><code>EXTRA_CONTENT</code></td>
+<td>array</td>
+<td><code>()</code></td>
+<td>Additional files to include in every version build (paths relative to <code>Documentation/</code>)</td>
+</tr>
+<tr>
+<td><code>RESOURCE_PATTERNS</code></td>
+<td>array</td>
+<td><code>()</code></td>
+<td>Glob patterns for non-markdown resources (images, etc.). Defaults to <code>Manual/**/*.png</code> if empty</td>
+</tr>
+</tbody>
+</table>
+<h3 id="version_content">VERSION_CONTENT</h3>
+<p><code>VERSION_CONTENT</code> is a Bash associative array that lets you override content sources on a per-version basis. Declare it as:</p>
+<pre><code class="lang-bash">declare -A VERSION_CONTENT
+VERSION_CONTENT[&quot;0.1.0&quot;]=&quot;manual_src|manual_exclude|toc_src&quot;
+</code></pre>
+<p>Each value is a pipe-delimited string with three components:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>manual_src</code></td>
+<td><code>Manual</code></td>
+<td>Source directory for manual pages (relative to <code>Documentation/</code>)</td>
+</tr>
+<tr>
+<td><code>manual_exclude</code></td>
+<td><code>Draft/**,Draft V2/**</code></td>
+<td>Comma-separated glob patterns to exclude from the manual</td>
+</tr>
+<tr>
+<td><code>toc_src</code></td>
+<td><code>.</code></td>
+<td>Directory containing <code>toc.md</code> and <code>index.md</code> for this version</td>
+</tr>
+</tbody>
+</table>
+<p>Leave a component empty to keep the default. For example, to only override the exclude patterns:</p>
+<pre><code class="lang-bash">VERSION_CONTENT[&quot;0.2.0&quot;]=&quot;|Internal/**|&quot;
+</code></pre>
+<h2 id="example">Example</h2>
+<p>A complete <code>doctools.config</code> for a Unity package with two versions:</p>
+<pre><code class="lang-bash">PACKAGE_NAME=&quot;com.wayngames.mypkg&quot;
+PACKAGE_TITLE=&quot;My Package&quot;
+PACKAGE_FOOTER=&quot;&lt;span&gt;&amp;copy; 2025 WAYN Games&lt;/span&gt;&quot;
+METADATA_SRC=&quot;..&quot;
+LOGO_PATH=&quot;&quot;
+FAVICON_PATH=&quot;&quot;
+OUTPUT_DIR=&quot;../Documentation~&quot;
+CURRENT_VERSION=&quot;0.2.0&quot;
+ALL_VERSIONS=(&quot;0.2.0&quot; &quot;0.1.0&quot;)
+
+declare -A VERSION_CONTENT
+VERSION_CONTENT[&quot;0.1.0&quot;]=&quot;Manual||v0.1.0&quot;
+
+EXTRA_CONTENT=(&quot;../LICENSE.md&quot; &quot;../CHANGELOG.md&quot;)
+RESOURCE_PATTERNS=(&quot;Manual/**/*.png&quot; &quot;Manual/**/*.gif&quot;)
+
+METADATA_ALLOW_COMPILATION_ERRORS=true
+METADATA_NAMESPACE_LAYOUT=&quot;nested&quot;
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script src="../../versions.js"></script>
+    <script>
+    (function () {
+      var current = '0.3.0';
+      var rel = '../';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
