@@ -105,36 +105,75 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="changelog">Changelog</h1>
 
-<h2 id="030--2026-03-22">[0.3.0] — 2026-03-22</h2>
+<h2 id="040--2026-03-23">[0.4.0] — 2026-03-23</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li><strong>Multilingual documentation support</strong> with 15 languages (fr, de, es, it, pt, ja, ko, zh, ru, ar, nl, pl, tr, sv)
+<ul>
+<li><code>add-language</code> command to configure target languages per package</li>
+<li><code>translate</code> command to list files needing translation (hash-based change tracking)</li>
+<li><code>translate-done</code> command to mark a file as translated</li>
+<li>Language-aware builds with staging/overlay system (English fallback for untranslated files)</li>
+<li>Language switcher dropdown in the navbar (auto-hidden when monolingual)</li>
+<li><code>languages.js</code> generation listing all built languages</li>
+</ul>
+</li>
+<li><strong>Language-aware version switcher</strong> — preserves current language when switching versions, falls back to English if unavailable</li>
+<li><strong>Convention-based configuration</strong> — reads <code>package.json</code> fields (<code>name</code>, <code>displayName</code>, <code>version</code>, <code>author</code>) instead of requiring a <code>doctools.config</code> file</li>
+<li><strong>Layout auto-detection</strong> — automatically detects new layout (flat <code>Documentation/</code>) vs legacy (<code>Documentation/Manual/</code>)</li>
+<li><strong>Root TOC auto-generation</strong> — root navbar TOC (Manual, API, LICENSE, CHANGELOG) generated at build time for new-layout projects</li>
+<li>Link validation utilities (<code>check_links.sh</code>, <code>verify_links.py</code>)</li>
+<li>Dark mode native scrollbars via <code>color-scheme: dark</code></li>
+<li>Mermaid diagram controls appear only on hover (no longer overlap content)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Version/language switcher JS uses URL-based path computation instead of <code>{{_rel}}</code> template variable (fixes broken URLs in language sub-builds)</li>
+<li><code>_availableLanguages</code> global metadata emitted as raw JSON array instead of quoted string</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Root TOC for translated builds uses correct relative paths for LICENSE, CHANGELOG, and API links</li>
+<li>Version switcher URLs resolve correctly from language sub-directories</li>
+<li>Removed conflicting svg-toolbelt keyboard shortcut tooltip overlay</li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li>Complete rewrite of all manual pages to match current API</li>
+<li>New pages: Installation, Quickstart, Translation, Troubleshooting, Best Practices</li>
+<li>Removed outdated Getting Started page (replaced by Installation + Quickstart)</li>
+<li>Updated Commands, Configuration, Versioning, and Template pages for current behavior</li>
+</ul>
+<h2 id="030--2026-03-22">[0.3.0] — 2026-03-22</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>Logo now uses the GitHub organization avatar URL instead of a local file, removing the need to bundle a logo image.</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li>Constrained logo size to fit within the navbar height.</li>
 <li>Root TOC and index entries are now only emitted in <code>docfx.json</code> when using the new layout, preventing build errors in legacy mode.</li>
 </ul>
 <h2 id="021--2026-03-19">[0.2.1] — 2026-03-19</h2>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 <ul>
 <li>Removed broken <code>API Reference</code> link (<code>api/index.html</code>) from scaffold <code>index.md</code> template — DocFX never generates that page; the nav bar &quot;API&quot; tab already provides the correct link.</li>
 </ul>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Default logo included in scaffold — <code>doctools init</code> now copies a default <code>logo.png</code> into <code>Documentation/Images/</code> so new packages have a working logo out of the box.</li>
 </ul>
 <h2 id="020--2026-03-18">[0.2.0] — 2026-03-18</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li><code>package.json</code> — formalizes DocTools as a versioned package (<code>com.wayngames.doctools</code>) with display name, description, and author metadata.</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Flattened <code>Documentation/</code> layout — moved all pages out of <code>Documentation/Manual/</code> into <code>Documentation/</code> directly; updated <code>toc.md</code> and <code>index.md</code> links accordingly.</li>
 <li>Removed <code>Documentation/doctools.config</code> (sample config that lived inside the docs folder).</li>
 </ul>
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 <ul>
 <li>Version dropdown now shows the human-readable display name (e.g. &quot;DocTools 0.2.0&quot;) instead of the technical package name.</li>
 </ul>
