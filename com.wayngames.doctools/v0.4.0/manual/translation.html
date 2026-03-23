@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Translation | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Translation | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quickstart" class="">Quickstart</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="commands.html" title="Commands" class="">Commands</a>
+                          </li>
+                          <li class="">
+                            <a href="versioning.html" title="Versioning" class="">Versioning</a>
+                          </li>
+                          <li class="active">
+                            <a href="translation.html" title="Translation" class="active">Translation</a>
+                          </li>
+                          <li class="">
+                            <a href="template.html" title="Template" class="">Template</a>
+                          </li>
+                          <li class="">
+                            <a href="workflow.html" title="CI/CD Workflow" class="">CI/CD Workflow</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Reference</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="best-practices.html" title="Best Practices" class="">Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="translation">Translation</h1>
+
+<p>DocTools supports translating manual documentation into multiple languages. English is always the source language. Translations are stored alongside the English source and built into separate URL paths with a language switcher for readers.</p>
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li>You write documentation in English</li>
+<li>You add target languages to your package</li>
+<li>An external tool (such as Claude Code) reads each English file, translates it, and writes it to a locale directory</li>
+<li>DocTools tracks which files have been translated via SHA-256 hashes</li>
+<li>The build produces a separate site for each language under <code>v{version}/{lang}/</code></li>
+<li>A language switcher dropdown appears when more than one language is built</li>
+</ol>
+<p>The translation system handles bookkeeping only — it tracks which files need translation and which are up-to-date. The actual translation is performed externally.</p>
+<h2 id="supported-languages">Supported Languages</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Language</th>
+<th>Code</th>
+<th>Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fr</code></td>
+<td>Français</td>
+<td><code>ja</code></td>
+<td>日本語</td>
+</tr>
+<tr>
+<td><code>de</code></td>
+<td>Deutsch</td>
+<td><code>ko</code></td>
+<td>한국어</td>
+</tr>
+<tr>
+<td><code>es</code></td>
+<td>Español</td>
+<td><code>zh</code></td>
+<td>中文</td>
+</tr>
+<tr>
+<td><code>it</code></td>
+<td>Italiano</td>
+<td><code>ru</code></td>
+<td>Русский</td>
+</tr>
+<tr>
+<td><code>pt</code></td>
+<td>Português</td>
+<td><code>ar</code></td>
+<td>العربية</td>
+</tr>
+<tr>
+<td><code>nl</code></td>
+<td>Nederlands</td>
+<td><code>pl</code></td>
+<td>Polski</td>
+</tr>
+<tr>
+<td><code>tr</code></td>
+<td>Türkçe</td>
+<td><code>sv</code></td>
+<td>Svenska</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adding-a-language">Adding a Language</h2>
+<p>Add a language to your package:</p>
+<pre><code class="lang-bash">doctools.sh add-language ./MyPackage fr
+</code></pre>
+<p>This creates or updates <code>Documentation/doctools.languages.json</code>:</p>
+<pre><code class="lang-json">[&quot;fr&quot;]
+</code></pre>
+<p>You can add multiple languages:</p>
+<pre><code class="lang-bash">doctools.sh add-language ./MyPackage zh
+doctools.sh add-language ./MyPackage ja
+</code></pre>
+<h2 id="translation-workflow">Translation Workflow</h2>
+<h3 id="step-1-check-what-needs-translating">Step 1: Check What Needs Translating</h3>
+<pre><code class="lang-bash">doctools.sh translate ./MyPackage
+</code></pre>
+<p>This lists every <code>.md</code> file that is missing or outdated for each configured language, showing source and target paths:</p>
+<pre><code>=== Checking translations for: fr (Français) ===
+  Files needing translation:
+    - getting-started.md
+      Source: /path/to/Documentation/getting-started.md
+      Target: /path/to/Documentation/.doctools/locales/fr/getting-started.md
+</code></pre>
+<h3 id="step-2-translate-each-file">Step 2: Translate Each File</h3>
+<p>For each pending file, read the English source, translate the content, and write the translated file to the target path.</p>
+<p><strong>Translation rules:</strong></p>
+<ul>
+<li>Translate all prose, headings, list items, table cell text, and alt text</li>
+<li>Do <strong>not</strong> translate: code blocks, inline code, file paths, class/method names, YAML front matter keys, link URLs, image paths</li>
+<li>Preserve all Markdown formatting, link structure, and document structure exactly</li>
+<li>Keep technical terms that are proper nouns (e.g., &quot;Unity&quot;, &quot;DocFX&quot;, &quot;Mermaid&quot;) untranslated</li>
+</ul>
+<h3 id="step-3-mark-each-file-as-done">Step 3: Mark Each File as Done</h3>
+<p>After writing a translated file, update the hash manifest:</p>
+<pre><code class="lang-bash">doctools.sh translate-done ./MyPackage fr getting-started.md
+</code></pre>
+<p>This records the current SHA-256 hash of the English source file. The file will not appear as pending again until the English source changes.</p>
+<h3 id="step-4-build">Step 4: Build</h3>
+<p>Run the build to include all translations:</p>
+<pre><code class="lang-bash">doctools.sh build ./MyPackage
+</code></pre>
+<p>Languages with translated files are built into subdirectories (e.g., <code>v1.0.0/fr/</code>). Languages with no translated files are skipped with a warning.</p>
+<h2 id="file-structure">File Structure</h2>
+<p>Translated files are stored in <code>.doctools/locales/{lang}/</code>, mirroring the English file structure:</p>
+<pre><code>Documentation/
+├── getting-started.md                              # English source
+├── architecture.md
+├── .doctools/
+│   └── locales/
+│       ├── fr/
+│       │   ├── .translation-hashes.json            # Hash manifest
+│       │   ├── getting-started.md                  # French translation
+│       │   └── architecture.md
+│       └── zh/
+│           ├── .translation-hashes.json
+│           ├── getting-started.md                  # Chinese translation
+│           └── architecture.md
+</code></pre>
+<h2 id="hash-based-change-tracking">Hash-Based Change Tracking</h2>
+<p>The <code>.translation-hashes.json</code> file in each language directory stores the SHA-256 hash of the English source file at the time of translation:</p>
+<pre><code class="lang-json">{
+  &quot;getting-started.md&quot;: &quot;a1b2c3d4...&quot;,
+  &quot;architecture.md&quot;: &quot;e5f6g7h8...&quot;
+}
+</code></pre>
+<p>When you run <code>doctools.sh translate</code>, it compares the current hash of each English file against the stored hash. If they differ, the file appears as needing re-translation. This means:</p>
+<ul>
+<li>New files always appear as pending (no stored hash)</li>
+<li>Edited English files appear as pending (hash changed)</li>
+<li>Unchanged files are skipped (hash matches)</li>
+</ul>
+<h2 id="how-translated-builds-work">How Translated Builds Work</h2>
+<p>For each language, the build system:</p>
+<ol>
+<li>Copies all English content into a staging directory</li>
+<li>Overlays translated files on top (replacing the English originals)</li>
+<li>Builds a separate DocFX site at <code>v{version}/{lang}/</code></li>
+<li>Generates <code>languages.js</code> listing all built languages</li>
+</ol>
+<p>This means untranslated files fall back to English automatically — you do not need to translate every file before building.</p>
+<h2 id="language-switcher">Language Switcher</h2>
+<p>The template includes a language dropdown in the navbar. It appears automatically when more than one language is built. It reads <code>languages.js</code> and rewrites URLs to switch between language paths:</p>
+<ul>
+<li>English: <code>/v1.0.0/manual/getting-started.html</code></li>
+<li>French: <code>/v1.0.0/fr/manual/getting-started.html</code></li>
+<li>Chinese: <code>/v1.0.0/zh/manual/getting-started.html</code></li>
+</ul>
+<h2 id="api-docs">API Docs</h2>
+<p>API documentation (generated from C# XML comments) is <strong>not translated</strong>. The same English API docs are shared across all language builds.</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="commands.html">Commands</a> — CLI reference for translation commands</li>
+<li><a href="configuration.html">Configuration</a> — Language configuration</li>
+<li><a href="best-practices.html">Best Practices</a> — Writing docs that translate well</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the output root (sibling of vX.Y.Z/).
+      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
+      // so we compute the path from the URL to handle both EN and translated builds.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
