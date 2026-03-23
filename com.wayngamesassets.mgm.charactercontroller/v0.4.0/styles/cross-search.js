@@ -12,6 +12,17 @@
     currentPackage = pathParts[0];
   }
 
+  // Detect current language from URL: /pkg/vX.Y.Z/{lang}/... or /pkg/vX.Y.Z/...
+  var currentSearchLang = '';
+  if (pathParts.length >= 3) {
+    // pathParts[1] = vX.Y.Z, pathParts[2] might be a 2-3 char lang code
+    var maybeLang = pathParts[2];
+    if (maybeLang && /^[a-z]{2,3}(-[A-Za-z]+)?$/.test(maybeLang) &&
+        maybeLang !== 'api' && maybeLang !== 'manual') {
+      currentSearchLang = maybeLang + '/';
+    }
+  }
+
   // Find the site root (go up from /pkg/vX.Y.Z/some/page.html to /)
   var siteRoot = '/';
 
@@ -93,7 +104,7 @@
         if (score > 0) {
           pkgResults.push({
             title: entry.title,
-            href: siteRoot + pkgName + '/v' + idx.version + '/' + entry.href,
+            href: siteRoot + pkgName + '/v' + idx.version + '/' + currentSearchLang + entry.href,
             summary: entry.summary || '',
             score: score,
             packageTitle: idx.title

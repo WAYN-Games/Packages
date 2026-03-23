@@ -71,6 +71,7 @@
   --footer-bg: #1A1A1A;
   --border: #3A3A3A;
   --code-bg: #252525;
+  color-scheme: dark;
 }
 
 /* --- Theme toggle ------------------------------------------------- */
@@ -417,6 +418,22 @@ body {
   padding: 0;
   font-size: 0.85rem;
   line-height: 1.5;
+}
+
+/* --- Mermaid diagram controls (svg-toolbelt) ---------------------- */
+
+.svg-toolbelt-controls {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.svg-toolbelt-wrapper:hover .svg-toolbelt-controls,
+.svg-toolbelt-controls:focus-within {
+  opacity: 1;
+}
+
+.svg-toolbelt-wrapper::after {
+  display: none !important;
 }
 
 /* --- Tables ------------------------------------------------------- */
