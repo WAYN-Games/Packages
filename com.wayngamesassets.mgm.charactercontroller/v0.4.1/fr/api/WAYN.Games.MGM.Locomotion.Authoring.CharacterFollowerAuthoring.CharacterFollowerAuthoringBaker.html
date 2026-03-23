@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker | MGM Character Controller ">
+    
+    <meta name="description" content="Baker that converts  into a  ECS component.">
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WAYN.Games.MGM.Locomotion.html" title="WAYN.Games.MGM.Locomotion" class="">WAYN.Games.MGM.Locomotion</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.Authoring.html" title="Authoring" class="">Authoring</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.html" title="BaseCharacterLocomotorAuthoring&lt;TProfile&gt;" class="">BaseCharacterLocomotorAuthoring&lt;TProfile&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.BaseCharacterLocomotorAuthoring-1.BaseCharacterLocomotorBaker-6.html" title="BaseCharacterLocomotorAuthoring&lt;TProfile&gt;.BaseCharacterLocomotorBaker&lt;TAuthoring, TStateMachine, TStates, TContext, TInput, TStateData&gt;" class="">BaseCharacterLocomotorAuthoring&lt;TProfile&gt;.BaseCharacterLocomotorBaker&lt;TAuthoring, TStateMachine, TStates, TContext, TInput, TStateData&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.html" title="BasePlayerCharacterAuthoring&lt;TInput&gt;" class="">BasePlayerCharacterAuthoring&lt;TInput&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterAuthoring-1.BasePlayerCharacterBaker-1.html" title="BasePlayerCharacterAuthoring&lt;TInput&gt;.BasePlayerCharacterBaker&lt;TAuthoring&gt;" class="">BasePlayerCharacterAuthoring&lt;TInput&gt;.BasePlayerCharacterBaker&lt;TAuthoring&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.BasePlayerCharacterBakingSystem.html" title="BasePlayerCharacterBakingSystem" class="">BasePlayerCharacterBakingSystem</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.html" title="CharacterFollowerAuthoring" class="">CharacterFollowerAuthoring</a>
+                                </li>
+                                <li class="active">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.html" title="CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker" class="active">CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.html" title="CompositeEntityAuthoring" class="">CompositeEntityAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.CompositeEntityAuthoring.CompositeEntityAuthoringBaker.html" title="CompositeEntityAuthoring.CompositeEntityAuthoringBaker" class="">CompositeEntityAuthoring.CompositeEntityAuthoringBaker</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.ControlledCharactersBakingList.html" title="ControlledCharactersBakingList" class="">ControlledCharactersBakingList</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.FollowStrategy.html" title="FollowStrategy" class="">FollowStrategy</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.ICharacterLocomotionInput-1.html" title="ICharacterLocomotionInput&lt;TInput&gt;" class="">ICharacterLocomotionInput&lt;TInput&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.ILocomotionInputReader-1.html" title="ILocomotionInputReader&lt;TInput&gt;" class="">ILocomotionInputReader&lt;TInput&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.ILocomotionProfileBuilder-1.html" title="ILocomotionProfileBuilder&lt;TProfile&gt;" class="">ILocomotionProfileBuilder&lt;TProfile&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.LocomotionDebugConfigAuthoring.html" title="LocomotionDebugConfigAuthoring" class="">LocomotionDebugConfigAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.LocomotionProfileAsset-1.html" title="LocomotionProfileAsset&lt;TProfile&gt;" class="">LocomotionProfileAsset&lt;TProfile&gt;</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.LocomotorAuthoring.html" title="LocomotorAuthoring" class="">LocomotorAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.MovingPlatformAuthoring.html" title="MovingPlatformAuthoring" class="">MovingPlatformAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.PlatformAuthoring.html" title="PlatformAuthoring" class="">PlatformAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.PlayerGoAuthoring.html" title="PlayerGoAuthoring" class="">PlayerGoAuthoring</a>
+                                </li>
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.Authoring.PlayerInputAsset-1.html" title="PlayerInputAsset&lt;TInput&gt;" class="">PlayerInputAsset&lt;TInput&gt;</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.Hybrid.html" title="Hybrid" class="">Hybrid</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Hybrid.Components.html" title="Components" class="">Components</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Components.EntityGoCleanup.html" title="EntityGoCleanup" class="">EntityGoCleanup</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Components.GameObjectEntity.html" title="GameObjectEntity" class="">GameObjectEntity</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.html" title="MonoBehaviours" class="">MonoBehaviours</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.DestructionManager.html" title="DestructionManager" class="">DestructionManager</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.EntityGameObject.html" title="EntityGameObject" class="">EntityGameObject</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.MonoBehaviours.LocomotionProfilerHUD.html" title="LocomotionProfilerHUD" class="">LocomotionProfilerHUD</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.html" title="Systems" class="">Systems</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoCleanupSystem.html" title="EntityGoCleanupSystem" class="">EntityGoCleanupSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.html" title="EntityGoEditorPreviewSystem" class="">EntityGoEditorPreviewSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoEditorPreviewSystem.MeshPreview.html" title="EntityGoEditorPreviewSystem.MeshPreview" class="">EntityGoEditorPreviewSystem.MeshPreview</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoInitialisationSystem.html" title="EntityGoInitialisationSystem" class="">EntityGoInitialisationSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Hybrid.Systems.EntityGoTransformSyncSystem.html" title="EntityGoTransformSyncSystem" class="">EntityGoTransformSyncSystem</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.Runtime.html" title="Runtime" class="">Runtime</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.html" title="Components" class="">Components</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.BodyType.html" title="BodyType" class="">BodyType</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower.html" title="CharacterFollower" class="">CharacterFollower</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfile.html" title="CharacterPhysicsProfile" class="">CharacterPhysicsProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterPhysicsProfileBlob.html" title="CharacterPhysicsProfileBlob" class="">CharacterPhysicsProfileBlob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.ContactType.html" title="ContactType" class="">ContactType</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.ControlledCharacters.html" title="ControlledCharacters" class="">ControlledCharacters</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.Impact.html" title="Impact" class="">Impact</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.InterpolationMode.html" title="InterpolationMode" class="">InterpolationMode</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionContact.html" title="LocomotionContact" class="">LocomotionContact</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionGravity.html" title="LocomotionGravity" class="">LocomotionGravity</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputAsset-1.html" title="LocomotionInputAsset&lt;TInput&gt;" class="">LocomotionInputAsset&lt;TInput&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionInputInstance-1.html" title="LocomotionInputInstance&lt;TInput&gt;" class="">LocomotionInputInstance&lt;TInput&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionProfileBlob-1.html" title="LocomotionProfileBlob&lt;TProfile&gt;" class="">LocomotionProfileBlob&lt;TProfile&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.LocomotionVelocity.html" title="LocomotionVelocity" class="">LocomotionVelocity</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.Motion.html" title="Motion" class="">Motion</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PhysicsBody.html" title="PhysicsBody" class="">PhysicsBody</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PlatformMover.html" title="PlatformMover" class="">PlatformMover</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerCameraHandle.html" title="PlayerCameraHandle" class="">PlayerCameraHandle</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectInstance.html" title="PlayerGameObjectInstance" class="">PlayerGameObjectInstance</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PlayerGameObjectPrefab.html" title="PlayerGameObjectPrefab" class="">PlayerGameObjectPrefab</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.PostCollisionImpulse.html" title="PostCollisionImpulse" class="">PostCollisionImpulse</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.Rotor.html" title="Rotor" class="">Rotor</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Components.Track.html" title="Track" class="">Track</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.html" title="DebugDisplay" class="">DebugDisplay</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColor.html" title="DebugColor" class="">DebugColor</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugColorExtensions.html" title="DebugColorExtensions" class="">DebugColorExtensions</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.DebugContactShape.html" title="DebugContactShape" class="">DebugContactShape</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfig.html" title="LocomotionDebugConfig" class="">LocomotionDebugConfig</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigBlob.html" title="LocomotionDebugConfigBlob" class="">LocomotionDebugConfigBlob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugConfigUtility.html" title="LocomotionDebugConfigUtility" class="">LocomotionDebugConfigUtility</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugContactPoint.html" title="LocomotionDebugContactPoint" class="">LocomotionDebugContactPoint</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplay.html" title="LocomotionDebugDisplay" class="">LocomotionDebugDisplay</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugDisplaySystem.html" title="LocomotionDebugDisplaySystem" class="">LocomotionDebugDisplaySystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounter.html" title="LocomotionDebugFrameCounter" class="">LocomotionDebugFrameCounter</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugFrameCounterSystem.html" title="LocomotionDebugFrameCounterSystem" class="">LocomotionDebugFrameCounterSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugImpulsePoint.html" title="LocomotionDebugImpulsePoint" class="">LocomotionDebugImpulsePoint</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugPathPoint.html" title="LocomotionDebugPathPoint" class="">LocomotionDebugPathPoint</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugRecorder.html" title="LocomotionDebugRecorder" class="">LocomotionDebugRecorder</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.DebugDisplay.LocomotionDebugStage.html" title="LocomotionDebugStage" class="">LocomotionDebugStage</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.Mathematics.html" title="Mathematics" class="">Mathematics</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Mathematics.MathematicsHelpers.html" title="MathematicsHelpers" class="">MathematicsHelpers</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.html" title="Physics" class="">Physics</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestColliderCastHitCollectorIgnoreSelf.html" title="ClosestColliderCastHitCollectorIgnoreSelf" class="">ClosestColliderCastHitCollectorIgnoreSelf</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestDistanceHitCollectorIgnoreSelf.html" title="ClosestDistanceHitCollectorIgnoreSelf" class="">ClosestDistanceHitCollectorIgnoreSelf</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.ClosestRaycastHitCollectorIgnoreSelf.html" title="ClosestRaycastHitCollectorIgnoreSelf" class="">ClosestRaycastHitCollectorIgnoreSelf</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsOperations.html" title="PhysicsOperations" class="">PhysicsOperations</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Physics.PhysicsWorldExtensions.html" title="PhysicsWorldExtensions" class="">PhysicsWorldExtensions</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.Profiling.html" title="Profiling" class="">Profiling</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.html" title="ProfilerMarkerExtensions" class="">ProfilerMarkerExtensions</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.html" title="ProfilerMarkerExtensions.ProfilerRecorderMap" class="">ProfilerMarkerExtensions.ProfilerRecorderMap</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Profiling.ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey.html" title="ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey" class="">ProfilerMarkerExtensions.ProfilerRecorderMap.ProfilerRecorderMapKey</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.html" title="StateMachine" class="">StateMachine</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.BaseLocomotionContext.html" title="BaseLocomotionContext" class="">BaseLocomotionContext</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.EvaluateAfterAttribute.html" title="EvaluateAfterAttribute" class="">EvaluateAfterAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.EvaluateBeforeAttribute.html" title="EvaluateBeforeAttribute" class="">EvaluateBeforeAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionContext-3.html" title="ILocomotionContext&lt;TProfile, TInput, TStateData&gt;" class="">ILocomotionContext&lt;TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionProfile.html" title="ILocomotionProfile" class="">ILocomotionProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionStateMachine-6.html" title="ILocomotionStateMachine&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;" class="">ILocomotionStateMachine&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionState-5.html" title="ILocomotionState&lt;TStates, TContext, TProfile, TInput, TStateData&gt;" class="">ILocomotionState&lt;TStates, TContext, TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.ILocomotionTransition-6.html" title="ILocomotionTransition&lt;TFrom, TTo, TContext, TProfile, TInput, TStateData&gt;" class="">ILocomotionTransition&lt;TFrom, TTo, TContext, TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionGenerationFlags.html" title="LocomotionGenerationFlags" class="">LocomotionGenerationFlags</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionGenerationOptionsAttribute.html" title="LocomotionGenerationOptionsAttribute" class="">LocomotionGenerationOptionsAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionInputDispatcher.html" title="LocomotionInputDispatcher" class="">LocomotionInputDispatcher</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionJob-6.html" title="LocomotionJob&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;" class="">LocomotionJob&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateAttribute.html" title="LocomotionStateAttribute" class="">LocomotionStateAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateBehaviorDispatcher.html" title="LocomotionStateBehaviorDispatcher" class="">LocomotionStateBehaviorDispatcher</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionStateMachineAttribute.html" title="LocomotionStateMachineAttribute" class="">LocomotionStateMachineAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.LocomotionTransitionAttribute.html" title="LocomotionTransitionAttribute" class="">LocomotionTransitionAttribute</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.StateMachine.OverlapState.html" title="OverlapState" class="">OverlapState</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.html" title="Systems" class="">Systems</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.ApplyPostCollisionImpulseJob.html" title="ApplyPostCollisionImpulseJob" class="">ApplyPostCollisionImpulseJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.html" title="CameraRigFollowControlledCharacterSystem" class="">CameraRigFollowControlledCharacterSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CameraRigFollowControlledCharacterSystem.Singleton.html" title="CameraRigFollowControlledCharacterSystem.Singleton" class="">CameraRigFollowControlledCharacterSystem.Singleton</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.html" title="CharacterContactSystem" class="">CharacterContactSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactClearMapJob.html" title="CharacterContactSystem.CharacterContactClearMapJob" class="">CharacterContactSystem.CharacterContactClearMapJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.CharacterContactJob.html" title="CharacterContactSystem.CharacterContactJob" class="">CharacterContactSystem.CharacterContactJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.ExternalImpulse.html" title="CharacterContactSystem.ExternalImpulse" class="">CharacterContactSystem.ExternalImpulse</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterContactSystem.Singleton.html" title="CharacterContactSystem.Singleton" class="">CharacterContactSystem.Singleton</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.html" title="CharacterFollowerSystem" class="">CharacterFollowerSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.CharacterFollowerSystem.CharacterFollowerJob.html" title="CharacterFollowerSystem.CharacterFollowerJob" class="">CharacterFollowerSystem.CharacterFollowerJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.html" title="ILocomotionSystem&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;" class="">ILocomotionSystem&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.ILocomotionSystem-6.LocomotionJobData.html" title="ILocomotionSystem&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;.LocomotionJobData" class="">ILocomotionSystem&lt;TStateMachine, TStates, TContext, TProfile, TInput, TStateData&gt;.LocomotionJobData</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.LocomotionSystemBehaviorDispatcher.html" title="LocomotionSystemBehaviorDispatcher" class="">LocomotionSystemBehaviorDispatcher</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementJob.html" title="PlatformMovementJob" class="">PlatformMovementJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformMovementSystem.html" title="PlatformMovementSystem" class="">PlatformMovementSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PlatformRotateJob.html" title="PlatformRotateJob" class="">PlatformRotateJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.html" title="PlayerGoManagerSystem" class="">PlayerGoManagerSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob.html" title="PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob" class="">PlayerGoManagerSystem.CleanUpControlledPlayerCharacterJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseClearJob.html" title="PostCollisionImpulseClearJob" class="">PostCollisionImpulseClearJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.html" title="PostCollisionImpulseSystem" class="">PostCollisionImpulseSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Runtime.Systems.PostCollisionImpulseSystem.Singleton.html" title="PostCollisionImpulseSystem.Singleton" class="">PostCollisionImpulseSystem.Singleton</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.html" title="Samples.Locomotion" class="">Samples.Locomotion</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.html" title="Authoring" class="">Authoring</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.html" title="LocomotionCharacterLocomotorLocomotionAuthoring" class="">LocomotionCharacterLocomotorLocomotionAuthoring</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker.html" title="LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker" class="">LocomotionCharacterLocomotorLocomotionAuthoring.LocomotionCharacterLocomotorLocomotionAuthoringBaker</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.html" title="LocomotionPlayerCharacterAuthoring" class="">LocomotionPlayerCharacterAuthoring</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Authoring.LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker.html" title="LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker" class="">LocomotionPlayerCharacterAuthoring.LocomotionPlayerCharacterBaker</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.html" title="Runtime" class="">Runtime</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingProfile.html" title="FallingProfile" class="">FallingProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingToIdle.html" title="FallingToIdle" class="">FallingToIdle</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingToMoving.html" title="FallingToMoving" class="">FallingToMoving</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.FallingToSliding.html" title="FallingToSliding" class="">FallingToSliding</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.IdleToFalling.html" title="IdleToFalling" class="">IdleToFalling</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.IdleToJumping.html" title="IdleToJumping" class="">IdleToJumping</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.IdleToMoving.html" title="IdleToMoving" class="">IdleToMoving</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.IdleToSliding.html" title="IdleToSliding" class="">IdleToSliding</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpData.html" title="JumpData" class="">JumpData</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingProfile.html" title="JumpingProfile" class="">JumpingProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingToIdle.html" title="JumpingToIdle" class="">JumpingToIdle</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingToMoving.html" title="JumpingToMoving" class="">JumpingToMoving</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.JumpingToSliding.html" title="JumpingToSliding" class="">JumpingToSliding</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionContext.html" title="LocomotionContext" class="">LocomotionContext</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionInput.html" title="LocomotionInput" class="">LocomotionInput</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionPlayerInputAsset.html" title="LocomotionPlayerInputAsset" class="">LocomotionPlayerInputAsset</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfile.html" title="LocomotionProfile" class="">LocomotionProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionProfileAsset.html" title="LocomotionProfileAsset" class="">LocomotionProfileAsset</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateData.html" title="LocomotionStateData" class="">LocomotionStateData</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.LocomotionStateMachine.html" title="LocomotionStateMachine" class="">LocomotionStateMachine</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingProfile.html" title="MovingProfile" class="">MovingProfile</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingToFalling.html" title="MovingToFalling" class="">MovingToFalling</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingToIdle.html" title="MovingToIdle" class="">MovingToIdle</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingToJumping.html" title="MovingToJumping" class="">MovingToJumping</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.MovingToSliding.html" title="MovingToSliding" class="">MovingToSliding</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.SlidingToFalling.html" title="SlidingToFalling" class="">SlidingToFalling</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.SlidingToIdle.html" title="SlidingToIdle" class="">SlidingToIdle</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Samples.Locomotion.Runtime.SlidingToMoving.html" title="SlidingToMoving" class="">SlidingToMoving</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.SourceGen.html" title="SourceGen" class="">SourceGen</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="WAYN.Games.MGM.Locomotion.SourceGen.StateMachineSourceGenerator.html" title="StateMachineSourceGenerator" class="">StateMachineSourceGenerator</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="WAYN.Games.MGM.Locomotion.Tests.html" title="Tests" class="">Tests</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.html" title="Runtime" class="">Runtime</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWell.html" title="GravityWell" class="">GravityWell</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellAuthoring.html" title="GravityWellAuthoring" class="">GravityWellAuthoring</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.html" title="GravityWellSystem" class="">GravityWellSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.GravityWellSystem.GravityWellJob.html" title="GravityWellSystem.GravityWellJob" class="">GravityWellSystem.GravityWellJob</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfig.html" title="SpawnConfig" class="">SpawnConfig</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnConfigData.html" title="SpawnConfigData" class="">SpawnConfigData</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawnPattern.html" title="SpawnPattern" class="">SpawnPattern</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.Spawner.html" title="Spawner" class="">Spawner</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.SpawningSystem.html" title="SpawningSystem" class="">SpawningSystem</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawner.html" title="TestSpawner" class="">TestSpawner</a>
+                                      </li>
+                                      <li class="">
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.Runtime.TestSpawnerBaker.html" title="TestSpawnerBaker" class="">TestSpawnerBaker</a>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                  <span class="expand-stub"></span>
+                                  <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.html" title="TestCharacter" class="">TestCharacter</a>
+
+                                    <ul class="nav level4">
+                                      <li class="">
+                                        <span class="expand-stub"></span>
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.html" title="Authoring" class="">Authoring</a>
+
+                                          <ul class="nav level5">
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.html" title="StateColorDebugAuthoring" class="">StateColorDebugAuthoring</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorDebugAuthoring.Baker.html" title="StateColorDebugAuthoring.Baker" class="">StateColorDebugAuthoring.Baker</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.StateColorEntry.html" title="StateColorEntry" class="">StateColorEntry</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.html" title="TestCharacterCharacterLocomotionAuthoring" class="">TestCharacterCharacterLocomotionAuthoring</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker.html" title="TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker" class="">TestCharacterCharacterLocomotionAuthoring.TestCharacterCharacterLocomotionAuthoringBaker</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.html" title="TestCharacterPlayerCharacterAuthoring" class="">TestCharacterPlayerCharacterAuthoring</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker.html" title="TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker" class="">TestCharacterPlayerCharacterAuthoring.TestCharacterPlayerCharacterBaker</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.html" title="TestInputAuthoring" class="">TestInputAuthoring</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Authoring.TestInputAuthoring.TestInputBaker.html" title="TestInputAuthoring.TestInputBaker" class="">TestInputAuthoring.TestInputBaker</a>
+                                            </li>
+                                          </ul>
+                                      </li>
+                                      <li class="">
+                                        <span class="expand-stub"></span>
+                                        <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.html" title="Runtime" class="">Runtime</a>
+
+                                          <ul class="nav level5">
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorBlob.html" title="StateColorBlob" class="">StateColorBlob</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugConfig.html" title="StateColorDebugConfig" class="">StateColorDebugConfig</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.html" title="StateColorDebugSystem" class="">StateColorDebugSystem</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.StateColorDebugSystem.LocomotionDebugJob.html" title="StateColorDebugSystem.LocomotionDebugJob" class="">StateColorDebugSystem.LocomotionDebugJob</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharFallingToIdle.html" title="TestCharFallingToIdle" class="">TestCharFallingToIdle</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharFallingToMoving.html" title="TestCharFallingToMoving" class="">TestCharFallingToMoving</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharFallingToSliding.html" title="TestCharFallingToSliding" class="">TestCharFallingToSliding</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharIdleToFalling.html" title="TestCharIdleToFalling" class="">TestCharIdleToFalling</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharIdleToJumping.html" title="TestCharIdleToJumping" class="">TestCharIdleToJumping</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharIdleToMoving.html" title="TestCharIdleToMoving" class="">TestCharIdleToMoving</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharIdleToSliding.html" title="TestCharIdleToSliding" class="">TestCharIdleToSliding</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharJumpingToIdle.html" title="TestCharJumpingToIdle" class="">TestCharJumpingToIdle</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharJumpingToMoving.html" title="TestCharJumpingToMoving" class="">TestCharJumpingToMoving</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharJumpingToSliding.html" title="TestCharJumpingToSliding" class="">TestCharJumpingToSliding</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharMovingToFalling.html" title="TestCharMovingToFalling" class="">TestCharMovingToFalling</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharMovingToIdle.html" title="TestCharMovingToIdle" class="">TestCharMovingToIdle</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharMovingToJumping.html" title="TestCharMovingToJumping" class="">TestCharMovingToJumping</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharMovingToSliding.html" title="TestCharMovingToSliding" class="">TestCharMovingToSliding</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharSlidingToFalling.html" title="TestCharSlidingToFalling" class="">TestCharSlidingToFalling</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharSlidingToIdle.html" title="TestCharSlidingToIdle" class="">TestCharSlidingToIdle</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharSlidingToMoving.html" title="TestCharSlidingToMoving" class="">TestCharSlidingToMoving</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterContext.html" title="TestCharacterContext" class="">TestCharacterContext</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterFallingProfile.html" title="TestCharacterFallingProfile" class="">TestCharacterFallingProfile</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterInput.html" title="TestCharacterInput" class="">TestCharacterInput</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpData.html" title="TestCharacterJumpData" class="">TestCharacterJumpData</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterJumpingProfile.html" title="TestCharacterJumpingProfile" class="">TestCharacterJumpingProfile</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterMovingProfile.html" title="TestCharacterMovingProfile" class="">TestCharacterMovingProfile</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterPlayerInputAsset.html" title="TestCharacterPlayerInputAsset" class="">TestCharacterPlayerInputAsset</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfile.html" title="TestCharacterProfile" class="">TestCharacterProfile</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterProfileAsset.html" title="TestCharacterProfileAsset" class="">TestCharacterProfileAsset</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateData.html" title="TestCharacterStateData" class="">TestCharacterStateData</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestCharacterStateMachine.html" title="TestCharacterStateMachine" class="">TestCharacterStateMachine</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInput.html" title="TestInput" class="">TestInput</a>
+                                            </li>
+                                            <li class="">
+                                              <a href="WAYN.Games.MGM.Locomotion.Tests.TestCharacter.Runtime.TestInputSystem.html" title="TestInputSystem" class="">TestInputSystem</a>
+                                            </li>
+                                          </ul>
+                                      </li>
+                                    </ul>
+                                </li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker">
+
+
+
+  <h1 id="WAYN_Games_MGM_Locomotion_Authoring_CharacterFollowerAuthoring_CharacterFollowerAuthoringBaker" data-uid="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker" class="text-break">Class CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker</h1>
+  <div class="markdown level0 summary"><p>Baker that converts <a class="xref" href="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.html">CharacterFollowerAuthoring</a> into a <a class="xref" href="WAYN.Games.MGM.Locomotion.Runtime.Components.CharacterFollower.html">CharacterFollower</a> ECS component.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WAYN.html">WAYN</a>.<a class="xref" href="WAYN.Games.html">Games</a>.<a class="xref" href="WAYN.Games.MGM.html">MGM</a>.<a class="xref" href="WAYN.Games.MGM.Locomotion.html">Locomotion</a>.<a class="xref" href="WAYN.Games.MGM.Locomotion.Authoring.html">Authoring</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="WAYN_Games_MGM_Locomotion_Authoring_CharacterFollowerAuthoring_CharacterFollowerAuthoringBaker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker : Baker&lt;CharacterFollowerAuthoring&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="WAYN_Games_MGM_Locomotion_Authoring_CharacterFollowerAuthoring_CharacterFollowerAuthoringBaker_Bake_" data-uid="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.Bake*"></a>
+  <h4 id="WAYN_Games_MGM_Locomotion_Authoring_CharacterFollowerAuthoring_CharacterFollowerAuthoringBaker_Bake_WAYN_Games_MGM_Locomotion_Authoring_CharacterFollowerAuthoring_" data-uid="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.CharacterFollowerAuthoringBaker.Bake(WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring)">Bake(CharacterFollowerAuthoring)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Bake(CharacterFollowerAuthoring authoring)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WAYN.Games.MGM.Locomotion.Authoring.CharacterFollowerAuthoring.html">CharacterFollowerAuthoring</a></td>
+        <td><span class="parametername">authoring</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.1';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the output root (sibling of vX.Y.Z/).
+      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
+      // so we compute the path from the URL to handle both EN and translated builds.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

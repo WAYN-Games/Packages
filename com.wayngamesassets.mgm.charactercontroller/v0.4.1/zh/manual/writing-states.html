@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="zh">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>编写自定义状态 | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="编写自定义状态 | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="安装" class="">安装</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="快速入门" class="">快速入门</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="开始使用" class="">开始使用</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">指南</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="架构概览" class="">架构概览</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="执行循环" class="">执行循环</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="创建状态机" class="">创建状态机</a>
+                          </li>
+                          <li class="active">
+                            <a href="writing-states.html" title="编写自定义状态" class="active">编写自定义状态</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="物理配置" class="">物理配置</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="输入系统" class="">输入系统</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="混合 GameObject 层" class="">混合 GameObject 层</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="移动平台" class="">移动平台</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="调试可视化" class="">调试可视化</a>
+                          </li>
+                          <li class="">
+                            <a href="extending.html" title="扩展包" class="">扩展包</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">实用技巧</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="添加新状态" class="">添加新状态</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="添加新转换" class="">添加新转换</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-double-jump.html" title="添加二段跳" class="">添加二段跳</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-air-control.html" title="添加空中控制" class="">添加空中控制</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="切换到 AI 输入" class="">切换到 AI 输入</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="自定义地面吸附" class="">自定义地面吸附</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="自定义碰撞响应" class="">自定义碰撞响应</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="推动动态物体" class="">推动动态物体</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="覆盖管线步骤" class="">覆盖管线步骤</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="运行多个状态机" class="">运行多个状态机</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="逐角色重力" class="">逐角色重力</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="设置混合角色" class="">设置混合角色</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="设置移动平台" class="">设置移动平台</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">集成</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="动画" class="">动画</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">参考</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="示例" class="">示例</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="最佳实践" class="">最佳实践</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="故障排除" class="">故障排除</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="升级指南" class="">升级指南</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="编写自定义状态">编写自定义状态</h1>
+
+<p>状态是角色行为的构建块。每个状态定义角色如何移动、对物理做出反应以及转换到其他状态。本指南涵盖状态接口、生命周期方法和常见模式。</p>
+<h2 id="状态接口">状态接口</h2>
+<p>每个状态都是一个实现 <code>ILocomotionState</code> 的非托管结构体：</p>
+<pre><code class="lang-csharp">[LocomotionState(typeof(MyCharacterStateMachine))]
+internal partial struct MyState
+{
+    public void OnEnterState(ref MyContext ctx) { }
+
+    public void OnIntegrateState(ref MyContext ctx) { }
+
+    public void OnResolveStateCollisions(ref MyContext ctx) { }
+
+    public void OnExitState(ref MyContext ctx) { }
+}
+</code></pre>
+<p>关键规则：</p>
+<ul>
+<li>所有生命周期方法都是带有<strong>默认接口实现</strong>（DIM 模式）的<strong>实例方法</strong>。它们是 <code>public void</code>，不是 <code>internal static</code>。<code>ILocomotionState</code> 接口由源代码生成器通过 <code>partial</code> 机制添加。</li>
+<li>转换由单独的 <code>ILocomotionTransition</code> 结构体处理（见下方<a href="#transitions">转换</a>）——状态结构体不定义转换逻辑</li>
+<li>源代码生成器将调用分派到正确的状态结构体——运行时没有虚拟分派</li>
+<li>状态方法在已经 Burst 编译的 Job 内运行，因此状态结构体和方法上不需要显式 <code>[BurstCompile]</code></li>
+<li>不能使用托管类型（字符串、类、数组）——此代码在 Burst Jobs 内运行</li>
+</ul>
+<h2 id="生命周期方法">生命周期方法</h2>
+<h3 id="onenterstate">OnEnterState</h3>
+<p>当状态机转换<strong>进入</strong>此状态时调用一次。用于：</p>
+<ul>
+<li>初始化状态特定数据（重置计时器、计数器）</li>
+<li>设置初始速度</li>
+<li>清除接触信息（用于空中状态）</li>
+</ul>
+<pre><code class="lang-csharp">public void OnEnterState(ref MyContext ctx)
+{
+    // 进入地面状态：取消所有垂直动量
+    ctx.BaseContext.VerticalVelocity = float3.zero;
+    ctx.BaseContext.VerticalDisplacement = float3.zero;
+}
+</code></pre>
+<h3 id="onintegratestate">OnIntegrateState</h3>
+<p>在<strong>积分</strong>阶段每帧调用一次。这是您根据输入、重力和配置文件参数计算角色期望位移的地方。</p>
+<p>您的任务是在 <code>BaseLocomotionContext</code> 上填充 <code>HorizontalDisplacement</code>、<code>VerticalDisplacement</code>、<code>HorizontalVelocity</code> 和 <code>VerticalVelocity</code>。</p>
+<p>最简单的方式是计算加速度并调用 <code>UpdateVelocitiesAndComputeDisplacements</code>：</p>
+<pre><code class="lang-csharp">public void OnIntegrateState(ref MyContext ctx)
+{
+    ref BaseLocomotionContext baseContext = ref ctx.BaseContext;
+
+    // 计算重力
+    float3 gravityAcceleration = baseContext.GravityDirection * baseContext.GravityStrength;
+
+    // 从输入计算移动加速度
+    float3 desiredVelocity = ctx.Input.MovementDirection * ctx.Profile.MaxSpeed;
+    float accel = ctx.Profile.MaxSpeed / ctx.Profile.TimeToMaxSpeed;
+    MathematicsHelpers.ComputeAccelerationToTargetVelocity(
+        out float3 moveAcceleration,
+        baseContext.HorizontalVelocity,
+        desiredVelocity,
+        baseContext.TimeStep,
+        accel);
+
+    // 应用两个加速度
+    baseContext.UpdateVelocitiesAndComputeDisplacements(
+        newHorizontalAcceleration: moveAcceleration,
+        newVerticalAcceleration: gravityAcceleration);
+}
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>不要在此处添加平台速度。<code>ComputeInheritedDisplacement</code> 步骤在碰撞解析后自动处理。手动添加会导致双重应用。</p>
+</div>
+<h3 id="onresolvestatecollisions">OnResolveStateCollisions</h3>
+<p>每帧可能被调用<strong>多次</strong>（最多 <code>MaxBounce</code> 次迭代）。每次调用代表碰撞滑移算法的一次迭代。</p>
+<p>大多数情况下，您的实现只需委托给 <code>baseContext.Move()</code>：</p>
+<pre><code class="lang-csharp">public void OnResolveStateCollisions(ref MyContext ctx)
+{
+    BaseLocomotionContext baseContext = ctx.BaseContext;
+    baseContext.Move();
+    ctx.BaseContext = baseContext;
+}
+</code></pre>
+<h3 id="onexitstate">OnExitState</h3>
+<p>当状态机转换<strong>离开</strong>此状态时调用一次。用于清理状态特定数据：</p>
+<pre><code class="lang-csharp">public void OnExitState(ref MyContext ctx)
+{
+    // 离开跳跃状态时重置跳跃计数器
+    ctx.StateData.JumpData.JumpsCount = 0;
+}
+</code></pre>
+<h2 id="转换">转换</h2>
+<p>转换定义角色何时以及如何在状态之间移动。</p>
+<h3 id="推荐基于属性的转换">推荐：基于属性的转换</h3>
+<p>将转换声明为带有 <code>[LocomotionTransition]</code> 的小型结构体。源代码生成器发现它们并自动处理分派、<code>OnExitState</code> 和 <code>OnEnterState</code>。</p>
+<pre><code class="lang-csharp">[LocomotionTransition]
+[EvaluateBefore(typeof(IdleToMoving))]
+[EvaluateBefore(typeof(IdleToFalling))]
+public struct IdleToJumping : ILocomotionTransition&lt;IdleState, JumpingState&gt;
+{
+    public bool ShouldTransition(ref MyContext ctx)
+        =&gt; ctx.BaseContext.IsGroundingContact &amp;&amp; ctx.Input.JumpTrigger &gt; 0;
+}
+</code></pre>
+<p>关键规则：</p>
+<ol>
+<li>结构体名称遵循 <code>{Source}To{Target}</code> 约定</li>
+<li><code>ILocomotionTransition&lt;TFrom, TTo&gt;</code> 声明连接哪些状态</li>
+<li><code>ShouldTransition</code> 在转换应该触发时返回 <code>true</code></li>
+<li><code>[EvaluateBefore]</code> / <code>[EvaluateAfter]</code> 控制优先级——第一个匹配的转换获胜</li>
+<li>源代码生成器自动调用源状态的 <code>OnExitState</code> 和目标状态的 <code>OnEnterState</code></li>
+</ol>
+<h2 id="常见状态模式">常见状态模式</h2>
+<h3 id="地面状态idle--moving">地面状态（Idle / Moving）</h3>
+<ul>
+<li><code>OnEnterState</code>：将垂直速度归零</li>
+<li><code>OnIntegrateState</code>：仅计算水平加速度</li>
+<li>转换：检查跳跃输入、失去地面接触、坡度超过最大值</li>
+</ul>
+<h3 id="空中状态falling--jumping">空中状态（Falling / Jumping）</h3>
+<ul>
+<li><code>OnEnterState</code>：清除接触（<code>LocomotionContact.None</code>），可选择继承平台速度</li>
+<li><code>OnIntegrateState</code>：应用重力 + 可选空中控制</li>
+<li>转换：检查地面接触、墙壁接触</li>
+</ul>
+<h3 id="滑行状态">滑行状态</h3>
+<ul>
+<li><code>OnIntegrateState</code>：应用重力（角色沿斜坡滑下）</li>
+<li>转换：检查失去接触（转为下落）、地面接触低于最大坡度（转为移动/空闲）</li>
+</ul>
+<h2 id="下一步">下一步</h2>
+<ul>
+<li><a href="execution-loop.html">执行循环</a> - 每个方法何时被精确调用</li>
+<li><a href="physics-configuration.html">物理配置</a> - 调整胶囊和碰撞参数</li>
+<li><a href="recipes/add-a-new-state.html">实用技巧：添加新状态</a> - 添加状态的分步指南</li>
+<li><a href="best-practices.html">最佳实践</a> - 状态逻辑的推荐模式</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.1';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the output root (sibling of vX.Y.Z/).
+      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
+      // so we compute the path from the URL to handle both EN and translated builds.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
