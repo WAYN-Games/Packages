@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="zh">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>扩展包 | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="扩展包 | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="安装" class="">安装</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="快速入门" class="">快速入门</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="开始使用" class="">开始使用</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">指南</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="架构概览" class="">架构概览</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="执行循环" class="">执行循环</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="创建状态机" class="">创建状态机</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="编写自定义状态" class="">编写自定义状态</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="物理配置" class="">物理配置</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="输入系统" class="">输入系统</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="混合 GameObject 层" class="">混合 GameObject 层</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="移动平台" class="">移动平台</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="调试可视化" class="">调试可视化</a>
+                          </li>
+                          <li class="active">
+                            <a href="extending.html" title="扩展包" class="active">扩展包</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">实用技巧</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="添加新状态" class="">添加新状态</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="添加新转换" class="">添加新转换</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-double-jump.html" title="添加二段跳" class="">添加二段跳</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-air-control.html" title="添加空中控制" class="">添加空中控制</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="切换到 AI 输入" class="">切换到 AI 输入</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="自定义地面吸附" class="">自定义地面吸附</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="自定义碰撞响应" class="">自定义碰撞响应</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="推动动态物体" class="">推动动态物体</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="覆盖管线步骤" class="">覆盖管线步骤</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="运行多个状态机" class="">运行多个状态机</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="逐角色重力" class="">逐角色重力</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="设置混合角色" class="">设置混合角色</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="设置移动平台" class="">设置移动平台</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">集成</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="动画" class="">动画</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">参考</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="示例" class="">示例</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="最佳实践" class="">最佳实践</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="故障排除" class="">故障排除</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="升级指南" class="">升级指南</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="扩展包">扩展包</h1>
+
+<p>MGM Character Controller 设计为无需修改包源码即可扩展。本页面介绍常见的扩展点和模式。</p>
+<h2 id="扩展点">扩展点</h2>
+<h3 id="1-自定义状态">1. 自定义状态</h3>
+<p>最常见的扩展。通过创建新的状态结构体并将它们添加到状态枚举来添加新的移动行为（墙壁奔跑、游泳、攀爬、冲刺）。</p>
+<p>参见 <a href="writing-states.html">编写自定义状态</a> 获取完整指南。</p>
+<h3 id="2-自定义-profile">2. 自定义 Profile</h3>
+<p>你的 <code>ILocomotionProfile</code> 结构体可以包含任何非托管数据。为新的游戏参数添加字段：</p>
+<pre><code class="lang-csharp">[Serializable]
+public partial struct MyProfile : ILocomotionProfile
+{
+    public MovingProfile Moving;
+    public FallingProfile Falling;
+    public JumpingProfile Jumping;
+
+    // Custom extension
+    public SwimmingProfile Swimming;
+    public DashProfile Dash;
+    public WallRunProfile WallRun;
+}
+</code></pre>
+<p>每个子 profile 都是一个带有配置字段的普通结构体。数据被烘焙到 blob 资产中，因此需要在你的 <code>LocomotionProfileAsset</code> 和 <code>BuildBlobAsset</code> 方法中添加对应字段。</p>
+<h3 id="3-自定义-context">3. 自定义 Context</h3>
+<p>你的 context 结构体可以包含额外的计算属性和辅助方法：</p>
+<pre><code class="lang-csharp">public partial struct MyContext : ILocomotionContext&lt;MyProfile, MyInput, MyStateData&gt;
+{
+    public BaseLocomotionContext BaseContext;
+    public MyStateData StateData;
+
+    // Standard interface properties...
+
+    // Custom helpers
+    public bool IsUnderwater =&gt; BaseContext.CharacterPosition.Position.y &lt; WaterLevel;
+    public bool WantsToMove =&gt; Input.MovementMagnitude &gt; math.EPSILON;
+    public bool CanDash =&gt; StateData.DashCooldown &lt;= 0;
+
+    // Custom ground snap for swimming (no ground snap when submerged)
+    public void ComputeGroundSnappingDistance(in MyProfile profile, out float distance)
+    {
+        if (IsUnderwater)
+        {
+            distance = 0; // No ground snapping while swimming
+            return;
+        }
+        // Normal ground snap calculation...
+    }
+}
+</code></pre>
+<h3 id="4-自定义-statedata">4. 自定义 StateData</h3>
+<p>添加每个状态的持久化数据，用于任何特定于状态的追踪：</p>
+<pre><code class="lang-csharp">public partial struct MyStateData : IComponentData
+{
+    public JumpData JumpData;
+    public float DashCooldown;
+    public float WallRunTimer;
+    public float3 WallNormal;  // Remembered from wall run entry
+}
+</code></pre>
+<p>状态数据在帧和状态转换之间持久存在。在 <code>OnEnterState</code> 或 <code>OnExitState</code> 中适当地清理它。</p>
+<h3 id="5-自定义输入">5. 自定义输入</h3>
+<p>为新动作添加输入通道：</p>
+<pre><code class="lang-csharp">public partial struct MyInput : ICharacterLocomotionInput&lt;MyInput&gt;
+{
+    public float3 Movement;
+    public float JumpTrigger;
+    public float DashTrigger;      // New action
+    public float InteractTrigger;  // New action
+
+    public void ApplyInputsToCharacter(in MyInput playerInputs)
+    {
+        Movement = playerInputs.Movement;
+        JumpTrigger += playerInputs.JumpTrigger;       // Accumulate triggers
+        DashTrigger += playerInputs.DashTrigger;
+        InteractTrigger += playerInputs.InteractTrigger;
+    }
+}
+</code></pre>
+<p>记得在你的 <code>PlayerInputAsset</code> 子类中读取新输入，并在状态逻辑中消费触发器。</p>
+<h3 id="6-自定义地面吸附">6. 自定义地面吸附</h3>
+<p>重写 context 上的 <code>ComputeGroundSnappingDistance</code> 以控制角色何时以及多远吸附到地面：</p>
+<pre><code class="lang-csharp">public void ComputeGroundSnappingDistance(in MyProfile profile, out float distance)
+{
+    // Disable ground snapping while jumping upward
+    if (StateData.CurrentState == MyStates.Jumping &amp;&amp;
+        math.dot(BaseContext.VerticalVelocity, -BaseContext.GravityDirection) &gt; 0)
+    {
+        distance = 0;
+        return;
+    }
+
+    // Default calculation
+    var slopeDistance = math.length(BaseContext.HorizontalVelocity * BaseContext.TimeStep) *
+                       math.tan(math.radians(CharacterPhysicsProfile.MaxSlope));
+    distance = math.max(CharacterPhysicsProfile.MaxStepHeight, slopeDistance);
+}
+</code></pre>
+<h3 id="7-自定义碰撞响应">7. 自定义碰撞响应</h3>
+<p>重写 <code>OnResolveStateCollisions</code> 以在角色碰到某物时添加自定义行为：</p>
+<pre><code class="lang-csharp">public void OnResolveStateCollisions(ref MyContext ctx)
+{
+    BaseLocomotionContext baseContext = ctx.BaseContext;
+    baseContext.Move();
+
+    // Custom: bounce off trampolines
+    if (baseContext.IsGroundingContact &amp;&amp;
+        HasTrampolineTag(baseContext.LocomotionContact.ValueRO.Entity))
+    {
+        baseContext.VerticalVelocity = -baseContext.VerticalVelocity * 1.5f;
+    }
+
+    ctx.BaseContext = baseContext;
+}
+</code></pre>
+<h3 id="8-自定义系统">8. 自定义系统</h3>
+<p>你可以添加系统在管线的任何位置修改运动组件：</p>
+<pre><code class="lang-csharp">[UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+[UpdateBefore(typeof(MyLocomotionSystem))]
+partial struct GravityZoneSystem : ISystem
+{
+    public void OnUpdate(ref SystemState state)
+    {
+        foreach (var gravity in SystemAPI.Query&lt;RefRW&lt;LocomotionGravity&gt;&gt;()
+            .WithAll&lt;InGravityZone&gt;())
+        {
+            gravity.ValueRW.Gravity = new float3(0, -4.9f, 0); // Half gravity
+        }
+    }
+}
+</code></pre>
+<h2 id="自定义执行管线">自定义执行管线</h2>
+<p><a href="execution-loop.html">执行循环</a>中的每个步骤都是 <code>ILocomotionStateMachine</code> 上的默认接口方法（DIM）。你可以在状态机的 partial 结构体上重写其中任何一个来替换或包装默认行为。</p>
+<p>源代码生成器为你的状态机生成一个 partial 结构体（例如 <code>MyStateMachine</code>）。因为它是 partial 的，你可以添加第二个 partial 声明来重写任何 DIM：</p>
+<pre><code class="lang-csharp">public partial struct MyStateMachine
+{
+    public void Integrate(ref MyStateMachine stateMachine, ref MyContext context)
+    {
+        // Skip movement entirely when crushed
+        if (context.BaseContext.OverlapState == OverlapState.Crush)
+            return;
+
+        // Otherwise run the default per-state integration
+        stateMachine.IntegratePerState(ref context);
+    }
+}
+</code></pre>
+<h3 id="可重写的管线方法">可重写的管线方法</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>默认行为</th>
+<th>重写以...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Execute</code></td>
+<td>编排完整管线（下面所有步骤按顺序执行）</td>
+<td>替换整个执行循环</td>
+</tr>
+<tr>
+<td><code>HandleExternalImpulses</code></td>
+<td>从物体接触中累积速度冲量</td>
+<td>自定义冲量过滤或缩放</td>
+</tr>
+<tr>
+<td><code>Integrate</code></td>
+<td>调用 <code>IntegratePerState</code>（被压碎时跳过）</td>
+<td>添加积分前/后逻辑</td>
+</tr>
+<tr>
+<td><code>SolveOverlaps</code></td>
+<td>多平面反碰撞算法</td>
+<td>自定义重叠解析</td>
+</tr>
+<tr>
+<td><code>CollideAndSlide</code></td>
+<td>循环 <code>ResolveCollisionPerState</code> 最多 MaxBounce 次</td>
+<td>自定义碰撞迭代</td>
+</tr>
+<tr>
+<td><code>SnapToGround</code></td>
+<td>向下胶囊投射以保持地面接触</td>
+<td>自定义地面附着</td>
+</tr>
+<tr>
+<td><code>InheritDisplacementFromMotionVelocity</code></td>
+<td>从物理体计算平台速度继承</td>
+<td>自定义平台骑乘行为</td>
+</tr>
+<tr>
+<td><code>EvaluateTransition</code></td>
+<td>调用 <code>EvaluateTransitionPerState</code></td>
+<td>添加转换前/后逻辑</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>IntegratePerState</code>、<code>ResolveCollisionPerState</code> 和 <code>EvaluateTransitionPerState</code> 由源代码生成器生成（switch 分发到每个状态的方法）。它们不打算被直接重写。</p>
+</div>
+<p>参见 <a href="execution-loop.html">执行循环</a> 了解这些步骤之间的顺序和数据流。</p>
+<h2 id="自定义运动系统">自定义运动系统</h2>
+<p>源代码生成器创建一个继承自 <code>ILocomotionSystem&lt;...&gt;</code> 的 partial 接口 <code>I{Prefix}LocomotionSystem</code>。生成的系统结构体使用 DIM 生命周期方法实现此接口，你可以重写这些方法。</p>
+<p>要自定义，添加你自己的 partial 接口声明：</p>
+<pre><code class="lang-csharp">public partial interface IMyLocomotionSystem
+{
+    void ILocomotionSystem&lt;MyStateMachine, MyStates, MyContext, MyProfile, MyInput, MyStateData&gt;
+        .OnLocomotionSystemUpdate(
+            ref LocomotionJobData jobData, ref EntityQuery query, ref SystemState state)
+    {
+        if (query.IsEmptyIgnoreFilter) return;
+        jobData = jobData.Update(ref state);
+
+        // Schedule single-threaded instead of parallel (useful for debugging)
+        state.Dependency = ScheduleLocomotionJob(
+            state.Dependency,
+            state.WorldUnmanaged.Time.DeltaTime,
+            jobData, query,
+            jobData.GetPhysicsWorldSingleton());
+    }
+}
+</code></pre>
+<h3 id="可重写的系统生命周期方法">可重写的系统生命周期方法</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>默认行为</th>
+<th>重写以...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OnLocomotionSystemCreate</code></td>
+<td>构建实体查询并创建 <code>LocomotionJobData</code></td>
+<td>添加 <code>RequireForUpdate</code>、自定义查询过滤器、速率管理器设置</td>
+</tr>
+<tr>
+<td><code>OnLocomotionSystemUpdate</code></td>
+<td>更新作业数据并调用 <code>ScheduleParallelLocomotionJob</code></td>
+<td>使用单线程调度、添加条件跳过、集成速率管理器</td>
+</tr>
+<tr>
+<td><code>OnLocomotionSystemDestroy</code></td>
+<td>无操作</td>
+<td>自定义资源清理</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>默认的 DIM 实现使用 <code>ref</code> 参数而不是 <code>SystemAPI</code>，因为 Unity 的源代码生成器无法修补包的源代码生成器发出的代码中的调用站点（两者并行运行）。你自己的 partial 接口重写<strong>可以</strong>使用 <code>SystemAPI</code>，因为它们对 Unity 的生成器可见。</p>
+</div>
+<h2 id="dim-自定义参考">DIM 自定义参考</h2>
+<p>包中所有默认接口方法的完整参考：</p>
+<table>
+<thead>
+<tr>
+<th>接口</th>
+<th>方法</th>
+<th>默认</th>
+<th>重写以...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ILocomotionState</code></td>
+<td><code>OnEnterState</code></td>
+<td>无操作</td>
+<td>在进入时初始化特定于状态的数据</td>
+</tr>
+<tr>
+<td><code>ILocomotionState</code></td>
+<td><code>OnIntegrateState</code></td>
+<td>应用重力 + 计算位移</td>
+<td>每个状态的自定义移动逻辑</td>
+</tr>
+<tr>
+<td><code>ILocomotionState</code></td>
+<td><code>OnExitState</code></td>
+<td>无操作</td>
+<td>在退出时清理特定于状态的数据</td>
+</tr>
+<tr>
+<td><code>ILocomotionState</code></td>
+<td><code>OnResolveStateCollisions</code></td>
+<td><code>baseContext.Move()</code></td>
+<td>每个状态的自定义碰撞响应</td>
+</tr>
+<tr>
+<td><code>ILocomotionContext</code></td>
+<td><code>ComputeGroundSnappingDistance</code></td>
+<td>返回 <code>1f</code></td>
+<td>基于速度或状态的吸附距离</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>Execute</code></td>
+<td>完整管线</td>
+<td>替换整个执行循环</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>HandleExternalImpulses</code></td>
+<td>累积接触冲量</td>
+<td>自定义冲量处理</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>Integrate</code></td>
+<td>调用 <code>IntegratePerState</code></td>
+<td>积分前/后逻辑</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>SolveOverlaps</code></td>
+<td>多平面反碰撞</td>
+<td>自定义重叠解析</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>CollideAndSlide</code></td>
+<td>弹跳循环最多 MaxBounce 次</td>
+<td>自定义碰撞循环</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>SnapToGround</code></td>
+<td>向下胶囊投射</td>
+<td>自定义地面附着</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>InheritDisplacementFromMotionVelocity</code></td>
+<td>平台速度继承</td>
+<td>自定义平台骑乘</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine</code></td>
+<td><code>EvaluateTransition</code></td>
+<td>调用 <code>EvaluateTransitionPerState</code></td>
+<td>转换前/后逻辑</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem</code></td>
+<td><code>OnLocomotionSystemCreate</code></td>
+<td>构建查询 + 作业数据</td>
+<td>自定义系统初始化</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem</code></td>
+<td><code>OnLocomotionSystemUpdate</code></td>
+<td>并行调度</td>
+<td>自定义调度策略</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem</code></td>
+<td><code>OnLocomotionSystemDestroy</code></td>
+<td>无操作</td>
+<td>自定义资源清理</td>
+</tr>
+<tr>
+<td><code>ICharacterLocomotionInput</code></td>
+<td><code>ApplyInputsToCharacter</code></td>
+<td>无操作</td>
+<td>在固定更新之间累积/合并输入</td>
+</tr>
+</tbody>
+</table>
+<h2 id="多个状态机">多个状态机</h2>
+<p>你可以在同一项目中拥有多个独立的状态机类型。例如：</p>
+<ul>
+<li><code>GroundLocomotionStates</code> - 行走、奔跑、跳跃、下落</li>
+<li><code>VehicleStates</code> - 驾驶、制动、加速、空中</li>
+<li><code>SwimmingStates</code> - 水面、水下、潜水</li>
+</ul>
+<p>每个都有自己的枚举、context、profile、输入、状态数据和生成的系统。它们完全独立。</p>
+<p>要在状态机之间切换角色，你需要添加/移除相关组件（状态机组件、输入、profile、状态数据）。这是一个涉及结构性实体更改的高级模式。</p>
+<h2 id="使用源代码生成器">使用源代码生成器</h2>
+<p>Roslyn 源代码生成器读取锚点结构体和状态结构体上的属性并生成：</p>
+<ol>
+<li>带分发逻辑的状态机组件</li>
+<li>输入读取器系统</li>
+<li>运动系统上的 <code>ISystem</code> 生命周期方法（<code>OnCreate</code>、<code>OnUpdate</code>、<code>OnDestroy</code>）</li>
+</ol>
+<p>生成器源码位于 <code>SourceGenerator/SrcGenProj~/</code>。要修改生成的代码模式：</p>
+<ol>
+<li>编辑 <code>StateMachineSourceGenerator.cs</code></li>
+<li>从 <code>SrcGenProj~</code> 目录使用 <code>dotnet build</code> 构建</li>
+<li>DLL 被复制到 <code>SourceGenerator/</code> 并由 Unity 加载</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>修改源代码生成器会影响项目中的所有状态机。请彻底测试。</p>
+</div>
+<h2 id="创建复合角色">创建复合角色</h2>
+<p>对于需要 ECS 运动和复杂视觉层级结构的角色，使用 <code>CompositeEntityAuthoring</code> 模式：</p>
+<ol>
+<li><strong>Locomotor</strong> 实体承载所有物理和状态机组件</li>
+<li><strong>Model</strong> 实体通过 <code>CharacterFollower</code> 跟随 Locomotor</li>
+<li>Model 的 GameObject 可以有带 Animator、粒子系统、音频源的子对象</li>
+</ol>
+<p><code>CharacterFollowerAuthoring</code> 在烘焙期间将模型链接到 locomotor。在运行时，<code>CharacterFollowerSystem</code> 同步变换。</p>
+<h2 id="性能注意事项">性能注意事项</h2>
+<h3 id="扩展到大量角色">扩展到大量角色</h3>
+<p>运动作业在 chunk 之间并行运行。要最大化吞吐量：</p>
+<ul>
+<li>保持所有角色具有相同的原型（相同的组件集）</li>
+<li>使用共享碰撞体（除非需要，否则避免 <code>ForceUniqueColliderAuthoring</code>）</li>
+<li>利用共享 blob 资产进行 Profile（所有引用相同 profile 的角色共享内存）</li>
+<li>只对你正在调查的角色启用调试可视化</li>
+</ul>
+<h3 id="burst-编译">Burst 编译</h3>
+<p>状态方法在 Burst 编译的作业内运行，因此它们必须是 Burst 兼容的。阻止 Burst 编译的常见错误：</p>
+<ul>
+<li>使用 <code>string</code> 或 <code>List&lt;T&gt;</code> 类型</li>
+<li>调用托管虚方法（DIM 生命周期方法由源代码生成器分发，而非通过虚分发）</li>
+<li>访问 <code>GameObject</code> 或 <code>MonoBehaviour</code> API</li>
+<li>使用 <code>Debug.Log</code>（使用 <code>[Conditional(&quot;ENABLE_UNITY_COLLECTIONS_CHECKS&quot;)]</code> 保护）</li>
+</ul>
+<h3 id="性能分析">性能分析</h3>
+<p>使用 Unity 的 Profiler 识别瓶颈：</p>
+<ul>
+<li>运动作业在 Jobs 时间线中显示为 <code>LocomotionJob</code></li>
+<li>每阶段的 profiler 标记是 <code>ILocomotionStateMachine</code> 上的静态字段，通过 <code>ProfilerMarkerExtensions</code> 由 <code>[Conditional(&quot;ENABLE_LOCOMOTION_PROFILER&quot;)]</code> 控制</li>
+<li><code>LocomotionProfilerHUD</code> 在游戏内显示帧级计时</li>
+</ul>
+<h2 id="后续步骤">后续步骤</h2>
+<ul>
+<li><a href="getting-started.html">快速入门</a> - 设置你的第一个角色</li>
+<li><a href="architecture.html">架构概述</a> - 了解完整的系统设计</li>
+<li><a href="writing-states.html">编写自定义状态</a> - 实现新的移动行为</li>
+<li><a href="recipes/override-pipeline-step.html">配方：重写管线步骤</a> - 逐步管线重写</li>
+<li><a href="recipes/run-multiple-state-machines.html">配方：运行多个状态机</a> - 同一项目中的独立状态机</li>
+<li><a href="best-practices.html">最佳实践</a> - 推荐的模式和反模式</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.1';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

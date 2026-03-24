@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Moving Platforms | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Moving Platforms | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quickstart" class="">Quickstart</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="Architecture Overview" class="">Architecture Overview</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="The Execution Loop" class="">The Execution Loop</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="Creating a State Machine" class="">Creating a State Machine</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="Writing Custom States" class="">Writing Custom States</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="Physics Configuration" class="">Physics Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="Input System" class="">Input System</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="Hybrid GameObject Layer" class="">Hybrid GameObject Layer</a>
+                          </li>
+                          <li class="active">
+                            <a href="moving-platforms.html" title="Moving Platforms" class="active">Moving Platforms</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="Debug Visualization" class="">Debug Visualization</a>
+                          </li>
+                          <li class="">
+                            <a href="extending.html" title="Extending the Package" class="">Extending the Package</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Recipes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="Add a New State" class="">Add a New State</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="Add a New Transition" class="">Add a New Transition</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-double-jump.html" title="Add Double Jump" class="">Add Double Jump</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-air-control.html" title="Add Air Control" class="">Add Air Control</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="Switch to AI Input" class="">Switch to AI Input</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="Customize Ground Snapping" class="">Customize Ground Snapping</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="Customize Collision Response" class="">Customize Collision Response</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="Push Dynamic Objects" class="">Push Dynamic Objects</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="Override a Pipeline Step" class="">Override a Pipeline Step</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="Run Multiple State Machines" class="">Run Multiple State Machines</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="Per-Character Gravity" class="">Per-Character Gravity</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="Set Up a Hybrid Character" class="">Set Up a Hybrid Character</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="Set Up a Moving Platform" class="">Set Up a Moving Platform</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Integrations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Reference</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="Samples" class="">Samples</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="Best Practices" class="">Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="Upgrade Guide" class="">Upgrade Guide</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="moving-platforms">Moving Platforms</h1>
+
+<p>The MGM Character Controller has built-in support for moving and rotating platforms. Characters standing on platforms automatically inherit their velocity and rotation without any special logic in your state code.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Moving platforms are kinematic physics bodies. The locomotion system detects when a character is grounded on any dynamic body (kinematic or fully-simulated) and automatically computes the displacement and rotation the character should inherit.</p>
+<h3 id="contact-detection">Contact Detection</h3>
+<p>During the <strong>SnapToGround</strong> step, the system detects that the character is standing on a dynamic body. It records the body index and entity reference in the <code>LocomotionContact</code> component.</p>
+<h3 id="inheritdisplacementfrommotionvelocity">InheritDisplacementFromMotionVelocity</h3>
+<p>At the end of the locomotion job, the <strong>InheritDisplacementFromMotionVelocity</strong> step reads the body's motion velocity from the physics world and decomposes it into:</p>
+<ul>
+<li><code>PlatformHorizontalVelocity</code> - The body's velocity projected onto the horizontal plane</li>
+<li><code>PlatformVerticalVelocity</code> - The body's velocity along the gravity axis</li>
+</ul>
+<p>The displacement is applied to the character's position in the <strong>same frame</strong>. The platform rotation is applied directly via a twist quaternion computation. The inherited velocities are available immediately in the same frame's <code>EvaluateTransition</code> step (e.g., a jumping state's <code>OnEnterState</code> can read <code>PlatformHorizontalVelocity</code> to preserve momentum when jumping off a platform).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You should <strong>never</strong> add platform velocity manually in <code>OnIntegrateState</code>. The system handles it automatically. Adding it yourself would result in double-application, making the character move twice as fast on platforms.</p>
+</div>
+<h2 id="platform-components">Platform Components</h2>
+<h3 id="platformmover">PlatformMover</h3>
+<p>Stores the movement speed and current waypoint index for track-based platform movement. Updated by the <code>PlatformMovementSystem</code>.</p>
+<h3 id="rotor">Rotor</h3>
+<p>Stores angular velocity for rotating platforms. The system applies the rotation each fixed update.</p>
+<h3 id="track">Track</h3>
+<p>Constrains platform motion along a predefined path. The platform loops cyclically through waypoints.</p>
+<p>For a step-by-step setup guide, see <a href="recipes/setup-moving-platform.html">Recipe: Set Up a Moving Platform</a>.</p>
+<h2 id="platformmovementsystem">PlatformMovementSystem</h2>
+<p>The <code>PlatformMovementSystem</code> runs in the <code>BeforePhysicsSystemGroup</code> and computes the desired linear and angular velocities based on <code>PlatformMover</code> and <code>Rotor</code> components. It writes to the <code>PhysicsVelocity</code> component only - Unity.Physics then integrates those velocities to update the platform's transform during the physics step.</p>
+<h2 id="character-behavior-on-platforms">Character Behavior on Platforms</h2>
+<h3 id="standing-still">Standing Still</h3>
+<p>When idle on a platform, the character moves with the platform. If the platform rotates, the character's rotation is updated directly by the <code>InheritDisplacementFromMotionVelocity</code> step via a twist quaternion computation (see the sample's <code>IdleState.OnIntegrateState</code> for the spin/roll/slide interpolation logic).</p>
+<h3 id="moving-on-a-platform">Moving on a Platform</h3>
+<p>When walking on a moving platform, the character's own velocity is additive with the platform's velocity. The character moves relative to the platform surface.</p>
+<h3 id="jumping-off-a-platform">Jumping off a Platform</h3>
+<p>When the character jumps, the <code>JumpingState.OnEnterState</code> adds <code>PlatformHorizontalVelocity</code> to the character's horizontal velocity:</p>
+<pre><code class="lang-csharp">ctx.BaseContext.HorizontalVelocity += ctx.BaseContext.PlatformHorizontalVelocity;
+</code></pre>
+<p>This preserves the platform's momentum, so jumping off a fast-moving platform launches the character in the direction the platform was moving. Without this, the character would appear to &quot;snap back&quot; to a standstill mid-air.</p>
+<h3 id="platform-push-overlap-resolution">Platform Push (Overlap Resolution)</h3>
+<p>If a platform moves into the character (e.g., a rising elevator ceiling), the <strong>SolveOverlaps</strong> step pushes the character out. If the character is trapped between two surfaces (e.g., elevator ceiling and floor), the overlap state transitions through <code>Push</code> -&gt; <code>Pinch</code> -&gt; <code>Crush</code>.</p>
+<p>When the character is pushed into geometry, the collide-and-slide algorithm can still move it back out because backface collisions are ignored. This means a character that has been shoved inside a wall by a platform can escape by moving away from the wall - the capsule cast will not collide with the interior face of the geometry.</p>
+<h2 id="custom-platform-behaviors">Custom Platform Behaviors</h2>
+<p>You can create custom platform movement by writing your own system that modifies the <code>PhysicsVelocity</code> component on platform entities. The locomotion system will automatically handle character inheritance for any dynamic body the character is grounded on.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Your system must run in <code>BeforePhysicsSystemGroup</code> so that the velocities are set before Unity.Physics integrates them into the platform's transform.</p>
+</div>
+<p>For example, a platform that follows a spline:</p>
+<pre><code class="lang-csharp">[BurstCompile]
+[UpdateInGroup(typeof(BeforePhysicsSystemGroup))]
+partial struct SplinePlatformSystem : ISystem
+{
+    [BurstCompile]
+    public void OnUpdate(ref SystemState state)
+    {
+        float dt = SystemAPI.Time.fixedDeltaTime;
+        foreach (var (velocity, spline, transform) in
+            SystemAPI.Query&lt;RefRW&lt;PhysicsVelocity&gt;, RefRW&lt;SplineFollower&gt;, RefRO&lt;LocalTransform&gt;&gt;()
+)
+        {
+            float3 targetPos = EvaluateSpline(spline.ValueRO, SystemAPI.Time.ElapsedTime);
+            velocity.ValueRW.Linear = (targetPos - transform.ValueRO.Position) / dt;
+        }
+    }
+}
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="execution-loop.html">The Execution Loop</a> - Understand the platform-related steps</li>
+<li><a href="physics-configuration.html">Physics Configuration</a> - Platform-relevant physics settings</li>
+<li><a href="recipes/per-character-gravity.html">Recipe: Per-Character Gravity</a> - Gravity wells and custom gravity zones</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the output root (sibling of vX.Y.Z/).
+      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
+      // so we compute the path from the URL to handle both EN and translated builds.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

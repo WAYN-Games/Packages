@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Hybrid GameObject Layer | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Hybrid GameObject Layer | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="../Images/logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../Images/logo.png" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <a href="architecture.html" title="Architecture Overview" class="">Architecture Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="execution-loop.html" title="The Execution Loop" class="">The Execution Loop</a>
+                    </li>
+                    <li class="">
+                      <a href="creating-state-machine.html" title="Creating a State Machine" class="">Creating a State Machine</a>
+                    </li>
+                    <li class="">
+                      <a href="writing-states.html" title="Writing Custom States" class="">Writing Custom States</a>
+                    </li>
+                    <li class="">
+                      <a href="physics-configuration.html" title="Physics Configuration" class="">Physics Configuration</a>
+                    </li>
+                    <li class="">
+                      <a href="input-system.html" title="Input System" class="">Input System</a>
+                    </li>
+                    <li class="active">
+                      <a href="hybrid-layer.html" title="Hybrid GameObject Layer" class="active">Hybrid GameObject Layer</a>
+                    </li>
+                    <li class="">
+                      <a href="moving-platforms.html" title="Moving Platforms" class="">Moving Platforms</a>
+                    </li>
+                    <li class="">
+                      <a href="debug-visualization.html" title="Debug Visualization" class="">Debug Visualization</a>
+                    </li>
+                    <li class="">
+                      <a href="extending.html" title="Extending the Package" class="">Extending the Package</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="hybrid-gameobject-layer">Hybrid GameObject Layer</h1>
+
+<p>The Hybrid layer bridges the gap between ECS entities and GameObjects. It enables characters driven by Burst-compiled ECS logic to have animated 3D models, particle effects, audio sources, and cameras, all of which require MonoBehaviour and GameObject APIs.</p>
+<h2 id="why-a-hybrid-layer">Why a Hybrid Layer?</h2>
+<p>Burst-compiled jobs cannot touch GameObjects, Cameras, Animators, or any managed Unity API. But games need these for rendering, animation, audio, and UI. The hybrid layer solves this by:</p>
+<ol>
+<li>Running all locomotion logic in pure ECS (fast, parallel, Burst-compatible)</li>
+<li>Syncing entity transforms to GameObjects each frame (main thread, after jobs complete)</li>
+<li>Letting MonoBehaviours on those GameObjects react to position/rotation changes</li>
+</ol>
+<p>This means you get the performance of ECS for simulation and the convenience of GameObjects for presentation.</p>
+<h2 id="assembly">Assembly</h2>
+<p>The hybrid layer lives in the <code>Wayn.Games.Locomotion.Hybrid</code> assembly, which references the <code>Runtime</code> assembly. Your game code can reference <code>Hybrid</code> if it needs to interact with the bridge systems.</p>
+<h2 id="core-types">Core Types</h2>
+<h3 id="entitygameobject-monobehaviour">EntityGameObject (MonoBehaviour)</h3>
+<p>Attached to a GameObject that is linked to an ECS entity. It stores the <code>Entity</code> reference and registers/unregisters the GameObject's <code>Transform</code> with the singleton transform sync system.</p>
+<p>When the GameObject is destroyed, it automatically unregisters from the sync system to prevent dangling references.</p>
+<h3 id="entitygameobjectinstance-monobehaviour">EntityGameObjectInstance (MonoBehaviour)</h3>
+<p>A per-instance marker that links a specific GameObject instance to its entity. Used when the same prefab is instantiated multiple times for different entities.</p>
+<h3 id="gameobjectentity-component">GameObjectEntity (Component)</h3>
+<p>An ECS component that stores the <code>UnityObjectRef&lt;GameObject&gt;</code> reference, allowing systems to look up the GameObject from the entity side.</p>
+<h3 id="entitygocleanup-component">EntityGoCleanup (Component)</h3>
+<p>A cleanup component added to entities whose associated GameObjects need to be destroyed. The <code>EntityGoCleanupSystem</code> processes these to ensure GameObjects are properly disposed when their entities are destroyed.</p>
+<h2 id="systems">Systems</h2>
+<h3 id="entitygoinitialisationsystem">EntityGoInitialisationSystem</h3>
+<p>Runs when new entities with <code>GameObjectEntity</code> components appear. It:</p>
+<ol>
+<li>Instantiates the referenced GameObject prefab</li>
+<li>Attaches an <code>EntityGameObject</code> MonoBehaviour to link it back to the entity</li>
+<li>Registers the transform for syncing</li>
+</ol>
+<h3 id="entitygotransformsyncsystem">EntityGoTransformSyncSystem</h3>
+<p>A singleton system that maintains a registry of <code>(Entity, Transform)</code> pairs. Each frame, after all ECS jobs complete, it copies <code>LocalTransform</code> from each registered entity to the corresponding GameObject's <code>Transform</code>.</p>
+<p>This runs on the main thread because <code>Transform</code> access requires it, but the actual locomotion simulation that produces the positions ran in parallel Burst jobs.</p>
+<h3 id="entitygocleanupsystem">EntityGoCleanupSystem</h3>
+<p>Processes entities with the <code>EntityGoCleanup</code> component. When an entity is destroyed, this system ensures the associated GameObject is also destroyed, preventing orphaned GameObjects in the scene.</p>
+<h3 id="entitygopreviewsystem-editor-only">EntityGoPreviewSystem (Editor Only)</h3>
+<p>Provides editor-time preview of entity-linked GameObjects. This allows you to see the visual representation in the Scene view without entering Play mode.</p>
+<h2 id="character-follower">Character Follower</h2>
+<p>The <code>CharacterFollower</code> component is an ECS component added to &quot;model&quot; entities. It stores a reference to the Locomotor entity that the model should follow.</p>
+<p>The <code>CharacterFollowerSystem</code> runs each frame and copies the Locomotor's position and rotation to the model entity. The model entity then has its transform synced to the associated GameObject by <code>EntityGoTransformSyncSystem</code>.</p>
+<p>This two-hop chain (Locomotor -&gt; Model Entity -&gt; GameObject) ensures:</p>
+<ul>
+<li>The Locomotor runs in parallel with no GameObject dependencies</li>
+<li>The Model entity can apply visual offsets or smoothing</li>
+<li>The GameObject receives the final visual transform</li>
+</ul>
+<h2 id="player-gameobject-management">Player GameObject Management</h2>
+<h3 id="playergomanagersystem">PlayerGOManagerSystem</h3>
+<p>This system manages the lifecycle of player GameObjects:</p>
+<ol>
+<li><strong>Spawn</strong>: When a new Player entity appears with a <code>PlayerGameObjectPrefab</code> but no <code>PlayerGameObjectInstance</code>, the system instantiates the prefab and stores the instance reference</li>
+<li><strong>Destroy</strong>: When a Player entity is destroyed, the system destroys the associated GameObject</li>
+</ol>
+<p>The player GameObject typically contains:</p>
+<ul>
+<li>A <code>Camera</code> component</li>
+<li>A <code>CinemachineBrain</code> for camera blending</li>
+<li>A <code>PlayerInput</code> component for input handling</li>
+<li>A <code>PlayerGoAuthoring</code> with references to the camera and camera target</li>
+</ul>
+<h3 id="camerarigfollowcontrolledcharactersystem">CameraRigFollowControlledCharacterSystem</h3>
+<p>Ensures the player's camera rig follows the controlled character. It reads the <code>ControlledCharacters</code> buffer and updates the camera target position to match the active character's position.</p>
+<h2 id="destructionmanager">DestructionManager</h2>
+<p>A MonoBehaviour that handles cleanup when a hybrid GameObject is destroyed. It ensures all entity references are properly cleaned up and prevents errors from accessing destroyed GameObjects.</p>
+<h2 id="locomotionprofilerhud">LocomotionProfilerHUD</h2>
+<p>An optional MonoBehaviour that displays runtime profiling information as an in-game overlay. Useful during development to monitor the performance of the locomotion system.</p>
+<h2 id="setting-up-a-hybrid-character">Setting Up a Hybrid Character</h2>
+<p>To create a character with a visual model:</p>
+<h3 id="1-create-the-locomotor-entity-in-sub-scene">1. Create the Locomotor entity (in sub-scene)</h3>
+<p>Add your Character Locomotor Authoring component as described in <a href="getting-started.html">Getting Started</a>.</p>
+<h3 id="2-create-the-model-in-sub-scene">2. Create the Model (in sub-scene)</h3>
+<ol>
+<li>Add a child GameObject under (or near) the Locomotor with your visual mesh/model</li>
+<li>Add a <code>CharacterFollowerAuthoring</code> component</li>
+<li>Set the <strong>Locomotor</strong> field to reference the Locomotor's authoring component</li>
+<li>The model can have an Animator, AudioSource, particle systems, etc.</li>
+</ol>
+<h3 id="3-create-the-player-prefab-regular-gameobject-not-in-sub-scene">3. Create the Player prefab (regular GameObject, NOT in sub-scene)</h3>
+<ol>
+<li>Create a GameObject with Camera, CinemachineBrain, PlayerInput</li>
+<li>Add a <code>PlayerGoAuthoring</code> component with camera references</li>
+<li>Save it as a prefab</li>
+</ol>
+<h3 id="4-create-the-player-entity-in-sub-scene">4. Create the Player entity (in sub-scene)</h3>
+<ol>
+<li>Create a GameObject in the sub-scene</li>
+<li>Add your Player Character Authoring component</li>
+<li>Assign the character entity, input asset, and player GO prefab</li>
+</ol>
+<p>At runtime:</p>
+<ol>
+<li>The Player entity is baked, triggering <code>PlayerGOManagerSystem</code> to instantiate the player prefab</li>
+<li>The input asset is initialized with the player's camera and input references</li>
+<li>The model entity follows the Locomotor via <code>CharacterFollowerSystem</code></li>
+<li>The model's GameObject transform is synced via <code>EntityGoTransformSyncSystem</code></li>
+</ol>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="architecture.html">Architecture Overview</a> - How the entity types relate</li>
+<li><a href="input-system.html">Input System</a> - How player input flows through the system</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script src="../../versions.js"></script>
+    <script>
+    (function () {
+      var current = '0.3.0';
+      var rel = '../';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = rel + '../v' + v.version + '/index.html';
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          if (select.value) {
+            window.location.href = select.value;
+          }
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Visualisation de debogage | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Visualisation de debogage | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngamesassets.mgm.charactercontroller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.Locomotion.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="D&#233;marrage rapide" class="">D&#233;marrage rapide</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="Premiers pas" class="">Premiers pas</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="Vue d&#39;ensemble de l&#39;architecture" class="">Vue d&#39;ensemble de l&#39;architecture</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="La boucle d&#39;ex&#233;cution" class="">La boucle d&#39;ex&#233;cution</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="Cr&#233;er une machine &#224; &#233;tats" class="">Cr&#233;er une machine &#224; &#233;tats</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="&#201;crire des &#233;tats personnalis&#233;s" class="">&#201;crire des &#233;tats personnalis&#233;s</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="Configuration physique" class="">Configuration physique</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="Syst&#232;me d&#39;entr&#233;e" class="">Syst&#232;me d&#39;entr&#233;e</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="Couche hybride GameObject" class="">Couche hybride GameObject</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="Plateformes mobiles" class="">Plateformes mobiles</a>
+                          </li>
+                          <li class="active">
+                            <a href="debug-visualization.html" title="Visualisation de d&#233;bogage" class="active">Visualisation de d&#233;bogage</a>
+                          </li>
+                          <li class="">
+                            <a href="extending.html" title="&#201;tendre le package" class="">&#201;tendre le package</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Recettes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="Ajouter un nouvel &#233;tat" class="">Ajouter un nouvel &#233;tat</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="Ajouter une nouvelle transition" class="">Ajouter une nouvelle transition</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-double-jump.html" title="Ajouter le double saut" class="">Ajouter le double saut</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-air-control.html" title="Ajouter le contr&#244;le a&#233;rien" class="">Ajouter le contr&#244;le a&#233;rien</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="Passer &#224; une entr&#233;e IA" class="">Passer &#224; une entr&#233;e IA</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="Personnaliser l&#39;accrochage au sol" class="">Personnaliser l&#39;accrochage au sol</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="Personnaliser la r&#233;ponse aux collisions" class="">Personnaliser la r&#233;ponse aux collisions</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="Pousser des objets dynamiques" class="">Pousser des objets dynamiques</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="Remplacer une &#233;tape du pipeline" class="">Remplacer une &#233;tape du pipeline</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="Ex&#233;cuter plusieurs machines &#224; &#233;tats" class="">Ex&#233;cuter plusieurs machines &#224; &#233;tats</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="Gravit&#233; par personnage" class="">Gravit&#233; par personnage</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="Configurer un personnage hybride" class="">Configurer un personnage hybride</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="Configurer une plateforme mobile" class="">Configurer une plateforme mobile</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Intégrations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Référence</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="Exemples" class="">Exemples</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="Bonnes pratiques" class="">Bonnes pratiques</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="D&#233;pannage" class="">D&#233;pannage</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="Guide de mise &#224; jour" class="">Guide de mise &#224; jour</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="visualisation-de-debogage">Visualisation de debogage</h1>
+
+<p>Le MGM Character Controller inclut un systeme de visualisation de debogage integre qui affiche les points de contact, les trajectoires de mouvement et les impulsions de collision directement dans la vue Scene. C'est un outil precieux pour diagnostiquer les problemes de mouvement, ajuster les parametres physiques et comprendre ce que fait le systeme de locomotion a chaque frame.</p>
+<h2 id="activer-la-visualisation-de-debogage">Activer la visualisation de debogage</h2>
+<p>La visualisation de debogage est activee par entite :</p>
+<ol>
+<li>Selectionnez le GameObject d'authoring de l'entite personnage dans la sous-scene</li>
+<li>Ajoutez un composant <code>LocomotionDebugConfigAuthoring</code></li>
+<li>Configurez les visualisations que vous souhaitez voir</li>
+<li>Entrez en mode Play</li>
+</ol>
+<p>La configuration de debogage est cuite dans un blob asset, les modifications necessitent donc de relancer le mode Play.</p>
+<h2 id="types-de-donnees-de-debogage">Types de donnees de debogage</h2>
+<h3 id="points-de-trajectoire">Points de trajectoire</h3>
+<p>Les points de trajectoire montrent la position du personnage a chaque etape de la boucle d'execution. Ils visualisent la trajectoire que le personnage emprunte au cours d'une seule frame, y compris chaque rebond de l'algorithme collide-and-slide.</p>
+<h3 id="points-de-contact">Points de contact</h3>
+<p>Les points de contact marquent l'endroit ou le collider du personnage touche l'environnement. Ils sont codes par couleur selon le type de contact :</p>
+<table>
+<thead>
+<tr>
+<th>Type de contact</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ground</td>
+<td>La surface est praticable (pente inferieure a <code>MaxSlope</code>)</td>
+</tr>
+<tr>
+<td>Wall</td>
+<td>La surface est trop raide pour marcher dessus</td>
+</tr>
+<tr>
+<td>Ceiling</td>
+<td>La surface est au-dessus du personnage</td>
+</tr>
+<tr>
+<td>None</td>
+<td>Aucun contact cette frame</td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-dimpulsion">Points d'impulsion</h3>
+<p>Les points d'impulsion montrent ou les forces de collision sont appliquees, tant les forces que le personnage recoit que celles qu'il applique aux autres corps. Ils aident a diagnostiquer les changements de velocite inattendus ou les interactions avec des objets dynamiques.</p>
+<h2 id="etapes-de-debogage">Etapes de debogage</h2>
+<p>Chaque point de visualisation est associe a l'etape d'execution ou il a ete enregistre :</p>
+<table>
+<thead>
+<tr>
+<th>Etape</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Start</code></td>
+<td>Avant tout traitement</td>
+</tr>
+<tr>
+<td><code>SolveOverlaps</code></td>
+<td>Apres la resolution des chevauchements</td>
+</tr>
+<tr>
+<td><code>CollideAndSlide</code></td>
+<td>Apres le collide-and-slide</td>
+</tr>
+<tr>
+<td><code>SnapToGround</code></td>
+<td>Apres l'etape d'accrochage au sol</td>
+</tr>
+<tr>
+<td><code>InheritDisplacement</code></td>
+<td>Apres le calcul de la velocite de la plateforme</td>
+</tr>
+</tbody>
+</table>
+<p>Cela vous permet de localiser exactement quelle etape produit un comportement inattendu.</p>
+<h2 id="composants-et-systemes">Composants et systemes</h2>
+<h3 id="locomotiondebugconfig">LocomotionDebugConfig</h3>
+<p>Un blob asset stockant la configuration de debogage par entite. Controle la visualisation via des durees flottantes (<code>PathSeconds</code>, <code>ContactSeconds</code>, <code>ImpulseSeconds</code>) - une duree de zero ou moins desactive cette categorie - ainsi que des parametres de couleur et de forme par etape/type.</p>
+<h3 id="locomotiondebugrecorder">LocomotionDebugRecorder</h3>
+<p>Un utilitaire statique qui enregistre les points de debogage dans des tampons dynamiques lors de l'execution des jobs. Appele depuis le job de locomotion lorsque des tampons de debogage sont presents.</p>
+<h3 id="tampons-de-debogage">Tampons de debogage</h3>
+<p>Trois types <code>IBufferElementData</code> stockent les points enregistres :</p>
+<ul>
+<li><code>LocomotionDebugPathPoint</code> - Position + etape + index de frame</li>
+<li><code>LocomotionDebugContactPoint</code> - Position + normale + type de contact + type de corps + index de frame</li>
+<li><code>LocomotionDebugImpulsePoint</code> - Position + direction + magnitude + type de corps + drapeau is-applied + index de frame</li>
+</ul>
+<h3 id="locomotiondebugdisplaysystem">LocomotionDebugDisplaySystem</h3>
+<p>Lit les tampons de debogage et effectue le rendu des visualisations en utilisant l'API <code>Unity.DebugDisplay</code> (dessin de lignes et de fleches compatible Burst via <code>PhysicsDebugDisplaySystem</code>).</p>
+<h3 id="locomotiondebugframecountersystem">LocomotionDebugFrameCounterSystem</h3>
+<p>Maintient un compteur de frames global utilise pour etiqueter les points de debogage. Cela permet au systeme d'affichage de distinguer les points de differentes frames et d'afficher eventuellement un historique.</p>
+<h2 id="considerations-de-performance">Considerations de performance</h2>
+<p>La visualisation de debogage ajoute une surcharge :</p>
+<ul>
+<li><strong>Memoire</strong> : Chaque entite avec le debogage active alloue trois tampons dynamiques qui grossissent a chaque frame</li>
+<li><strong>CPU</strong> : L'enregistrement des points dans le job de locomotion ajoute des verifications de branchement et des ecritures dans les tampons</li>
+<li><strong>Rendu</strong> : Le dessin des gizmos se fait sur le thread principal</li>
+</ul>
+<p>Pour cette raison :</p>
+<ul>
+<li>N'activez le debogage que sur les entites que vous etudiez activement</li>
+<li>Desactivez la visualisation de debogage dans les builds</li>
+<li>Les composants de debogage sont automatiquement exclus lorsque le composant d'authoring n'est pas present</li>
+</ul>
+<h2 id="inspecteur-de-debogage-personnalise">Inspecteur de debogage personnalise</h2>
+<p>Le <code>LocomotionDebugConfigAuthoringEditor</code> fournit un Inspector personnalise pour le composant d'authoring de configuration de debogage. Il affiche un apercu visuel des options de debogage configurees, y compris les parametres de duree, les couleurs et les formes de contact.</p>
+<h2 id="conseils-de-debogage">Conseils de debogage</h2>
+<h3 id="le-personnage-tombe-a-travers-le-sol">Le personnage tombe a travers le sol</h3>
+<p>Activez les points de trajectoire et la visualisation de l'accrochage au sol. Verifiez si :</p>
+<ul>
+<li>Le capsule cast d'accrochage au sol atteint le sol (le point de trajectoire devrait montrer un segment descendant)</li>
+<li>Le type de contact a la fin de la frame est <code>Ground</code></li>
+</ul>
+<h3 id="le-personnage-reste-bloque-sur-les-murs">Le personnage reste bloque sur les murs</h3>
+<p>Activez les points de contact. Verifiez si :</p>
+<ul>
+<li>Le contact est classifie comme <code>Wall</code> vs <code>Ground</code></li>
+<li>Le seuil <code>MaxSlope</code> est correct</li>
+<li>La detection de marche tente et echoue (verifiez <code>MaxStepHeight</code>)</li>
+</ul>
+<h3 id="le-personnage-est-propulse-de-maniere-inattendue">Le personnage est propulse de maniere inattendue</h3>
+<p>Activez les points d'impulsion. Verifiez si :</p>
+<ul>
+<li>Des impulsions externes sont appliquees (depuis <code>CharacterContactSystem</code>)</li>
+<li>Une collision avec un corps dynamique injecte une velocite inattendue</li>
+<li>L'heritage de plateforme est applique en double</li>
+</ul>
+<h3 id="les-transitions-detat-ne-se-declenchent-pas">Les transitions d'etat ne se declenchent pas</h3>
+<p>C'est un probleme de logique, pas de physique. Ajoutez des appels <code>Debug.Log</code> dans vos methodes d'aide aux transitions (temporairement, pour le debogage hors Burst) ou verifiez le composant de la machine a etats dans l'Entity Inspector.</p>
+<h2 id="integration-avec-le-profiler">Integration avec le Profiler</h2>
+<p>Au-dela du debogage visuel, le package s'integre avec le Profiler de Unity :</p>
+<h3 id="profilermarkerextensions">ProfilerMarkerExtensions</h3>
+<p>Des utilitaires de marqueurs de profilage compiles avec Burst qui ajoutent des marqueurs personnalises a la timeline du Profiler. Ces marqueurs apparaissent sous l'execution du job de locomotion, vous aidant a identifier quelle etape consomme le plus de temps.</p>
+<h3 id="locomotionprofilerhud">LocomotionProfilerHUD</h3>
+<p>Un MonoBehaviour optionnel (dans l'assembly Hybrid) qui affiche un overlay de profilage simple en jeu montrant les FPS et le temps du systeme de locomotion.</p>
+<h2 id="prochaines-etapes">Prochaines etapes</h2>
+<ul>
+<li><a href="execution-loop.html">La boucle d'execution</a> - Comprendre a quoi correspond chaque etape de debogage</li>
+<li><a href="physics-configuration.html">Configuration physique</a> - Ajustement des parametres eclaires par les donnees de debogage</li>
+<li><a href="troubleshooting.html">Depannage</a> - Problemes courants et comment la visualisation de debogage aide a les diagnostiquer</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.4.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the output root (sibling of vX.Y.Z/).
+      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
+      // so we compute the path from the URL to handle both EN and translated builds.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
