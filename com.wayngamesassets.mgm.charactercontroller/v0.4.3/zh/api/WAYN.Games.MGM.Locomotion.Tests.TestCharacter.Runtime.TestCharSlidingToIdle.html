@@ -30,7 +30,8 @@
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -61,10 +62,11 @@
                 </ul>
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
                 </div>
               </form>
-              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
                 <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
                 <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
               </button>
@@ -78,10 +80,10 @@
           <div class="container">
             <div class="version-breadcrumb-row">
               <div class="version-switcher">
-                <select id="version-select"></select>
+                <select id="version-select" aria-label="Version"></select>
               </div>
               <div class="language-switcher hidden">
-                <select id="language-select"></select>
+                <select id="language-select" aria-label="Language"></select>
               </div>
               <div class="breadcrumb-trail" id="breadcrumb">
                 <ul class="breadcrumb">
@@ -986,8 +988,8 @@ public struct TestCharSlidingToIdle : ITestCharacterTransition&lt;TestCharacterS
 
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
                 <div></div>
               </nav>
             </div>
@@ -1054,6 +1056,22 @@ public struct TestCharSlidingToIdle : ITestCharacterTransition&lt;TestCharacterS
           var t = a.textContent;
           if (!t || t.indexOf('.') === -1) return;
           a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
         });
       }
     })();

@@ -144,7 +144,7 @@ body {
 
 .body-content a {
   color: var(--primary);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .body-content a:hover,
@@ -220,6 +220,20 @@ body {
 .navbar-inverse .navbar-form .form-control:focus {
   background: rgba(255, 255, 255, 0.2);
   border-color: var(--primary);
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 /* --- Version + Breadcrumb bar ------------------------------------- */
@@ -374,7 +388,7 @@ body {
   padding: 7px 28px;
   width: 100%;
   font-family: var(--font);
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--ink);
   box-sizing: border-box;
 }
@@ -543,10 +557,37 @@ body {
   border-top: none !important;
   background-color: var(--footer-bg) !important;
   color: var(--ink-secondary) !important;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
 }
 
 /* --- Accessibility ------------------------------------------------ */
+
+/* Skip-to-content link: visible only on focus */
+.sr-only-focusable:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  padding: 0.75em 1.5em;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  clip: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+/* Affix sidebar heading (replaces h5) */
+.affix-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-secondary);
+  margin-bottom: 10px;
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
@@ -574,7 +615,7 @@ body {
 
 #cross-search-results .cross-search-badge {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 10px;
@@ -608,6 +649,68 @@ body {
   color: var(--ink-secondary);
   margin-top: 2px;
 }
+
+/* --- Syntax highlighting (WCAG AA overrides) --------------------- */
+/* Contrast-safe colors for highlight.js on --code-bg surfaces.
+   Light: against #F6F8FA  |  Dark: against #252525               */
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type          { color: #0550AE; }   /* 7.1:1 */
+
+.hljs-string,
+.hljs-attr           { color: #0A3069; }   /* 8.5:1 */
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta           { color: #57606A; }   /* 4.6:1 */
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet         { color: #0550AE; }   /* 7.1:1 */
+
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-title          { color: #6639BA; }   /* 5.8:1 */
+
+.hljs-variable,
+.hljs-template-variable { color: #953800; } /* 5.0:1 */
+
+.hljs-name,
+.hljs-tag,
+.hljs-addition       { color: #116329; }   /* 5.5:1 */
+
+.hljs-deletion       { color: #82071E; }   /* 6.0:1 */
+
+[data-theme="dark"] .hljs-keyword,
+[data-theme="dark"] .hljs-selector-tag,
+[data-theme="dark"] .hljs-type          { color: #7DBAF0; }   /* 7.1:1 */
+
+[data-theme="dark"] .hljs-string,
+[data-theme="dark"] .hljs-attr           { color: #A5D6FF; }   /* 9.5:1 */
+
+[data-theme="dark"] .hljs-comment,
+[data-theme="dark"] .hljs-quote,
+[data-theme="dark"] .hljs-meta           { color: #9198A1; }   /* 4.6:1 */
+
+[data-theme="dark"] .hljs-number,
+[data-theme="dark"] .hljs-literal,
+[data-theme="dark"] .hljs-symbol,
+[data-theme="dark"] .hljs-bullet         { color: #7DBAF0; }   /* 7.1:1 */
+
+[data-theme="dark"] .hljs-built_in,
+[data-theme="dark"] .hljs-builtin-name,
+[data-theme="dark"] .hljs-title          { color: #D2A8FF; }   /* 7.0:1 */
+
+[data-theme="dark"] .hljs-variable,
+[data-theme="dark"] .hljs-template-variable { color: #FFA657; } /* 6.8:1 */
+
+[data-theme="dark"] .hljs-name,
+[data-theme="dark"] .hljs-tag,
+[data-theme="dark"] .hljs-addition       { color: #7EE787; }   /* 7.5:1 */
+
+[data-theme="dark"] .hljs-deletion       { color: #FFA198; }   /* 6.7:1 */
 
 /* --- Print -------------------------------------------------------- */
 
