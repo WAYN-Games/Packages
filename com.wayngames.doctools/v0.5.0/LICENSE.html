@@ -281,14 +281,13 @@ SOFTWARE.</p>
       var wrapper = select ? select.closest('.language-switcher') : null;
       if (!select || !wrapper) return;
 
-      // Load languages.js from the output root (sibling of vX.Y.Z/).
-      // For lang sub-builds (v0.4.0/zh/manual/...), _rel only goes back to zh/,
-      // so we compute the path from the URL to handle both EN and translated builds.
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
       var script = document.createElement('script');
       var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
       script.src = vMatch
-        ? window.location.pathname.substring(0, vMatch.index + 1) + 'languages.js'
-        : '../languages.js';
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : 'languages.js';
       script.onload = function () {
         var languages = window.DOC_LANGUAGES || [];
         if (languages.length <= 1) return; // Only English, keep hidden
