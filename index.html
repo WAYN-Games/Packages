@@ -3,453 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WAYN Games — Documentation</title>
-  <meta name="description" content="Documentation hub for WAYN Games open-source packages.">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    // Apply theme before render to prevent flash
-    (function () {
-      var stored = localStorage.getItem('forge-theme');
-      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
-    })();
-  </script>
+  <title>WAYN Games - Documentation</title>
   <style>
     :root {
-      --primary: #2968A8;
-      --primary-hover: #1D4F7A;
-      --primary-light: #EBF2FA;
-      --accent: #C58400;
-      --ink: #1E1E1E;
-      --ink-secondary: #555;
-      --page-bg: #FFFFFF;
-      --card-bg: #FFFFFF;
-      --border: #E0E0E0;
-      --badge-bg: #EBF2FA;
-      --badge-color: #2968A8;
-      --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --bg: #ffffff;
+      --text: #1a1a2e;
+      --muted: #555;
+      --border: #e0e0e0;
+      --link: #0366d6;
+      --card-bg: #fafafa;
     }
-
-    [data-theme="dark"] {
-      --primary: #5BA3E6;
-      --primary-hover: #7DBAF0;
-      --primary-light: #1E2D3D;
-      --accent: #E9A84C;
-      --ink: #E0E0E0;
-      --ink-secondary: #A0A0A0;
-      --page-bg: #1E1E1E;
-      --card-bg: #252525;
-      --border: #3A3A3A;
-      --badge-bg: #1E2D3D;
-      --badge-color: #5BA3E6;
-      color-scheme: dark;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a2e;
+        --text: #e0e0e0;
+        --muted: #999;
+        --border: #333;
+        --link: #58a6ff;
+        --card-bg: #222;
+      }
     }
-
-    *, *::before, *::after { box-sizing: border-box; }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: var(--font);
-      background: var(--page-bg);
-      color: var(--ink);
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      color: var(--text);
+      background: var(--bg);
     }
-
-    a { color: var(--primary); text-decoration: none; }
-    a:hover, a:focus { color: var(--primary-hover); text-decoration: underline; }
-
-    /* --- Header --- */
-    .site-header {
-      background: #2D2D2D;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      height: 56px;
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 30px;
     }
-
-    [data-theme="dark"] .site-header { background: #1A1A1A; }
-
-    .site-header .logo {
-      height: 32px;
-      width: 32px;
-      border-radius: 4px;
-      margin-right: 12px;
+    .package {
+      margin: 16px 0;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card-bg);
     }
-
-    .site-header .site-title {
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 0;
-      flex: 1;
+    .package h2 { margin: 0 0 6px; font-size: 1.2rem; }
+    .package h2 a { text-decoration: none; color: var(--link); }
+    .package h2 a:hover { text-decoration: underline; }
+    .package p { color: var(--muted); font-size: 0.95rem; }
+    .package code {
+      font-size: 0.85rem;
+      color: var(--muted);
     }
-
-    .theme-toggle-btn {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 4px;
-      color: rgba(255, 255, 255, 0.85);
-      cursor: pointer;
-      font-size: 1.1rem;
-      padding: 4px 8px;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: border-color 0.15s, color 0.15s;
-    }
-
-    .theme-toggle-btn:hover {
-      border-color: rgba(255, 255, 255, 0.5);
-      color: #fff;
-    }
-
-    .theme-icon-dark { display: none; }
-    [data-theme="dark"] .theme-icon-light { display: none; }
-    [data-theme="dark"] .theme-icon-dark { display: inline; }
-
-    /* --- Main content --- */
-    .content {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 48px 24px;
-    }
-
-    .content h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin: 0 0 8px;
-    }
-
-    .content .subtitle {
-      font-size: 1.1rem;
-      color: var(--ink-secondary);
-      margin: 0 0 24px;
-    }
-
-    /* --- Search / filter --- */
-    .search-bar {
+    .package.hidden { display: none; }
+    .search-box {
       width: 100%;
-      max-width: 400px;
       padding: 10px 14px;
-      font-family: var(--font);
-      font-size: 0.95rem;
+      font-size: 1rem;
+      font-family: inherit;
       border: 1px solid var(--border);
       border-radius: 6px;
       background: var(--card-bg);
-      color: var(--ink);
-      margin-bottom: 32px;
+      color: var(--text);
+      margin-bottom: 20px;
     }
-
-    .search-bar::placeholder { color: var(--ink-secondary); }
-    .search-bar:focus { border-color: var(--primary); outline: none; }
-
-    /* --- Card grid --- */
-    .package-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 24px;
+    .search-box::placeholder { color: var(--muted); }
+    .search-box:focus {
+      outline: 2px solid var(--link);
+      outline-offset: -1px;
     }
-
-    .package-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      transition: border-color 0.15s, box-shadow 0.15s;
-      position: relative;
-    }
-
-    .package-card:hover {
-      border-color: var(--primary);
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-      z-index: 10;
-    }
-
-    [data-theme="dark"] .package-card:hover {
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .package-card h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 0 0 8px;
-    }
-
-    .package-card .description {
+    .no-results {
+      color: var(--muted);
       font-size: 0.95rem;
-      color: var(--ink-secondary);
-      margin: 0 0 16px;
-      flex: 1;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .package-card .description-overlay {
       display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: var(--card-bg);
-      border: 1px solid var(--primary);
-      border-radius: 8px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-      z-index: 11;
-    }
-
-    [data-theme="dark"] .package-card .description-overlay {
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .package-card.clamped:hover .description-overlay {
-      display: block;
-    }
-
-    .package-card .meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-    }
-
-    .version-badge {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 2px 10px;
-      border-radius: 10px;
-      background: var(--badge-bg);
-      color: var(--badge-color);
-    }
-
-    .tag-badge {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 2px 10px;
-      border-radius: 10px;
-      background: color-mix(in srgb, var(--accent) 15%, transparent);
-      color: var(--accent);
-      text-transform: capitalize;
-    }
-
-    .author {
-      font-size: 0.85rem;
-      color: var(--ink-secondary);
-    }
-
-    .package-card .view-link {
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    /* --- Loading & empty states --- */
-    .loading, .error-state {
-      text-align: center;
-      padding: 60px 24px;
-      color: var(--ink-secondary);
-    }
-
-    /* --- Footer --- */
-    .site-footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 0.8125rem;
-      color: var(--ink-secondary);
-      border-top: 1px solid var(--border);
-      margin-top: 60px;
-    }
-
-    /* --- Accessibility --- */
-    :focus-visible {
-      outline: 2px solid var(--primary);
-      outline-offset: 2px;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; }
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <img class="logo" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="">
-    <p class="site-title">WAYN Games Documentation</p>
-    <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
-      <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
-      <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
-    </button>
-  </header>
+  <h1>WAYN Games Documentation</h1>
+  <input type="text" class="search-box" id="search" placeholder="Search packages..." autocomplete="off">
+  <p class="no-results" id="no-results">No packages found.</p>
 
-  <main class="content">
-    <h1>Documentation</h1>
-    <p class="subtitle">Browse the docs for our packages.</p>
+  <div class="package">
+    <h2><a href="com.wayngamesassets.mgm.charactercontroller/">MGM Character Controller</a></h2>
+    <p>ECS-based character locomotion system for Unity DOTS</p>
+    <code>com.wayngamesassets.mgm.charactercontroller</code>
+  </div>
 
-    <input type="text" id="package-search" class="search-bar" placeholder="Filter packages&hellip;" aria-label="Filter packages">
+  <div class="package">
+    <h2><a href="games.wayn.blob/">WAYN Games Blob</a></h2>
+    <p>BlobAsset-based HashMap and MultiHashMap for Unity DOTS</p>
+    <code>games.wayn.blob</code>
+  </div>
 
-    <div id="package-grid" class="package-grid">
-      <p class="loading">Loading packages&hellip;</p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
-  </footer>
-
+  <div class="package">
+    <h2><a href="com.wayngames.doctools/">DocTools</a></h2>
+    <p>Bash CLI for building DocFX documentation sites</p>
+    <code>com.wayngames.doctools</code>
+  </div>
   <script>
-    // Theme toggle
-    (function () {
-      var STORAGE_KEY = 'forge-theme';
-
-      function getPreferred() {
-        var stored = localStorage.getItem(STORAGE_KEY);
-        if (stored) return stored;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-
-      function apply(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem(STORAGE_KEY, theme);
-      }
-
-      apply(getPreferred());
-
-      var btn = document.getElementById('theme-toggle');
-      if (btn) {
-        btn.addEventListener('click', function () {
-          var current = document.documentElement.getAttribute('data-theme');
-          apply(current === 'dark' ? 'light' : 'dark');
-        });
-      }
-
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (!localStorage.getItem(STORAGE_KEY)) {
-          apply(e.matches ? 'dark' : 'light');
-        }
+    document.getElementById('search').addEventListener('input', function () {
+      var query = this.value.toLowerCase();
+      var packages = document.querySelectorAll('.package');
+      var visible = 0;
+      packages.forEach(function (pkg) {
+        var text = pkg.textContent.toLowerCase();
+        var match = !query || text.indexOf(query) !== -1;
+        pkg.classList.toggle('hidden', !match);
+        if (match) visible++;
       });
-    })();
-
-    // Load packages and render cards
-    (function () {
-      var grid = document.getElementById('package-grid');
-      var searchInput = document.getElementById('package-search');
-      var allPackages = [];
-
-      fetch('packages.json')
-        .then(function (res) {
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          return res.json();
-        })
-        .then(function (packages) {
-          if (!packages.length) {
-            grid.innerHTML = '<p class="error-state">No packages found.</p>';
-            return;
-          }
-
-          allPackages = packages;
-          renderCards(packages);
-        })
-        .catch(function () {
-          grid.innerHTML = '<p class="error-state">Unable to load package list.</p>';
-        });
-
-      searchInput.addEventListener('input', function () {
-        var q = this.value.toLowerCase();
-        if (!q) { renderCards(allPackages); return; }
-        var filtered = allPackages.filter(function (pkg) {
-          var prodText = pkg.product ? humanize(pkg.product) : '';
-          var tags = Array.isArray(pkg.tags) ? pkg.tags : [];
-          var tagMatch = tags.some(function (t) { return humanize(t).toLowerCase().indexOf(q) !== -1; });
-          return prodText.toLowerCase().indexOf(q) !== -1 ||
-                 tagMatch ||
-                 (pkg.title || pkg.name).toLowerCase().indexOf(q) !== -1 ||
-                 (pkg.description || '').toLowerCase().indexOf(q) !== -1 ||
-                 pkg.name.toLowerCase().indexOf(q) !== -1;
-        });
-        renderCards(filtered);
-      });
-
-      function renderCards(packages) {
-        grid.innerHTML = '';
-        if (!packages.length) {
-          grid.innerHTML = '<p class="error-state">No matching packages.</p>';
-          return;
-        }
-        packages.forEach(function (pkg) {
-          var card = document.createElement('article');
-          card.className = 'package-card';
-
-          var product = pkg.product ? humanize(pkg.product) : (pkg.title || pkg.name);
-          var tags = Array.isArray(pkg.tags) ? pkg.tags : [];
-          var desc = pkg.description || '';
-          var version = pkg.latestVersion || '';
-          var author = pkg.author || '';
-          var href = '/' + pkg.name + '/v' + version + '/index.html';
-
-          var metaHtml = '';
-          tags.forEach(function (tag) {
-            metaHtml += '<span class="tag-badge">' + escapeHtml(humanize(tag)) + '</span>';
-          });
-          if (version) {
-            metaHtml += '<span class="version-badge">v' + escapeHtml(version) + '</span>';
-          }
-          if (author) {
-            metaHtml += '<span class="author">' + escapeHtml(author) + '</span>';
-          }
-
-          var overlayHtml = desc
-            ? '<div class="description-overlay">' +
-                (metaHtml ? '<div class="meta">' + metaHtml + '</div>' : '') +
-                '<h2>' + escapeHtml(product) + '</h2>' +
-                '<p class="description" style="display:block;-webkit-line-clamp:unset;overflow:visible">' + escapeHtml(desc) + '</p>' +
-                '<a class="view-link" href="' + escapeHtml(href) + '">View Docs &rarr;</a>' +
-              '</div>'
-            : '';
-
-          card.innerHTML =
-            (metaHtml ? '<div class="meta">' + metaHtml + '</div>' : '') +
-            '<h2>' + escapeHtml(product) + '</h2>' +
-            '<p class="description">' + escapeHtml(desc) + '</p>' +
-            '<a class="view-link" href="' + escapeHtml(href) + '">View Docs &rarr;</a>' +
-            overlayHtml;
-
-          grid.appendChild(card);
-        });
-
-        // Mark cards whose description is clamped
-        requestAnimationFrame(function () {
-          var descs = grid.querySelectorAll('.package-card > .description');
-          descs.forEach(function (el) {
-            if (el.scrollHeight > el.clientHeight + 1) {
-              el.closest('.package-card').classList.add('clamped');
-            }
-          });
-        });
-      }
-
-      function escapeHtml(str) {
-        var div = document.createElement('div');
-        div.appendChild(document.createTextNode(str));
-        return div.innerHTML;
-      }
-
-      function humanize(str) {
-        if (!str) return '';
-        return str
-          .replace(/-/g, ' ')
-          .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-      }
-    })();
+      document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+    });
   </script>
 </body>
 </html>
