@@ -1,6 +1,5 @@
 [
   {
-  {
     "name": "games.wayn.blob",
     "title": "WAYN Games Blob",
     "latestVersion": "2.0.1",
@@ -17,7 +16,7 @@
   {
     "latestVersion": "0.7.2",
     "title": "Package Forge",
-    "description": "Unity development tool suite \u2014 documentation, builds, and more",
+    "description": "Unity development tool suite — documentation, builds, and more",
     "author": "WAYN Games",
     "name": "wayn.games.tools.package-forge"
   }
