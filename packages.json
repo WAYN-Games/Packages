@@ -9,7 +9,9 @@
   {
     "name": "games.wayn.blob",
     "title": "WAYN Games Blob",
-    "latestVersion": "2.0.1"
+    "latestVersion": "2.0.1",
+    "description": "This package contains additionnal blob structures for use in Unity DOTS projects.",
+    "author": "WAYN Games"
   },
   {
     "name": "com.wayngamesassets.mgm.charactercontroller",
