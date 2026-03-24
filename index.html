@@ -127,8 +127,25 @@
     .content .subtitle {
       font-size: 1.1rem;
       color: var(--ink-secondary);
-      margin: 0 0 40px;
+      margin: 0 0 24px;
     }
+
+    /* --- Search / filter --- */
+    .search-bar {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 14px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--card-bg);
+      color: var(--ink);
+      margin-bottom: 32px;
+    }
+
+    .search-bar::placeholder { color: var(--ink-secondary); }
+    .search-bar:focus { border-color: var(--primary); outline: none; }
 
     /* --- Card grid --- */
     .package-grid {
@@ -239,6 +256,8 @@
     <h1>Documentation</h1>
     <p class="subtitle">Browse the docs for our open-source Unity packages.</p>
 
+    <input type="text" id="package-search" class="search-bar" placeholder="Filter packages&hellip;" aria-label="Filter packages">
+
     <div id="package-grid" class="package-grid">
       <p class="loading">Loading packages&hellip;</p>
     </div>
@@ -284,6 +303,8 @@
     // Load packages and render cards
     (function () {
       var grid = document.getElementById('package-grid');
+      var searchInput = document.getElementById('package-search');
+      var allPackages = [];
 
       fetch('packages.json')
         .then(function (res) {
@@ -296,37 +317,57 @@
             return;
           }
 
-          grid.innerHTML = '';
-          packages.forEach(function (pkg) {
-            var card = document.createElement('article');
-            card.className = 'package-card';
-
-            var title = pkg.title || pkg.name;
-            var desc = pkg.description || '';
-            var version = pkg.latestVersion || '';
-            var author = pkg.author || '';
-            var href = '/' + pkg.name + '/v' + version + '/index.html';
-
-            var metaHtml = '';
-            if (version) {
-              metaHtml += '<span class="version-badge">v' + escapeHtml(version) + '</span>';
-            }
-            if (author) {
-              metaHtml += '<span class="author">' + escapeHtml(author) + '</span>';
-            }
-
-            card.innerHTML =
-              '<h2>' + escapeHtml(title) + '</h2>' +
-              '<p class="description">' + escapeHtml(desc) + '</p>' +
-              (metaHtml ? '<div class="meta">' + metaHtml + '</div>' : '') +
-              '<a class="view-link" href="' + escapeHtml(href) + '">View Docs &rarr;</a>';
-
-            grid.appendChild(card);
-          });
+          allPackages = packages;
+          renderCards(packages);
         })
         .catch(function () {
           grid.innerHTML = '<p class="error-state">Unable to load package list.</p>';
         });
+
+      searchInput.addEventListener('input', function () {
+        var q = this.value.toLowerCase();
+        if (!q) { renderCards(allPackages); return; }
+        var filtered = allPackages.filter(function (pkg) {
+          return (pkg.title || pkg.name).toLowerCase().indexOf(q) !== -1 ||
+                 (pkg.description || '').toLowerCase().indexOf(q) !== -1 ||
+                 pkg.name.toLowerCase().indexOf(q) !== -1;
+        });
+        renderCards(filtered);
+      });
+
+      function renderCards(packages) {
+        grid.innerHTML = '';
+        if (!packages.length) {
+          grid.innerHTML = '<p class="error-state">No matching packages.</p>';
+          return;
+        }
+        packages.forEach(function (pkg) {
+          var card = document.createElement('article');
+          card.className = 'package-card';
+
+          var title = pkg.title || pkg.name;
+          var desc = pkg.description || '';
+          var version = pkg.latestVersion || '';
+          var author = pkg.author || '';
+          var href = '/' + pkg.name + '/v' + version + '/index.html';
+
+          var metaHtml = '';
+          if (version) {
+            metaHtml += '<span class="version-badge">v' + escapeHtml(version) + '</span>';
+          }
+          if (author) {
+            metaHtml += '<span class="author">' + escapeHtml(author) + '</span>';
+          }
+
+          card.innerHTML =
+            '<h2>' + escapeHtml(title) + '</h2>' +
+            '<p class="description">' + escapeHtml(desc) + '</p>' +
+            (metaHtml ? '<div class="meta">' + metaHtml + '</div>' : '') +
+            '<a class="view-link" href="' + escapeHtml(href) + '">View Docs &rarr;</a>';
+
+          grid.appendChild(card);
+        });
+      }
 
       function escapeHtml(str) {
         var div = document.createElement('div');
