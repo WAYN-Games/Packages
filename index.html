@@ -12,7 +12,7 @@
   <script>
     // Apply theme before render to prevent flash
     (function () {
-      var stored = localStorage.getItem('doctools-theme');
+      var stored = localStorage.getItem('forge-theme');
       var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
     })();
@@ -282,7 +282,7 @@
 
   <main class="content">
     <h1>Documentation</h1>
-    <p class="subtitle">Browse the docs for our open-source Unity packages.</p>
+    <p class="subtitle">Browse the docs for our packages.</p>
 
     <input type="text" id="package-search" class="search-bar" placeholder="Filter packages&hellip;" aria-label="Filter packages">
 
@@ -298,7 +298,7 @@
   <script>
     // Theme toggle
     (function () {
-      var STORAGE_KEY = 'doctools-theme';
+      var STORAGE_KEY = 'forge-theme';
 
       function getPreferred() {
         var stored = localStorage.getItem(STORAGE_KEY);
