@@ -14,9 +14,9 @@
     "name": "wayn.games.mgm.character-controller"
   },
   {
-    "latestVersion": "0.7.2",
+    "latestVersion": "0.8.0",
     "title": "Package Forge",
-    "description": "Unity development tool suite — documentation, builds, and more",
+    "description": "Unity development tool suite \u2014 documentation, builds, and more",
     "author": "WAYN Games",
     "name": "wayn.games.tools.package-forge"
   }
