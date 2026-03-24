@@ -13,5 +13,16 @@
     "name": "com.wayngamesassets.mgm.charactercontroller",
     "title": "MGM Character Controller",
     "latestVersion": "0.3.0"
+  },
+  {
+    "latestVersion": "0.9.0",
+    "title": "Package Forge",
+    "description": "Unity development tool suite \u2014 documentation, builds, and more",
+    "author": "WAYN Games",
+    "name": "wayn.games.tools.package-forge",
+    "tags": [
+      "tools"
+    ],
+    "product": "package-forge"
   }
 ]
