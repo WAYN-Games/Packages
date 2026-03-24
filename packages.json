@@ -2,7 +2,7 @@
   {
     "name": "com.wayngames.doctools",
     "title": "DocTools",
-    "latestVersion": "0.6.1",
+    "latestVersion": "0.6.2",
     "description": "Bash CLI for building DocFX documentation sites",
     "author": "WAYN Games"
   },
