@@ -2,6 +2,7 @@
   {
     "name": "games.wayn.blob",
     "title": "WAYN Games Blob",
+    "author": "WAYN Games",
     "latestVersion": "1.0.0",
     "tags": [
       "Extensions"
@@ -11,6 +12,7 @@
   {
     "name": "com.wayngamesassets.mgm.charactercontroller",
     "title": "MGM Character Controller",
+    "author": "WAYN Games",
     "latestVersion": "0.3.0",
     "tags": [
       "MGM"
