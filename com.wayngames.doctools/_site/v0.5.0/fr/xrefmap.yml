@@ -1,6 +1,0 @@
-### YamlMime:XRefMap
-sorted: true
-references:
-- uid: workflow
-  name: Cycle de vie des packages et workflow de documentation
-  href: manual/workflow.html
