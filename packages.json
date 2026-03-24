@@ -1,33 +1,35 @@
 [
   {
     "name": "games.wayn.blob",
-    "title": "WAYN Games Blob",
-    "author": "WAYN Games",
-    "latestVersion": "1.0.0",
     "tags": [
       "Extensions"
     ],
-    "product": "Blob"
+    "product": "Blob",
+    "title": "WAYN Games Blob",
+    "latestVersion": "2.0.1",
+    "description": "This package contains additionnal blob structures for use in Unity DOTS projects.",
+    "author": "WAYN Games"
   },
   {
-    "name": "com.wayngamesassets.mgm.charactercontroller",
-    "title": "MGM Character Controller",
-    "author": "WAYN Games",
+    "name": "wayn.games.mgm.character-controller",
     "latestVersion": "0.5.0",
     "tags": [
       "MGM"
     ],
-    "product": "Character Controller"
+    "product": "Character Controller",
+    "title": "MGM Character Controller",
+    "description": "The MGM Character Controller provides a modular, ECS-based architecture for implementing character locomotion in Unity using state-driven logic.\nIt cleanly separates gameplay entities - Players, Characters, and Models - and handles input, movement, and visual synchronization in a scalable and maintainable way.\nIt integrates seamlessly with Unity's New Input System and Cinemachine, but remains flexible enough to support custom input or camera solutions. And it provides powerful debug visualization to make test new behavior simpler",
+    "author": "WAYN Games"
   },
   {
+    "name": "wayn.games.tools.package-forge",
     "latestVersion": "0.9.0",
+    "tags": [
+      "Tools"
+    ],
+    "product": "Package Forge",
     "title": "Package Forge",
     "description": "Unity development tool suite \u2014 documentation, builds, and more",
-    "author": "WAYN Games",
-    "name": "wayn.games.tools.package-forge",
-    "tags": [
-      "tools"
-    ],
-    "product": "package-forge"
+    "author": "WAYN Games"
   }
 ]
