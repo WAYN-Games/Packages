@@ -1,0 +1,179 @@
+{
+  "source_base_path": "/home/runner/work/TOOLS-Package-Forge/TOOLS-Package-Forge/package/Documentation~/.forge-build-2852",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../manual/Images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/_root/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "_lang_fr/_root/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/best-practices.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/best-practices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/install.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/quickstart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/template.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "_lang_fr/manual/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/translation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/translation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/troubleshooting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/versioning.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/versioning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_lang_fr/manual/workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/workflow.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

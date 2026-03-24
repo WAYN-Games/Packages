@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Configuration | Package Forge </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Configuration | Package Forge ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.tools.package-forge">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="D&#233;marrage rapide" class="">D&#233;marrage rapide</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="configuration.html" title="Configuration" class="active">Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="commands.html" title="Commandes" class="">Commandes</a>
+                          </li>
+                          <li class="">
+                            <a href="versioning.html" title="Versionnage" class="">Versionnage</a>
+                          </li>
+                          <li class="">
+                            <a href="translation.html" title="Traduction" class="">Traduction</a>
+                          </li>
+                          <li class="">
+                            <a href="template.html" title="Mod&#232;le" class="">Mod&#232;le</a>
+                          </li>
+                          <li class="">
+                            <a href="workflow.html" title="Workflow CI/CD" class="">Workflow CI/CD</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Référence</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="best-practices.html" title="Bonnes pratiques" class="">Bonnes pratiques</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="D&#233;pannage" class="">D&#233;pannage</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="configuration">Configuration</h1>
+
+<p>Package Forge utilise une approche <strong>convention plutôt que configuration</strong>. La plupart des paramètres sont déduits automatiquement de votre <code>package.json</code>. Aucun fichier de configuration n'est requis pour les packages Unity standard.</p>
+<h2 id="fonctionnement-de-la-configuration">Fonctionnement de la configuration</h2>
+<p>Lorsque vous exécutez une commande Package Forge, les paramètres sont chargés dans cet ordre :</p>
+<ol>
+<li><strong><code>package.json</code></strong> — Le nom du package, le nom d'affichage, la version et l'auteur sont lus depuis le manifeste standard du package Unity</li>
+<li><strong>Conventions</strong> — Le répertoire de sortie, la source des métadonnées, le logo et le pied de page sont déduits de valeurs par défaut raisonnables</li>
+<li><strong><code>doctools.languages.json</code></strong> (optionnel) — Liste les langues pour lesquelles construire les traductions</li>
+</ol>
+<h2 id="requis--packagejson">Requis : package.json</h2>
+<p>Votre <code>package.json</code> doit contenir ces champs :</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;com.company.mypackage&quot;,
+  &quot;displayName&quot;: &quot;My Package&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;author&quot;: {
+    &quot;name&quot;: &quot;Company Name&quot;
+  }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Champ</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>Identifiant du package, segment de chemin URL</td>
+</tr>
+<tr>
+<td><code>displayName</code></td>
+<td>Titre de la barre de navigation, titres des pages</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>Numéro de version actuel, nom du répertoire de sortie</td>
+</tr>
+<tr>
+<td><code>author.name</code></td>
+<td>Texte de copyright du pied de page</td>
+</tr>
+</tbody>
+</table>
+<h2 id="paramètres-déduits">Paramètres déduits</h2>
+<p>Package Forge calcule automatiquement ces valeurs. Vous n'avez pas besoin de les définir.</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Convention</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Répertoire de sortie</td>
+<td><code>../Documentation~</code></td>
+<td>Relatif à <code>Documentation/</code>. Le suffixe <code>~</code> le masque de la base de données d'assets Unity</td>
+</tr>
+<tr>
+<td>Source des métadonnées</td>
+<td><code>..</code></td>
+<td>Les fichiers source C# sont analysés depuis la racine du package (parent de <code>Documentation/</code>)</td>
+</tr>
+<tr>
+<td>Logo</td>
+<td>Avatar de l'organisation GitHub</td>
+<td>Utilise <code>https://avatars.githubusercontent.com/u/{org-id}</code></td>
+</tr>
+<tr>
+<td>Favicon</td>
+<td>Identique au logo</td>
+<td></td>
+</tr>
+<tr>
+<td>Pied de page</td>
+<td><code>© {year} {author.name}</code></td>
+<td>Généré automatiquement à partir de l'auteur du package.json</td>
+</tr>
+<tr>
+<td>Contenu supplémentaire</td>
+<td><code>LICENSE.md</code>, <code>CHANGELOG.md</code></td>
+<td>Inclus dans la barre de navigation s'ils sont présents à la racine du package</td>
+</tr>
+<tr>
+<td>Motifs de ressources</td>
+<td><code>**/*.png</code></td>
+<td>Images incluses dans la construction</td>
+</tr>
+<tr>
+<td>Disposition des espaces de noms</td>
+<td><code>nested</code></td>
+<td>La documentation de l'API utilise une hiérarchie d'espaces de noms imbriquée</td>
+</tr>
+<tr>
+<td>Autoriser les erreurs de compilation</td>
+<td><code>true</code></td>
+<td>Les métadonnées DocFX réussissent même si le C# a des références manquantes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="détection-de-la-disposition">Détection de la disposition</h2>
+<p>Package Forge prend en charge deux dispositions de documentation :</p>
+<h3 id="nouvelle-disposition-recommandée">Nouvelle disposition (recommandée)</h3>
+<p>Les fichiers Markdown se trouvent directement dans <code>Documentation/</code>. La table des matières racine est générée automatiquement lors de la construction. C'est la disposition par défaut pour les nouveaux projets.</p>
+<pre><code>MyPackage/
+├── package.json
+└── Documentation/
+    ├── toc.md              # Navigation latérale
+    ├── index.md            # Page d'accueil
+    ├── install.md          # Vos pages...
+    └── Images/
+</code></pre>
+<h3 id="disposition-héritée">Disposition héritée</h3>
+<p>Les fichiers Markdown se trouvent dans <code>Documentation/Manual/</code> avec un fichier <code>doctools.config</code> séparé. Package Forge détecte automatiquement cette disposition si un répertoire <code>Manual/</code> ou un fichier <code>doctools.config</code> existe.</p>
+<pre><code>MyPackage/
+├── package.json
+└── Documentation/
+    ├── doctools.config     # Fichier de configuration hérité
+    ├── toc.md              # Navigation racine
+    ├── index.md
+    └── Manual/
+        ├── toc.md          # Navigation latérale
+        └── *.md
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>La disposition héritée est entièrement prise en charge mais n'est pas recommandée pour les nouveaux projets. Utilisez la nouvelle disposition sauf si vous avez une raison spécifique d'utiliser <code>Manual/</code>.</p>
+</div>
+<h2 id="configuration-des-langues">Configuration des langues</h2>
+<p>Pour activer les constructions multilingues, créez <code>Documentation/doctools.languages.json</code> :</p>
+<pre><code class="lang-json">[&quot;fr&quot;, &quot;zh&quot;, &quot;ja&quot;]
+</code></pre>
+<p>Cela indique à Package Forge de construire les versions française, chinoise et japonaise en plus de l'anglais. Consultez <a href="translation.html">Traduction</a> pour le flux de travail complet.</p>
+<p>Si ce fichier n'existe pas, seul l'anglais est construit et aucun sélecteur de langue n'apparaît.</p>
+<h2 id="détection-des-versions">Détection des versions</h2>
+<p>Package Forge détecte automatiquement les versions :</p>
+<ul>
+<li><strong>Version actuelle</strong> : lue depuis le champ <code>version</code> du <code>package.json</code></li>
+<li><strong>Versions précédentes</strong> : découvertes à partir des répertoires <code>v*/</code> existants dans le dossier de sortie</li>
+</ul>
+<p>Aucune liste de versions n'a besoin d'être maintenue manuellement. Lorsque vous incrémentez la version dans <code>package.json</code> et reconstruisez, la nouvelle version apparaît aux côtés des anciennes.</p>
+<h2 id="doctoolsconfig-hérité">doctools.config hérité</h2>
+<p>Les projets plus anciens peuvent utiliser un fichier Bash <code>doctools.config</code> au lieu de s'appuyer sur les conventions. Si ce fichier existe, Package Forge le charge pour assurer la rétrocompatibilité. Consultez la <a href="#r%C3%A9f%C3%A9rence-de-la-configuration-h%C3%A9rit%C3%A9e">référence de la configuration héritée</a> ci-dessous.</p>
+<h3 id="référence-de-la-configuration-héritée">Référence de la configuration héritée</h3>
+<table>
+<thead>
+<tr>
+<th>Champ</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PACKAGE_NAME</code></td>
+<td>string</td>
+<td>Identifiant du package</td>
+</tr>
+<tr>
+<td><code>PACKAGE_TITLE</code></td>
+<td>string</td>
+<td>Titre d'affichage</td>
+</tr>
+<tr>
+<td><code>CURRENT_VERSION</code></td>
+<td>string</td>
+<td>Version actuelle</td>
+</tr>
+<tr>
+<td><code>ALL_VERSIONS</code></td>
+<td>array</td>
+<td>Toutes les versions à construire</td>
+</tr>
+<tr>
+<td><code>PACKAGE_FOOTER</code></td>
+<td>string</td>
+<td>HTML du pied de page</td>
+</tr>
+<tr>
+<td><code>METADATA_SRC</code></td>
+<td>string</td>
+<td>Chemin des sources C#</td>
+</tr>
+<tr>
+<td><code>LOGO_PATH</code></td>
+<td>string</td>
+<td>Chemin de l'image du logo</td>
+</tr>
+<tr>
+<td><code>OUTPUT_DIR</code></td>
+<td>string</td>
+<td>Répertoire de sortie de la construction</td>
+</tr>
+<tr>
+<td><code>EXTRA_CONTENT</code></td>
+<td>array</td>
+<td>Fichiers supplémentaires à inclure</td>
+</tr>
+<tr>
+<td><code>RESOURCE_PATTERNS</code></td>
+<td>array</td>
+<td>Motifs glob pour les images</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pour migrer de la configuration héritée vers les conventions : supprimez <code>doctools.config</code>, assurez-vous que votre <code>package.json</code> contient les champs requis, et déplacez les fichiers de documentation de <code>Manual/</code> directement dans <code>Documentation/</code>.</p>
+</div>
+<h2 id="prochaines-étapes">Prochaines étapes</h2>
+<ul>
+<li><a href="commands.html">Commandes</a> — Référence complète de la CLI</li>
+<li><a href="versioning.html">Gestion des versions</a> — Flux de travail multi-versions</li>
+<li><a href="translation.html">Traduction</a> — Support multilingue</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.8.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'Package Forge ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
