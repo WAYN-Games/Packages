@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Bonnes pratiques | Package Forge </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Bonnes pratiques | Package Forge ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.tools.package-forge">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="D&#233;marrage rapide" class="">D&#233;marrage rapide</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="commands.html" title="Commandes" class="">Commandes</a>
+                          </li>
+                          <li class="">
+                            <a href="versioning.html" title="Versionnage" class="">Versionnage</a>
+                          </li>
+                          <li class="">
+                            <a href="translation.html" title="Traduction" class="">Traduction</a>
+                          </li>
+                          <li class="">
+                            <a href="template.html" title="Mod&#232;le" class="">Mod&#232;le</a>
+                          </li>
+                          <li class="">
+                            <a href="workflow.html" title="Workflow CI/CD" class="">Workflow CI/CD</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Référence</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="best-practices.html" title="Bonnes pratiques" class="active">Bonnes pratiques</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="D&#233;pannage" class="">D&#233;pannage</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bonnes-pratiques">Bonnes pratiques</h1>
+
+<p>Recommandations pour tirer le meilleur parti de Package Forge.</p>
+<h2 id="structure-du-projet">Structure du projet</h2>
+<h3 id="utiliser-la-nouvelle-disposition">Utiliser la nouvelle disposition</h3>
+<p>Placez les fichiers markdown directement dans <code>Documentation/</code> plutôt que dans un sous-répertoire <code>Manual/</code>. La nouvelle disposition génère automatiquement la table des matières racine et ne nécessite aucun fichier <code>doctools.config</code>.</p>
+<h3 id="garder-documentation-ciblé">Garder Documentation/ ciblé</h3>
+<p>Ne placez que les fichiers liés à la documentation dans <code>Documentation/</code> :</p>
+<ul>
+<li>Pages markdown (<code>.md</code>)</li>
+<li>Images (sous-répertoire <code>Images/</code>)</li>
+<li>Fichiers de traduction (<code>.forge/locales/</code>)</li>
+</ul>
+<p>Les fichiers générés vont dans <code>Documentation~/</code> (automatiquement exclu de la base de données d'assets Unity).</p>
+<h3 id="organiser-avec-des-sous-répertoires">Organiser avec des sous-répertoires</h3>
+<p>Pour les packages comportant de nombreuses pages, utilisez des sous-répertoires pour regrouper le contenu associé :</p>
+<pre><code>Documentation/
+├── toc.md
+├── index.md
+├── install.md
+├── quickstart.md
+├── recipes/
+│   ├── add-a-feature.md
+│   └── integrate-with-x.md
+├── integrations/
+│   ├── input-system.md
+│   └── cinemachine.md
+└── Images/
+</code></pre>
+<p>Mettez à jour <code>toc.md</code> pour refléter la hiérarchie :</p>
+<pre><code class="lang-markdown"># [Installation](install.md)
+# [Quickstart](quickstart.md)
+# Recipes
+## [Add a Feature](recipes/add-a-feature.md)
+## [Integrate with X](recipes/integrate-with-x.md)
+</code></pre>
+<h2 id="rédiger-pour-la-traduction">Rédiger pour la traduction</h2>
+<p>Si votre documentation sera traduite, suivez ces directives pour produire des traductions plus propres :</p>
+<h3 id="garder-les-phrases-courtes-et-directes">Garder les phrases courtes et directes</h3>
+<p>Les phrases courtes se traduisent plus fidèlement que les longues phrases composées.</p>
+<h3 id="éviter-les-expressions-idiomatiques-et-familières">Éviter les expressions idiomatiques et familières</h3>
+<p>Des expressions comme « out of the box » ou « under the hood » ne se traduisent pas bien. Utilisez un langage précis à la place.</p>
+<h3 id="utiliser-une-terminologie-cohérente">Utiliser une terminologie cohérente</h3>
+<p>Définissez les termes clés une seule fois et utilisez-les de manière cohérente. N'alternez pas entre des synonymes (par exemple, « entity » vs « object » vs « item » pour le même concept).</p>
+<h3 id="garder-les-blocs-de-code-et-les-termes-techniques-en-anglais">Garder les blocs de code et les termes techniques en anglais</h3>
+<p>Les traducteurs ne doivent pas traduire le code, les noms de classes, les noms de méthodes ou les termes spécifiques à Unity. Les règles de traduction de Package Forge imposent cela, mais rédiger en gardant cela à l'esprit est utile.</p>
+<h2 id="versionnage">Versionnage</h2>
+<h3 id="mettre-à-jour-la-version-avant-de-compiler">Mettre à jour la version avant de compiler</h3>
+<p>Mettez toujours à jour <code>version</code> dans <code>package.json</code> avant d'exécuter <code>forge.sh build</code>. Le numéro de version détermine le nom du répertoire de sortie.</p>
+<h3 id="conserver-les-versions-précédentes">Conserver les versions précédentes</h3>
+<p>Ne supprimez pas les anciens répertoires de version de <code>Documentation~/</code> sauf si nécessaire. Le sélecteur de version permet aux utilisateurs d'accéder à la documentation correspondant à la version qu'ils utilisent.</p>
+<h3 id="mettre-à-jour-changelogmd">Mettre à jour CHANGELOG.md</h3>
+<p>Maintenez un fichier <code>CHANGELOG.md</code> à la racine de votre package. Package Forge l'inclut automatiquement dans la barre de navigation aux côtés de LICENSE.</p>
+<h2 id="diagrammes-mermaid">Diagrammes Mermaid</h2>
+<h3 id="utiliser-mermaid-pour-les-diagrammes-darchitecture-et-de-flux">Utiliser Mermaid pour les diagrammes d'architecture et de flux</h3>
+<p>Les diagrammes Mermaid s'affichent directement dans la documentation sans fichiers image à maintenir. Ils se mettent à jour automatiquement lorsque vous modifiez le markdown.</p>
+<h3 id="garder-les-diagrammes-simples">Garder les diagrammes simples</h3>
+<p>Les diagrammes complexes avec de nombreux nœuds deviennent difficiles à lire. Divisez les grands diagrammes en plusieurs plus petits, chacun centré sur un aspect.</p>
+<h3 id="tester-les-diagrammes-localement">Tester les diagrammes localement</h3>
+<p>Compilez et visualisez le site pour vérifier que les diagrammes s'affichent correctement. Les erreurs de syntaxe Mermaid produisent des blocs vides sans message d'erreur visible dans le résultat compilé.</p>
+<h2 id="images">Images</h2>
+<h3 id="utiliser-des-chemins-relatifs">Utiliser des chemins relatifs</h3>
+<p>Référencez les images avec des chemins relatifs depuis le fichier markdown :</p>
+<pre><code class="lang-markdown">![Screenshot](Images/screenshot.png)
+</code></pre>
+<h3 id="garder-les-images-dans-documentationimages">Garder les images dans Documentation/Images/</h3>
+<p>Stockez toutes les images dans le sous-répertoire <code>Images/</code>. Le motif de ressources par défaut (<code>**/*.png</code>) les détecte automatiquement.</p>
+<h3 id="utiliser-png-pour-les-captures-décran-svg-pour-les-diagrammes">Utiliser PNG pour les captures d'écran, SVG pour les diagrammes</h3>
+<p>Le format PNG convient bien aux captures d'écran et aux captures d'interface. Pour les diagrammes, préférez Mermaid (rendu au moment de la compilation) aux fichiers image statiques.</p>
+<h2 id="cicd">CI/CD</h2>
+<h3 id="déployer-lors-du-push-dun-tag">Déployer lors du push d'un tag</h3>
+<p>Utilisez le workflow réutilisable GitHub Actions pour déployer la documentation automatiquement lorsque vous poussez un tag de version. Voir <a href="workflow.html">Workflow CI/CD</a>.</p>
+<h3 id="commiter-les-traductions-dans-le-dépôt">Commiter les traductions dans le dépôt</h3>
+<p>Les fichiers traduits dans <code>.forge/locales/</code> doivent être commités dans le contrôle de version. La compilation CI les récupère automatiquement — aucune traduction n'a lieu pendant la CI.</p>
+<h2 id="étapes-suivantes">Étapes suivantes</h2>
+<ul>
+<li><a href="quickstart.html">Quickstart</a> — Démarrer avec Package Forge</li>
+<li><a href="translation.html">Translation</a> — Workflow multilingue</li>
+<li><a href="template.html">Template</a> — Fonctionnalités et personnalisation du template</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.9.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'Package Forge ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
