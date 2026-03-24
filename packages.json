@@ -19,5 +19,12 @@
     "latestVersion": "0.4.3",
     "description": "The MGM Character Controller provides a modular, ECS-based architecture for implementing character locomotion in Unity using state-driven logic. \nIt cleanly separates gameplay entities - Players, Characters, and Models - and handles input, movement, and visual synchronization in a scalable and maintainable way.\nIt integrates seamlessly with Unity's New Input System and Cinemachine, but remains flexible enough to support custom input or camera solutions. And it provides powerful debug visualization to make test new behavior simpler",
     "author": "WAYN Games"
+  },
+  {
+    "latestVersion": "0.5.0",
+    "title": "MGM Character Controller",
+    "description": "The MGM Character Controller provides a modular, ECS-based architecture for implementing character locomotion in Unity using state-driven logic. \nIt cleanly separates gameplay entities - Players, Characters, and Models - and handles input, movement, and visual synchronization in a scalable and maintainable way.\nIt integrates seamlessly with Unity's New Input System and Cinemachine, but remains flexible enough to support custom input or camera solutions. And it provides powerful debug visualization to make test new behavior simpler",
+    "author": "WAYN Games",
+    "name": "wayn.games.mgm.character-controller"
   }
 ]
