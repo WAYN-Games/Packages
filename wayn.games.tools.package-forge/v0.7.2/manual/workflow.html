@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Package Lifecycle &amp; Documentation Workflow | Package Forge </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Package Lifecycle &amp; Documentation Workflow | Package Forge ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.tools.package-forge">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quickstart" class="">Quickstart</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="commands.html" title="Commands" class="">Commands</a>
+                          </li>
+                          <li class="">
+                            <a href="versioning.html" title="Versioning" class="">Versioning</a>
+                          </li>
+                          <li class="">
+                            <a href="translation.html" title="Translation" class="">Translation</a>
+                          </li>
+                          <li class="">
+                            <a href="template.html" title="Template" class="">Template</a>
+                          </li>
+                          <li class="active">
+                            <a href="workflow.html" title="CI/CD Workflow" class="active">CI/CD Workflow</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Reference</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="best-practices.html" title="Best Practices" class="">Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="workflow">
+<h1 id="package-lifecycle--documentation-workflow">Package Lifecycle &amp; Documentation Workflow</h1>
+
+<p>This page describes the end-to-end workflow for managing packages with versioned documentation, from initial setup through automated deployment.</p>
+<h2 id="package-lifecycle">Package Lifecycle</h2>
+<h3 id="first-time-setup">First-Time Setup</h3>
+<p>These steps are done once per package.</p>
+<h4 id="1-create-the-package">1. Create the package</h4>
+<p>Create a Unity package with a <code>package.json</code> containing at minimum:</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;com.wayngames.mypackage&quot;,
+  &quot;displayName&quot;: &quot;My Package&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;author&quot;: { &quot;name&quot;: &quot;WAYN Games&quot; }
+}
+</code></pre>
+<h4 id="2-initialize-documentation">2. Initialize documentation</h4>
+<pre><code class="lang-bash">forge.sh init ./MyPackage
+</code></pre>
+<p>This creates <code>Documentation/</code> with a table of contents, index page, and starter guide.</p>
+<h4 id="3-add-languages-optional">3. Add languages (optional)</h4>
+<p>If you want multilingual documentation, add each target language:</p>
+<pre><code class="lang-bash">forge.sh add-language ./MyPackage fr
+forge.sh add-language ./MyPackage zh
+</code></pre>
+<h4 id="4-add-the-cicd-workflow">4. Add the CI/CD workflow</h4>
+<p>Add <code>.github/workflows/docs.yml</code> to the package repo (see <a href="#adding-a-new-package">CI/CD setup</a> below).</p>
+<h4 id="5-initial-commit-and-release">5. Initial commit and release</h4>
+<pre><code class="lang-bash">git add Documentation/ .github/
+git commit -m &quot;docs: initialize documentation&quot;
+git tag v1.0.0
+git push origin main --tags
+</code></pre>
+<hr>
+<h3 id="feature-development-workflow">Feature Development Workflow</h3>
+<p>This is the day-to-day workflow for adding features with documentation.</p>
+<h4 id="1-create-a-feature-branch">1. Create a feature branch</h4>
+<pre><code class="lang-bash">git checkout main
+git pull origin main
+git checkout -b feature/my-feature
+</code></pre>
+<h4 id="2-develop">2. Develop</h4>
+<p>Write code, add or update documentation pages in <code>Documentation/</code>, and commit as you go:</p>
+<pre><code class="lang-bash"># ... edit files ...
+git add src/MyNewFeature.cs Documentation/my-new-feature.md Documentation/toc.md
+git commit -m &quot;feat: add my new feature&quot;
+</code></pre>
+<p>Repeat as needed — multiple commits on the feature branch are fine.</p>
+<h4 id="3-merge-to-main">3. Merge to main</h4>
+<p>When the feature is complete:</p>
+<pre><code class="lang-bash">git checkout main
+git pull origin main
+git merge --no-ff feature/my-feature
+git branch -d feature/my-feature
+</code></pre>
+<hr>
+<h3 id="release-workflow">Release Workflow</h3>
+<p>When you are ready to release a new version with updated documentation.</p>
+<h4 id="1-bump-the-version">1. Bump the version</h4>
+<p>Edit <code>package.json</code> to update the <code>version</code> field (e.g., <code>1.0.0</code> → <code>1.1.0</code>). Update <code>CHANGELOG.md</code> with the changes.</p>
+<pre><code class="lang-bash"># Edit package.json and CHANGELOG.md, then:
+git add package.json CHANGELOG.md
+git commit -m &quot;chore: bump version to 1.1.0&quot;
+</code></pre>
+<h4 id="2-translate-documentation-if-multilingual">2. Translate documentation (if multilingual)</h4>
+<p>Check which files need translation:</p>
+<pre><code class="lang-bash">forge.sh translate ./MyPackage
+</code></pre>
+<p>For each file listed as pending, translate the English source and write the translated file to the target path shown in the output. Then mark each file as done:</p>
+<pre><code class="lang-bash"># After writing the translated file to .forge/locales/fr/my-page.md:
+forge.sh translate-done ./MyPackage fr my-page.md
+
+# Repeat for each file and language
+forge.sh translate-done ./MyPackage fr another-page.md
+forge.sh translate-done ./MyPackage zh my-page.md
+forge.sh translate-done ./MyPackage zh another-page.md
+</code></pre>
+<p>Commit the translations:</p>
+<pre><code class="lang-bash">git add Documentation/.forge/locales/
+git commit -m &quot;docs: update translations for v1.1.0&quot;
+</code></pre>
+<h4 id="3-build-and-verify-locally">3. Build and verify locally</h4>
+<pre><code class="lang-bash">forge.sh build ./MyPackage
+</code></pre>
+<p>Open the output to verify:</p>
+<pre><code class="lang-bash"># Windows (Git Bash)
+start MyPackage/Documentation~/v1.1.0/index.html
+
+# macOS
+open MyPackage/Documentation~/v1.1.0/index.html
+</code></pre>
+<p>Check that:</p>
+<ul>
+<li>English pages render correctly</li>
+<li>Translated pages render with correct layout</li>
+<li>Version switcher lists all versions</li>
+<li>Language switcher appears and switches correctly</li>
+</ul>
+<h4 id="4-tag-and-push">4. Tag and push</h4>
+<pre><code class="lang-bash">git tag v1.1.0
+git push origin main --tags
+</code></pre>
+<p>The tag push triggers the GitHub Actions workflow, which:</p>
+<ol>
+<li>Checks out the package repo and Package Forge</li>
+<li>Fetches previously published versions from <code>gh-pages</code></li>
+<li>Runs <code>forge.sh build</code></li>
+<li>Deploys to GitHub Pages</li>
+</ol>
+<p>The live site includes the version switcher, language switcher, and all translations.</p>
+<h2 id="documentation-workflow-cicd">Documentation Workflow (CI/CD)</h2>
+<p>When a version tag (<code>v*</code>) is pushed, the following automated flow executes:</p>
+<pre><code class="lang-text">Package Repo                    Package Forge                       Packages (gh-pages)
+    |                               |                               |
+    |-- tag v1.0.0 pushed ---------&gt;|                               |
+    |   docs.yml triggers           |                               |
+    |   calls deploy-docs.yml -----&gt;|                               |
+    |                               |-- checkout package repo       |
+    |                               |-- checkout Package Forge           |
+    |                               |-- install .NET + DocFX        |
+    |                               |-- fetch existing v*/ --------&gt;|
+    |                               |   from gh-pages               |
+    |                               |-- forge.sh build              |
+    |                               |-- deploy Documentation~/ ---&gt;|
+    |                               |   to /{package.name}/         |
+    |                               |                               |-- GitHub Pages serves
+    |                               |                               |   docs.wayn.games/{name}/
+</code></pre>
+<h3 id="step-by-step">Step by step</h3>
+<ol>
+<li>A <code>v*</code> tag push triggers the package repo's <code>.github/workflows/docs.yml</code></li>
+<li><code>docs.yml</code> calls the reusable workflow at <code>WAYN-Games/TOOLS-Package-Forge/.github/workflows/deploy-docs.yml</code></li>
+<li>The reusable workflow:
+<ul>
+<li>Checks out the package repo and Package Forge (private repo, authenticated via PAT)</li>
+<li>Installs .NET SDK and DocFX</li>
+<li>Sparse-checkouts previously published version directories from the <code>gh-pages</code> branch of <code>WAYN-Games/Packages</code> into <code>Documentation~/</code> so the version switcher includes all historical versions</li>
+<li>Runs <code>forge.sh build</code> which generates the DocFX site, <code>versions.js</code>, and a root <code>index.html</code> redirect</li>
+<li>Deploys the full <code>Documentation~/</code> output to <code>WAYN-Games/Packages</code> gh-pages under <code>/{package.name}/</code> using <code>keep_files: true</code> (preserving other packages' docs)</li>
+</ul>
+</li>
+<li>GitHub Pages serves the content at <code>docs.wayn.games/{package.name}/</code></li>
+<li>The version-switcher dropdown (populated from <code>versions.js</code>) lets users navigate between versions</li>
+</ol>
+<h2 id="repository-roles">Repository Roles</h2>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Visibility</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WAYN-Games/TOOLS-Package-Forge</code></td>
+<td>Private</td>
+<td>Build CLI + reusable GitHub Actions workflow</td>
+</tr>
+<tr>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Public</td>
+<td>Hosts <code>gh-pages</code> branch, custom domain <code>docs.wayn.games</code></td>
+</tr>
+<tr>
+<td>Package repos</td>
+<td>Private or Public</td>
+<td>Source code + doc source, each has a <code>docs.yml</code> caller workflow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="url-structure">URL Structure</h2>
+<p>All documentation is served from a single domain:</p>
+<pre><code class="lang-text">docs.wayn.games/
+  index.html                              &lt;- landing page listing all packages
+  wayn.games.tools.package-forge/
+    index.html                            &lt;- redirect to latest version
+    versions.js                           &lt;- version manifest for dropdown
+    v0.1.0/                               &lt;- DocFX output for v0.1.0
+    v0.2.0/                               &lt;- DocFX output for v0.2.0
+  com.wayngamesassets.mgm.charactercontroller/
+    index.html
+    versions.js
+    v0.3.0/
+</code></pre>
+<p>The URL path segment is the <code>name</code> field from the package's <code>package.json</code>.</p>
+<h2 id="adding-a-new-package">Adding a New Package</h2>
+<ol>
+<li><p>Initialize documentation: <code>forge.sh init ./NewPackage</code></p>
+</li>
+<li><p>Write docs and build locally: <code>forge.sh build ./NewPackage</code></p>
+</li>
+<li><p>Add <code>.github/workflows/docs.yml</code> to the package repo:</p>
+<pre><code class="lang-yaml">name: Documentation
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  docs:
+    uses: WAYN-Games/TOOLS-Package-Forge/.github/workflows/deploy-docs.yml@main
+    with:
+      package-name: com.wayngames.newpackage
+    secrets:
+      forge-token: ${{ secrets.FORGE_READ_TOKEN }}
+      deploy-token: ${{ secrets.PACKAGES_DEPLOY_TOKEN }}
+</code></pre>
+</li>
+<li><p>Add <code>FORGE_READ_TOKEN</code> and <code>PACKAGES_DEPLOY_TOKEN</code> secrets to the repo (or use org-level secrets)</p>
+</li>
+<li><p>Tag a release (<code>git tag v1.0.0 &amp;&amp; git push --tags</code>) to trigger deployment</p>
+</li>
+<li><p>Add an entry to <code>landing/index.html</code> in the Packages repo</p>
+</li>
+</ol>
+<h2 id="removing-a-version">Removing a Version</h2>
+<p>To remove a published version:</p>
+<ol>
+<li>Locally: <code>forge.sh version ./PackageDir remove X.Y.Z</code></li>
+<li>Re-trigger the docs workflow (via <code>workflow_dispatch</code>) to update <code>versions.js</code> and the root redirect on the deployed site</li>
+</ol>
+<h2 id="authentication-setup">Authentication Setup</h2>
+<h3 id="reusable-workflow-access">Reusable Workflow Access</h3>
+<p>Since Package Forge is a private repository, its reusable workflows must be explicitly shared with the organization:</p>
+<ol>
+<li>Go to <strong><a href="https://github.com/WAYN-Games/TOOLS-Package-Forge/settings/actions">https://github.com/WAYN-Games/TOOLS-Package-Forge/settings/actions</a></strong></li>
+<li>Under <strong>Access</strong>, select <strong>&quot;Accessible from repositories in the 'WAYN-Games' organization&quot;</strong></li>
+</ol>
+<p>This is a one-time setup. Without it, other repos cannot call the reusable workflow.</p>
+<h3 id="personal-access-tokens">Personal Access Tokens</h3>
+<p>The system uses two fine-grained Personal Access Tokens for least-privilege access:</p>
+<table>
+<thead>
+<tr>
+<th>Secret Name</th>
+<th>Scope</th>
+<th>Permission</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FORGE_READ_TOKEN</code></td>
+<td><code>WAYN-Games/TOOLS-Package-Forge</code></td>
+<td>Contents: Read-only</td>
+<td>Checkout the private build tooling</td>
+</tr>
+<tr>
+<td><code>PACKAGES_DEPLOY_TOKEN</code></td>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Contents: Read and write</td>
+<td>Push built docs to <code>gh-pages</code></td>
+</tr>
+</tbody>
+</table>
+<p>Both secrets must be added to each package repo (or stored as organization-level secrets for convenience).</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.7.2';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'Package Forge ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
