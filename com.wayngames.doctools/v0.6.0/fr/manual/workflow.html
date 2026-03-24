@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Cycle de vie des packages et workflow de documentation | DocTools </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Cycle de vie des packages et workflow de documentation | DocTools ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="com.wayngames.doctools">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <link rel="stylesheet" href="../styles/version-switcher.css">
+        <link rel="stylesheet" href="../styles/language-switcher.css">
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="D&#233;marrage rapide" class="">D&#233;marrage rapide</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="configuration.html" title="Configuration" class="">Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="commands.html" title="Commandes" class="">Commandes</a>
+                          </li>
+                          <li class="">
+                            <a href="versioning.html" title="Versionnage" class="">Versionnage</a>
+                          </li>
+                          <li class="">
+                            <a href="translation.html" title="Traduction" class="">Traduction</a>
+                          </li>
+                          <li class="">
+                            <a href="template.html" title="Mod&#232;le" class="">Mod&#232;le</a>
+                          </li>
+                          <li class="active">
+                            <a href="workflow.html" title="Workflow CI/CD" class="active">Workflow CI/CD</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Référence</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="best-practices.html" title="Bonnes pratiques" class="">Bonnes pratiques</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="D&#233;pannage" class="">D&#233;pannage</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="workflow">
+<h1 id="cycle-de-vie-des-packages-et-workflow-de-documentation">Cycle de vie des packages et workflow de documentation</h1>
+
+<p>Cette page decrit le workflow de bout en bout pour gerer des packages avec une documentation versionnee, de la configuration initiale au deploiement automatise.</p>
+<h2 id="cycle-de-vie-des-packages">Cycle de vie des packages</h2>
+<h3 id="configuration-initiale">Configuration initiale</h3>
+<p>Ces etapes sont effectuees une seule fois par package.</p>
+<h4 id="1-creer-le-package">1. Creer le package</h4>
+<p>Creez un package Unity avec un fichier <code>package.json</code> contenant au minimum :</p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;com.wayngames.mypackage&quot;,
+  &quot;displayName&quot;: &quot;My Package&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;author&quot;: { &quot;name&quot;: &quot;WAYN Games&quot; }
+}
+</code></pre>
+<h4 id="2-initialiser-la-documentation">2. Initialiser la documentation</h4>
+<pre><code class="lang-bash">doctools.sh init ./MyPackage
+</code></pre>
+<p>Cela cree le dossier <code>Documentation/</code> avec une table des matieres, une page d'accueil et un guide de demarrage.</p>
+<h4 id="3-ajouter-des-langues-optionnel">3. Ajouter des langues (optionnel)</h4>
+<p>Si vous souhaitez une documentation multilingue, ajoutez chaque langue cible :</p>
+<pre><code class="lang-bash">doctools.sh add-language ./MyPackage fr
+doctools.sh add-language ./MyPackage zh
+</code></pre>
+<h4 id="4-ajouter-le-workflow-cicd">4. Ajouter le workflow CI/CD</h4>
+<p>Ajoutez <code>.github/workflows/docs.yml</code> au depot du package (voir <a href="#adding-a-new-package">Configuration CI/CD</a> ci-dessous).</p>
+<h4 id="5-premier-commit-et-release">5. Premier commit et release</h4>
+<pre><code class="lang-bash">git add Documentation/ .github/
+git commit -m &quot;docs: initialize documentation&quot;
+git tag v1.0.0
+git push origin main --tags
+</code></pre>
+<hr>
+<h3 id="workflow-de-developpement-de-fonctionnalites">Workflow de developpement de fonctionnalites</h3>
+<p>Ceci est le workflow quotidien pour ajouter des fonctionnalites avec leur documentation.</p>
+<h4 id="1-creer-une-branche-de-fonctionnalite">1. Creer une branche de fonctionnalite</h4>
+<pre><code class="lang-bash">git checkout main
+git pull origin main
+git checkout -b feature/my-feature
+</code></pre>
+<h4 id="2-developper">2. Developper</h4>
+<p>Ecrivez du code, ajoutez ou mettez a jour les pages de documentation dans <code>Documentation/</code>, et commitez au fur et a mesure :</p>
+<pre><code class="lang-bash"># ... modifier les fichiers ...
+git add src/MyNewFeature.cs Documentation/my-new-feature.md Documentation/toc.md
+git commit -m &quot;feat: add my new feature&quot;
+</code></pre>
+<p>Repetez autant que necessaire — plusieurs commits sur la branche de fonctionnalite sont tout a fait acceptables.</p>
+<h4 id="3-fusionner-dans-main">3. Fusionner dans main</h4>
+<p>Lorsque la fonctionnalite est terminee :</p>
+<pre><code class="lang-bash">git checkout main
+git pull origin main
+git merge --no-ff feature/my-feature
+git branch -d feature/my-feature
+</code></pre>
+<hr>
+<h3 id="workflow-de-release">Workflow de release</h3>
+<p>Lorsque vous etes pret a publier une nouvelle version avec une documentation mise a jour.</p>
+<h4 id="1-incrementer-la-version">1. Incrementer la version</h4>
+<p>Modifiez <code>package.json</code> pour mettre a jour le champ <code>version</code> (par exemple, <code>1.0.0</code> → <code>1.1.0</code>). Mettez a jour <code>CHANGELOG.md</code> avec les modifications.</p>
+<pre><code class="lang-bash"># Modifier package.json et CHANGELOG.md, puis :
+git add package.json CHANGELOG.md
+git commit -m &quot;chore: bump version to 1.1.0&quot;
+</code></pre>
+<h4 id="2-traduire-la-documentation-si-multilingue">2. Traduire la documentation (si multilingue)</h4>
+<p>Verifiez quels fichiers necessitent une traduction :</p>
+<pre><code class="lang-bash">doctools.sh translate ./MyPackage
+</code></pre>
+<p>Pour chaque fichier indique comme en attente, traduisez la source anglaise et ecrivez le fichier traduit vers le chemin cible affiche dans la sortie. Ensuite, marquez chaque fichier comme termine :</p>
+<pre><code class="lang-bash"># Apres avoir ecrit le fichier traduit dans .doctools/locales/fr/my-page.md :
+doctools.sh translate-done ./MyPackage fr my-page.md
+
+# Repeter pour chaque fichier et chaque langue
+doctools.sh translate-done ./MyPackage fr another-page.md
+doctools.sh translate-done ./MyPackage zh my-page.md
+doctools.sh translate-done ./MyPackage zh another-page.md
+</code></pre>
+<p>Commitez les traductions :</p>
+<pre><code class="lang-bash">git add Documentation/.doctools/locales/
+git commit -m &quot;docs: update translations for v1.1.0&quot;
+</code></pre>
+<h4 id="3-compiler-et-verifier-localement">3. Compiler et verifier localement</h4>
+<pre><code class="lang-bash">doctools.sh build ./MyPackage
+</code></pre>
+<p>Ouvrez la sortie pour verifier :</p>
+<pre><code class="lang-bash"># Windows (Git Bash)
+start MyPackage/Documentation~/v1.1.0/index.html
+
+# macOS
+open MyPackage/Documentation~/v1.1.0/index.html
+</code></pre>
+<p>Verifiez que :</p>
+<ul>
+<li>Les pages en anglais s'affichent correctement</li>
+<li>Les pages traduites s'affichent avec la bonne mise en page</li>
+<li>Le selecteur de version liste toutes les versions</li>
+<li>Le selecteur de langue apparait et fonctionne correctement</li>
+</ul>
+<h4 id="4-taguer-et-pousser">4. Taguer et pousser</h4>
+<pre><code class="lang-bash">git tag v1.1.0
+git push origin main --tags
+</code></pre>
+<p>Le push du tag declenche le workflow GitHub Actions, qui :</p>
+<ol>
+<li>Clone le depot du package et DocTools</li>
+<li>Recupere les versions precedemment publiees depuis <code>gh-pages</code></li>
+<li>Execute <code>doctools.sh build</code></li>
+<li>Deploie sur GitHub Pages</li>
+</ol>
+<p>Le site en ligne inclut le selecteur de version, le selecteur de langue et toutes les traductions.</p>
+<h2 id="workflow-de-documentation-cicd">Workflow de documentation (CI/CD)</h2>
+<p>Lorsqu'un tag de version (<code>v*</code>) est pousse, le flux automatise suivant s'execute :</p>
+<pre><code class="lang-text">Package Repo                    DocTools                        Packages (gh-pages)
+    |                               |                               |
+    |-- tag v1.0.0 pushed ---------&gt;|                               |
+    |   docs.yml triggers           |                               |
+    |   calls deploy-docs.yml -----&gt;|                               |
+    |                               |-- checkout package repo       |
+    |                               |-- checkout DocTools            |
+    |                               |-- install .NET + DocFX        |
+    |                               |-- fetch existing v*/ --------&gt;|
+    |                               |   from gh-pages               |
+    |                               |-- doctools.sh build           |
+    |                               |-- deploy Documentation~/ ---&gt;|
+    |                               |   to /{package.name}/         |
+    |                               |                               |-- GitHub Pages serves
+    |                               |                               |   docs.wayn.games/{name}/
+</code></pre>
+<h3 id="etape-par-etape">Etape par etape</h3>
+<ol>
+<li>Un push de tag <code>v*</code> declenche le fichier <code>.github/workflows/docs.yml</code> du depot du package</li>
+<li><code>docs.yml</code> appelle le workflow reutilisable situe dans <code>WAYN-Games/DocTools/.github/workflows/deploy-docs.yml</code></li>
+<li>Le workflow reutilisable :
+<ul>
+<li>Clone le depot du package et DocTools (depot prive, authentifie via PAT)</li>
+<li>Installe le SDK .NET et DocFX</li>
+<li>Effectue un sparse-checkout des repertoires de versions precedemment publiees depuis la branche <code>gh-pages</code> de <code>WAYN-Games/Packages</code> dans <code>Documentation~/</code> afin que le selecteur de version inclue toutes les versions historiques</li>
+<li>Execute <code>doctools.sh build</code> qui genere le site DocFX, <code>versions.js</code> et une redirection <code>index.html</code> a la racine</li>
+<li>Deploie l'ensemble de la sortie <code>Documentation~/</code> vers <code>WAYN-Games/Packages</code> gh-pages sous <code>/{package.name}/</code> en utilisant <code>keep_files: true</code> (preservant la documentation des autres packages)</li>
+</ul>
+</li>
+<li>GitHub Pages sert le contenu a l'adresse <code>docs.wayn.games/{package.name}/</code></li>
+<li>Le menu deroulant du selecteur de version (alimente par <code>versions.js</code>) permet aux utilisateurs de naviguer entre les versions</li>
+</ol>
+<h2 id="roles-des-depots">Roles des depots</h2>
+<table>
+<thead>
+<tr>
+<th>Depot</th>
+<th>Visibilite</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WAYN-Games/DocTools</code></td>
+<td>Prive</td>
+<td>CLI de build + workflow GitHub Actions reutilisable</td>
+</tr>
+<tr>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Public</td>
+<td>Heberge la branche <code>gh-pages</code>, domaine personnalise <code>docs.wayn.games</code></td>
+</tr>
+<tr>
+<td>Depots de packages</td>
+<td>Prive ou Public</td>
+<td>Code source + source de documentation, chacun possede un workflow appelant <code>docs.yml</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="structure-des-url">Structure des URL</h2>
+<p>Toute la documentation est servie depuis un seul domaine :</p>
+<pre><code class="lang-text">docs.wayn.games/
+  index.html                              &lt;- page d'accueil listant tous les packages
+  com.wayngames.doctools/
+    index.html                            &lt;- redirection vers la derniere version
+    versions.js                           &lt;- manifeste de versions pour le menu deroulant
+    v0.1.0/                               &lt;- sortie DocFX pour v0.1.0
+    v0.2.0/                               &lt;- sortie DocFX pour v0.2.0
+  com.wayngamesassets.mgm.charactercontroller/
+    index.html
+    versions.js
+    v0.3.0/
+</code></pre>
+<p>Le segment de chemin dans l'URL correspond au champ <code>name</code> du fichier <code>package.json</code> du package.</p>
+<h2 id="ajouter-un-nouveau-package">Ajouter un nouveau package</h2>
+<ol>
+<li><p>Initialiser la documentation : <code>doctools.sh init ./NewPackage</code></p>
+</li>
+<li><p>Rediger la documentation et compiler localement : <code>doctools.sh build ./NewPackage</code></p>
+</li>
+<li><p>Ajouter <code>.github/workflows/docs.yml</code> au depot du package :</p>
+<pre><code class="lang-yaml">name: Documentation
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  docs:
+    uses: WAYN-Games/DocTools/.github/workflows/deploy-docs.yml@main
+    with:
+      package-name: com.wayngames.newpackage
+    secrets:
+      doctools-token: ${{ secrets.DOCTOOLS_READ_TOKEN }}
+      deploy-token: ${{ secrets.PACKAGES_DEPLOY_TOKEN }}
+</code></pre>
+</li>
+<li><p>Ajouter les secrets <code>DOCTOOLS_READ_TOKEN</code> et <code>PACKAGES_DEPLOY_TOKEN</code> au depot (ou utiliser des secrets au niveau de l'organisation)</p>
+</li>
+<li><p>Taguer une release (<code>git tag v1.0.0 &amp;&amp; git push --tags</code>) pour declencher le deploiement</p>
+</li>
+<li><p>Ajouter une entree dans <code>landing/index.html</code> du depot Packages</p>
+</li>
+</ol>
+<h2 id="supprimer-une-version">Supprimer une version</h2>
+<p>Pour supprimer une version publiee :</p>
+<ol>
+<li>Localement : <code>doctools.sh version ./PackageDir remove X.Y.Z</code></li>
+<li>Relancer le workflow de documentation (via <code>workflow_dispatch</code>) pour mettre a jour <code>versions.js</code> et la redirection racine sur le site deploye</li>
+</ol>
+<h2 id="configuration-de-lauthentification">Configuration de l'authentification</h2>
+<h3 id="acces-au-workflow-reutilisable">Acces au workflow reutilisable</h3>
+<p>Etant donne que DocTools est un depot prive, ses workflows reutilisables doivent etre explicitement partages avec l'organisation :</p>
+<ol>
+<li>Allez dans <strong><a href="https://github.com/WAYN-Games/DocTools/settings/actions">https://github.com/WAYN-Games/DocTools/settings/actions</a></strong></li>
+<li>Sous <strong>Access</strong>, selectionnez <strong>&quot;Accessible from repositories in the 'WAYN-Games' organization&quot;</strong></li>
+</ol>
+<p>Il s'agit d'une configuration unique. Sans cela, les autres depots ne peuvent pas appeler le workflow reutilisable.</p>
+<h3 id="personal-access-tokens">Personal Access Tokens</h3>
+<p>Le systeme utilise deux Personal Access Tokens a granularite fine pour un acces a moindre privilege :</p>
+<table>
+<thead>
+<tr>
+<th>Nom du secret</th>
+<th>Portee</th>
+<th>Permission</th>
+<th>Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DOCTOOLS_READ_TOKEN</code></td>
+<td><code>WAYN-Games/DocTools</code></td>
+<td>Contents: Read-only</td>
+<td>Cloner l'outillage de build prive</td>
+</tr>
+<tr>
+<td><code>PACKAGES_DEPLOY_TOKEN</code></td>
+<td><code>WAYN-Games/Packages</code></td>
+<td>Contents: Read and write</td>
+<td>Pousser la documentation compilee vers <code>gh-pages</code></td>
+</tr>
+</tbody>
+</table>
+<p>Les deux secrets doivent etre ajoutes a chaque depot de package (ou stockes comme secrets au niveau de l'organisation pour plus de commodite).</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.6.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'DocTools ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'doctools-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'doctools-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
