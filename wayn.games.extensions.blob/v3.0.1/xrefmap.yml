@@ -1,0 +1,191 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: WAYN.Games.Extensions.Blob
+  name: WAYN.Games.Extensions.Blob
+  href: api/WAYN.Games.Extensions.Blob.html
+  commentId: N:WAYN.Games.Extensions.Blob
+  fullName: WAYN.Games.Extensions.Blob
+  nameWithType: WAYN.Games.Extensions.Blob
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2
+  name: BlobHashMapBuilder<TKey, TValue>
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html
+  commentId: T:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2
+  name.vb: BlobHashMapBuilder(Of TKey, TValue)
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue)
+  nameWithType: BlobHashMapBuilder<TKey, TValue>
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue)
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.#ctor(BlobBuilder,System.Int32,System.Single)
+  name: BlobHashMapBuilder(BlobBuilder, int, float)
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2__ctor_BlobBuilder_System_Int32_System_Single_
+  commentId: M:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.#ctor(BlobBuilder,System.Int32,System.Single)
+  name.vb: New(BlobBuilder, Integer, Single)
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.BlobHashMapBuilder(BlobBuilder, int, float)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).New(BlobBuilder, Integer, Single)
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.BlobHashMapBuilder(BlobBuilder, int, float)
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).New(BlobBuilder, Integer, Single)
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.#ctor*
+  name: BlobHashMapBuilder
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2__ctor_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.BlobHashMapBuilder
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).New
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.BlobHashMapBuilder
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).New
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_Add__0__1_
+  commentId: M:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.Add(`0,`1)
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).Add(TKey, TValue)
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).Add(TKey, TValue)
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.Add*
+  name: Add
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_Add_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.Add
+  isSpec: "True"
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.Add
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).Add
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.Add
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).Add
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})
+  name: AddAll(IEnumerable<KeyValuePair<TKey, TValue>>)
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_AddAll_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0__1___
+  commentId: M:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})
+  name.vb: AddAll(IEnumerable(Of KeyValuePair(Of TKey, TValue)))
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.AddAll(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).AddAll(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)))
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.AddAll(IEnumerable<KeyValuePair<TKey, TValue>>)
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).AddAll(IEnumerable(Of KeyValuePair(Of TKey, TValue)))
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerator{KeyValue{`0,`1}})
+  name: AddAll(IEnumerator<KeyValue<TKey, TValue>>)
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_AddAll_System_Collections_Generic_IEnumerator_KeyValue__0__1___
+  commentId: M:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll(System.Collections.Generic.IEnumerator{KeyValue{`0,`1}})
+  name.vb: AddAll(IEnumerator(Of KeyValue(Of TKey, TValue)))
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.AddAll(System.Collections.Generic.IEnumerator<KeyValue<TKey, TValue>>)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).AddAll(System.Collections.Generic.IEnumerator(Of KeyValue(Of TKey, TValue)))
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.AddAll(IEnumerator<KeyValue<TKey, TValue>>)
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).AddAll(IEnumerator(Of KeyValue(Of TKey, TValue)))
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll*
+  name: AddAll
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_AddAll_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.AddAll
+  isSpec: "True"
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.AddAll
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).AddAll
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.AddAll
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).AddAll
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference(Allocator)
+  name: CreateBlobAssetReference(Allocator)
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_CreateBlobAssetReference_Allocator_
+  commentId: M:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference(Allocator)
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.CreateBlobAssetReference(Allocator)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).CreateBlobAssetReference(Allocator)
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.CreateBlobAssetReference(Allocator)
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).CreateBlobAssetReference(Allocator)
+- uid: WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference*
+  name: CreateBlobAssetReference
+  href: api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html#WAYN_Games_Extensions_Blob_BlobHashMapBuilder_2_CreateBlobAssetReference_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobHashMapBuilder`2.CreateBlobAssetReference
+  isSpec: "True"
+  fullName: WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>.CreateBlobAssetReference
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobHashMapBuilder(Of TKey, TValue).CreateBlobAssetReference
+  nameWithType: BlobHashMapBuilder<TKey, TValue>.CreateBlobAssetReference
+  nameWithType.vb: BlobHashMapBuilder(Of TKey, TValue).CreateBlobAssetReference
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2
+  name: BlobMultiHashMap<TKey, TValue>
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html
+  commentId: T:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2
+  name.vb: BlobMultiHashMap(Of TKey, TValue)
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue)
+  nameWithType: BlobMultiHashMap<TKey, TValue>
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue)
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ContainsKey(`0)
+  name: ContainsKey(TKey)
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html#WAYN_Games_Extensions_Blob_BlobMultiHashMap_2_ContainsKey__0_
+  commentId: M:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ContainsKey(`0)
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>.ContainsKey(TKey)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue).ContainsKey(TKey)
+  nameWithType: BlobMultiHashMap<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue).ContainsKey(TKey)
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ContainsKey*
+  name: ContainsKey
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html#WAYN_Games_Extensions_Blob_BlobMultiHashMap_2_ContainsKey_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ContainsKey
+  isSpec: "True"
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>.ContainsKey
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue).ContainsKey
+  nameWithType: BlobMultiHashMap<TKey, TValue>.ContainsKey
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue).ContainsKey
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.GetValuesForKey(`0)
+  name: GetValuesForKey(TKey)
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html#WAYN_Games_Extensions_Blob_BlobMultiHashMap_2_GetValuesForKey__0_
+  commentId: M:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.GetValuesForKey(`0)
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>.GetValuesForKey(TKey)
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue).GetValuesForKey(TKey)
+  nameWithType: BlobMultiHashMap<TKey, TValue>.GetValuesForKey(TKey)
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue).GetValuesForKey(TKey)
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.GetValuesForKey*
+  name: GetValuesForKey
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html#WAYN_Games_Extensions_Blob_BlobMultiHashMap_2_GetValuesForKey_
+  commentId: Overload:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.GetValuesForKey
+  isSpec: "True"
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>.GetValuesForKey
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue).GetValuesForKey
+  nameWithType: BlobMultiHashMap<TKey, TValue>.GetValuesForKey
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue).GetValuesForKey
+- uid: WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ValueCount
+  name: ValueCount
+  href: api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html#WAYN_Games_Extensions_Blob_BlobMultiHashMap_2_ValueCount
+  commentId: F:WAYN.Games.Extensions.Blob.BlobMultiHashMap`2.ValueCount
+  fullName: WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>.ValueCount
+  fullName.vb: WAYN.Games.Extensions.Blob.BlobMultiHashMap(Of TKey, TValue).ValueCount
+  nameWithType: BlobMultiHashMap<TKey, TValue>.ValueCount
+  nameWithType.vb: BlobMultiHashMap(Of TKey, TValue).ValueCount
+- uid: WAYN.Games.Extensions.Blob.KeyComputation
+  name: KeyComputation
+  href: api/WAYN.Games.Extensions.Blob.KeyComputation.html
+  commentId: T:WAYN.Games.Extensions.Blob.KeyComputation
+  fullName: WAYN.Games.Extensions.Blob.KeyComputation
+  nameWithType: KeyComputation
+- uid: WAYN.Games.Extensions.Blob.KeyComputation.bucketIndex
+  name: bucketIndex
+  href: api/WAYN.Games.Extensions.Blob.KeyComputation.html#WAYN_Games_Extensions_Blob_KeyComputation_bucketIndex
+  commentId: F:WAYN.Games.Extensions.Blob.KeyComputation.bucketIndex
+  fullName: WAYN.Games.Extensions.Blob.KeyComputation.bucketIndex
+  nameWithType: KeyComputation.bucketIndex
+- uid: WAYN.Games.Extensions.Blob.KeyComputation.keyHash
+  name: keyHash
+  href: api/WAYN.Games.Extensions.Blob.KeyComputation.html#WAYN_Games_Extensions_Blob_KeyComputation_keyHash
+  commentId: F:WAYN.Games.Extensions.Blob.KeyComputation.keyHash
+  fullName: WAYN.Games.Extensions.Blob.KeyComputation.keyHash
+  nameWithType: KeyComputation.keyHash
+- uid: WAYN.Games.Extensions.Blob.KeyIndex
+  name: KeyIndex
+  href: api/WAYN.Games.Extensions.Blob.KeyIndex.html
+  commentId: T:WAYN.Games.Extensions.Blob.KeyIndex
+  fullName: WAYN.Games.Extensions.Blob.KeyIndex
+  nameWithType: KeyIndex
+- uid: WAYN.Games.Extensions.Blob.KeyIndex.ElementCount
+  name: ElementCount
+  href: api/WAYN.Games.Extensions.Blob.KeyIndex.html#WAYN_Games_Extensions_Blob_KeyIndex_ElementCount
+  commentId: F:WAYN.Games.Extensions.Blob.KeyIndex.ElementCount
+  fullName: WAYN.Games.Extensions.Blob.KeyIndex.ElementCount
+  nameWithType: KeyIndex.ElementCount
+- uid: WAYN.Games.Extensions.Blob.KeyIndex.FirstIndex
+  name: FirstIndex
+  href: api/WAYN.Games.Extensions.Blob.KeyIndex.html#WAYN_Games_Extensions_Blob_KeyIndex_FirstIndex
+  commentId: F:WAYN.Games.Extensions.Blob.KeyIndex.FirstIndex
+  fullName: WAYN.Games.Extensions.Blob.KeyIndex.FirstIndex
+  nameWithType: KeyIndex.FirstIndex
+- uid: WAYN.Games.Extensions.Blob.KeyIndex.KeyHash
+  name: KeyHash
+  href: api/WAYN.Games.Extensions.Blob.KeyIndex.html#WAYN_Games_Extensions_Blob_KeyIndex_KeyHash
+  commentId: F:WAYN.Games.Extensions.Blob.KeyIndex.KeyHash
+  fullName: WAYN.Games.Extensions.Blob.KeyIndex.KeyHash
+  nameWithType: KeyIndex.KeyHash

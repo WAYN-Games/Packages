@@ -1,0 +1,159 @@
+{
+  "source_base_path": "/home/runner/work/ECSBlobExtension/ECSBlobExtension/package/Documentation~/.forge-build-2839",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../manual/en/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../manual/en/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "_root/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "_root/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.Extensions.Blob.BlobHashMapBuilder<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.Extensions.Blob.BlobHashMapBuilder-2.yml\" sourcestartlinenumber=\"1\">Fluent builder for constructing a <xref href=\"WAYN.Games.Extensions.Blob.BlobMultiHashMap%602\" data-throw-if-not-resolved=\"false\"></xref> stored in a blob asset.\nAccumulates key-value pairs, automatically rehashes when the load factor is exceeded,\nand produces an immutable BlobAssetReference&lt;T&gt; via <xref href=\"WAYN.Games.Extensions.Blob.BlobHashMapBuilder%602.CreateBlobAssetReference(Allocator)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.Extensions.Blob.BlobMultiHashMap<TKey, TValue>",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.Extensions.Blob.BlobMultiHashMap-2.yml\" sourcestartlinenumber=\"1\">An immutable multi-value hash map stored in a BlobAssetReference&lt;T&gt;.\nSupports multiple values per key with O(1) average bucket lookup and binary search within buckets.\nBuilt using <xref href=\"WAYN.Games.Extensions.Blob.BlobHashMapBuilder%602\" data-throw-if-not-resolved=\"false\"></xref> and intended for read-only access at runtime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.Extensions.Blob.KeyComputation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.Extensions.Blob.KeyComputation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.Extensions.Blob.KeyComputation",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.Extensions.Blob.KeyComputation.yml\" sourcestartlinenumber=\"1\">Result of computing a bucket index for a key, containing both the target bucket index and the processed key hash.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.Extensions.Blob.KeyIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.Extensions.Blob.KeyIndex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.Extensions.Blob.KeyIndex",
+      "Summary": "<p sourcefile=\"api/WAYN.Games.Extensions.Blob.KeyIndex.yml\" sourcestartlinenumber=\"1\">Stores metadata about a key's values within a hash map bucket.\nTracks the key's hash code and the location and count of its associated values in the bucket's values array.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WAYN.Games.Extensions.Blob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WAYN.Games.Extensions.Blob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WAYN.Games.Extensions.Blob",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
