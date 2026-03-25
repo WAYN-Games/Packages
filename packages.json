@@ -31,5 +31,16 @@
     "title": "Package Forge",
     "description": "Unity development tool suite \u2014 documentation, builds, and more",
     "author": "WAYN Games"
+  },
+  {
+    "latestVersion": "4.0.0",
+    "title": "Extensions Blob",
+    "description": "This package contains additionnal blob structures for use in Unity DOTS projects.",
+    "author": "WAYN Games",
+    "name": "wayn.games.extensions.blob",
+    "tags": [
+      "extensions"
+    ],
+    "product": "blob"
   }
 ]
