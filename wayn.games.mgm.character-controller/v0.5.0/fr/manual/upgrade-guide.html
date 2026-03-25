@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <script>
-      (function(){var t=localStorage.getItem('doctools-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
     </script>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Guide de mise a jour | MGM Character Controller </title>
@@ -603,7 +603,7 @@ public partial struct MyStateMachine { }
 
     <script>
     (function () {
-      var LANG_STORAGE_KEY = 'doctools-lang';
+      var LANG_STORAGE_KEY = 'forge-lang';
       var select = document.querySelector('#language-select');
       var wrapper = select ? select.closest('.language-switcher') : null;
       if (!select || !wrapper) return;
@@ -677,7 +677,7 @@ public partial struct MyStateMachine { }
 
     <script>
     (function () {
-      var STORAGE_KEY = 'doctools-theme';
+      var STORAGE_KEY = 'forge-theme';
 
       function getPreferred() {
         var stored = localStorage.getItem(STORAGE_KEY);

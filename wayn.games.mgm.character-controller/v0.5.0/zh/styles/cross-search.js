@@ -6,7 +6,7 @@
   var container = null;
   var fetching = false;
 
-  // Detect current package from URL path: /com.wayngames.doctools/v0.2.0/...
+  // Detect current package from URL path: /wayn.games.tools.package-forge/v1.0.0/...
   var pathParts = window.location.pathname.split('/').filter(Boolean);
   if (pathParts.length >= 2) {
     currentPackage = pathParts[0];
