@@ -43,7 +43,7 @@
   --badge-bg: #EBF2FA;
   --badge-color: #2968A8;
   /* Typography */
-  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, monospace;
 }
 
@@ -111,7 +111,9 @@
 
 /* --- Base typography ---------------------------------------------- */
 
+html,
 body {
+  font-family: var(--font);
   background: var(--page-bg);
 }
 
@@ -119,8 +121,8 @@ body {
 .container {
   font-family: var(--font);
   color: var(--ink);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .content.wrap h1,
@@ -130,20 +132,25 @@ body {
 .content.wrap h5,
 .content.wrap h6 {
   font-family: var(--font);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--ink);
-  line-height: 1.3;
+  line-height: 1.1;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.content.wrap h1 { font-size: 2rem; margin-top: 0; }
-.content.wrap h2 { font-size: 1.5rem; }
-.content.wrap h3 { font-size: 1.25rem; }
-.content.wrap h4 { font-size: 1.1rem; }
+.content.wrap h1 { font-size: 36px; margin-top: 0; }
+.content.wrap h2 { font-size: 30px; }
+.content.wrap h3 { font-size: 24px; }
+.content.wrap h4 { font-size: 18px; margin-top: 10px; margin-bottom: 5px; }
+.content.wrap h5 { font-size: 14px; margin-top: 10px; margin-bottom: 5px; }
+.content.wrap h6 { font-size: 12px; margin-top: 10px; margin-bottom: 5px; }
 
 .content.wrap p,
 .content.wrap li {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 10px;
 }
 
 /* --- Links -------------------------------------------------------- */
@@ -177,20 +184,24 @@ body {
 .navbar-inverse .navbar-brand {
   color: #fff;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0.6em;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-inverse .navbar-brand img#logo {
-  height: 62px;
+  height: calc(var(--navbar-height, 50px) * 0.9);
   width: auto;
-  vertical-align: middle;
 }
 
 .navbar-inverse .navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.85);
   font-family: var(--font);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 14px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 2px solid transparent;
@@ -262,7 +273,7 @@ body {
 .breadcrumb-trail {
   margin-left: 24px;
   font-family: var(--font);
-  font-size: 0.85rem;
+  font-size: 12px;
   flex: 1;
 }
 
@@ -338,7 +349,7 @@ body {
 .toc .nav > li > a {
   color: var(--ink-secondary);
   font-family: var(--font);
-  font-size: 0.875rem;
+  font-size: 13px;
   padding: 6px 12px;
   border-left: 3px solid transparent;
   transition: color 0.15s, background 0.15s, border-color 0.15s;
@@ -394,7 +405,7 @@ body {
   padding: 7px 28px;
   width: 100%;
   font-family: var(--font);
-  font-size: 0.8125rem;
+  font-size: 12px;
   color: var(--ink);
   box-sizing: border-box;
 }
@@ -416,7 +427,7 @@ body {
 
 .content.wrap code {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-size: 13px;
   background: var(--code-bg);
   color: var(--ink);
   padding: 2px 6px;
@@ -436,8 +447,8 @@ body {
   background: none;
   border: none;
   padding: 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.43;
 }
 
 /* --- Mermaid diagram controls (svg-toolbelt) ---------------------- */
@@ -469,14 +480,14 @@ body {
 .content.wrap td {
   padding: 8px 12px;
   border: 1px solid var(--border);
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 .content.wrap th {
   background: var(--version-bar-bg);
   color: var(--ink);
   font-weight: 600;
-  padding: 10px 12px;
+  padding: 8px 12px;
 }
 
 .content.wrap tr:hover td {
@@ -491,9 +502,9 @@ body {
   border: 1px solid var(--border);
   border-left: 4px solid;
   padding: 12px 16px;
-  margin: 1rem 0;
-  font-size: 0.9rem;
-  line-height: 1.6;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .alert-info {
@@ -521,7 +532,7 @@ body {
 .TIP > h5,
 .IMPORTANT > h5,
 .CAUTION > h5 {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 0;
 }
@@ -556,6 +567,57 @@ body {
   max-width: 900px;
 }
 
+/* --- Affix sidebar ------------------------------------------------ */
+
+.sideaffix > .bs-docs-sidebar {
+  overflow-x: hidden;
+}
+
+.sideaffix > div.contribution {
+  margin-bottom: 0;
+}
+
+.sideaffix {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sideaffix::-webkit-scrollbar {
+  display: none;
+}
+
+.affix h5 {
+  margin-top: 0;
+}
+
+/* --- Copy code button --------------------------------------------- */
+
+button.copy-code {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 4px 8px;
+  font-size: 16px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  outline-offset: 2px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 100;
+}
+
+pre:hover button.copy-code {
+  opacity: 1;
+}
+
+button.copy-code:hover {
+  color: MistyRose;
+}
+
 /* --- Footer ------------------------------------------------------- */
 
 .footer,
@@ -563,7 +625,8 @@ body {
   border-top: none !important;
   background-color: var(--footer-bg) !important;
   color: var(--ink-secondary) !important;
-  font-size: 0.8125rem;
+  font-size: 12px;
+  padding: 15px 0;
 }
 
 /* --- Accessibility ------------------------------------------------ */
@@ -587,7 +650,7 @@ body {
 
 /* Affix sidebar heading (replaces h5) */
 .affix-header {
-  font-size: 0.85rem;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -613,7 +676,7 @@ body {
 }
 
 #cross-search-results .cross-search-header {
-  font-size: 0.95rem;
+  font-size: 13px;
   color: var(--ink-secondary);
   font-weight: 600;
   margin-bottom: 15px;
@@ -621,7 +684,7 @@ body {
 
 #cross-search-results .cross-search-badge {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 11px;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 10px;
@@ -638,7 +701,7 @@ body {
 #cross-search-results .item-title a {
   color: var(--primary);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 #cross-search-results .item-title a:hover {
@@ -646,12 +709,12 @@ body {
 }
 
 #cross-search-results .item-href {
-  font-size: 0.8rem;
+  font-size: 11px;
   color: var(--success);
 }
 
 #cross-search-results .item-brief {
-  font-size: 0.85rem;
+  font-size: 12px;
   color: var(--ink-secondary);
   margin-top: 2px;
 }
