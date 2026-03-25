@@ -1,0 +1,215 @@
+/* ===================================================================
+   Homepage — Layout & component styles
+   Theme variables and toggle styles are provided by main.css
+   =================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--page-bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover, a:focus { color: var(--primary-hover); text-decoration: underline; }
+
+/* --- Header --- */
+.site-header {
+  background: var(--navbar-bg);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.site-header .logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.site-header .site-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+/* Reset main.css toggle margin for standalone header */
+.site-header .theme-toggle-btn {
+  margin: 0;
+}
+
+/* --- Main content --- */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.content .subtitle {
+  font-size: 1.1rem;
+  color: var(--ink-secondary);
+  margin: 0 0 24px;
+}
+
+/* --- Search / filter --- */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.search-bar::placeholder { color: var(--ink-secondary); }
+.search-bar:focus { border-color: var(--primary); outline: none; }
+
+/* --- Card grid --- */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.package-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+
+.package-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+[data-theme="dark"] .package-card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.package-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.package-card .description {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  margin: 0 0 16px;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.package-card .description-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 11;
+}
+
+[data-theme="dark"] .package-card .description-overlay {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.package-card.clamped:hover .description-overlay {
+  display: block;
+}
+
+.package-card .meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.version-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background: var(--badge-bg);
+  color: var(--badge-color);
+}
+
+.tag-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+  text-transform: capitalize;
+}
+
+.author {
+  font-size: 0.85rem;
+  color: var(--ink-secondary);
+}
+
+.package-card .view-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* --- Loading & empty states --- */
+.loading, .error-state {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--ink-secondary);
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8125rem;
+  color: var(--ink-secondary);
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+}
+
+/* --- Accessibility --- */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
