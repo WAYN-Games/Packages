@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="zh">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>故障排除 | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="故障排除 | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="/styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="/styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="/styles/language-switcher.css">
+      <link rel="stylesheet" href="/wayn.games.mgm.character-controller/styles/override.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.mgm.character-controller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.CharacterController.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="安装" class="">安装</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="快速入门" class="">快速入门</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="开始使用" class="">开始使用</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">指南</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="架构概览" class="">架构概览</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="执行循环" class="">执行循环</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="创建状态机" class="">创建状态机</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="编写自定义状态" class="">编写自定义状态</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="物理配置" class="">物理配置</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="输入系统" class="">输入系统</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="混合 GameObject 层" class="">混合 GameObject 层</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="移动平台" class="">移动平台</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="调试可视化" class="">调试可视化</a>
+                          </li>
+                          <li class="">
+                            <a href="extending.html" title="扩展包" class="">扩展包</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">实用技巧</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="添加新状态" class="">添加新状态</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="添加新转换" class="">添加新转换</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="切换到 AI 输入" class="">切换到 AI 输入</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="自定义地面吸附" class="">自定义地面吸附</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="自定义碰撞响应" class="">自定义碰撞响应</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="推动动态物体" class="">推动动态物体</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="覆盖管线步骤" class="">覆盖管线步骤</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="运行多个状态机" class="">运行多个状态机</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="逐角色重力" class="">逐角色重力</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="设置混合角色" class="">设置混合角色</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="设置移动平台" class="">设置移动平台</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">集成</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="动画" class="">动画</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">参考</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="示例" class="">示例</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="最佳实践" class="">最佳实践</a>
+                          </li>
+                          <li class="active">
+                            <a href="troubleshooting.html" title="故障排除" class="active">故障排除</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="升级指南" class="">升级指南</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="故障排除">故障排除</h1>
+
+<p>本页面按症状列出常见问题。对于每个问题：你看到什么、为什么发生、如何修复。</p>
+<h2 id="角色穿过地板">角色穿过地板</h2>
+<p><strong>原因</strong>：地板没有 ECS 世界可以看到的物理碰撞体。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在子场景内选择地板 GameObject</li>
+<li>为地板添加碰撞体组件</li>
+<li>验证子场景已加载（检查 Hierarchy 中的子场景图标）</li>
+</ol>
+<p><strong>验证</strong>：进入 Play 模式。打开 Physics Debugger（<strong>Window &gt; Analysis &gt; Physics Debugger</strong>）并确认地板碰撞体可见。</p>
+<p><strong>预防</strong>：始终确保子场景中的环境几何体有碰撞体。</p>
+<h2 id="角色不响应输入">角色不响应输入</h2>
+<p><strong>原因</strong>：输入没有从硬件流向 ECS 组件。</p>
+<p><strong>修复</strong> - 按顺序检查每一层：</p>
+<ol>
+<li><strong>Input System 包</strong>：确认 <code>com.unity.inputsystem</code> 已安装，且 Active Input Handling 在 <strong>Edit &gt; Project Settings &gt; Player</strong> 中设置为 <strong>Input System Package (New)</strong> 或 <strong>Both</strong></li>
+<li><strong>Player 实体</strong>：验证 Player 实体在 Player Character Authoring 组件中分配了输入资产</li>
+<li><strong>Player 预制体</strong>：Player GO Prefab 必须有一个 <code>PlayerInput</code> 组件并分配了输入动作</li>
+<li><strong>角色引用</strong>：Player 实体必须引用正确的 Character 实体</li>
+</ol>
+<p><strong>验证</strong>：在你的 <code>PlayerInputAsset.ReadInputsFromAsset()</code> 方法中添加断点或日志以确认它每帧被调用。</p>
+<h2 id="角色在地面上抖动">角色在地面上抖动</h2>
+<p><strong>原因</strong>：角色的视觉位置每个固定步离散更新，导致可见的卡顿。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在 Character Physics Profile 中将 <code>InterpolationMode</code> 设为 <code>Interpolated</code></li>
+<li>如果仍然抖动，略微增加 <code>CollisionTolerance</code>（尝试 <code>0.01</code>）</li>
+<li>验证地面碰撞体是<strong>静态的</strong>（不是每帧重建的动态物体）</li>
+</ol>
+<p><strong>验证</strong>：抖动应在 60+ FPS 下消失或变得不可察觉。</p>
+<h2 id="角色穿过墙壁">角色穿过墙壁</h2>
+<p><strong>原因</strong>：碰撞滑动算法没有足够的迭代次数来解析碰撞。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在 Character Physics Profile 上增加 <code>MaxBounce</code>（尝试 5-6，默认为 3）</li>
+<li>检查墙壁的碰撞层是否包含在角色的 <code>CollidesWith</code> 掩码中</li>
+<li>如果角色移动非常快，每帧的位移可能超过碰撞体尺寸——降低速度或提高固定更新率</li>
+</ol>
+<p><strong>验证</strong>：启用<a href="debug-visualization.html">调试可视化</a>的接触点以查看墙壁接触是否被检测到。</p>
+<h2 id="角色无法攀爬台阶">角色无法攀爬台阶</h2>
+<p><strong>原因</strong>：台阶检测条件未满足。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在 Character Physics Profile 上增加 <code>MaxStepHeight</code></li>
+<li>确保 <code>MaxSlope</code> 足够高使台阶的垂直面被分类为墙壁（而非地面）</li>
+<li>验证台阶几何体是干净的——倾斜的网格伪影可能会混淆台阶检测器</li>
+</ol>
+<p><strong>验证</strong>：启用调试可视化。墙壁接触应出现在台阶面，随后是成功的向上移动。</p>
+<h2 id="角色从可行走的斜坡上滑落">角色从可行走的斜坡上滑落</h2>
+<p><strong>原因</strong>：坡度角超过了 <code>MaxSlope</code> 阈值。</p>
+<p><strong>修复</strong>：在 Character Physics Profile 上增加 <code>MaxSlope</code>。默认在 45-60 度范围内处理大多数情况。</p>
+<p><strong>验证</strong>：记录或检查 <code>ctx.BaseContext.LocomotionContact.ValueRO.Normal</code> 以计算实际坡度角。</p>
+<h2 id="跳跃不触发">跳跃不触发</h2>
+<p><strong>原因</strong>：跳跃触发器输入被覆盖而不是累积，或者使用后未被消费。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在你的 <code>ICharacterLocomotionInput.ApplyInputsToCharacter</code> 中，累积触发器：<code>JumpTrigger += playerInputs.JumpTrigger</code>（不是 <code>JumpTrigger = playerInputs.JumpTrigger</code>）</li>
+<li>在你的 <code>PlayerInputAsset.ReadInputsFromAsset</code> 中，只在按钮被按下的帧返回 <code>1f</code>（<code>WasPerformedThisFrame()</code>），而不是在按住时</li>
+</ol>
+<p><strong>验证</strong>：在 <code>ApplyInputsToCharacter</code> 中添加临时日志以查看累积值。</p>
+<h2 id="跳跃每帧都触发">跳跃每帧都触发</h2>
+<p><strong>原因</strong>：跳跃触发器使用后未被消费（重置为零）。</p>
+<p><strong>修复</strong>：在状态的 <code>OnIntegrateState</code> 中读取触发值后重置它：</p>
+<pre><code class="lang-csharp">LocomotionInput value = ctx.Input;
+value.JumpTrigger = 0;
+ctx.Input = value;
+</code></pre>
+<p><strong>验证</strong>：角色应该每次按下按钮跳一次，而不是连续跳。</p>
+<h2 id="状态转换从不触发">状态转换从不触发</h2>
+<p><strong>原因</strong>：转换的条件未满足，或者优先级更高的转换先触发了。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>检查转换上的 <code>[EvaluateBefore]</code> 属性——它们控制评估顺序。第一个匹配的转换胜出。</li>
+<li>验证 <code>ShouldTransition</code> 方法中的条件是否匹配实际运行时状态。使用 Entity Inspector 检查 <code>LocomotionContact</code>、<code>LocomotionVelocity</code> 和你的输入组件值。</li>
+<li>如果使用内联的 <code>EvaluateTransitions</code> 模式，检查 <code>if</code> 检查的顺序——较早的检查具有更高的优先级。</li>
+</ol>
+<p><strong>验证</strong>：在转换的 <code>ShouldTransition</code> 内添加临时日志以查看哪个条件失败。</p>
+<h2 id="角色意外弹射">角色意外弹射</h2>
+<p><strong>原因</strong>：动态物体碰撞施加了外部冲量，或者平台速度被应用了两次。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>启用冲量调试可视化以查看力的来源</li>
+<li>检查你是否<strong>没有</strong>在 <code>OnIntegrateState</code> 中手动添加 <code>PlatformHorizontalVelocity</code>——系统在 <code>ComputeInheritedDisplacement</code> 步骤中自动处理平台继承</li>
+<li>如果动态物体碰撞注入了过多速度，检查 Character Physics Profile 上的 <code>Mass</code> 和 <code>MassToDynamic</code> 值</li>
+</ol>
+<p><strong>验证</strong>：通过在状态机结构体上将 <code>HandleExternalImpulses</code> 重写为空操作来临时禁用冲量处理。</p>
+<h2 id="角色穿过或卡在移动平台上">角色穿过或卡在移动平台上</h2>
+<p><strong>原因</strong>：地面吸附距离对于平台的速度来说太小。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li><code>ILocomotionContext</code> 上的默认 <code>ComputeGroundSnappingDistance</code> 已经考虑了平台的垂直速度。如果您在上下文结构体上重写了它，请确保您的实现在距离计算中包含了平台速度。</li>
+<li>详见<a href="recipes/customize-ground-snapping.html">教程：自定义地面吸附</a>。</li>
+</ol>
+<p><strong>验证</strong>：启用路径点调试可视化以查看角色是否在快速平台上失去地面接触。</p>
+<h2 id="源代码生成器未生成代码">源代码生成器未生成代码</h2>
+<p><strong>原因</strong>：源代码生成器无法找到或处理你的状态机属性。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>确保你的状态枚举有 <code>[LocomotionStateMachine]</code> 属性</li>
+<li>确保每个枚举值有 <code>[LocomotionState(typeof(YourState))]</code> 属性</li>
+<li>检查你的项目是否引用了 <code>WAYN.Games.MGM.CharacterController.Runtime</code> 程序集</li>
+<li>重启 Unity 或重新导入包——源代码生成器在编译时运行</li>
+</ol>
+<p><strong>验证</strong>：检查你的程序集定义中的 <strong>Roslyn Analyzers</strong> 部分以确认源代码生成器 DLL 被引用。</p>
+<h2 id="构建编译成功但角色在-player-中不工作">构建编译成功但角色在 Player 中不工作</h2>
+<p><strong>原因</strong>：源代码生成器使用的泛型类型可能未注册为 AOT 编译。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>确保你的程序集中有 <code>[assembly: RegisterGenericComponentType(typeof(LocomotionInputAsset&lt;YourInput&gt;))]</code></li>
+<li>检查构建日志中的 Burst 编译错误——状态方法必须是 Burst 兼容的（没有托管类型）</li>
+<li>验证状态结构体或 context 中没有托管类型（string、class、数组）</li>
+</ol>
+<p><strong>验证</strong>：启用 <strong>Development Build</strong> 进行构建并检查 Player 日志中的 Burst 或 ECS 错误。</p>
+<h2 id="调试可视化不显示">调试可视化不显示</h2>
+<p><strong>原因</strong>：调试组件未添加或 Scene 视图不可见。</p>
+<p><strong>修复</strong>：</p>
+<ol>
+<li>在子场景中选择角色实体的 authoring GameObject</li>
+<li>添加 <code>LocomotionDebugConfigAuthoring</code> 组件</li>
+<li>在 Inspector 中配置要启用的可视化选项</li>
+<li>进入 Play 模式并切换到 <strong>Scene 视图</strong>（调试 Gizmo 不在 Game 视图中渲染）</li>
+</ol>
+<p><strong>验证</strong>：调试数据被烘焙为 blob 资产，因此更改需要重新进入 Play 模式。</p>
+<h2 id="后续步骤">后续步骤</h2>
+<ul>
+<li><a href="debug-visualization.html">调试可视化</a> - 调试系统的详细指南</li>
+<li><a href="physics-configuration.html">物理配置</a> - 调优物理参数</li>
+<li><a href="getting-started.html">快速入门</a> - 验证你的设置是否正确</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '2.0.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>

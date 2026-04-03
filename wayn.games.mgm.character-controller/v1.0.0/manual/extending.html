@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Extending the Package | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Extending the Package | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="/styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="/styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="/styles/language-switcher.css">
+      <link rel="stylesheet" href="/wayn.games.mgm.character-controller/styles/override.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.mgm.character-controller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/WAYN.Games.MGM.CharacterController.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quickstart" class="">Quickstart</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="Architecture Overview" class="">Architecture Overview</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="The Execution Loop" class="">The Execution Loop</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="Creating a State Machine" class="">Creating a State Machine</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="Writing Custom States" class="">Writing Custom States</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="Physics Configuration" class="">Physics Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="Input System" class="">Input System</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="Hybrid GameObject Layer" class="">Hybrid GameObject Layer</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="Moving Platforms" class="">Moving Platforms</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="Debug Visualization" class="">Debug Visualization</a>
+                          </li>
+                          <li class="active">
+                            <a href="extending.html" title="Extending the Package" class="active">Extending the Package</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Recipes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="Add a New State" class="">Add a New State</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="Add a New Transition" class="">Add a New Transition</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="Switch to AI Input" class="">Switch to AI Input</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="Customize Ground Snapping" class="">Customize Ground Snapping</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="Customize Collision Response" class="">Customize Collision Response</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="Push Dynamic Objects" class="">Push Dynamic Objects</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="Override a Pipeline Step" class="">Override a Pipeline Step</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="Run Multiple State Machines" class="">Run Multiple State Machines</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="Per-Character Gravity" class="">Per-Character Gravity</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="Set Up a Hybrid Character" class="">Set Up a Hybrid Character</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="Set Up a Moving Platform" class="">Set Up a Moving Platform</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Integrations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Reference</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="samples.html" title="Samples" class="">Samples</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="Best Practices" class="">Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="Upgrade Guide" class="">Upgrade Guide</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="extending-the-package">Extending the Package</h1>
+
+<p>The MGM Character Controller is designed to be extended without modifying the package source. This page covers common extension points and patterns.</p>
+<h2 id="extension-points">Extension Points</h2>
+<h3 id="1-custom-states">1. Custom States</h3>
+<p>The most common extension. Add new movement behaviors (wall running, swimming, climbing, dashing) by creating new state structs and adding them to your state enum.</p>
+<p>See <a href="writing-states.html">Writing Custom States</a> for the full guide.</p>
+<h3 id="2-custom-profiles">2. Custom Profiles</h3>
+<p>Your <code>ILocomotionProfile</code> struct can contain any unmanaged data. Add fields for new gameplay parameters:</p>
+<pre><code class="lang-csharp">[Serializable]
+public partial struct MyProfile : ILocomotionProfile
+{
+    public MovingProfile Moving;
+    public FallingProfile Falling;
+    public JumpingProfile Jumping;
+
+    // Custom extension
+    public SwimmingProfile Swimming;
+    public DashProfile Dash;
+    public WallRunProfile WallRun;
+}
+</code></pre>
+<p>Each sub-profile is a plain struct with configuration fields. The data is baked into a blob asset, so add corresponding fields to your <code>LocomotionProfileAsset</code> and <code>BuildBlobAsset</code> method.</p>
+<h3 id="3-custom-context">3. Custom Context</h3>
+<p>Your context struct can include additional computed properties and helper methods:</p>
+<pre><code class="lang-csharp">public partial struct MyContext : ILocomotionContext&lt;MyProfile, MyInput, MyStateData&gt;
+{
+    public BaseLocomotionContext BaseContext;
+    public MyStateData StateData;
+
+    // Standard interface properties...
+
+    // Custom helpers
+    public bool IsUnderwater =&gt; BaseContext.CharacterPosition.Position.y &lt; WaterLevel;
+    public bool WantsToMove =&gt; Input.MovementMagnitude &gt; math.EPSILON;
+    public bool CanDash =&gt; StateData.DashCooldown &lt;= 0;
+
+    // Custom ground snap for swimming (no ground snap when submerged)
+    public void ComputeGroundSnappingDistance(in MyProfile profile, out float distance)
+    {
+        if (IsUnderwater)
+        {
+            distance = 0; // No ground snapping while swimming
+            return;
+        }
+        // Normal ground snap calculation...
+    }
+}
+</code></pre>
+<h3 id="4-custom-statedata">4. Custom StateData</h3>
+<p>Add per-state persistent data for any state-specific tracking:</p>
+<pre><code class="lang-csharp">public partial struct MyStateData : IComponentData
+{
+    public JumpData JumpData;
+    public float DashCooldown;
+    public float WallRunTimer;
+    public float3 WallNormal;  // Remembered from wall run entry
+}
+</code></pre>
+<p>State data persists across frames and state transitions. Clean it up in <code>OnEnterState</code> or <code>OnExitState</code> as appropriate.</p>
+<h3 id="5-custom-input">5. Custom Input</h3>
+<p>Add input channels for new actions:</p>
+<pre><code class="lang-csharp">public partial struct MyInput : ICharacterLocomotionInput&lt;MyInput&gt;
+{
+    public float3 Movement;
+    public float JumpTrigger;
+    public float DashTrigger;      // New action
+    public float InteractTrigger;  // New action
+
+    public void ApplyInputsToCharacter(in MyInput playerInputs)
+    {
+        Movement = playerInputs.Movement;
+        JumpTrigger += playerInputs.JumpTrigger;       // Accumulate triggers
+        DashTrigger += playerInputs.DashTrigger;
+        InteractTrigger += playerInputs.InteractTrigger;
+    }
+}
+</code></pre>
+<p>Remember to read the new inputs in your <code>PlayerInputAsset</code> subclass and consume triggers in your state logic.</p>
+<h3 id="6-custom-ground-snapping">6. Custom Ground Snapping</h3>
+<p>Override <code>ComputeGroundSnappingDistance</code> on your context to control when and how far the character snaps to the ground:</p>
+<pre><code class="lang-csharp">public void ComputeGroundSnappingDistance(in MyProfile profile, out float distance)
+{
+    // Disable ground snapping while jumping upward
+    if (StateData.CurrentState == MyStates.Jumping &amp;&amp;
+        math.dot(BaseContext.VerticalVelocity, -BaseContext.GravityDirection) &gt; 0)
+    {
+        distance = 0;
+        return;
+    }
+
+    // Default calculation
+    var slopeDistance = math.length(BaseContext.HorizontalVelocity * BaseContext.TimeStep) *
+                       math.tan(math.radians(CharacterPhysicsProfile.MaxSlope));
+    distance = math.max(CharacterPhysicsProfile.MaxStepHeight, slopeDistance);
+}
+</code></pre>
+<h3 id="7-custom-collision-response">7. Custom Collision Response</h3>
+<p>Override <code>OnResolveStateCollisions</code> to add custom behavior when the character hits something:</p>
+<pre><code class="lang-csharp">public void OnResolveStateCollisions(ref MyContext ctx)
+{
+    BaseLocomotionContext baseContext = ctx.BaseContext;
+    baseContext.Move();
+
+    // Custom: bounce off trampolines
+    if (baseContext.IsGroundingContact &amp;&amp;
+        HasTrampolineTag(baseContext.LocomotionContact.ValueRO.Entity))
+    {
+        baseContext.VerticalVelocity = -baseContext.VerticalVelocity * 1.5f;
+    }
+
+    ctx.BaseContext = baseContext;
+}
+</code></pre>
+<h3 id="8-custom-systems">8. Custom Systems</h3>
+<p>You can add systems that modify locomotion components at any point in the pipeline:</p>
+<pre><code class="lang-csharp">[UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+[UpdateBefore(typeof(MyLocomotionSystem))]
+partial struct GravityZoneSystem : ISystem
+{
+    public void OnUpdate(ref SystemState state)
+    {
+        foreach (var gravity in SystemAPI.Query&lt;RefRW&lt;LocomotionGravity&gt;&gt;()
+            .WithAll&lt;InGravityZone&gt;())
+        {
+            gravity.ValueRW.Gravity = new float3(0, -4.9f, 0); // Half gravity
+        }
+    }
+}
+</code></pre>
+<h2 id="customizing-the-execution-pipeline">Customizing the Execution Pipeline</h2>
+<p>Each step in the <a href="execution-loop.html">execution loop</a> is a default interface method (DIM) on <code>ILocomotionStateMachine</code>. You can override any of them on your state machine's partial struct to replace or wrap the default behavior.</p>
+<p>The source generator produces a partial struct for your state machine (e.g., <code>MyStateMachine</code>). Because it is partial, you can add a second partial declaration that overrides any DIM:</p>
+<pre><code class="lang-csharp">public partial struct MyStateMachine
+{
+    public void Integrate(ref MyStateMachine stateMachine, ref MyContext context)
+    {
+        // Skip movement entirely when crushed
+        if (context.BaseContext.OverlapState == OverlapState.Crush)
+            return;
+
+        // Otherwise run the default per-state integration
+        stateMachine.IntegratePerState(ref context);
+    }
+}
+</code></pre>
+<h3 id="overridable-pipeline-methods">Overridable Pipeline Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Override to...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Execute</code></td>
+<td>Replace the entire execution loop</td>
+</tr>
+<tr>
+<td><code>HandleExternalImpulses</code></td>
+<td>Custom impulse filtering or scaling</td>
+</tr>
+<tr>
+<td><code>Integrate</code></td>
+<td>Add pre/post integration logic</td>
+</tr>
+<tr>
+<td><code>SolveOverlaps</code></td>
+<td>Custom overlap resolution</td>
+</tr>
+<tr>
+<td><code>CollideAndSlide</code></td>
+<td>Custom collision iteration</td>
+</tr>
+<tr>
+<td><code>SnapToGround</code></td>
+<td>Custom ground adhesion</td>
+</tr>
+<tr>
+<td><code>InheritDisplacementFromMotionVelocity</code></td>
+<td>Custom platform riding behavior</td>
+</tr>
+<tr>
+<td><code>EvaluateTransition</code></td>
+<td>Add pre/post transition logic</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>IntegratePerState</code>, <code>ResolveCollisionPerState</code>, and <code>EvaluateTransitionPerState</code> are generated by the source generator (switch dispatches to per-state methods). They are not intended to be overridden directly.</p>
+</div>
+<p>See <a href="execution-loop.html">The Execution Loop</a> for the ordering and data flow between these steps.</p>
+<h2 id="customizing-the-locomotion-system">Customizing the Locomotion System</h2>
+<p>The source generator creates a partial interface <code>I{Prefix}LocomotionSystem</code> that inherits from <code>ILocomotionSystem&lt;...&gt;</code>. The generated system struct implements this interface with DIM lifecycle methods that you can override.</p>
+<p>To customize, add your own partial interface declaration:</p>
+<pre><code class="lang-csharp">public partial interface IMyLocomotionSystem
+{
+    void ILocomotionSystem&lt;MyStateMachine, MyStates, MyContext, MyProfile, MyInput, MyStateData&gt;
+        .OnLocomotionSystemUpdate(
+            ref LocomotionJobData jobData, ref EntityQuery query, ref SystemState state)
+    {
+        if (query.IsEmptyIgnoreFilter) return;
+        jobData = jobData.Update(ref state);
+
+        // Schedule single-threaded instead of parallel (useful for debugging)
+        state.Dependency = ScheduleLocomotionJob(
+            state.Dependency,
+            state.WorldUnmanaged.Time.DeltaTime,
+            jobData, query,
+            jobData.GetPhysicsWorldSingleton());
+    }
+}
+</code></pre>
+<h3 id="overridable-system-lifecycle-methods">Overridable System Lifecycle Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Override to...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OnLocomotionSystemCreate</code></td>
+<td>Add <code>RequireForUpdate</code>, custom query filters, rate manager setup</td>
+</tr>
+<tr>
+<td><code>OnLocomotionSystemUpdate</code></td>
+<td>Use single-threaded scheduling, add conditional skip, integrate rate manager</td>
+</tr>
+<tr>
+<td><code>OnLocomotionSystemDestroy</code></td>
+<td>Custom resource cleanup</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The default DIM implementations use <code>ref</code> parameters instead of <code>SystemAPI</code> because Unity's source generator cannot patch call sites in code emitted by the package's source generator (both run in parallel). Your own partial interface overrides <strong>can</strong> use <code>SystemAPI</code> since they are visible to Unity's generator.</p>
+</div>
+<h2 id="dim-customization-reference">DIM Customization Reference</h2>
+<p>Complete reference of all default interface methods across the package:</p>
+<table>
+<thead>
+<tr>
+<th>Interface.Method</th>
+<th>Override to...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ILocomotionState.OnEnterState</code></td>
+<td>Initialize state-specific data on entry</td>
+</tr>
+<tr>
+<td><code>ILocomotionState.OnIntegrateState</code></td>
+<td>Custom movement logic per state</td>
+</tr>
+<tr>
+<td><code>ILocomotionState.OnExitState</code></td>
+<td>Clean up state-specific data on exit</td>
+</tr>
+<tr>
+<td><code>ILocomotionState.OnResolveStateCollisions</code></td>
+<td>Custom collision response per state</td>
+</tr>
+<tr>
+<td><code>ILocomotionContext.ComputeGroundSnappingDistance</code></td>
+<td>Speed-dependent or state-dependent snap distance</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.Execute</code></td>
+<td>Replace the entire execution loop</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.HandleExternalImpulses</code></td>
+<td>Custom impulse handling</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.Integrate</code></td>
+<td>Pre/post integration logic</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.SolveOverlaps</code></td>
+<td>Custom overlap resolution</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.CollideAndSlide</code></td>
+<td>Custom collision loop</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.SnapToGround</code></td>
+<td>Custom ground adhesion</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.InheritDisplacementFromMotionVelocity</code></td>
+<td>Custom platform riding</td>
+</tr>
+<tr>
+<td><code>ILocomotionStateMachine.EvaluateTransition</code></td>
+<td>Pre/post transition logic</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem.OnLocomotionSystemCreate</code></td>
+<td>Custom system initialization</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem.OnLocomotionSystemUpdate</code></td>
+<td>Custom scheduling strategy</td>
+</tr>
+<tr>
+<td><code>ILocomotionSystem.OnLocomotionSystemDestroy</code></td>
+<td>Custom resource cleanup</td>
+</tr>
+<tr>
+<td><code>ICharacterLocomotionInput.ApplyInputsToCharacter</code></td>
+<td>Accumulate/merge inputs between fixed updates</td>
+</tr>
+</tbody>
+</table>
+<h2 id="multiple-state-machines">Multiple State Machines</h2>
+<p>You can have multiple independent state machine types in the same project. For example:</p>
+<ul>
+<li><code>GroundLocomotionStates</code> - Walking, running, jumping, falling</li>
+<li><code>VehicleStates</code> - Driving, braking, boosting, airborne</li>
+<li><code>SwimmingStates</code> - Surface, submerged, diving</li>
+</ul>
+<p>Each has its own enum, context, profile, input, state data, and generated systems. They are completely independent.</p>
+<p>To switch a character between state machines, you would need to add/remove the relevant components (the state machine component, input, profile, state data). This is an advanced pattern that involves structural entity changes.</p>
+<h2 id="working-with-the-source-generator">Working with the Source Generator</h2>
+<p>The Roslyn source generator reads attributes on your anchor struct and state structs and generates:</p>
+<ol>
+<li>State machine component with dispatch logic</li>
+<li>Input reader system</li>
+<li><code>ISystem</code> lifecycle methods (<code>OnCreate</code>, <code>OnUpdate</code>, <code>OnDestroy</code>) on your locomotion system</li>
+</ol>
+<p>The generator source is at <code>SourceGenerator/SrcGenProj~/</code>. To modify the generated code patterns:</p>
+<ol>
+<li>Edit <code>StateMachineSourceGenerator.cs</code></li>
+<li>Build with <code>dotnet build</code> from the <code>SrcGenProj~</code> directory</li>
+<li>The DLL is copied to <code>SourceGenerator/</code> and picked up by Unity</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Modifying the source generator affects all state machines in the project. Test thoroughly.</p>
+</div>
+<h2 id="creating-composite-characters">Creating Composite Characters</h2>
+<p>For characters that need both ECS locomotion and complex visual hierarchies, use the <code>CompositeEntityAuthoring</code> pattern:</p>
+<ol>
+<li>The <strong>Locomotor</strong> entity carries all physics and state machine components</li>
+<li>A <strong>Model</strong> entity follows the Locomotor via <code>CharacterFollower</code></li>
+<li>The Model's GameObject can have child objects with Animators, particle systems, audio sources</li>
+</ol>
+<p>The <code>CharacterFollowerAuthoring</code> links the model to the locomotor during baking. At runtime, the <code>CharacterFollowerSystem</code> syncs the transform.</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<h3 id="scaling-to-many-characters">Scaling to Many Characters</h3>
+<p>The locomotion job runs in parallel across chunks. To maximize throughput:</p>
+<ul>
+<li>Keep all characters with the same archetype (same component set)</li>
+<li>Use shared colliders (avoid <code>ForceUniqueColliderAuthoring</code> unless needed)</li>
+<li>Profile shared blob assets (all characters referencing the same profile share memory)</li>
+<li>Only enable debug visualization on characters you are actively investigating</li>
+</ul>
+<h3 id="burst-compilation">Burst Compilation</h3>
+<p>State methods run inside a Burst-compiled job, so they must be Burst-compatible. Common mistakes that prevent Burst compilation:</p>
+<ul>
+<li>Using <code>string</code> or <code>List&lt;T&gt;</code> types</li>
+<li>Calling managed virtual methods (DIM lifecycle methods are dispatched by the source generator, not via virtual dispatch)</li>
+<li>Accessing <code>GameObject</code> or <code>MonoBehaviour</code> APIs</li>
+<li>Using <code>Debug.Log</code> (use <code>[Conditional(&quot;ENABLE_UNITY_COLLECTIONS_CHECKS&quot;)]</code> guards)</li>
+</ul>
+<h3 id="profiling">Profiling</h3>
+<p>Use Unity's Profiler to identify bottlenecks:</p>
+<ul>
+<li>The locomotion job appears as <code>LocomotionJob</code> in the Jobs timeline</li>
+<li>Per-stage profiler markers are static fields on <code>ILocomotionStateMachine</code>, gated by <code>[Conditional(&quot;ENABLE_LOCOMOTION_PROFILER&quot;)]</code> via <code>ProfilerMarkerExtensions</code></li>
+</ul>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="getting-started.html">Getting Started</a> - Set up your first character</li>
+<li><a href="architecture.html">Architecture Overview</a> - Understand the full system design</li>
+<li><a href="writing-states.html">Writing Custom States</a> - Implement new movement behaviors</li>
+<li><a href="recipes/override-pipeline-step.html">Recipe: Override a Pipeline Step</a> - Step-by-step pipeline override</li>
+<li><a href="recipes/run-multiple-state-machines.html">Recipe: Run Multiple State Machines</a> - Independent state machines in one project</li>
+<li><a href="best-practices.html">Best Practices</a> - Recommended patterns and anti-patterns</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '1.0.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
