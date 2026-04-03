@@ -116,8 +116,27 @@
 
 <p>All notable changes to this project will be documented in this file.<br>
 The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a> and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="050---2026-03-24">[0.5.0] - 2026-03-24</h2>
+<h2 id="060---2026-04-03">[0.6.0] - 2026-04-03</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li><strong>FlyCam sample</strong> — Minimal first-person fly camera scene demonstrating single-state machines, gravity-free movement, split entity/camera rotation, and contact clearing</li>
+<li><strong>Samples registration</strong> — <code>SinglePlayerSample</code> and <code>FlyCamSample</code> registered in <code>package.json</code></li>
+</ul>
 <h3 id="changed">Changed</h3>
+<ul>
+<li><strong>PostCollisionImpulse queue</strong> — Replaced <code>NativeParallelMultiHashMap</code> with <code>NativeQueue</code> for deterministic ordering; impulses are now sorted before application and the separate clear job is removed</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li><strong>ProfilerRecorderMap / LocomotionProfilerHUD</strong> — Profiler overlay components removed</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>Documentation URLs</strong> — Updated <code>documentationUrl</code> and <code>changelogUrl</code> in <code>package.json</code> to v0.6.0</li>
+<li><strong>Broken doc links and orphaned meta file</strong> — Fixed sample README links and removed orphaned <code>Documentation.meta</code></li>
+</ul>
+<h2 id="050---2026-03-24">[0.5.0] - 2026-03-24</h2>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li><strong>Package renamed</strong> — <code>com.wayngamesassets.mgm.charactercontroller</code> → <code>wayn.games.mgm.character-controller</code></li>
 <li><strong>Namespaces renamed</strong> — <code>WAYN.Games.MGM.Locomotion.*</code> → <code>WAYN.Games.MGM.CharacterController.*</code></li>
@@ -125,41 +144,41 @@ The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Cha
 <li><strong>Editor menu path</strong> — <code>WAYN Games/Locomotion</code> → <code>WAYN Games/MGM Character Controller</code></li>
 <li><strong>Source generator project renamed</strong> — <code>Wayn.Games.Locomotion.SourceGen</code> → <code>WAYN.Games.MGM.CharacterController.SourceGen</code></li>
 </ul>
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 <ul>
 <li><strong>Upgrade guide</strong> — Migration instructions for 0.4.x → 0.5.0</li>
 </ul>
 <h2 id="043---2026-03-24">[0.4.3] - 2026-03-24</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li><strong>Documentation build</strong> — Added v0.4.2 built docs and updated version redirect</li>
 </ul>
 <h2 id="042---2026-03-24">[0.4.2] - 2026-03-24</h2>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li><strong>Documentation structure</strong> — Migrated to new DocTools layout</li>
 </ul>
-<h3 id="removed">Removed</h3>
+<h3 id="removed-1">Removed</h3>
 <ul>
 <li><strong>Legacy documentation files</strong> — Removed old shell scripts, .meta files, and deprecated doc structure</li>
 </ul>
 <h2 id="041---2026-03-23">[0.4.1] - 2026-03-23</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li><strong>i18n documentation</strong> — French and Chinese translations for all manual and API pages</li>
 </ul>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 <ul>
 <li><strong>Documentation navigation</strong> — Fixed broken relative links in navbar (API, LICENSE, CHANGELOG)</li>
 <li><strong>API documentation</strong> — Validated and corrected v0.4.0 API docs against codebase</li>
 </ul>
 <h2 id="040---2026-03-22">[0.4.0] - 2026-03-22</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li><strong>Documentation site</strong> — Manual pages and DocFX deployment workflow for hosted docs</li>
 <li><strong>XML documentation</strong> — Added and updated XML doc comments across the codebase</li>
 </ul>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li><strong>Source generator rewrite</strong> — Rewritten source generator with minimal boilerplate; <code>ILocomotionStateMachineDefinition</code> replaced by attribute-based discovery</li>
 <li><strong>DIM lifecycle defaults</strong> — Source generator now emits explicit struct forwarding methods for default interface method lifecycle hooks</li>
@@ -167,12 +186,12 @@ The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Cha
 <li><strong>Locomotion script scaffolding</strong> — New <code>CreateLocomotionScript</code> menu and <code>LocomotionScriptCreationMenus</code> for streamlined script creation</li>
 <li><strong>Package metadata</strong> — Updated display name, description, dependencies, and documentation URLs in package.json</li>
 </ul>
-<h3 id="removed-1">Removed</h3>
+<h3 id="removed-2">Removed</h3>
 <ul>
 <li><strong>Build artifacts from source control</strong> — Stopped tracking SrcGenProj~ build outputs</li>
 </ul>
 <h2 id="030---2026-03-18">[0.3.0] - 2026-03-18</h2>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li><strong>Debug visualization system</strong> — Configurable debug display for contact points, movement paths, and collision impulses with per-entity color coding</li>
 <li><strong><code>Move()</code> method</strong> — Unified movement API with integrated debug visualization</li>
@@ -181,7 +200,7 @@ The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Cha
 <li><strong><code>ILocomotionSystem</code> interface template</strong> — New DIM-based locomotion system interface generated by editor scaffolding, replacing inline boilerplate</li>
 <li><strong>TestCharacter test state machine</strong> — Full test state machine under <code>Tests/TestCharacter/</code> with runtime, authoring, and editor assemblies</li>
 </ul>
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li><strong><code>ILocomotionState</code> uses instance-method DIM pattern</strong> — State lifecycle methods are now instance methods with default interface implementations instead of static methods</li>
 <li><strong><code>CharacterPhysicsProfile</code> moved to <code>ILocomotionContext</code></strong> — Decoupled from <code>ILocomotionProfile</code> so profiles no longer need to carry physics data</li>
@@ -193,7 +212,7 @@ The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Cha
 <li><strong>Generated file naming</strong> — All scaffolded files now prefixed with state machine name to avoid collisions across multiple state machines</li>
 <li><strong>Test runtime namespace</strong> — Moved to <code>WAYN.Games.MGM.Locomotion.Tests.Runtime</code></li>
 </ul>
-<h3 id="fixed-2">Fixed</h3>
+<h3 id="fixed-3">Fixed</h3>
 <ul>
 <li><strong>Overlap resolution</strong> — Burst-compiled resolution for extreme overlap cases and low frame rate scenarios</li>
 <li><strong>Dynamic body impulse scaling</strong> — Corrected impulse magnitude and platform velocity transfer</li>
@@ -201,20 +220,20 @@ The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Cha
 <li><strong>Contact system and execute loop ordering</strong> — Overhauled contact detection; <code>EvaluateTransition</code> now runs once at the end of the loop</li>
 <li><strong>Balance behavior</strong> — Fixed edge-balancing state detection</li>
 </ul>
-<h3 id="removed-2">Removed</h3>
+<h3 id="removed-3">Removed</h3>
 <ul>
 <li><strong><code>GenerateLocomotionSystem</code></strong> — Removed dead source generator method (superseded by DIM-based template)</li>
 <li><strong><code>PhysicsProfileValue</code> on <code>ILocomotionProfile</code></strong> — Moved to context; profiles no longer carry physics configuration</li>
 </ul>
 <h2 id="020---2025-10-05">[0.2.0] - 2025-10-05</h2>
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 <ul>
 <li><strong>Support for custom state machine</strong> - Refactored systems to enable user defined state machine</li>
 <li><strong>Source Generator</strong> - The package now relies on source generator to create the input and state machine execution systems.</li>
 <li><strong>State Machine Creation Menu</strong> - Added a creation menu to set up a new state machine</li>
 </ul>
 <h2 id="010---2025-07-02">[0.1.0] - 2025-07-02</h2>
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 <ul>
 <li><strong>Modular locomotion architecture</strong> – Introduces a clean separation of concerns by splitting player input, character physics, and the visual model into distinct entities. This design supports both player-controlled and AI-controlled characters, and scales to multiple characters or players in local multiplayer scenarios.</li>
 <li><strong>State-driven movement system</strong> – Character locomotion is governed by a flexible state machine with distinct states (e.g. idle, grounded, jumping, falling, sliding) and smooth automatic transitions between them. Movement behavior is defined by data-driven profiles, making it easy to tune speeds and jump parameters without code changes.</li>
