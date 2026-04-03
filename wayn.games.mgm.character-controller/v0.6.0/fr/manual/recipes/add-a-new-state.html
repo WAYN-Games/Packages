@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Recette : Ajouter un nouvel &#233;tat | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Recette : Ajouter un nouvel &#233;tat | MGM Character Controller ">
+    
+    
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="/styles/main.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <link rel="stylesheet" href="/styles/version-switcher.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="/styles/language-switcher.css">
+      <link rel="stylesheet" href="/wayn.games.mgm.character-controller/styles/override.css">
+      <meta property="docfx:navrel" content="../../toc.json">
+      <meta property="docfx:tocrel" content="../toc.json">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.mgm.character-controller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../../api/WAYN.Games.MGM.CharacterController.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="../install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="../quickstart.html" title="D&#233;marrage rapide" class="">D&#233;marrage rapide</a>
+                    </li>
+                    <li class="">
+                      <a href="../getting-started.html" title="Premiers pas" class="">Premiers pas</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../architecture.html" title="Vue d&#39;ensemble de l&#39;architecture" class="">Vue d&#39;ensemble de l&#39;architecture</a>
+                          </li>
+                          <li class="">
+                            <a href="../execution-loop.html" title="La boucle d&#39;ex&#233;cution" class="">La boucle d&#39;ex&#233;cution</a>
+                          </li>
+                          <li class="">
+                            <a href="../creating-state-machine.html" title="Cr&#233;er une machine &#224; &#233;tats" class="">Cr&#233;er une machine &#224; &#233;tats</a>
+                          </li>
+                          <li class="">
+                            <a href="../writing-states.html" title="&#201;crire des &#233;tats personnalis&#233;s" class="">&#201;crire des &#233;tats personnalis&#233;s</a>
+                          </li>
+                          <li class="">
+                            <a href="../physics-configuration.html" title="Configuration physique" class="">Configuration physique</a>
+                          </li>
+                          <li class="">
+                            <a href="../input-system.html" title="Syst&#232;me d&#39;entr&#233;e" class="">Syst&#232;me d&#39;entr&#233;e</a>
+                          </li>
+                          <li class="">
+                            <a href="../hybrid-layer.html" title="Couche hybride GameObject" class="">Couche hybride GameObject</a>
+                          </li>
+                          <li class="">
+                            <a href="../moving-platforms.html" title="Plateformes mobiles" class="">Plateformes mobiles</a>
+                          </li>
+                          <li class="">
+                            <a href="../debug-visualization.html" title="Visualisation de d&#233;bogage" class="">Visualisation de d&#233;bogage</a>
+                          </li>
+                          <li class="">
+                            <a href="../extending.html" title="&#201;tendre le package" class="">&#201;tendre le package</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Recettes</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="../recipes/add-a-new-state.html" title="Ajouter un nouvel &#233;tat" class="active">Ajouter un nouvel &#233;tat</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/add-a-new-transition.html" title="Ajouter une nouvelle transition" class="">Ajouter une nouvelle transition</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/switch-to-ai-input.html" title="Passer &#224; une entr&#233;e IA" class="">Passer &#224; une entr&#233;e IA</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/customize-ground-snapping.html" title="Personnaliser l&#39;accrochage au sol" class="">Personnaliser l&#39;accrochage au sol</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/customize-collision-response.html" title="Personnaliser la r&#233;ponse aux collisions" class="">Personnaliser la r&#233;ponse aux collisions</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/push-dynamic-objects.html" title="Pousser des objets dynamiques" class="">Pousser des objets dynamiques</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/override-pipeline-step.html" title="Remplacer une &#233;tape du pipeline" class="">Remplacer une &#233;tape du pipeline</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/run-multiple-state-machines.html" title="Ex&#233;cuter plusieurs machines &#224; &#233;tats" class="">Ex&#233;cuter plusieurs machines &#224; &#233;tats</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/per-character-gravity.html" title="Gravit&#233; par personnage" class="">Gravit&#233; par personnage</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/setup-hybrid-character.html" title="Configurer un personnage hybride" class="">Configurer un personnage hybride</a>
+                          </li>
+                          <li class="">
+                            <a href="../recipes/setup-moving-platform.html" title="Configurer une plateforme mobile" class="">Configurer une plateforme mobile</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Intégrations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="../integrations/animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Référence</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="../samples.html" title="Exemples" class="">Exemples</a>
+                          </li>
+                          <li class="">
+                            <a href="../best-practices.html" title="Bonnes pratiques" class="">Bonnes pratiques</a>
+                          </li>
+                          <li class="">
+                            <a href="../troubleshooting.html" title="D&#233;pannage" class="">D&#233;pannage</a>
+                          </li>
+                          <li class="">
+                            <a href="../upgrade-guide.html" title="Guide de mise &#224; jour" class="">Guide de mise &#224; jour</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="recette--ajouter-un-nouvel-état">Recette : Ajouter un nouvel état</h1>
+
+<p>Ajoutez un nouveau comportement de mouvement (par exemple, le Dash) à une machine à états existante.</p>
+<h2 id="quand-lutiliser">Quand l'utiliser</h2>
+<p>Vous souhaitez un nouveau mode de déplacement distinct des états existants (physique différente, gestion des entrées différente, transitions différentes).</p>
+<h2 id="prérequis">Prérequis</h2>
+<ul>
+<li>Une machine à états existante créée avec l'outil de scaffolding ou manuellement</li>
+<li>Être familier avec <a href="../writing-states.html">Écrire des états personnalisés</a></li>
+</ul>
+<h2 id="étapes">Étapes</h2>
+<h3 id="1-générer-le-fichier-détat">1. Générer le fichier d'état</h3>
+<ol>
+<li>Faites un clic droit dans la fenêtre Project</li>
+<li>Sélectionnez <strong>Assets &gt; Create &gt; WAYN Games &gt; MGM Character Controller &gt; State</strong></li>
+<li>Nommez-le (par exemple, <code>Dashing</code>)</li>
+<li>Appuyez sur Entrée</li>
+</ol>
+<p>Cela crée un nouveau fichier <code>DashingState.cs</code> et ajoute l'entrée d'énumération avec l'attribut <code>[LocomotionState]</code>.</p>
+<h3 id="2-ajouter-des-données-de-profil-si-nécessaire">2. Ajouter des données de profil (si nécessaire)</h3>
+<p>Si le nouvel état nécessite des paramètres ajustables, ajoutez un sous-profil :</p>
+<pre><code class="lang-csharp">[Serializable]
+public struct DashProfile
+{
+    public float DashSpeed;
+    public float DashDuration;
+    public float DashCooldown;
+}
+</code></pre>
+<p>Ajoutez-le à votre struct de profil principal :</p>
+<pre><code class="lang-csharp">public partial struct MyProfile : ILocomotionProfile
+{
+    public MovingProfile Moving;
+    public FallingProfile Falling;
+    public JumpingProfile Jumping;
+    public DashProfile Dash; // New
+}
+</code></pre>
+<p>Mettez à jour votre méthode <code>LocomotionProfileAsset.BuildBlobAsset</code> pour copier les nouveaux champs.</p>
+<h3 id="3-ajouter-des-données-détat-si-nécessaire">3. Ajouter des données d'état (si nécessaire)</h3>
+<p>Si l'état doit suivre des données entre les frames (minuteries, compteurs), ajoutez des champs à votre struct de données d'état :</p>
+<pre><code class="lang-csharp">public partial struct MyStateData : IComponentData
+{
+    public JumpData JumpData;
+    public float DashTimer;      // New
+    public float DashCooldown;   // New
+}
+</code></pre>
+<h3 id="4-implémenter-la-logique-de-létat">4. Implémenter la logique de l'état</h3>
+<pre><code class="lang-csharp">[LocomotionState(typeof(MyStateMachine))]
+internal partial struct DashingState
+{
+    public void OnEnterState(ref MyContext ctx)
+    {
+        // Set initial dash velocity in the current facing direction
+        ctx.BaseContext.HorizontalVelocity =
+            math.forward(ctx.BaseContext.CharacterPosition.Rotation) * ctx.Profile.Dash.DashSpeed;
+        ctx.BaseContext.VerticalVelocity = float3.zero;
+        ctx.StateData.DashTimer = ctx.Profile.Dash.DashDuration;
+    }
+
+    public void OnIntegrateState(ref MyContext ctx)
+    {
+        ref BaseLocomotionContext baseContext = ref ctx.BaseContext;
+        // Maintain dash velocity, no acceleration
+        baseContext.UpdateVelocitiesAndComputeDisplacements();
+        ctx.StateData.DashTimer -= baseContext.TimeStep;
+    }
+
+    public void OnExitState(ref MyContext ctx)
+    {
+        ctx.StateData.DashCooldown = ctx.Profile.Dash.DashCooldown;
+    }
+}
+</code></pre>
+<h3 id="5-ajouter-des-transitions">5. Ajouter des transitions</h3>
+<p>Créez des structs de transition pour entrer et sortir du nouvel état :</p>
+<pre><code class="lang-csharp">[LocomotionTransition(typeof(MovingState), typeof(DashingState))]
+[EvaluateBefore(typeof(MovingToJumping))] // Higher priority than jump
+public struct MovingToDashing : IMyTransition
+{
+    public bool ShouldTransition(ref MyContext ctx)
+        =&gt; ctx.Input.DashTrigger &gt; 0 &amp;&amp; ctx.StateData.DashCooldown &lt;= 0;
+}
+
+[LocomotionTransition(typeof(DashingState), typeof(MovingState))]
+public struct DashingToMoving : IMyTransition
+{
+    public bool ShouldTransition(ref MyContext ctx)
+        =&gt; ctx.StateData.DashTimer &lt;= 0;
+}
+
+[LocomotionTransition(typeof(DashingState), typeof(FallingState))]
+[EvaluateBefore(typeof(DashingToMoving))]
+public struct DashingToFalling : IMyTransition
+{
+    public bool ShouldTransition(ref MyContext ctx)
+        =&gt; !ctx.BaseContext.IsInContact;
+}
+</code></pre>
+<h3 id="6-ajouter-une-entrée-si-nécessaire">6. Ajouter une entrée (si nécessaire)</h3>
+<p>Si l'état nécessite une nouvelle action d'entrée (par exemple, un déclencheur de dash), ajoutez-la à votre struct d'entrée et à votre <code>PlayerInputAsset</code>. Voir <a href="../input-system.html">Système d'entrée</a>.</p>
+<h2 id="résultat-attendu">Résultat attendu</h2>
+<p>Le personnage effectue un dash vers l'avant à grande vitesse lorsque le déclencheur de dash est pressé, maintient cette vélocité pendant la durée configurée, puis revient à l'état de déplacement (ou de chute s'il est en l'air).</p>
+<h2 id="erreurs-courantes">Erreurs courantes</h2>
+<ul>
+<li>Utiliser des types managés (chaînes, classes, tableaux) dans la logique d'état - les états s'exécutent dans des jobs compilés par Burst</li>
+<li>Ne pas consommer les entrées de déclencheur (le dash se déclenche à chaque frame)</li>
+</ul>
+<h2 id="voir-aussi">Voir aussi</h2>
+<ul>
+<li><a href="../writing-states.html">Écrire des états personnalisés</a> - Référence complète du cycle de vie</li>
+<li><a href="add-a-new-transition.html">Recette : Ajouter une nouvelle transition</a></li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.6.0';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
