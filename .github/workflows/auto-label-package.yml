@@ -1,0 +1,53 @@
+name: Auto-label public issues by package
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+
+            // Issue forms render the Package dropdown as:
+            //   ### Package
+            //
+            //   mgm-character-controller
+            const match = body.match(/###\s+Package\s*\n+([^\n]+)/);
+            if (!match) {
+              core.info('No "### Package" section found in issue body.');
+              return;
+            }
+
+            const value = match[1].trim();
+            if (!value || value.toLowerCase().startsWith('other')) {
+              core.info(`Package value "${value}" is not labelable; skipping.`);
+              return;
+            }
+
+            // Known packages — extend this list when a new package is added.
+            const knownPackages = [
+              'mgm-character-controller',
+            ];
+
+            if (!knownPackages.includes(value)) {
+              core.info(`Package "${value}" is not in the known list; skipping.`);
+              return;
+            }
+
+            const label = `package: ${value}`;
+            core.info(`Applying label "${label}" to issue #${context.issue.number}.`);
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [label],
+            });

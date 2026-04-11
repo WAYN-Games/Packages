@@ -1,0 +1,58 @@
+name: Documentation issue
+description: Report an error, gap, or improvement in the documentation
+title: "[Docs] "
+labels: ["type: docs", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the docs! Clear, accurate documentation is as important as working code.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      description: Which package's documentation is affected?
+      options:
+        - mgm-character-controller
+        - other (specify in description)
+    validations:
+      required: true
+
+  - type: input
+    id: doc-url
+    attributes:
+      label: Documentation URL
+      description: Link to the page (or pages) with the issue.
+      placeholder: "https://docs.wayn.games/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of issue
+      options:
+        - Incorrect information
+        - Missing information
+        - Confusing or unclear
+        - Broken link or image
+        - Typo
+        - Out of date
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong?
+      description: Describe the issue. Quote the specific text if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: How would you correct or improve this? (Optional but appreciated.)
