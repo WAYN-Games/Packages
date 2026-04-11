@@ -39,7 +39,3 @@ This repository is public. **Do not include**:
 - **WAYN Games package source code.** The packages are commercial products and their internal code must not be redistributed in public issues. To reproduce a bug, share your own code that *uses* the package (plus stack traces from the Unity console) — never the package's own source files. Quoting short snippets from the public documentation when reporting a docs issue is fine; pasting full source files from `Runtime/`, `Editor/`, or `Tests/` is not.
 
 If you need to share something sensitive to reproduce a bug, mention it in the issue and a maintainer will reach out via email.
-
-## Security vulnerabilities
-
-If you believe you've found a security vulnerability, **please do not file a public issue**. See [`SECURITY.md`](SECURITY.md) for the private reporting process, acknowledgement timeline, and disclosure policy.
