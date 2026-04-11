@@ -42,4 +42,4 @@ If you need to share something sensitive to reproduce a bug, mention it in the i
 
 ## Security vulnerabilities
 
-If you believe you've found a security vulnerability, **please do not file a public issue**. Email the maintainers privately so the issue can be fixed before disclosure. (See [`SECURITY.md`](SECURITY.md) if available.)
+If you believe you've found a security vulnerability, **please do not file a public issue**. See [`SECURITY.md`](SECURITY.md) for the private reporting process, acknowledgement timeline, and disclosure policy.
