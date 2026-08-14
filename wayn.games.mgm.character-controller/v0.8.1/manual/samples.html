@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <script>
+      (function(){var t=localStorage.getItem('forge-theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();
+    </script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Samples | MGM Character Controller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Samples | MGM Character Controller ">
+    
+    <meta name="description" content="Index of the included samples (SinglePlayerSample, FlyCamSample, BehaviorShowCase, Museum Tour) with study order and suggested experiments.">
+      <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/269321351?v=4">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="/styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="/styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="/styles/language-switcher.css">
+      <link rel="stylesheet" href="/wayn.games.mgm.character-controller/styles/override.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <a href="#_content" class="sr-only sr-only-focusable">Skip to main content</a>
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" aria-label="Main navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="https://avatars.githubusercontent.com/u/269321351?v=4" alt="wayn.games.mgm.character-controller">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../index.html" title="Manual">Manual</a>
+                      </li>
+                      <li>
+                          <a href="../api/Snapshot.Minimal.html" title="API">API</a>
+                      </li>
+                      <li>
+                          <a href="../LICENSE.html" title="LICENSE">LICENSE</a>
+                      </li>
+                      <li>
+                          <a href="../CHANGELOG.html" title="CHANGELOG">CHANGELOG</a>
+                      </li>
+                </ul>
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" aria-label="Search">
+                  <button type="submit" class="sr-only">Search</button>
+                </div>
+              </form>
+              <button type="button" id="theme-toggle" class="navbar-btn navbar-right theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon theme-icon-light" aria-hidden="true">&#9790;</span>
+                <span class="theme-icon theme-icon-dark" aria-hidden="true">&#9788;</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="version-breadcrumb-bar">
+          <div class="container">
+            <div class="version-breadcrumb-row">
+              <div class="version-switcher">
+                <select id="version-select" aria-label="Version"></select>
+              </div>
+              <div class="language-switcher hidden">
+                <select id="language-select" aria-label="Language"></select>
+              </div>
+              <div class="breadcrumb-trail" id="breadcrumb">
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="install.html" title="Installation" class="">Installation</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quickstart" class="">Quickstart</a>
+                    </li>
+                    <li class="">
+                      <a href="getting-started.html" title="Getting Started" class="">Getting Started</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Guides</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="architecture.html" title="Architecture Overview" class="">Architecture Overview</a>
+                          </li>
+                          <li class="">
+                            <a href="execution-loop.html" title="The Execution Loop" class="">The Execution Loop</a>
+                          </li>
+                          <li class="">
+                            <a href="creating-state-machine.html" title="Creating a State Machine" class="">Creating a State Machine</a>
+                          </li>
+                          <li class="">
+                            <a href="writing-states.html" title="Writing Custom States" class="">Writing Custom States</a>
+                          </li>
+                          <li class="">
+                            <a href="transition-ordering.html" title="Transition Ordering" class="">Transition Ordering</a>
+                          </li>
+                          <li class="">
+                            <a href="physics-configuration.html" title="Physics Configuration" class="">Physics Configuration</a>
+                          </li>
+                          <li class="">
+                            <a href="fixed-step-rate.html" title="Fixed Step Rate" class="">Fixed Step Rate</a>
+                          </li>
+                          <li class="">
+                            <a href="performance.html" title="Performance" class="">Performance</a>
+                          </li>
+                          <li class="">
+                            <a href="input-system.html" title="Input System" class="">Input System</a>
+                          </li>
+                          <li class="">
+                            <a href="hybrid-layer.html" title="Hybrid GameObject Layer" class="">Hybrid GameObject Layer</a>
+                          </li>
+                          <li class="">
+                            <a href="moving-platforms.html" title="Moving Platforms" class="">Moving Platforms</a>
+                          </li>
+                          <li class="">
+                            <a href="debug-visualization.html" title="Debug Visualization" class="">Debug Visualization</a>
+                          </li>
+                          <li class="">
+                            <a href="extending.html" title="Extending the Package" class="">Extending the Package</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Recipes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="recipes/add-a-new-state.html" title="Add a New State" class="">Add a New State</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/add-a-new-transition.html" title="Add a New Transition" class="">Add a New Transition</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/switch-to-ai-input.html" title="Switch to AI Input" class="">Switch to AI Input</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-ground-snapping.html" title="Customize Ground Snapping" class="">Customize Ground Snapping</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/customize-collision-response.html" title="Customize Collision Response" class="">Customize Collision Response</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/push-dynamic-objects.html" title="Push Dynamic Objects" class="">Push Dynamic Objects</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/override-pipeline-step.html" title="Override a Pipeline Step" class="">Override a Pipeline Step</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/run-multiple-state-machines.html" title="Run Multiple State Machines" class="">Run Multiple State Machines</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/per-character-gravity.html" title="Per-Character Gravity" class="">Per-Character Gravity</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-hybrid-character.html" title="Set Up a Hybrid Character" class="">Set Up a Hybrid Character</a>
+                          </li>
+                          <li class="">
+                            <a href="recipes/setup-moving-platform.html" title="Set Up a Moving Platform" class="">Set Up a Moving Platform</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Integrations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="integrations/cinemachine.html" title="Cinemachine" class="">Cinemachine</a>
+                          </li>
+                          <li class="">
+                            <a href="integrations/animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Reference</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="samples.html" title="Samples" class="active">Samples</a>
+                          </li>
+                          <li class="">
+                            <a href="best-practices.html" title="Best Practices" class="">Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="troubleshooting.html" title="Troubleshooting" class="">Troubleshooting</a>
+                          </li>
+                          <li class="">
+                            <a href="upgrade-guide.html" title="Upgrade Guide" class="">Upgrade Guide</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="samples">Samples</h1>
+
+<p>This page lists all samples included with the MGM Character Controller and provides a recommended study order.</p>
+<h2 id="singleplayersample">SinglePlayerSample</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Teaches</strong></td>
+<td>Complete state machine with five states, transitions, input handling, camera setup, and profile configuration</td>
+</tr>
+<tr>
+<td><strong>Difficulty</strong></td>
+<td>Beginner to intermediate</td>
+</tr>
+<tr>
+<td><strong>Setup time</strong></td>
+<td>5 minutes (see <a href="quickstart.html">Quickstart</a>)</td>
+</tr>
+<tr>
+<td><strong>Dependencies</strong></td>
+<td>Unity Input System, Cinemachine</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-it-contains">What It Contains</h3>
+<p>The sample provides a full reference implementation of a third-person character controller:</p>
+<ul>
+<li><strong>5 states</strong>: Idling, Moving, Jumping, Falling, Sliding</li>
+<li><strong>17 transitions</strong>: All valid state-to-state transitions with priority ordering</li>
+<li><strong>3 behavior structs</strong>: Reusable gravity, horizontal locomotion, and jump-arc logic shared across states</li>
+<li><strong>Input handling</strong>: Camera-relative movement with jump trigger accumulation</li>
+<li><strong>Profile</strong>: Tunable walk/run speed, acceleration, jump arcs, gravity, and terminal velocity</li>
+<li><strong>Prefabs</strong>: Character (Locomotor + Model) and Player (Camera + Input)</li>
+<li><strong>Assets</strong>: Pre-configured profile and input ScriptableObjects</li>
+<li><strong>Scene</strong>: A ready-to-play playground (<code>Scenes/SinglePlayerSample.unity</code>) with stairs, slopes, conveyors, elevators, bridges, and rotating platforms</li>
+</ul>
+<h3 id="key-files---study-order">Key Files - Study Order</h3>
+<p>Read the sample code in this order to build the mental model (all paths relative to <code>Scripts/SimpleCharacter/</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>File</th>
+<th>What It Teaches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>Runtime/SimpleCharacterStateMachine.cs</code></td>
+<td>The anchor struct - <code>[LocomotionStateMachine]</code> attribute triggers source generation</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>Runtime/Data/SimpleCharacterInput.cs</code></td>
+<td>Input struct with continuous (Movement, IsSprinting, IsJumping) and trigger (JumpTrigger) fields, plus accumulation in <code>ApplyInputsToCharacter</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>Runtime/Data/SimpleCharacterProfile.cs</code></td>
+<td>Profile struct composed of per-state sub-profiles (<code>Moving.Profile</code>, <code>Falling.Profile</code>, <code>Jumping.Profile</code>) plus <code>AirControlFactor</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>Runtime/Data/SimpleCharacterStateData.cs</code></td>
+<td>Per-state persistent data (<code>JumpData</code> with jump count and apex timer)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>Runtime/States/Idling.cs</code></td>
+<td>Simplest state - zeros velocity on enter, empty integrate</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>Runtime/States/Moving.cs</code></td>
+<td>Walk/run speed selection and horizontal acceleration via <code>HorizontalLocomotionBehavior</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>Runtime/States/Falling.cs</code></td>
+<td>Gravity with terminal velocity via <code>GravityBehavior</code>; rotates to face input with no horizontal acceleration</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>Runtime/States/Jumping.cs</code></td>
+<td>Air control (<code>HorizontalLocomotionBehavior</code> scaled by <code>AirControlFactor</code>) + jump arc via <code>JumpBehavior</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>Runtime/States/Sliding.cs</code></td>
+<td>Gravity-driven sliding on steep slopes, reusing <code>GravityBehavior</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>Runtime/States/Behaviors/</code></td>
+<td><code>GravityBehavior</code>, <code>HorizontalLocomotionBehavior</code>, <code>JumpBehavior</code> - reusable behavior structs states compose</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>Runtime/States/Transitions/</code></td>
+<td>17 transitions split across <code>From*.cs</code> / <code>To*.cs</code> files, with <code>[LocomotionTransition]</code> and <code>[EvaluateBefore]</code> for priority ordering</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>Runtime/ReorientGravityToContactSurface.cs</code> + <code>Runtime/System/ReorientGravityToContactSurfaceSystem.cs</code></td>
+<td>Opt-in gravity reorientation to the contact surface (wall-walking / gravity pads)</td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>Authoring/SimpleCharacterPlayerInputAsset.cs</code></td>
+<td>Camera-relative input reading from the Player GO prefab's camera</td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>Authoring/SimpleCharacterProfileAsset.cs</code></td>
+<td>Designer-facing jump parameters converted to runtime physics values at bake time</td>
+</tr>
+</tbody>
+</table>
+<h3 id="things-to-try">Things to Try</h3>
+<p>After running the sample, try these modifications to deepen your understanding:</p>
+<ol>
+<li><strong>Change movement speed</strong> - Open the <code>SimpleCharacter Profile</code> asset and modify <code>Moving &gt; WalkSpeed</code> / <code>RunSpeed</code>. Notice how the profile is baked, so you need to re-enter Play mode.</li>
+<li><strong>Enable double jump</strong> - In the profile asset, add a second entry to the <code>Jumps</code> list. <code>JumpBehavior</code> already supports chained jumps via <code>StateData.JumpData.JumpsCount</code>.</li>
+<li><strong>Disable air control</strong> - In the profile asset, set <code>AirControlFactor</code> to 0. The character will maintain its launch velocity with no air steering.</li>
+<li><strong>Add debug visualization</strong> - Select the character entity in the sub-scene and add a <code>LocomotionDebugConfigAuthoring</code> component. Enter Play mode and observe contact points and movement paths in the Scene view.</li>
+</ol>
+<h3 id="related-docs">Related Docs</h3>
+<ul>
+<li><a href="quickstart.html">Quickstart</a> - Set up and run this sample</li>
+<li><a href="writing-states.html">Writing Custom States</a> - How the state lifecycle works</li>
+<li><a href="creating-state-machine.html">Creating a State Machine</a> - How the scaffolding tool generates this structure</li>
+<li><a href="input-system.html">Input System</a> - Input architecture in depth</li>
+</ul>
+<hr>
+<h2 id="flycamsample">FlyCamSample</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Teaches</strong></td>
+<td>Minimal single-state fly camera, gravity-free movement, split entity/camera rotation, collision handling without ground contact</td>
+</tr>
+<tr>
+<td><strong>Difficulty</strong></td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td><strong>Setup time</strong></td>
+<td>5 minutes</td>
+</tr>
+<tr>
+<td><strong>Dependencies</strong></td>
+<td>Unity Input System</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-it-contains-1">What It Contains</h3>
+<p>A first-person fly camera controller for navigating test scenes. The camera floats freely without gravity, slides along obstacles, and uses mouse look for rotation.</p>
+<ul>
+<li><strong>1 state</strong>: Flying (always active — no transitions needed)</li>
+<li><strong>No gravity</strong>: Zero vertical acceleration, ground snapping disabled</li>
+<li><strong>Split rotation</strong>: Entity rotates in yaw only; pitch is applied to the camera GameObject</li>
+<li><strong>Collision</strong>: Slides along walls and ceilings via the default collide-and-slide pipeline</li>
+<li><strong>Input</strong>: WASD/ZQSD movement, mouse look, Space to fly up, Left Ctrl to fly down</li>
+</ul>
+<h3 id="controls">Controls</h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W / Z</td>
+<td>Move forward</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Move backward</td>
+</tr>
+<tr>
+<td>A / Q</td>
+<td>Strafe left</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Strafe right</td>
+</tr>
+<tr>
+<td>Mouse</td>
+<td>Look (yaw + pitch)</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Fly up</td>
+</tr>
+<tr>
+<td>Left Ctrl</td>
+<td>Fly down</td>
+</tr>
+</tbody>
+</table>
+<p>Movement follows the camera look direction — looking down and pressing forward moves the camera downward toward where it is looking.</p>
+<h3 id="how-it-works">How It Works</h3>
+<h4 id="architecture">Architecture</h4>
+<p>The FlyCam follows the same Player → Character entity split as the SinglePlayerSample but is intentionally minimal:</p>
+<pre><code class="lang-mermaid">classDiagram
+    direction LR
+
+    class PlayerEntity[&quot;Player Entity&quot;] {
+        CharacterFollower
+        LocomotionInputAsset
+        PlayerGameObjectPrefab
+    }
+
+    class CharacterEntity[&quot;Character Entity&quot;] {
+        FlyCamStateMachine
+        FlyCamInput
+        FlyCamStateData ~yaw~
+        FlyCamProfile
+        LocomotionVelocity
+        LocomotionContact
+        PhysicsCollider ~capsule~
+    }
+
+    class PlayerGo[&quot;PlayerGo (GameObject)&quot;] {
+        PlayerGoAuthoring
+        PlayerInput
+    }
+
+    class CameraTarget[&quot;CameraTarget (Transform)&quot;] {
+        Camera
+    }
+
+    PlayerEntity --&gt; CharacterEntity : CharacterFollower
+    PlayerEntity ..&gt; PlayerGo : instantiates at runtime
+    PlayerGo --&gt; CameraTarget : child transform
+</code></pre>
+<h4 id="rotation-entity-vs-camera">Rotation: Entity vs Camera</h4>
+<p>The entity only rotates around the gravity axis (yaw). This is necessary because the locomotion pipeline applies gravity alignment before the state runs, which would fight with any pitch applied to the entity.</p>
+<p>Pitch is handled entirely on the managed (GameObject) side:</p>
+<ol>
+<li><code>FlyCamPlayerInputAsset.ReadInputsFromAsset</code> accumulates pitch from mouse Y delta</li>
+<li>It applies pitch as <code>localRotation</code> on the Camera transform</li>
+<li>It passes the pitch angle to the ECS input struct so the state can compute a pitched movement direction</li>
+</ol>
+<pre><code class="lang-csharp">// In FlyCamPlayerInputAsset — managed side
+m_Pitch = Mathf.Clamp(m_Pitch - look.y * LookSensitivity, -MaxPitch, MaxPitch);
+m_CameraTransform.localRotation = Quaternion.Euler(m_Pitch, 0f, 0f);
+inputs.Pitch = m_Pitch;
+</code></pre>
+<pre><code class="lang-csharp">// In FlyCamFlyingState — ECS side (yaw only on entity)
+quaternion rotation = quaternion.AxisAngle(up, math.radians(stateData.Yaw));
+baseContext.CharacterPosition.Rotation = rotation;
+
+// Pitched forward for movement direction
+quaternion pitchedRotation = math.mul(rotation,
+    quaternion.AxisAngle(math.right(), math.radians(ctx.Input.Pitch)));
+float3 forward = math.mul(pitchedRotation, math.forward());
+</code></pre>
+<h4 id="movement-without-gravity">Movement Without Gravity</h4>
+<p>The state computes desired velocity from input and uses <code>MathematicsHelpers.ComputeAccelerationToTargetVelocity</code> for smooth acceleration/deceleration. No gravity acceleration is applied — both horizontal and vertical channels are purely input-driven.</p>
+<p>The desired direction is split into horizontal and vertical components relative to the gravity axis, then passed to <code>UpdateVelocitiesAndComputeDisplacements</code> with zero gravity contribution.</p>
+<h4 id="ground-snapping-disabled">Ground Snapping Disabled</h4>
+<p>The <code>FlyCamContext</code> partial overrides <code>ComputeGroundSnappingDistance</code> to return zero, preventing the snap-to-ground step from pulling the camera to the floor:</p>
+<pre><code class="lang-csharp">public partial struct FlyCamContext
+{
+    public void ComputeGroundSnappingDistance(in FlyCamProfile profile, out float distance)
+    {
+        distance = 0f;
+    }
+}
+</code></pre>
+<h4 id="stale-contact-clearing">Stale Contact Clearing</h4>
+<p>A flying entity has no transitions to clear the contact state (unlike a grounded character that transitions to Falling). Without clearing, a contact from a previous collision would persist and cause <code>Move()</code> to project displacement incorrectly on subsequent frames.</p>
+<p>The state clears the contact at the start of each integration:</p>
+<pre><code class="lang-csharp">baseContext.LocomotionContact.ValueRW = LocomotionContact.None;
+</code></pre>
+<p>The collide-and-slide step will set a fresh contact if a collision occurs that frame.</p>
+<h3 id="scene-setup">Scene Setup</h3>
+<p>The sample scene contains:</p>
+<ol>
+<li><p><strong>Subscene</strong> with:</p>
+<ul>
+<li>A <strong>character entity</strong> (capsule collider) with <code>FlyCamCharacterLocomotionAuthoring</code> — assigns the profile asset and configures the physics capsule</li>
+<li>A <strong>player entity</strong> with <code>FlyCamPlayerCharacterAuthoring</code> — references the character, input asset, and PlayerGo prefab</li>
+</ul>
+</li>
+<li><p><strong>PlayerGo prefab</strong> (instantiated at runtime):</p>
+<ul>
+<li><code>PlayerGoAuthoring</code> component with Camera and CameraTarget references</li>
+<li><code>PlayerInput</code> component bound to <code>FlyCamActionMap</code></li>
+<li>A <code>CameraTarget</code> child Transform with the Camera as its child</li>
+</ul>
+</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The Camera must be a <strong>child of the CameraTarget</strong> Transform. The <code>CameraRigFollowControlledCharacterSystem</code> moves the CameraTarget to match the character entity's position. The Camera inherits that position and adds its own local pitch rotation.</p>
+</div>
+<h3 id="key-files---study-order-1">Key Files - Study Order</h3>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>File</th>
+<th>What It Teaches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>Runtime/FlyCamStateMachine.cs</code></td>
+<td>Minimal state machine anchor — single <code>[LocomotionStateMachine]</code> attribute</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>Runtime/Data/FlyCamInput.cs</code></td>
+<td>Input with continuous (Movement, Pitch), accumulated (LookDelta <code>+=</code>), and overwritten (VerticalMovement) fields</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>Runtime/Data/FlyCamProfile.cs</code></td>
+<td>Simple profile with just movement tuning and look sensitivity</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>Runtime/Data/FlyCamStateData.cs</code></td>
+<td>Minimal state data — only yaw angle</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>Runtime/Data/FlyCamContextExtensions.cs</code></td>
+<td>Overriding a DIM default to disable ground snapping</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>Runtime/States/FlyCamFlyingState.cs</code></td>
+<td>Core logic: split yaw/pitch rotation, pitched movement direction, zero-gravity movement, stale contact clearing</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>Runtime/Data/FlyCamPlayerInputAsset.cs</code></td>
+<td>Managed-side pitch handling, camera rotation, Input System action reading</td>
+</tr>
+</tbody>
+</table>
+<h3 id="things-to-try-1">Things to Try</h3>
+<ol>
+<li><strong>Adjust fly speed</strong> - Open the <code>FlyCamProfileAsset</code> and change <code>Moving &gt; MaxSpeed</code>. Higher values make the camera faster. <code>TimeToMaxSpeed</code> and <code>TimeToStop</code> control acceleration and deceleration feel.</li>
+<li><strong>Change mouse sensitivity</strong> - Modify <code>LookSensitivity</code> on either the <code>FlyCamProfileAsset</code> (affects yaw) or the <code>FlyCamPlayerInputAsset</code> (affects pitch).</li>
+<li><strong>Disable collision</strong> - Either set the physics profile's collision filter to collide with nothing in the <code>FlyCamCharacterLocomotionAuthoring</code> inspector, or override <code>OnResolveStateCollisions</code> in <code>FlyCamFlyingState</code> to move the locomotor directly without any collision check. Both approaches help understand what the collide-and-slide pipeline does.</li>
+<li><strong>Add a speed boost</strong> - Create a second profile with higher MaxSpeed and swap profiles at runtime, or add a sprint input to the action map.</li>
+</ol>
+<h3 id="related-docs-1">Related Docs</h3>
+<ul>
+<li><a href="creating-state-machine.html">Creating a State Machine</a> - Full scaffolding walkthrough</li>
+<li><a href="writing-states.html">Writing Custom States</a> - State lifecycle and DIM overrides</li>
+<li><a href="input-system.html">Input System</a> - Player → Character input pipeline</li>
+<li><a href="recipes/customize-ground-snapping.html">Customize Ground Snapping</a> - More on the <code>ComputeGroundSnappingDistance</code> override</li>
+<li><a href="recipes/customize-collision-response.html">Customize Collision Response</a> - Overriding <code>OnResolveStateCollisions</code></li>
+</ul>
+<hr>
+<h2 id="behaviorshowcase">BehaviorShowCase</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Teaches</strong></td>
+<td>The controller's behavior envelope — one focused subscene per behavior, loadable at runtime, plus stress-testing tools</td>
+</tr>
+<tr>
+<td><strong>Difficulty</strong></td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td><strong>Setup time</strong></td>
+<td>2 minutes (open <code>Scenes/BehaviourTests.unity</code> and press Play)</td>
+</tr>
+<tr>
+<td><strong>Dependencies</strong></td>
+<td>Unity Input System</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-it-contains-2">What It Contains</h3>
+<p>A behavior gallery built around the SimpleCharacter state machine from the SinglePlayerSample. The main scene (<code>Scenes/BehaviourTests.unity</code>) hosts a runtime scene-picker UI; each entry streams in one small subscene that demonstrates a single behavior with a bot-driven character, so you can study or regression-check behaviors in isolation.</p>
+<p><strong>28 behavior subscenes</strong>, organized by category under <code>Scenes/BehaviourTests/</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Subscenes</th>
+<th>What They Cover</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Locomotion</td>
+<td>4</td>
+<td>Slope grounding, jumping on flat ground, jumping through one-way platforms, stair step-up</td>
+</tr>
+<tr>
+<td>CharacterCollision</td>
+<td>3</td>
+<td>Head-on character collisions, stacked characters, overlap depenetration</td>
+</tr>
+<tr>
+<td>DynamicBody</td>
+<td>7</td>
+<td>Pushing light/medium/heavy spheres, sphere-drop impacts at various masses and heights</td>
+</tr>
+<tr>
+<td>DynamicBridge</td>
+<td>3</td>
+<td>Walking across a dynamic bridge, character and dynamic-body impacts on it</td>
+</tr>
+<tr>
+<td>KinematicPlatform</td>
+<td>7</td>
+<td>Elevator, conveyor, spinner, one-way platform grounding; crusher, pusher, rotating-bat collisions</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>4</td>
+<td>Edge balancing: character vs character and character vs dynamic body, in both directions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Runtime tools</strong> (under <code>Runtime/</code> and <code>Bot/</code>):</p>
+<ul>
+<li><strong><code>TestSceneSelector</code></strong> - UI Toolkit scene picker driven by a <code>TestSceneCatalog</code> asset: hover a category, click an entry to load/unload its subscene. Includes a <strong>timestep slider</strong> that changes the fixed update rate (Hz) live by writing the <code>FixedStepRate</code> singleton and the <code>FixedStepSimulationSystemGroup</code> timestep (see <a href="fixed-step-rate.html">Fixed Step Rate</a>).</li>
+<li><strong>Bot input</strong> (<code>SimpleCharacterBotAuthoring</code> + <code>SimpleCharacterBotBakingSystem</code>) - bakes a constant Move direction and a one-shot JumpTrigger directly into the character's <code>SimpleCharacterInput</code>, so each subscene's character acts without a player or a runtime input system.</li>
+<li><strong><code>SpawningSystem</code> + <code>TestSpawner</code> / <code>SpawnConfig</code></strong> - input-driven stress spawning in seven patterns (sphere, grid, cube, circle, line, random scatter, single-at-click). Tab cycles the pattern, Enter batch-spawns, Shift+LMB spawns one, Backspace clears.</li>
+<li><strong><code>GravityWellAuthoring</code> + <code>GravityWellSystem</code></strong> - overrides locomotion gravity for characters within range of a gravity-well entity (per-character gravity demo).</li>
+<li><strong>PerfTests</strong> - <code>Scenes/PerfTests.unity</code> with a <code>PerfSpawner</code> subscene for measuring the controller under large entity counts using the spawn patterns above.</li>
+</ul>
+<h3 id="things-to-try-2">Things to Try</h3>
+<ol>
+<li><strong>Compare timesteps</strong> - Load <code>KinematicPlatform &gt; Grounding_Elevator</code> and drag the timestep slider from 60 Hz down to 15 Hz to see how the behavior holds up at low tick rates.</li>
+<li><strong>Stress-test</strong> - Open <code>Scenes/PerfTests.unity</code>, press Enter to spawn a batch, and watch the profiler; press Tab to switch spawn patterns.</li>
+<li><strong>Add your own behavior scene</strong> - Copy one of the subscenes, modify the setup, and add an entry to the <code>TestSceneCatalog</code> asset so it appears in the picker.</li>
+</ol>
+<h3 id="related-docs-2">Related Docs</h3>
+<ul>
+<li><a href="fixed-step-rate.html">Fixed Step Rate</a> - The <code>FixedStepRate</code> singleton behind the timestep slider</li>
+<li><a href="recipes/per-character-gravity.html">Recipe: Per-Character Gravity</a> - The pattern behind the gravity well</li>
+<li><a href="recipes/switch-to-ai-input.html">Recipe: Switch to AI Input</a> - Driving characters without a player</li>
+<li><a href="#museum-tour">Museum Tour</a> - The same 29 exhibits, presented hands-off</li>
+</ul>
+<hr>
+<h2 id="museum-tour">Museum Tour</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Teaches</strong></td>
+<td>The controller's whole behavior range in one hands-off pass, plus a runtime application of AI-driven input on streamed-in characters</td>
+</tr>
+<tr>
+<td><strong>Difficulty</strong></td>
+<td>Beginner to watch, intermediate to read</td>
+</tr>
+<tr>
+<td><strong>Setup time</strong></td>
+<td>1 minute (open <code>Scenes/Museum.unity</code> and press Play)</td>
+</tr>
+<tr>
+<td><strong>Dependencies</strong></td>
+<td>The <strong>Behavior Showcase</strong> and <strong>Single Player</strong> samples, imported first</td>
+</tr>
+</tbody>
+</table>
+<p>Where the BehaviorShowCase is a Gym — you pick an exhibit and study it — the Museum is a curated
+presentation: it picks for you. Press Play, touch nothing, and it cycles all 29 behavior exhibits
+one at a time, each for exactly as long as that behavior is characterized over, with a placard
+naming what is on screen. Use it for a first impression, a demo reel, or a five-minute look at what
+the package does; use the Gym when you want to stop on one behavior.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The Museum ships no characters, geometry, or behavior of its own — it streams the Behavior
+Showcase's subscenes and uses the Single Player sample's reference character. Import both samples
+before importing this one, or the tour has nothing to show.</p>
+</div>
+<h3 id="what-it-contains-3">What It Contains</h3>
+<ul>
+<li><strong><code>Scenes/Museum.unity</code></strong> - the only entry point: a camera framed like the Behavior Showcase's own
+scene, a directional light, the shared <code>World</code> subscene (physics step + ground plane), and the
+<code>MuseumDirector</code> GameObject carrying the placard <code>UIDocument</code>.</li>
+<li><strong><code>Runtime/Resources/MuseumCatalog.asset</code></strong> - the generated tour data: 29 rows of category, exhibit
+name, entity-scene reference, and dwell, in tour order. Array order <em>is</em> tour order.</li>
+<li><strong><code>MuseumTourSequencer</code></strong> - the tour lifecycle as plain C#: which exhibit is current, whether it is
+still loading or on display, how much dwell is left, when to hand over. It owns no clock and no
+world (both the frame delta and &quot;is the exhibit visible yet&quot; are passed in), which is why the whole
+lifecycle is covered by EditMode tests with no scene and no Play mode.</li>
+<li><strong><code>MuseumPlacard</code></strong> - the pure text projection behind the on-screen label: category, exhibit name,
+and either a whole-second countdown or <code>Loading…</code>.</li>
+<li><strong><code>MuseumDirector</code></strong> - the only place the sample touches the engine: it streams the exhibit the
+sequencer asks for, writes the three placard labels, and creates the <code>MuseumTour</code> gate entity.</li>
+<li><strong><code>MuseumBotCaptureSystem</code> + <code>MuseumBotReArmSystem</code></strong> - two Burst <code>ISystem</code>s that keep the jump
+exhibits jumping (see <a href="#keeping-the-jump-exhibits-going">Keeping the jump exhibits going</a>).</li>
+<li><strong><code>MuseumSampleBuilder</code></strong> (Editor) - regenerates the catalog and the scene from one 29-row table.</li>
+</ul>
+<h3 id="how-to-use-it">How to Use It</h3>
+<ol>
+<li>Import <strong>Behavior Showcase</strong> and <strong>Single Player Sample</strong> from <strong>Window &gt; Package Manager &gt; Samples</strong>.</li>
+<li>Import <strong>Museum Tour</strong> from the same list.</li>
+<li>Open <code>Scenes/Museum.unity</code>.</li>
+<li>Press Play, and do not touch anything — there is no menu, no selection step, and no input path.</li>
+</ol>
+<p><strong>Expected result:</strong> within a moment the first exhibit (Locomotion / <em>Jump - Flat Ground</em>) streams in
+and the placard in the bottom-left reads its category, its name, and a countdown from 3 s. When the
+countdown runs out that exhibit is unloaded, the next one is loaded, and the placard reads <code>Loading…</code>
+until it is visible. After all 29 exhibits the tour wraps back to the first and keeps going
+indefinitely.</p>
+<p><strong>What a common failure looks like:</strong> the tour sits on <code>Loading…</code> for 10 seconds and then moves to the
+next exhibit. That is the deliberate give-up path — an exhibit that cannot be streamed never halts the
+tour, and it is attempted again on the next lap. If <em>every</em> exhibit does this, the Behavior Showcase
+sample is not imported, so the scenes the catalog points at do not exist in your project.</p>
+<h3 id="tour-order-and-dwell">Tour Order and Dwell</h3>
+<p>The order is the Gym picker's own order and wording, with <code>Jump - Moving Platform</code> — the one behavior
+subscene the picker does not list — appended to the end of its category:</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Category</th>
+<th>Exhibits</th>
+<th>Dwell range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Locomotion</td>
+<td>4</td>
+<td>3-5 s</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Character Collision</td>
+<td>3</td>
+<td>5-10 s</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kinematic Platform</td>
+<td>8</td>
+<td>5-30 s</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Dynamic Body</td>
+<td>7</td>
+<td>5-10 s</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Dynamic Bridge</td>
+<td>3</td>
+<td>5 s</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Balance</td>
+<td>4</td>
+<td>10 s</td>
+</tr>
+</tbody>
+</table>
+<p>Each dwell is the duration that scene is characterized over by the golden-master suite, so an exhibit
+is on display for exactly as long as its behavior is known to be interesting — <em>Jump - Flat Ground</em>
+for 3 s, <em>Conveyor</em> for 14 s, <em>Crusher</em> for 30 s. <code>Jump - Moving Platform</code> has no characterization
+run, so the spec mints 8 s for it. One lap is <strong>278 s of dwell</strong> (4 min 38 s) plus loading time.</p>
+<p>The dwell clock starts when the exhibit becomes <em>visible</em>, not when it is selected, so streaming time
+is never charged against the time you get to watch it. Because each handover unloads the previous
+exhibit and the next lap re-loads it from its baked file, every lap replays each exhibit from its
+start: the dropped sphere falls again, the stacked characters collide again — you never see a lap of
+settled leftovers.</p>
+<h3 id="keeping-the-jump-exhibits-going">Keeping the Jump Exhibits Going</h3>
+<p>Three exhibits are jumps (<em>Jump - Flat Ground</em>, <em>Jump - One-Way Platforms</em>, <em>Jump - Moving Platform</em>).
+Their characters are bot-driven by the Behavior Showcase's baker, which bakes a <strong>one-shot</strong> jump
+trigger — enough for a single jump, which would leave most of a 3-8 s dwell showing a character
+standing still. The Museum re-arms it, and this is a runtime application of the
+<a href="recipes/switch-to-ai-input.html">Switch to AI Input</a> recipe: write the input component directly from a
+system, and the state machine cannot tell the difference.</p>
+<ul>
+<li><code>MuseumBotCaptureSystem</code> runs in <code>InitializationSystemGroup</code> after the scene-streaming group, so it
+snapshots each streamed-in character's <strong>pristine baked</strong> <code>JumpTrigger</code> before any tick can consume
+it. The snapshot lives on the character entity, so it dies with the exhibit and is retaken on the
+next lap.</li>
+<li><code>MuseumBotReArmSystem</code> restores that value once the character reports a ground contact and its
+trigger has been consumed — one field, one condition, no accumulation.</li>
+</ul>
+<p>Two consequences worth knowing, because they are what keep the exhibits honest:</p>
+<ul>
+<li>A character with <strong>nothing</strong> baked is never written to. The snapshot carries no movement and no other
+intent, so the Museum structurally cannot perform an exhibit that does not jump — what you see on a
+push, balance, or platform exhibit is the exhibit, not a Museum performance of it.</li>
+<li>Both systems require a <code>MuseumTour</code> gate entity that only <code>MuseumDirector</code> creates, at runtime, in
+the Museum scene. There is no authoring component and no baker for it, so with the Museum merely
+imported and not playing, both systems are inert everywhere else in your project — including in the
+package's own characterization suites, which reproduce bitwise with the sample installed.</li>
+</ul>
+<h3 id="regenerating-the-sample">Regenerating the Sample</h3>
+<p>The catalog and the scene are generated, not hand-maintained. <code>MuseumSampleBuilder.TourOrder</code> is the
+single source of truth for the 29 rows; everything else is derived from it.</p>
+<table>
+<thead>
+<tr>
+<th>Menu item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MGM &gt; Museum &gt; Rebuild Catalog</strong></td>
+<td>Rewrites <code>Runtime/Resources/MuseumCatalog.asset</code> from the tour table, resolving each row to its behavior scene</td>
+</tr>
+<tr>
+<td><strong>MGM &gt; Museum &gt; Rebuild Scene</strong></td>
+<td>Rebuilds <code>Scenes/Museum.unity</code> (camera, light, <code>World</code> subscene, director + placard panel)</td>
+</tr>
+<tr>
+<td><strong>MGM &gt; Museum &gt; Rebuild All</strong></td>
+<td>Both, in that order</td>
+</tr>
+</tbody>
+</table>
+<p>All three overwrite in place rather than delete and recreate, so asset GUIDs — and therefore the
+scene's references — survive a rebuild. Rebuilding the catalog from an unchanged table is a byte-level
+no-op, which the test suite asserts.</p>
+<h3 id="things-to-try-3">Things to Try</h3>
+<ol>
+<li><strong>Change a dwell</strong> - Edit the row's <code>DwellSeconds</code> in <code>MuseumSampleBuilder.TourOrder</code>, run
+<strong>MGM &gt; Museum &gt; Rebuild Catalog</strong>, and press Play. Watch the placard count down from the new value.
+(Editing the generated asset directly works too, but the next rebuild overwrites it.)</li>
+<li><strong>Reorder the tour</strong> - Move a row in <code>TourOrder</code> and rebuild the catalog. Array order is tour order,
+so the Museum immediately follows the new order — including where the lap wraps.</li>
+<li><strong>Watch the re-arm</strong> - Let <em>Jump - Flat Ground</em> play and count the jumps in its 3 s. Then open
+<code>MuseumBotReArmSystem</code> and comment out the re-arm assignment: the character now jumps once and
+stands still for the rest of the dwell, which is what the one-shot baked trigger does on its own.</li>
+<li><strong>Verify the gate</strong> - Load a Behavior Showcase subscene from the Gym picker with the Museum sample
+installed. Nothing jumps by itself: without the Museum scene playing there is no <code>MuseumTour</code>
+entity, so neither Museum system runs.</li>
+</ol>
+<h3 id="related-docs-3">Related Docs</h3>
+<ul>
+<li><a href="recipes/switch-to-ai-input.html">Recipe: Switch to AI Input</a> - The pattern behind the two Museum systems</li>
+<li><a href="#behaviorshowcase">BehaviorShowCase</a> - The Gym the Museum's exhibits come from</li>
+<li><a href="execution-loop.html">The Execution Loop</a> - Where the Museum's systems sit relative to the fixed step</li>
+<li><a href="architecture.html">Architecture Overview</a> - Entity roles and the input component the Museum writes</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix" aria-label="In this article">
+                <p class="affix-header"><strong>In this article</strong></p>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>&copy; 2026 WAYN Games &ndash; All rights reserved.</span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+
+    <!-- Include the library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-dotnetconfig@0.9.3/dist/dotnetconfig.min.js"></script>
+    <script src="https://unpkg.com/mermaid@11.11.0/dist/mermaid.min.js" integrity="sha384-C21M+hYzDJXD/DX5WsUXM3HXXjl7OoOhRmMQBk65O3qx1sIILZV4074xRvGbt6+K" crossorigin="anonymous"></script>
+
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="https://unpkg.com/svg-toolbelt@latest/dist/svg-toolbelt.css">
+
+    <script>
+    mermaid.initialize({
+    startOnLoad: false
+    });
+    mermaid.init(undefined, ".lang-mermaid");
+    </script>
+    <script type="module">
+      import { initializeSvgToolbelt } from 'https://unpkg.com/svg-toolbelt@0.7.0/dist/svg-toolbelt.esm.js';
+
+      initializeSvgToolbelt('.lang-mermaid');
+    </script>
+
+    <script>
+    (function () {
+      // Run once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+
+      function run() {
+        var toc = document.getElementById('toc');
+        if (!toc) return;
+
+        // Only change link *text* inside the TOC
+        toc.querySelectorAll('a').forEach(function (a) {
+          // Use textContent to avoid touching any existing HTML,
+          // then re-inject with <wbr> after each dot.
+          var t = a.textContent;
+          if (!t || t.indexOf('.') === -1) return;
+          a.innerHTML = t.replace(/\./g, '.<wbr>');
+        });
+
+        // Accessibility: hide decorative glyphicon loading spinner from screen readers
+        document.querySelectorAll('.glyphicon.index-loading').forEach(function (el) {
+          el.setAttribute('aria-hidden', 'true');
+          var parent = el.closest('p');
+          if (parent && !parent.textContent.trim().replace(el.textContent, '').trim()) {
+            parent.setAttribute('aria-hidden', 'true');
+          }
+        });
+
+        // Accessibility: remove title attributes that just repeat link text
+        document.querySelectorAll('a[title]').forEach(function (a) {
+          if (a.title.trim() === a.textContent.trim()) {
+            a.removeAttribute('title');
+          }
+        });
+      }
+    })();
+    </script>
+
+    <script type="text/javascript" src="../styles/cross-search.js"></script>
+
+    <script>
+      // Load versions.js from the output root, handling both EN and language sub-builds
+      (function() {
+        var vm = window.location.pathname.match(/\/v[\d.]+\//);
+        var src = vm
+          ? window.location.pathname.substring(0, vm.index + 1) + 'versions.js'
+          : '../../versions.js';
+        document.write('<scr' + 'ipt src="' + src + '"><\/scr' + 'ipt>');
+      })();
+    </script>
+    <script>
+    (function () {
+      var current = '0.8.1';
+      var select = document.querySelector('#version-select');
+      if (!select || !current) return;
+
+      // Compute the output root from the URL (parent of vX.Y.Z/)
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      var outputRoot = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + 1)
+        : '../../';
+
+      // Detect current language from URL
+      var currentLang = 'en';
+      if (vMatch) {
+        var afterVer = window.location.pathname.substring(vMatch.index + vMatch[0].length);
+        var seg = afterVer.split('/')[0];
+        if (seg && seg.length >= 2 && seg.length <= 3 && seg !== 'api' && seg !== 'manual') {
+          currentLang = seg;
+        }
+      }
+
+      function buildDropdown(versions) {
+        versions.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.textContent = 'MGM Character Controller ' + v.version;
+          if (v.version === current) {
+            opt.selected = true;
+          }
+          opt.value = v.version;
+          select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function () {
+          var newVer = select.value;
+          if (!newVer) return;
+          var base = outputRoot + 'v' + newVer + '/';
+
+          if (currentLang === 'en') {
+            window.location.href = base + 'index.html';
+            return;
+          }
+
+          // Try the same language in the new version; fall back to EN
+          var langUrl = base + currentLang + '/index.html';
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', langUrl, true);
+          xhr.onload = function () {
+            window.location.href = (xhr.status < 400) ? langUrl : base + 'index.html';
+          };
+          xhr.onerror = function () {
+            window.location.href = base + 'index.html';
+          };
+          xhr.send();
+        });
+      }
+
+      var versions = window.DOC_VERSIONS || [{ version: current }];
+      buildDropdown(versions);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var LANG_STORAGE_KEY = 'forge-lang';
+      var select = document.querySelector('#language-select');
+      var wrapper = select ? select.closest('.language-switcher') : null;
+      if (!select || !wrapper) return;
+
+      // Load languages.js from the version folder (version-specific).
+      // For lang sub-builds (v0.4.0/zh/manual/...), compute the vX.Y.Z/ base.
+      var script = document.createElement('script');
+      var vMatch = window.location.pathname.match(/\/v[\d.]+\//);
+      script.src = vMatch
+        ? window.location.pathname.substring(0, vMatch.index + vMatch[0].length) + 'languages.js'
+        : '../languages.js';
+      script.onload = function () {
+        var languages = window.DOC_LANGUAGES || [];
+        if (languages.length <= 1) return; // Only English, keep hidden
+
+        wrapper.classList.remove('hidden');
+
+        // Detect current language from URL path
+        // URL pattern: /package/vX.Y.Z/{lang}/manual/... or /package/vX.Y.Z/manual/...
+        var path = window.location.pathname;
+        var versionMatch = path.match(/\/v[\d.]+\//);
+        var currentLang = 'en';
+        if (versionMatch) {
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+          var langCodes = languages.map(function (l) { return l.code; });
+          var firstSegment = afterVersion.split('/')[0];
+          if (firstSegment && langCodes.indexOf(firstSegment) !== -1 && firstSegment !== 'en') {
+            currentLang = firstSegment;
+          }
+        }
+
+        // Populate dropdown
+        languages.forEach(function (l) {
+          var opt = document.createElement('option');
+          opt.value = l.code;
+          opt.textContent = l.name;
+          if (l.code === currentLang) opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        // Handle language switch
+        select.addEventListener('change', function () {
+          var newLang = select.value;
+          localStorage.setItem(LANG_STORAGE_KEY, newLang);
+
+          if (!versionMatch) return;
+          var beforeVersion = path.substring(0, versionMatch.index + versionMatch[0].length);
+          var afterVersion = path.substring(versionMatch.index + versionMatch[0].length);
+
+          // Strip current language prefix if present
+          if (currentLang !== 'en') {
+            afterVersion = afterVersion.substring(currentLang.length + 1); // remove "fr/"
+          }
+
+          // Add new language prefix (unless English)
+          var newPath;
+          if (newLang === 'en') {
+            newPath = beforeVersion + afterVersion;
+          } else {
+            newPath = beforeVersion + newLang + '/' + afterVersion;
+          }
+
+          window.location.href = newPath;
+        });
+      };
+      // If languages.js doesn't exist, keep the switcher hidden
+      script.onerror = function () { /* no-op, switcher stays hidden */ };
+      document.head.appendChild(script);
+    })();
+    </script>
+
+    <script>
+    (function () {
+      var STORAGE_KEY = 'forge-theme';
+
+      function getPreferred() {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+      }
+
+      // Apply immediately to avoid flash
+      apply(getPreferred());
+
+      // Wire up toggle button
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          apply(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+
+      // Respect OS-level changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem(STORAGE_KEY)) {
+          apply(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+    </script>
+  </body>
+</html>
